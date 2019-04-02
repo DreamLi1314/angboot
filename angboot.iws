@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0db29d73-a968-42fe-9ff0-4b649ded7035" name="Default Changelist" comment="" />
+    <list default="true" id="0db29d73-a968-42fe-9ff0-4b649ded7035" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/angboot.iws" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/index.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,13 +48,145 @@
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="html" value="2" />
+          <entry key="java" value="1" />
+          <entry key="json" value="1" />
+          <entry key="ts" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="2" />
+          <entry key="JAVA" value="1" />
+          <entry key="JSON" value="1" />
+          <entry key="TypeScript" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="18" />
+          <entry key="json" value="11" />
+          <entry key="ts" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="18" />
+          <entry key="JSON" value="11" />
+          <entry key="TypeScript" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="Angular2LanguageService" value="1" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/angboot/AngbootApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+              <folding>
+                <element signature="e#250#251#0" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/app/app.component.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/src/app/app.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/app/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>concurrently</find>
+      <find>^6.0.2</find>
+      <find>keyword</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>^6.1.3</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/web/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/web/src/index.html" />
+        <option value="$PROJECT_DIR$/web/package.json" />
+        <option value="$PROJECT_DIR$/web/src/app/app.component.spec.ts" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -76,7 +216,6 @@
       <path value="$PROJECT_DIR$/web/node_modules/@angular-devkit/architect/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/@angular-devkit/architect/test/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/@angular-devkit/build-angular/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/@angular-devkit/build-optimizer/node_modules/typescript/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/@angular-devkit/build-optimizer/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/@angular-devkit/build-optimizer/webpack-loader/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/@angular-devkit/core/package.json" />
@@ -85,7 +224,6 @@
       <path value="$PROJECT_DIR$/web/node_modules/@angular/animations/browser/testing/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/@angular/animations/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/@angular/cli/node_modules/camelcase/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/@angular/cli/node_modules/opn/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/@angular/cli/node_modules/yargs-parser/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/@angular/cli/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/@angular/common/http/package.json" />
@@ -265,15 +403,12 @@
       <path value="$PROJECT_DIR$/web/node_modules/bytes/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/cacache/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/cache-base/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/cache-loader/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/callsite/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/camel-case/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/camelcase-keys/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/camelcase/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/caniuse-lite/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/caseless/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/chalk/node_modules/has-flag/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/chalk/node_modules/supports-color/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/chalk/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/chokidar/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/chownr/package.json" />
@@ -387,12 +522,9 @@
       <path value="$PROJECT_DIR$/web/node_modules/encodeurl/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/end-of-stream/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/engine.io-client/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/engine.io-client/node_modules/ms/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/engine.io-client/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/engine.io-parser/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/engine.io/node_modules/accepts/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/engine.io/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/engine.io/node_modules/ms/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/engine.io/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/enhanced-resolve/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/ent/package.json" />
@@ -575,8 +707,6 @@
       <path value="$PROJECT_DIR$/web/node_modules/har-validator/node_modules/uri-js/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/har-validator/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/has-ansi/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/has-binary/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/has-binary/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/has-cors/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/has-flag/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/has-symbols/package.json" />
@@ -614,7 +744,6 @@
       <path value="$PROJECT_DIR$/web/node_modules/iferr/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/ignore/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/image-size/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/immediate/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/import-cwd/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/import-from/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/import-local/node_modules/find-up/package.json" />
@@ -695,13 +824,6 @@
       <path value="$PROJECT_DIR$/web/node_modules/istanbul-reports/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/istanbul/node_modules/glob/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/istanbul/node_modules/has-flag/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/istanbul/node_modules/resolve/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/istanbul/node_modules/resolve/test/module_dir/zmodules/bbb/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/istanbul/node_modules/resolve/test/pathfilter/deep_ref/node_modules/deep/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/istanbul/node_modules/resolve/test/resolver/baz/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/istanbul/node_modules/resolve/test/resolver/biz/node_modules/garply/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/istanbul/node_modules/resolve/test/resolver/incorrect_main/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/istanbul/node_modules/resolve/test/subdirs/node_modules/a/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/istanbul/node_modules/supports-color/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/istanbul/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/jasmine-core/package.json" />
@@ -726,26 +848,11 @@
       <path value="$PROJECT_DIR$/web/node_modules/json3/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/json5/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/jsprim/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/jszip/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/karma-chrome-launcher/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/karma-coverage-istanbul-reporter/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/karma-jasmine-html-reporter/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/karma-jasmine/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/karma-source-map-support/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/anymatch/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/arr-diff/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/array-unique/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/braces/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/chokidar/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/expand-brackets/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/extglob/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/glob-parent/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/is-extglob/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/is-glob/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/lodash/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/micromatch/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/karma/node_modules/normalize-path/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/karma/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/killable/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/kind-of/package.json" />
@@ -757,7 +864,6 @@
       <path value="$PROJECT_DIR$/web/node_modules/less/test/import-module/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/levn/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/license-webpack-plugin/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/lie/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/load-json-file/node_modules/pify/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/load-json-file/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/loader-runner/package.json" />
@@ -768,10 +874,6 @@
       <path value="$PROJECT_DIR$/web/node_modules/lodash.mergewith/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/lodash.tail/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/lodash/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/log4js/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/log4js/node_modules/readable-stream/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/log4js/node_modules/semver/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/log4js/node_modules/string_decoder/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/log4js/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/loglevel/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/long/package.json" />
@@ -888,7 +990,6 @@
       <path value="$PROJECT_DIR$/web/node_modules/parse-glob/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/parse-json/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/parse5/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/parsejson/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/parseqs/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/parseuri/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/parseurl/package.json" />
@@ -915,7 +1016,6 @@
       <path value="$PROJECT_DIR$/web/node_modules/postcss-loader/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/postcss-url/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/postcss-value-parser/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/postcss/node_modules/chalk/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/postcss/node_modules/source-map/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/postcss/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/prelude-ls/package.json" />
@@ -926,8 +1026,6 @@
       <path value="$PROJECT_DIR$/web/node_modules/promise-inflight/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/promise/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/protractor/exampleTypescript/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/protractor/node_modules/@types/node/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/protractor/node_modules/adm-zip/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/protractor/node_modules/ansi-styles/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/protractor/node_modules/chalk/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/protractor/node_modules/del/package.json" />
@@ -1043,7 +1141,6 @@
       <path value="$PROJECT_DIR$/web/node_modules/serve-index/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/serve-static/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/set-blocking/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/set-immediate-shim/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/set-value/node_modules/extend-shallow/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/set-value/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/setimmediate/package.json" />
@@ -1054,7 +1151,6 @@
       <path value="$PROJECT_DIR$/web/node_modules/shebang-command/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/shebang-regex/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/signal-exit/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/silent-error/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/slash/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/slide/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/snapdragon-node/node_modules/define-property/package.json" />
@@ -1067,20 +1163,11 @@
       <path value="$PROJECT_DIR$/web/node_modules/snapdragon/node_modules/define-property/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/snapdragon/node_modules/extend-shallow/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/snapdragon/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/socket.io-adapter/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/socket.io-adapter/node_modules/ms/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/socket.io-adapter/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/socket.io-client/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/socket.io-client/node_modules/ms/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/socket.io-client/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/socket.io-parser/node_modules/component-emitter/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/socket.io-parser/node_modules/debug/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/socket.io-parser/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/socket.io-parser/node_modules/ms/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/socket.io-parser/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/socket.io/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/socket.io/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/socket.io/node_modules/object-assign/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/socket.io/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/sockjs-client/node_modules/debug/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/sockjs-client/node_modules/faye-websocket/package.json" />
@@ -1158,12 +1245,10 @@
       <path value="$PROJECT_DIR$/web/node_modules/trim-newlines/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/trim-right/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/true-case-path/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/ts-node/node_modules/chalk/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/ts-node/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/tsickle/node_modules/source-map/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/tsickle/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/tslib/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/tslint/node_modules/chalk/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/tslint/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/tsutils/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/tty-browserify/package.json" />
@@ -1267,7 +1352,6 @@
       <path value="$PROJECT_DIR$/web/node_modules/wrap-ansi/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/wrappy/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/ws/package.json" />
-      <path value="$PROJECT_DIR$/web/node_modules/wtf-8/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/xml2js/node_modules/sax/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/xml2js/package.json" />
       <path value="$PROJECT_DIR$/web/node_modules/xmlbuilder/package.json" />
@@ -1314,6 +1398,71 @@
               <item name="angboot" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dream" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="dream" type="462c0819:PsiDirectoryNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -1323,10 +1472,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554218281823" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/web/node_modules/typescript/lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1360,15 +1512,16 @@
       <option name="presentableId" value="Default" />
       <updated>1554211062696</updated>
       <workItem from="1554211065037" duration="340000" />
-      <workItem from="1554213099255" duration="228000" />
+      <workItem from="1554213099255" duration="4156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="568000" />
+    <option name="totallyTimeSpent" value="4496000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="952" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1378,6 +1531,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -1419,6 +1573,70 @@
     <entry file="file://$PROJECT_DIR$/mvnw">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2097" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dream/angboot/AngbootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/node_modules/@types/jasmine/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/app/app.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
