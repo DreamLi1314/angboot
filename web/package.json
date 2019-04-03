@@ -5,7 +5,7 @@
     "ng": "node --max-old-space-size=6000 ./node_modules/@angular/cli/bin/ng",
     "start": "npm run ng -- serve",
     "build:ng": "npm run ng -- build --named-chunks --vendor-chunk",
-    "build": "npm run build:resources && npm run build:ng",
+    "build": "npm run build:ng",
     "build:prod": "npm run build:resources && npm run build:ng:prod",
     "build:watch": "concurrently -r \"npm run build:ng -- --watch\"",
     "test": "ng test",
