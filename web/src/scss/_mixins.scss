@@ -1,0 +1,63 @@
+/*!
+ * Copyright (c) 2017, InetSoft Technology Corp, All Rights Reserved.
+ *
+ * The software and information contained herein are copyrighted and
+ * proprietary to InetSoft Technology Corp. This software is furnished
+ * pursuant to a written license agreement and may be used, copied,
+ * transmitted, and stored only in accordance with the terms of such
+ * license and with the inclusion of the above copyright notice. Please
+ * refer to the file "COPYRIGHT" for further copyright and licensing
+ * information. This software and information or any other copies
+ * thereof may not be provided or otherwise made available to any other
+ * person.
+ */
+
+@mixin background-image($img-path) {
+  background-image: url("#{$img-path}");
+}
+
+@mixin background-position($top, $left){
+  background-position: #{$top}px #{$left}px;
+}
+
+// BEM element mixin
+@mixin element($e) {
+  &__#{$e} {
+    @content;
+  }
+}
+
+// BEM modifier mixin
+@mixin modifier($m) {
+  &--#{$m} {
+    @content;
+  }
+}
+
+
+@mixin query-node-background($type) {
+  &-#{$type} {
+    background-image: url("assets/#{$type}.png");
+  }
+}
+
+/* pass a list of class names and set the z-index on each. z-index: 1..n; */
+@mixin set-z-index($stacking-order) {
+  @for $i from 1 through length($stacking-order) {
+    $class-name: nth($stacking-order, $i);
+
+    .#{$class-name} {
+      z-index: #{$i}
+    }
+  }
+}
+
+@mixin set-z-index-selector($stacking-order, $startIndex: 1) {
+  @for $i from 1 through length($stacking-order) {
+    $selector: nth($stacking-order, $i);
+
+    #{$selector} {
+      z-index: #{$startIndex + $i - 1}
+    }
+  }
+}

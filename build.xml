@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="AngBoot Development Environment" basedir="." default="server" xmlns:unless="ant:unless">
+	<property file="build.properties"/>
+	<sequential unless:set="src.dir">
+	 <property name="src.dir" value="src"/>
+	 <propertyfile file="build.properties">
+	   <entry key="src.dir" value="${src.dir}"/>
+	 </propertyfile>
+	</sequential>
+
+	<sequential unless:set="web.dir">
+	 <property name="web.dir" value="web"/>
+	 <propertyfile file="build.properties">
+	   <entry key="web.dir" value="${web.dir}"/>
+	 </propertyfile>
+	</sequential>
+
+	<!-- import lib -->
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+	  <classpath>
+	    <pathelement location="${ant.lib.dir}\\ant-contrib-1.0b3.jar"/>
+	  </classpath>
+	</taskdef>
+
+	<property environment="SystemVariable" />
+	<property name="node.home" value="${SystemVariable.NODE_HOME}" />
+
+	<condition property="isMac">
+	 <os family="mac" />
+	</condition>
+
+	<condition property="isWindows">
+	 <os family="windows" />
+	</condition>
+
+	<condition property="isUnix">
+	 <os family="unix" />
+	</condition>
+
+   <!-- define build command -->
+	<condition property="cmd.npm" value="npm.cmd" else="npm">
+    	<isset property="isWindows"/>
+	</condition>
+
+	<condition property="cmd.ng" value="ng.cmd" else="ng">
+    	<isset property="isWindows"/>
+	</condition>
+
+	<condition property="cmd.mvn" value="mvn.cmd" else="mvn">
+    	<isset property="isWindows"/>
+	</condition>
+
+   <!-- define our main target -->
+   <target name="installDependencies">
+		<echo message="start install package..." />
+    <exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
+       <arg value="install" />
+    </exec>
+    <echo message="install package success..." />
+ 	</target>
+
+ 	<target name="init">
+		<antcall target="installDependencies" />
+ 	</target>
+
+ 	<target name="build-angulalr" unless="skip.angular">
+		<echo message="start build angular..." />
+		<exec executable="${cmd.ng}" failonerror="${error.failonerror}" dir="${web.dir}">
+			<arg value="build"/>
+		</exec>
+		<echo message="build angular success..." />
+ 	</target>
+
+	<target name="build-java" unless="skip.java">
+		<echo message="start compile java source...." />
+		<exec executable="${cmd.mvn}" failonerror="${error.failonerror}">
+			<arg value="compile" />
+		</exec>
+		<echo message="compile java source success...." />
+	</target>
+
+	<target name="build">
+		<antcall target="build-angulalr" />
+		<antcall target="build-java" />
+	</target>
+
+   <target name="server" description="start up the angular server" depends="build">
+  		<echo message="satrt server..." />
+
+	  	<!--
+	  		<condition property="sdk.dir" value="${window.sdk.dir}" else="${linux.sdk.dir}">
+	        <os family="windows" />
+	    	</condition>
+
+				<if>
+					<isset property="isWindows"/>
+					<then>
+						<property name="mvn.command" value="mvn.cmd" />
+					</then>
+					<else>
+						<property name="mvn.command" value="mvn" />
+					</else>
+	  		</if>
+	  	-->
+
+		<exec executable="${cmd.mvn}" failonerror="${error.failonerror}">
+			<arg value="${start.server.command}"/>
+		</exec>
+   </target>
+
+	<target name="clean">
+		<echo message="Start clean target/dist/chunk..." />
+		<delete dir="${web.app.dist}" />
+		<delete dir="${target.dir}" />
+		<echo message="Clean output success..." />
+	</target>
+
+	<target name="clean-all" depends="clean">
+		<echo message="Start clean ${web.dir}\\node_modules..." />
+		<delete dir="${web.dir}\\node_modules" />
+		<echo message="Clean ${web.dir}\\node_modules success..." />
+	</target>
+
+	<target name="rebuild">
+		<echo message="Start rebuild...." />
+		<antcall target="clean" />
+		<antcall target="build" />
+		<echo message="Rebuild Success..." />
+	</target>
+
+	<target name="rebuild-all">
+		<echo message="Start rebuild all..." />
+		<antcall target="clean-all" />
+		<antcall target="init" />
+		<antcall target="build" />
+		<echo message="Rebuild all success..." />
+	</target>
+
+	<target name="watch">
+	   <echo message="Start watch app build..." />
+	   <exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
+		   <arg value="run"/>
+		   <arg line="${web.watch.cmd}" />
+	   </exec>
+	</target>
+
+	<target name="angular.generate-index-files">
+		<echo message="generate index files start..." />
+		<exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
+			<arg value="run"/>
+			<arg value="generate-index-files"/>
+		</exec>
+		<echo message="generate index files success..." />
+	</target>
+</project>

@@ -24,3 +24,6 @@
 hs_err_pid*
 .DS_Store
 web/package-lock.json
+
+# include dir
+!build/**

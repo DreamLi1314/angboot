@@ -1,6 +1,8 @@
 {
   "rulesDirectory": [
-    "node_modules/codelyzer"
+    "node_modules/codelyzer",
+    "node_modules/rxjs-tslint",
+    "rules"
   ],
   "rules": {
     "arrow-return-shorthand": true,
@@ -15,6 +17,10 @@
       "severity": "warn"
     },
     "eofline": true,
+    "file-header": [
+      true,
+      "Copyright ?\\(c\\) \\d{4}(-\\d{4})?, AngBoot Technology Corp, All Rights Reserved\\."
+    ],
     "forin": true,
     "import-blacklist": [
       true,
@@ -29,7 +35,7 @@
     "label-position": true,
     "max-line-length": [
       true,
-      140
+      120
     ],
     "member-access": false,
     "member-ordering": [

@@ -1,0 +1,545 @@
+
+// theming utility classes should be utilized in html template for components
+.bt-gray {
+  border-top: 1px solid $inet-gray-border;
+}
+
+.bb-gray {
+  border-bottom: 1px solid $inet-gray-border;
+}
+
+.br-gray {
+  border-right: 1px solid $inet-gray-border;
+}
+
+.bl-gray {
+  border-left: 1px solid $inet-gray-border;
+}
+
+.bd-gray {
+  border: 1px solid $inet-gray-border;
+}
+
+.bd-primary {
+  border: 1px solid $primary;
+}
+
+.bd-gray-hover {
+  &:hover {
+    border: 1px solid $inet-gray-border;
+  }
+}
+
+.bg-white1 {
+  background-color: $inet-offwhite1;
+}
+
+.bg-white2 {
+  background-color: $inet-offwhite2;
+}
+
+.bg-white3 {
+  background-color: $inet-offwhite3;
+}
+
+.bg-white4 {
+  background-color: $inet-offwhite4;
+}
+
+.bg-gray1 {
+  background-color: $inet-gray1;
+}
+
+.bg-gray4 {
+  background-color: $inet-gray4;
+}
+
+.bg-white-inet {
+  background-color: white;
+}
+
+.bg-danger-inet {
+  background-color: $danger;
+}
+
+.bg-third-color-light {
+  background-color: $third-color-light;
+}
+
+.bg-selected {
+  background-color: $selected-item-bg-color;
+}
+
+.txt-light {
+  color: $inet-text-light;
+}
+
+.txt-dark {
+  color: $inet-text-dark;
+}
+
+.txt-primary {
+  color: $primary;
+}
+
+.txt-highlight {
+  color: $inet-drop-highlight;
+}
+
+.txt-danger {
+  color: $inet-red-dark;
+}
+
+.disabled-grayout, .grayout {
+  opacity: 0.5;
+}
+
+.bt-highlight {
+  border-top: 4px solid $inet-drop-highlight;
+}
+
+.bb-highlight {
+  border-bottom: 4px solid $inet-drop-highlight;
+}
+
+.br-highlight {
+  border-right: 4px solid $inet-drop-highlight;
+}
+
+.bl-highlight {
+  border-left: 4px solid $inet-drop-highlight;
+}
+
+.bd-highlight {
+  border: 4px solid $inet-drop-highlight;
+}
+
+.bt-highlight-thin {
+  border-top: 1px solid $inet-drop-highlight;
+}
+
+.bb-highlight-thin {
+  border-bottom: 1px solid $inet-drop-highlight;
+}
+
+.bg-highlight-color {
+  background-color: $inet-drop-highlight;
+}
+
+.bt-highlight-primary {
+  border-top: 4px solid $primary;
+}
+
+.bb-highlight-primary {
+  border-bottom: 4px solid $primary;
+}
+
+.br-highlight-primary {
+  border-right: 4px solid $primary;
+}
+
+.bl-highlight-primary {
+  border-left: 4px solid $primary;
+}
+
+.bd-highlight-primary {
+  border: 4px solid $primary;
+}
+
+bd-highlight-med {
+  border: 2px solid $inet-drop-highlight;
+}
+
+bd-highlight-med-filler {
+  border: 2px solid transparent;
+}
+
+.bt-highlight-filler {
+  border-top: 4px solid transparent;
+}
+
+.bb-highlight-filler {
+  border-bottom: 4px solid transparent;
+}
+
+.br-highlight-filler {
+  border-right: 4px solid transparent;
+}
+
+.bl-highlight-filler {
+  border-left: 4px solid transparent;
+}
+
+.bt-selected {
+  border-top: 2px solid $selected-item-bg-color;
+}
+
+.bb-selected {
+  border-bottom: 2px solid $selected-item-bg-color;
+}
+
+.br-selected {
+  border-right: 2px solid $selected-item-bg-color;
+}
+
+.bl-selected {
+  border-left: 2px solid $selected-item-bg-color;
+}
+
+.bd-selected {
+  border: 2px solid $selected-item-bg-color;
+}
+
+.bd-gray-none {
+  border: 0 solid $inet-gray-border;
+}
+
+.popup-mini-bw {
+  background-color: white;
+  color: black;
+  border: 1px solid $inet-gray-border;
+}
+
+.table-data-row {
+  background-color: white;
+  border: none;
+}
+
+.table-data-row.table-data-row-even {
+  background-color: #f2f2f2
+}
+
+.table-data-row:hover {
+  background-color: #ddf;
+}
+
+.hover-bg-white {
+  &:not([disabled]):hover {
+    background: $inet-offwhite4;
+    cursor: pointer;
+  }
+}
+
+.hover-bg-selectable {
+  &:not(.selected):hover {
+    background: $hover-bg-blue;
+    cursor: pointer;
+  }
+}
+
+.hover-bg-gray {
+  &:not([disabled]):hover {
+    background-color: $inet-gray1;
+    cursor: pointer;
+  }
+}
+
+.hover-bg-white-border {
+  background: white;
+  border: 1px solid black;
+}
+
+.hover-bg-blue {
+  &:not([disabled]):not(.bg-selected):hover {
+    background-color: $hover-bg-blue;
+    cursor: pointer;
+  }
+}
+
+.txt-navbar-top {
+  color: white;
+}
+
+.bg-navbar-top {
+  background-color: $top-bar-black;
+}
+
+.hover-bg-navbar-menu {
+  &:not([disabled]):hover {
+    background-color: $inet-gray3;
+  }
+}
+
+.hover-bg-editable-list {
+  :hover {
+    background-color: $inet-gray2;
+  }
+}
+
+.bg-bold-selected {
+  @extend .bg-selected;
+  font-weight: bold;
+}
+
+.bd-outer-indicator {
+  border: 3px solid $inet-gray4;
+}
+
+.bd-inner-indicator {
+  border: 3px solid $inet-offwhite1;
+}
+
+.br-ruler {
+  border-right: 1px solid $inet-gray3;
+}
+
+.bb-ruler {
+  border-bottom: 1px solid $inet-gray3;
+}
+
+.bd-layout {
+  border: 1px solid $inet-blue;
+}
+
+.grayed-out-field {
+  color: $input-placeholder-color;
+  background-color: $input-disabled-bg;
+}
+
+//TODO simplify this
+%selected-item-colors {
+  background-color: $selected-item-bg-color;
+  color: $selected-item-color;
+}
+
+.selected {
+  @extend %selected-item-colors
+}
+
+.dropdown-pane {
+  .dropdown-item.selected,
+  .dropdown-item.selected .dropdown-item {
+    &:focus, &:hover {
+      @extend %selected-item-colors
+    }
+  }
+}
+
+.ruler-bg-stroke {
+  color: $inet-gray4;
+  background-color: $inet-offwhite1;
+}
+
+.hover-bd-selectable {
+  &.bd-selected {
+    border: 2px solid $selected-item-bg-color;
+  }
+
+  &:not(.bd-selected) {
+    border: 2px solid transparent;
+  }
+
+  &:not(.bd-selected):hover {
+    border: 2px solid $selected-item-bg-color;
+    cursor: pointer;
+  }
+}
+
+.hover-bd-primary {
+  border: 2px solid transparent;
+
+  &:hover {
+    border: 2px solid $primary;
+  }
+}
+
+table-header-resizer {
+  border: 1px solid $inet-orange-light;
+  border-right: 4px double $inet-orange-light;
+}
+
+.hover-table-header-resizer {
+  border: 1px solid transparent;
+  border-right: 4px double transparent;
+
+  &:hover {
+    border: 1px solid $inet-orange-light;
+    border-right: 4px double $inet-orange-light;
+  }
+}
+
+.bd-navbar {
+   border: $top-bar-black;
+}
+
+.composer-btn {
+  @extend .bg-navbar-top;
+  @extend .bd-navbar;
+  @extend .txt-navbar-top;
+
+  > i {
+    color: $inet-offwhite1;
+  }
+}
+
+.composer-btn-toolbar {
+  @extend .composer-btn;
+
+}
+
+.composer-toolbar-font-family {
+  font-family: $font-family-sans-serif;
+}
+
+.composer-bottom-tabs {
+  @extend .bt-gray;
+  @extend .bg-white3;
+  min-height:33px;
+  border-bottom: none;
+}
+
+.condition-field-combo-toggle.disabled {
+  @extend .form-control.disabled;
+}
+
+condition-item-pane {
+  .form-control:focus {
+    @extend .bd-primary;
+  }
+}
+
+.left {
+  .slide-out-content-container, .slide-out-toggle-container {
+    @extend .br-gray;
+  }
+}
+
+.right {
+  .slide-out-content-container, .slide-out-toggle-container {
+    @extend .bl-gray;
+  }
+}
+
+/* for html element that can't have "disabled" attribute, .disabled class is set.
+ * This class sets same porperties as bootstrap form-control:disabled
+ */
+.form-control.disabled, bordered-box.disabled {
+  background-color: $input-disabled-bg;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+//TODO merge form-control.disabled
+a.disable-link,
+a.disable-link:visited,
+a.disable-link:active,
+a.disable-link:hover {
+  color: #aaa !important;
+  pointer-events: none;
+}
+
+.disable-actions {
+  pointer-events: none;
+
+  input {
+    background-color: $input-disabled-bg;
+  }
+}
+
+//When a component use another component,  it's not possible to override that components' html template with utility classes
+//It's done with class override here for themable attributes
+binding-editor {
+  split-pane .gutter.gutter-vertical {
+    background: $inet-offwhite2;
+  }
+}
+
+.composer-body {
+  .gutter {
+    @extend .bg-white-inet;
+  }
+
+  // for ws detail table
+  .ws-graph-pane-container + .gutter-vertical {
+    background-color: $inet-offwhite1;
+  }
+
+  .search-box {
+    background-color: $inet-offwhite3;
+
+    input:focus {
+      border-color: $primary;
+    }
+  }
+}
+
+.base-font-size {
+  font-size: $font-size-base;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.month-calendar,
+.year-calendar {
+  .vs-calendar.dropdown-calendar & {
+      border: 1px solid $inet-gray-border;
+  }
+}
+
+.bg-third-color, .ws-assembly-graph-element--selected .ws-graph-thumbnail__title {
+  background-color: $third-color;
+}
+
+.ws-assembly-graph-element--selection-adjacent .ws-graph-thumbnail__title {
+  background-color: $fourth-color-light;
+}
+
+.ws-assembly-graph-element--primary .ws-assembly-thumbnail-image {
+  background-color: $primary;
+  color: $inet-text-light;
+}
+
+/*
+  Themeable CSS for CodeMirror component primarily used currently in Script Pane
+*/
+
+div.CodeMirror span.CodeMirror-matchingbracket {
+  color: #000;
+  background-color: #99ccff;
+}
+
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+  color: #f22;
+  background-color: #99ccff;
+}
+
+/*
+  Selection Box created when dragging for multi-selection
+*/
+
+.selection-box {
+  position: absolute;
+  background-color: rgba($inet-offwhite2, 0.4);
+  z-index: 9000;
+  cursor: default !important;
+  box-shadow: inset 0 0 0 1px $inet-gray-border;
+}
+
+//TODO should probably be able to combine this with other class in this file
+%bd-selected-cell {
+  border: 2px solid $primary !important;
+}
+
+//TODO this class is only used in vs-title
+.selected-title {
+  @extend %bd-selected-cell;
+}
+
+//TODO maybe some the the content here belong to handles or layout
+.selected-cell:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  @extend %bd-selected-cell;
+}
+
+.selected-table-cell .table-cell-relative-container {
+  @extend .selected-cell;
+}

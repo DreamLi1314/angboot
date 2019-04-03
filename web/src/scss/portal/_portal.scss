@@ -1,0 +1,38 @@
+
+$portal-titlebar-height: 52px;
+
+.portal-title-body {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  height: $portal-titlebar-height;
+  background-color: $portal-bar-black;
+
+  .home-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 30px !important;
+    text-align: center;
+    vertical-align: center;
+    background-color: $inet-orange;
+  }
+
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    height: 52px;
+    border-bottom: 4px solid transparent;
+
+    span {
+      color: white;
+    }
+
+  }
+}
