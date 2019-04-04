@@ -28,7 +28,7 @@ const appRoutes: Routes = [
           },
           {
               path: "**",
-              redirectTo: "portal"
+              redirectTo: "welcome"
           }
       ]
    }

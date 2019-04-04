@@ -140,7 +140,7 @@
 	   <echo message="Start watch app build..." />
 	   <exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
 		   <arg value="run"/>
-		   <arg line="${web.watch.cmd}" />
+		   <arg line="build:watch" />
 	   </exec>
 	</target>
 
