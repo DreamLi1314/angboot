@@ -5,7 +5,7 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 const { JUnitReporter } = require('./jasmine-junit-reporter');
 const fs = require('fs');
 const path = require('path');
-let junitDir = '../bin/test-results';
+let junitDir = '../target/test-results';
 
 if(!fs.existsSync(path.join(__dirname, junitDir))) {
    junitDir = './_test-output';
