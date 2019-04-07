@@ -128,11 +128,51 @@
 		<echo message="Rebuild Success..." />
 	</target>
 
+	<target name="test-java">
+		<echo message="Start test java..." />
+
+		<exec executable="${cmd.mvn}" failonerror="${error.failonerror}">
+			<arg value="test"/>
+		</exec>
+
+		<echo message="test java success..."/>
+	</target>
+
+	<target name="lint-angular">
+		<echo message="Start lint angular..." />
+
+		<exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
+			<arg value="run"/>
+			<arg line="lint" />
+		</exec>
+
+		<echo message="lint angular success..."/>
+	</target>
+
+	<target name="test-angular" depends="lint-angular">
+		<echo message="Start test angular..." />
+
+		<exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
+			<arg value="run"/>
+			<arg line="test" />
+		</exec>
+
+		<echo message="test angular success..."/>
+	</target>
+
+	<target name="test">
+		<echo message="Start test project..." />
+		<antcall target="test-java" />
+		<antcall target="test-angular" />
+		<echo message="test project success..."/>
+	</target>
+
 	<target name="rebuild-all">
 		<echo message="Start rebuild all..." />
 		<antcall target="clean-all" />
 		<antcall target="init" />
 		<antcall target="build" />
+		<antcall target="test" />
 		<echo message="Rebuild all success..." />
 	</target>
 
