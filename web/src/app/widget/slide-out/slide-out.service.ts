@@ -50,7 +50,7 @@ export class SlideOutService {
       const containerCandidates = document.querySelectorAll(containerSelector);
       let containerEl: Element = null;
 
-      // Don't check the layout box if only one element is found.
+      // Don"t check the layout box if only one element is found.
       if(containerCandidates.length === 1) {
          containerEl = containerCandidates.item(0);
       }

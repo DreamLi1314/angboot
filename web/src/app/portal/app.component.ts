@@ -15,7 +15,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-   selector: "portal-app",
+   selector: "app-portal",
    templateUrl: "app.component.html",
    styleUrls: ["app.component.scss"]
 })

@@ -1,8 +1,8 @@
 /*
- * Copyright (c) 2016, InetSoft Technology Corp, All Rights Reserved.
+ * Copyright (c) 2019, AngBoot Technology Corp, All Rights Reserved.
  *
  * The software and information contained herein are copyrighted and
- * proprietary to InetSoft Technology Corp. This software is furnished
+ * proprietary to AngBoot Technology Corp. This software is furnished
  * pursuant to a written license agreement and may be used, copied,
  * transmitted, and stored only in accordance with the terms of such
  * license and with the inclusion of the above copyright notice. Please
@@ -17,10 +17,10 @@ import { Observable, of as observableOf, Subject } from "rxjs";
 import { HttpParams } from "@angular/common/http";
 import { DomService } from "../../widget/dom-service/dom.service";
 import { isString, isBoolean, isNumber, isArray } from "util";
-import { Dimension } from '../data/dimension';
-import { TreeNodeModel } from '../../widget/tree/model/tree-node-model';
-import { Tool } from './tool';
-import { NetTool } from './net-tool';
+import { Dimension } from "../data/dimension";
+import { TreeNodeModel } from "../../widget/tree/model/tree-node-model";
+import { Tool } from "./tool";
+import { NetTool } from "./net-tool";
 
 declare const window: any;
 
@@ -102,7 +102,7 @@ export namespace GuiTool {
          outer.parentNode.removeChild(outer);
 
          scrollbarWidth = widthNoScroll - widthWithScroll;
-         // Some browsers (e.g. safari) don't show scrollbars unless scrolling so it does not
+         // Some browsers (e.g. safari) don"t show scrollbars unless scrolling so it does not
          // find the scroll bar width. Default to 10px
          scrollbarWidth =  scrollbarWidth == 0 ? 10 : scrollbarWidth;
       }
@@ -285,9 +285,9 @@ export namespace GuiTool {
                z-index: -1;
                display: none;
             }
-            @media ('-moz-touch-enabled'),
-            ('-ms-touch-enabled'),
-            ('-o-touch-enabled'),
+            @media ("-moz-touch-enabled"),
+            ("-ms-touch-enabled"),
+            ("-o-touch-enabled"),
             (pointer:coarse),
             not all (pointer:fine) {
               #inetsoft_touchTest_div {
@@ -522,7 +522,7 @@ export namespace GuiTool {
 
    /**
     * Implement our own drag image because:
-    * 1. IE/Edge doesn't support Dom setDragimage
+    * 1. IE/Edge doesn"t support Dom setDragimage
     * 2. DragImage addes a gradient transparency to the image that makes the image
     * look terrible in many cases.
     * @param event    the drag event.
@@ -614,7 +614,7 @@ export namespace GuiTool {
    }
 
    /**
-    * @return {boolean} whether we're in an iframe
+    * @return {boolean} whether we"re in an iframe
     */
    export function isIFrame(): boolean {
       try {

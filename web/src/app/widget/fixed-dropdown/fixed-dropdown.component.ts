@@ -108,7 +108,7 @@ export class FixedDropdownComponent implements OnInit, AfterViewInit, OnDestroy 
          const containerElement = this.container;
          const restrictBounds = Rectangle.fromClientRect(containerElement.getBoundingClientRect());
 
-         // Restricting to an empty rectangle (such as when the body size is 0) doesn't really
+         // Restricting to an empty rectangle (such as when the body size is 0) doesn"t really
          // make sense so use the viewport size instead
          if(restrictBounds.isEmpty()) {
             [restrictBounds.x, restrictBounds.y] = [0, 0];

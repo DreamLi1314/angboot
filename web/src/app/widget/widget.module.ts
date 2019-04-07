@@ -20,17 +20,17 @@ import { MODULE_DIRECTIVES } from "./index.directives";
 import { MODULE_PIPES } from "./index.pipes";
 import { ModelService } from "./services/model.service";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import {DomService} from './dom-service/dom.service';
-import {DropdownStackService} from './fixed-dropdown/dropdown-stack.service';
-import {SlideOutService} from './slide-out/slide-out.service';
-import {FixedDropdownService} from './fixed-dropdown/fixed-dropdown.service';
-import {TooltipService} from './tooltip/tooltip.service';
-import {DebounceService} from './services/debounce.service';
-import {SlideOutComponent} from './slide-out/slide-out.component';
-import {TooltipComponent} from './tooltip/tooltip.component';
-import {MessageDialog} from './dialog/message-dialog.component';
-import {FixedDropdownContextmenuComponent} from './fixed-dropdown/fixed-dropdown-contextmenu.component';
-import {FixedDropdownComponent} from './fixed-dropdown/fixed-dropdown.component';
+import { DomService } from "./dom-service/dom.service";
+import { DropdownStackService } from "./fixed-dropdown/dropdown-stack.service";
+import { SlideOutService } from "./slide-out/slide-out.service";
+import { FixedDropdownService } from "./fixed-dropdown/fixed-dropdown.service";
+import { TooltipService } from "./tooltip/tooltip.service";
+import { DebounceService } from "./services/debounce.service";
+import { SlideOutComponent } from "./slide-out/slide-out.component";
+import { TooltipComponent } from "./tooltip/tooltip.component";
+import { MessageDialog } from "./dialog/message-dialog.component";
+import { FixedDropdownContextmenuComponent } from "./fixed-dropdown/fixed-dropdown-contextmenu.component";
+import { FixedDropdownComponent } from "./fixed-dropdown/fixed-dropdown.component";
 
 @NgModule({
    imports: [

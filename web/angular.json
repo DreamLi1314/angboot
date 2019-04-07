@@ -7,8 +7,6 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
-      "schematics": {},
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -18,6 +16,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
+            "showCircularDependencies": false,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -118,5 +117,14 @@
       }
     }
   },
-  "defaultProject": "web"
+  "defaultProject": "web",
+  "schematics": {
+    "@schematics/angular:component": {
+      "prefix": "c",
+      "styleext": "scss"
+    },
+    "@schematics/angular:directive": {
+      "prefix": "c"
+    }
+  }
 }

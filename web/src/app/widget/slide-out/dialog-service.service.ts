@@ -19,7 +19,7 @@ import { UIContextService } from "../../common/services/ui-context.service";
 import { SlideOutOptions } from "./slide-out-options";
 import { SlideOutRef } from "./slide-out-ref";
 import { SlideOutService } from "./slide-out.service";
-import { Tool } from '../../common/util/tool';
+import { Tool } from "../../common/util/tool";
 
 /**
  * The service that delegates whether to open content in a modal or slide out panel.
@@ -119,8 +119,8 @@ export class DialogService implements OnDestroy {
       });
    }
 
-   // check if slideout is on top of all others. a slide out is on top if it's z-index
-   // is set on top (1049), or if it's the last slideout of all visible slideouts.
+   // check if slideout is on top of all others. a slide out is on top if it"s z-index
+   // is set on top (1049), or if it"s the last slideout of all visible slideouts.
    isSlideoutOnTop(idx: number): boolean {
       if(this.currentSlideouts[idx].isOnTop()) {
          return true;

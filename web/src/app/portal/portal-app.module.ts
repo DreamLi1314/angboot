@@ -16,10 +16,10 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { PortalAppComponent } from './app.component';
-import { WidgetModule } from '../widget/widget.module';
-import { MODULE_COMPONENTS } from './index.components';
-import { PortalAppRoutingModule } from './app-routing.module';
+import { PortalAppComponent } from "./app.component";
+import { WidgetModule } from "../widget/widget.module";
+import { MODULE_COMPONENTS } from "./index.components";
+import { PortalAppRoutingModule } from "./app-routing.module";
 
 @NgModule({
    declarations: [

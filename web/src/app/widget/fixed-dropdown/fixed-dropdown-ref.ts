@@ -46,8 +46,8 @@ export class DropdownRef {
    }
 
    /**
-    * The instance of component used as dropdown's content.
-    * Undefined when a TemplateRef is used as dropdown's content.
+    * The instance of component used as dropdown"s content.
+    * Undefined when a TemplateRef is used as dropdown"s content.
     */
    get componentInstance(): any {
       if(this.contentRef.componentRef) {

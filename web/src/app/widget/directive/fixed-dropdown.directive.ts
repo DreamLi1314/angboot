@@ -105,7 +105,7 @@ export class FixedDropdownDirective implements OnDestroy {
 
    @HostListener("mousedown")
    public mousedown() {
-      // If dropdown is open on mousedown, don't open it on click.
+      // If dropdown is open on mousedown, don"t open it on click.
       this.isDropdownOpenOnMousedown = this.dropdown && !this.dropdown.closed;
    }
 

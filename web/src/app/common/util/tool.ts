@@ -28,12 +28,12 @@ export namespace Tool {
     export const union: <T>(...arr: T[]) => T[] = require("lodash/union");
     export const orderBy = require("lodash/orderBy");
 
-    // correct typing of first parameter - varargs isn't possible in typescript
+    // correct typing of first parameter - varargs isn"t possible in typescript
     export const intersectionWith: <T>(obj: T[], vals: T[], comparator: (v1: T, v2: T) => boolean) => T[] = require("lodash/intersectionWith");
     export const uniq: <T>(arr: T[]) => T[] = require("lodash/uniq");
 
     /**
-     * Encode a single non-ascii character to unicode enclosed in '[]'
+     * Encode a single non-ascii character to unicode enclosed in "[]"
      * @param ch single-character string
      * @param encodeDot whether to encode "."
      * @returns encoded string
@@ -45,9 +45,9 @@ export namespace Tool {
 
         let charCode: number = ch.charCodeAt(0);
 
-        if(charCode < 128 && ch !== "[" && ch !== "]" && ch !== "/" && ch !== "'" &&
+        if(charCode < 128 && ch !== "[" && ch !== "]" && ch !== "/" &&
             ch !== "=" && ch !== "%" && ch !== "&" && ch !== "?" &&
-            ch !== "#" && ch !== '"' && ch !== "<" && ch !== ">" &&
+            ch !== "#" && ch !== "'" && ch !== "<" && ch !== ">" &&
             ch !== "," && ch !== "\\" && ch !== "+" && ch !== ";" &&
             ch !== "(" && ch !== ")" && ch !== "{" && ch !== "}" && ch !== "`" &&
             (ch !== "." || !encodeDot) && ch !== "|") {
@@ -59,7 +59,7 @@ export namespace Tool {
     }
 
     /**
-     * Encode non-ascii characters to unicode enclosed in '[]'.
+     * Encode non-ascii characters to unicode enclosed in "[]".
      * @param source string
      * @param encodeDot whether to encode "."
      * @returns encoded string.
@@ -186,7 +186,7 @@ export namespace Tool {
             return true;
         }
 
-        const validEmailRegex = /^[\w\d!#$%&'*+\-/=?^_`{|}~]+(\.[\w\d!#$%&'*+\-/=?^_`{|}~]+)*@[\w\d\-_]+(\.[\w\d\-_]+)*$/;
+        const validEmailRegex = /^[\w\d!#$%&"*+\-/=?^_`{|}~]+(\.[\w\d!#$%&"*+\-/=?^_`{|}~]+)*@[\w\d\-_]+(\.[\w\d\-_]+)*$/;
         const addresses: string[] = val.split(";");
 
         // Return false if any of the emails are invalid

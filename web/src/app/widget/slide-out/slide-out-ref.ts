@@ -43,7 +43,7 @@ export class SlideOutRef {
    }
 
    /**
-    * The instance of component used as slide out's content.
+    * The instance of component used as slide out"s content.
     * Undefined when a TemplateRef is used.
     */
    get componentInstance(): any {

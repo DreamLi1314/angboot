@@ -29,7 +29,7 @@ import { Subscription } from "rxjs";
 import { DropdownOptions } from "./dropdown-options";
 import { DropdownRef } from "./fixed-dropdown-ref";
 import { FixedDropdownService } from "./fixed-dropdown.service";
-import {AssemblyActionGroup} from '../../common/action/assembly-action-group';
+import {AssemblyActionGroup} from "../../common/action/assembly-action-group";
 
 @Component({
    selector: "actions-contextmenu",

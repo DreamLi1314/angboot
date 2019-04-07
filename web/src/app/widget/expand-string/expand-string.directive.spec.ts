@@ -51,71 +51,71 @@ describe("expand-string.directive", () => {
 
    it("should replace single string content", () => {
       contentTest.componentInstance.values = ["Test input"];
-      contentTest.componentInstance.content = "The input is '%s'!";
+      contentTest.componentInstance.content = "The input is \"%s\"!";
       contentTest.detectChanges();
 
       let element = contentTest.debugElement.query(By.css(".content-test-span"));
       let actual = element.nativeElement.innerHTML;
-      expect(actual).toBe("The input is 'Test input'!");
+      expect(actual).toBe("The input is \"Test input\"!");
 
       contentTest.componentInstance.values = ["Different input"];
       contentTest.detectChanges();
 
       element = contentTest.debugElement.query(By.css(".content-test-span"));
       actual = element.nativeElement.innerHTML;
-      expect(actual).toBe("The input is 'Different input'!");
+      expect(actual).toBe("The input is \"Different input\"!");
    });
 
    it("should replace string sequence content", () => {
       contentTest.componentInstance.values = [ "first", "second" ];
-      contentTest.componentInstance.content = "The first value is '%s'. The second value is '%s'";
+      contentTest.componentInstance.content = "The first value is \"%s\". The second value is \"%s\"";
       contentTest.detectChanges();
 
       let element = contentTest.debugElement.query(By.css(".content-test-span"));
       let actual = element.nativeElement.innerHTML;
-      expect(actual).toBe("The first value is 'first'. The second value is 'second'");
+      expect(actual).toBe("The first value is \"first\". The second value is \"second\"");
 
       contentTest.componentInstance.values = [ "a", "b" ];
       contentTest.detectChanges();
 
       element = contentTest.debugElement.query(By.css(".content-test-span"));
       actual = element.nativeElement.innerHTML;
-      expect(actual).toBe("The first value is 'a'. The second value is 'b'");
+      expect(actual).toBe("The first value is \"a\". The second value is \"b\"");
    });
 
    it("should replace indexed string content", () => {
       contentTest.componentInstance.values = [ "first", "second" ];
-      contentTest.componentInstance.content = "The second value is '%s$1'. The first value is '%s$0'";
+      contentTest.componentInstance.content = "The second value is \"%s$1\". The first value is \"%s$0\"";
       contentTest.detectChanges();
 
       let element = contentTest.debugElement.query(By.css(".content-test-span"));
       let actual = element.nativeElement.innerHTML;
-      expect(actual).toBe("The second value is 'second'. The first value is 'first'");
+      expect(actual).toBe("The second value is \"second\". The first value is \"first\"");
 
       contentTest.componentInstance.values = [ "a", "b" ];
       contentTest.detectChanges();
 
       element = contentTest.debugElement.query(By.css(".content-test-span"));
        actual = element.nativeElement.innerHTML;
-      expect(actual).toBe("The second value is 'b'. The first value is 'a'");
+      expect(actual).toBe("The second value is \"b\". The first value is \"a\"");
    });
 
    it("should replace single string attribute", () => {
       attributeTest.componentInstance.values = ["Test input"];
-      attributeTest.componentInstance.content = "The input is '%s'!";
+      attributeTest.componentInstance.content = "The input is \"%s\"!";
       attributeTest.componentInstance.attribute = "title";
       attributeTest.detectChanges();
 
       let element = attributeTest.debugElement.query(By.css(".attribute-test-span"));
       let actual = element.nativeElement.getAttribute("title");
-      expect(actual).toBe("The input is 'Test input'!");
+      expect(actual).toBe("The input is \"Test input\"!");
 
       attributeTest.componentInstance.values = ["Different input"];
       attributeTest.detectChanges();
 
       element = attributeTest.debugElement.query(By.css(".attribute-test-span"));
       actual = element.nativeElement.getAttribute("title");
-      expect(actual).toBe("The input is 'Different input'!");
+      expect(actual).toBe("The input is \"Different input\"!");
 
       attributeTest.componentInstance.values = ["Test input"];
       attributeTest.componentInstance.attribute = "data-test";
@@ -123,32 +123,32 @@ describe("expand-string.directive", () => {
 
       element = attributeTest.debugElement.query(By.css(".attribute-test-span"));
       actual = element.nativeElement.getAttribute("data-test");
-      expect(actual).toBe("The input is 'Test input'!");
+      expect(actual).toBe("The input is \"Test input\"!");
 
       attributeTest.componentInstance.values = ["Different input"];
       attributeTest.detectChanges();
 
       element = attributeTest.debugElement.query(By.css(".attribute-test-span"));
       actual = element.nativeElement.getAttribute("data-test");
-      expect(actual).toBe("The input is 'Different input'!");
+      expect(actual).toBe("The input is \"Different input\"!");
    });
 
    it("should replace string sequence attribute", () => {
       attributeTest.componentInstance.values = [ "first", "second" ];
-      attributeTest.componentInstance.content = "The first value is '%s'. The second value is '%s'";
+      attributeTest.componentInstance.content = "The first value is \"%s\". The second value is \"%s\"";
       attributeTest.componentInstance.attribute = "title";
       attributeTest.detectChanges();
 
       let element = attributeTest.debugElement.query(By.css(".attribute-test-span"));
       let actual = element.nativeElement.getAttribute("title");
-      expect(actual).toBe("The first value is 'first'. The second value is 'second'");
+      expect(actual).toBe("The first value is \"first\". The second value is \"second\"");
 
       attributeTest.componentInstance.values = [ "a", "b" ];
       attributeTest.detectChanges();
 
       element = attributeTest.debugElement.query(By.css(".attribute-test-span"));
       actual = element.nativeElement.getAttribute("title");
-      expect(actual).toBe("The first value is 'a'. The second value is 'b'");
+      expect(actual).toBe("The first value is \"a\". The second value is \"b\"");
 
       attributeTest.componentInstance.values = [ "first", "second" ];
       attributeTest.componentInstance.attribute = "data-test";
@@ -156,32 +156,32 @@ describe("expand-string.directive", () => {
 
       element = attributeTest.debugElement.query(By.css(".attribute-test-span"));
       actual = element.nativeElement.getAttribute("data-test");
-      expect(actual).toBe("The first value is 'first'. The second value is 'second'");
+      expect(actual).toBe("The first value is \"first\". The second value is \"second\"");
 
       attributeTest.componentInstance.values = [ "a", "b" ];
       attributeTest.detectChanges();
 
       element = attributeTest.debugElement.query(By.css(".attribute-test-span"));
       actual = element.nativeElement.getAttribute("data-test");
-      expect(actual).toBe("The first value is 'a'. The second value is 'b'");
+      expect(actual).toBe("The first value is \"a\". The second value is \"b\"");
    });
 
    it("should replace indexed string attribute", () => {
       attributeTest.componentInstance.values = [ "first", "second" ];
-      attributeTest.componentInstance.content = "The second value is '%s$1'. The first value is '%s$0'";
+      attributeTest.componentInstance.content = "The second value is \"%s$1\". The first value is \"%s$0\"";
       attributeTest.componentInstance.attribute = "title";
       attributeTest.detectChanges();
 
       let element = attributeTest.debugElement.query(By.css(".attribute-test-span"));
       let actual = element.nativeElement.getAttribute("title");
-      expect(actual).toBe("The second value is 'second'. The first value is 'first'");
+      expect(actual).toBe("The second value is \"second\". The first value is \"first\"");
 
       attributeTest.componentInstance.values = [ "a", "b" ];
       attributeTest.detectChanges();
 
       element = attributeTest.debugElement.query(By.css(".attribute-test-span"));
       actual = element.nativeElement.getAttribute("title");
-      expect(actual).toBe("The second value is 'b'. The first value is 'a'");
+      expect(actual).toBe("The second value is \"b\". The first value is \"a\"");
 
       attributeTest.componentInstance.values = [ "first", "second" ];
       attributeTest.componentInstance.attribute = "data-test";
@@ -189,14 +189,14 @@ describe("expand-string.directive", () => {
 
       element = attributeTest.debugElement.query(By.css(".attribute-test-span"));
       actual = element.nativeElement.getAttribute("data-test");
-      expect(actual).toBe("The second value is 'second'. The first value is 'first'");
+      expect(actual).toBe("The second value is \"second\". The first value is \"first\"");
 
       attributeTest.componentInstance.values = [ "a", "b" ];
       attributeTest.detectChanges();
 
       element = attributeTest.debugElement.query(By.css(".attribute-test-span"));
       actual = element.nativeElement.getAttribute("data-test");
-      expect(actual).toBe("The second value is 'b'. The first value is 'a'");
+      expect(actual).toBe("The second value is \"b\". The first value is \"a\"");
    });
 
    it("replacement marker at the beginning of string", () => {

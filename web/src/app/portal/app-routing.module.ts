@@ -15,7 +15,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { PortalAppComponent } from "./app.component";
-import {WelcomeComponent} from './welcome/welcome.component';
+import { WelcomeComponent } from "./welcome/welcome.component";
 
 const appRoutes: Routes = [
    {

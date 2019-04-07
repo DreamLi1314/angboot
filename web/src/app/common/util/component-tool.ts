@@ -25,8 +25,8 @@ import { DropdownOptions } from "../../widget/fixed-dropdown/dropdown-options";
 import { ActionsContextmenuComponent } from "../../widget/fixed-dropdown/actions-contextmenu.component";
 import { Point } from "../data/point";
 import { Type } from "@angular/core";
-import { SlideOutOptions } from '../../widget/slide-out/slide-out-options';
-import { SlideOutRef } from '../../widget/slide-out/slide-out-ref';
+import { SlideOutOptions } from "../../widget/slide-out/slide-out-options";
+import { SlideOutRef } from "../../widget/slide-out/slide-out-ref";
 
 /**
  * Common utility methods
@@ -335,7 +335,7 @@ export namespace ComponentTool {
 
    /**
     * Get the title for the slide out pane for an assembly dialog.
-    * @param {string} assemblyName  the assembly's name
+    * @param {string} assemblyName  the assembly"s name
     * @param {string} dialogName    the dialog name
     * @returns {string} the title for the slide out pane
     */

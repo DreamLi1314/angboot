@@ -12,7 +12,7 @@
  * person.
  */
 import { ChangeDetectorRef, Component, Input, OnInit } from "@angular/core";
-import { NotificationType, Notification } from '../../common/data/notification';
+import { NotificationType, Notification } from "../../common/data/notification";
 
 /**
  * Component that displays notification messages to the user.
