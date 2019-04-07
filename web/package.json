@@ -10,7 +10,7 @@
     "build:prod": "npm run build:ng:prod",
     "build:watch": "concurrently -r \"npm run build:ng:app -- --watch\"",
     "test": "ng test",
-    "lint": "ng lint",
+    "lint": "tsc -p rules/tsconfig.json && npm run ng -- lint",
     "e2e": "ng e2e",
     "generate-index-files": "node ./generate-index-files.js"
   },
