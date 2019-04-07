@@ -149,7 +149,7 @@
 		<echo message="lint angular success..."/>
 	</target>
 
-	<target name="test-angular" depends="lint-angular">
+	<target name="test-angular">
 		<echo message="Start test angular..." />
 
 		<exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
@@ -171,6 +171,7 @@
 		<echo message="Start rebuild all..." />
 		<antcall target="clean-all" />
 		<antcall target="init" />
+		<antcal target="lint-angular"/>
 		<antcall target="build" />
 		<antcall target="test" />
 		<echo message="Rebuild all success..." />

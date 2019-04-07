@@ -96,8 +96,8 @@
       "check-type"
     ],
     "no-output-on-prefix": false,
-    "directive-selector": [false, "attribute", null, "camelCase"],
-    "component-selector": [false, "element", null, "kebab-case"],
+    "directive-selector": [true, "attribute", null, "camelCase"],
+    "component-selector": [true, "element", null, "kebab-case"],
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
     "use-host-property-decorator": true,

@@ -12,25 +12,18 @@
  * person.
  */
 
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+/**
+ * Namespace that provides utility methods that are useful in developing unit tests.
+ */
+export namespace TestUtils {
 
-import { AppComponent } from "./app.component";
-import { AppRoutingModule } from "./app-routing.module";
-import { HttpClientModule } from "@angular/common/http";
-import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
+   export function toString(localStr: string): string {
+      let str = localStr.slice(localStr.indexOf("(") + 1, localStr.lastIndexOf(")"));
 
-@NgModule({
-   declarations: [
-      AppComponent
-   ],
-   imports: [
-      BrowserModule,
-      HttpClientModule,
-      AppRoutingModule,
-      NgbModalModule.forRoot()
-   ],
-  providers: [],
-  bootstrap: [ AppComponent ]
-})
-export class AppModule { }
+      if(str.startsWith("js:")) {
+         str = str.substring(3);
+      }
+
+      return str;
+   }
+}

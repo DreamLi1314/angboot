@@ -34,7 +34,6 @@ var Rule = /** @class */ (function (_super) {
     };
     Rule.FAILURE_MSG = "cross-app dependency forbidden";
     Rule.PROHIBITED_DEPENDENCIES = {
-        "admin/": [],
         "common/": [],
         "widget/": []
     };
@@ -49,6 +48,7 @@ var NoCrossDependenciesWalker = /** @class */ (function (_super) {
     NoCrossDependenciesWalker.prototype.visitImportDeclaration = function (node) {
         // let sourceFile: ts.SourceFile = <ts.SourceFile> node.parent;
         // let importFrom: string = <string> node.moduleSpecifier["text"];
+        //
         // for(let prefix in Rule.PROHIBITED_DEPENDENCIES) {
         //    if(sourceFile.fileName.indexOf(prefix) === 0) {
         //       for(let prohibited of Rule.PROHIBITED_DEPENDENCIES[prefix]) {

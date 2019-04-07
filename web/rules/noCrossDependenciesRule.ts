@@ -18,7 +18,6 @@ import * as Lint from "tslint";
 export class Rule extends Lint.Rules.AbstractRule {
    public static FAILURE_MSG: string = "cross-app dependency forbidden";
    public static PROHIBITED_DEPENDENCIES: {[name: string]: string[]} = {
-      "admin/": [],
       "common/": [],
       "widget/": []
    };
@@ -32,7 +31,7 @@ class NoCrossDependenciesWalker extends Lint.RuleWalker {
    public visitImportDeclaration(node: ts.ImportDeclaration) {
       // let sourceFile: ts.SourceFile = <ts.SourceFile> node.parent;
       // let importFrom: string = <string> node.moduleSpecifier["text"];
-
+      //
       // for(let prefix in Rule.PROHIBITED_DEPENDENCIES) {
       //    if(sourceFile.fileName.indexOf(prefix) === 0) {
       //       for(let prohibited of Rule.PROHIBITED_DEPENDENCIES[prefix]) {

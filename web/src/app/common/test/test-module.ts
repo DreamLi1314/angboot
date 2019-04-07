@@ -11,26 +11,24 @@
  * thereof may not be provided or otherwise made available to any other
  * person.
  */
-
-import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
-import { AppComponent } from "./app.component";
-import { AppRoutingModule } from "./app-routing.module";
-import { HttpClientModule } from "@angular/common/http";
-import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
+import { FixedDropdownContextmenuComponent } from "../../widget/fixed-dropdown/fixed-dropdown-contextmenu.component";
+import { FixedDropdownComponent } from "../../widget/fixed-dropdown/fixed-dropdown.component";
+import { FixedDropdownService } from "../../widget/fixed-dropdown/fixed-dropdown.service";
+import { DropdownStackService } from "../../widget/fixed-dropdown/dropdown-stack.service";
 
 @NgModule({
    declarations: [
-      AppComponent
+      FixedDropdownComponent,
+      FixedDropdownContextmenuComponent,
    ],
-   imports: [
-      BrowserModule,
-      HttpClientModule,
-      AppRoutingModule,
-      NgbModalModule.forRoot()
+   entryComponents: [
+      FixedDropdownComponent,
+      FixedDropdownContextmenuComponent
    ],
-  providers: [],
-  bootstrap: [ AppComponent ]
+   providers: [
+      FixedDropdownService,
+      DropdownStackService
+   ]
 })
-export class AppModule { }
+export class DropDownTestModule {}
