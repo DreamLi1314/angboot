@@ -112,6 +112,7 @@
 		<echo message="Start clean target/dist/chunk..." />
 		<delete dir="${web.app.dist}" />
 		<delete dir="${target.dir}" />
+		<delete dir="${web.dir}/dist" />
 		<echo message="Clean output success..." />
 	</target>
 
@@ -171,7 +172,7 @@
 		<echo message="Start rebuild all..." />
 		<antcall target="clean-all" />
 		<antcall target="init" />
-		<antcal target="lint-angular"/>
+		<antcall target="lint-angular"/>
 		<antcall target="build" />
 		<antcall target="test" />
 		<echo message="Rebuild all success..." />

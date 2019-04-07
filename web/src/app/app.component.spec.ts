@@ -15,9 +15,9 @@
 import { TestBed, async } from "@angular/core/testing";
 import { AppComponent } from "./app.component";
 import { BrowserModule } from "@angular/platform-browser";
-import { Router, RouterModule } from "@angular/router";
+import { Router } from "@angular/router";
 import { Subject } from "rxjs";
-import {RouterTestingModule} from "@angular/router/testing";
+import { RouterTestingModule } from "@angular/router/testing";
 
 describe("AppComponent", () => {
 

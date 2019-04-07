@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "angboot-web",
   "version": "0.0.0",
   "scripts": {
     "ng": "node --max-old-space-size=6000 ./node_modules/@angular/cli/bin/ng",
@@ -9,9 +9,10 @@
     "build": "npm run build:ng",
     "build:prod": "npm run build:ng:prod",
     "build:watch": "concurrently -r \"npm run build:ng:app -- --watch\"",
-    "test": "ng test",
+    "test": "npm run test:app -- --watch false",
+    "test:app": "npm run ng -- test angboot-web",
     "lint": "tsc -p rules/tsconfig.json && npm run ng -- lint",
-    "e2e": "ng e2e",
+    "e2e": "npm run ng -- e2e --serve false",
     "generate-index-files": "node ./generate-index-files.js"
   },
   "private": true,
