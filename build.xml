@@ -65,7 +65,8 @@
 
  	<target name="build-angulalr" unless="skip.angular">
 		<echo message="start build angular..." />
-		<exec executable="${cmd.ng}" failonerror="${error.failonerror}" dir="${web.dir}">
+		<exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
+			<arg value="run"/>
 			<arg value="build"/>
 		</exec>
 		<echo message="build angular success..." />
