@@ -14,33 +14,22 @@
 
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { EMAppComponent } from "./app.component";
 
-const routes: Routes = [
+const appRoutes: Routes = [
    {
       path: "",
-      children: [
-         {
-            path: "portal",
-            loadChildren: "./portal/portal-app.module#PortalAppModule"
-         },
-         {
-            path: "em",
-            loadChildren: "./em/em-app.module#EmAppModule"
-         },
-         {
-            path: "**",
-            redirectTo: "portal"
-         }
-      ]}
+      component: EMAppComponent
+   }
 ];
 
 @NgModule({
    imports: [
-       RouterModule.forRoot(routes, {onSameUrlNavigation: "reload", enableTracing: true})
+      RouterModule.forChild(appRoutes)
    ],
    exports: [
-       RouterModule
+      RouterModule
    ]
 })
-export class AppRoutingModule {
+export class EMAppRoutingModule {
 }

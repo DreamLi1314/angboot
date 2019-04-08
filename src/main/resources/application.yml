@@ -20,6 +20,10 @@ spring:
 server:
   port: 80
 
+logging:
+  level:
+    com.dream.angboot: debug
+
 ---
 
 spring:

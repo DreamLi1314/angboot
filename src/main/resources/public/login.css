@@ -1,1 +1,15 @@
+/* css for login.html */
+.login-container {
+    position: fixed;
+    top: 54px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
 
+.login-form-content {
+    margin: 16px auto;
+    width: 600px;
+    max-width: 90%;
+}

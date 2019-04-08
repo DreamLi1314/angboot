@@ -12,35 +12,33 @@
  * person.
  */
 
+import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
-
-const routes: Routes = [
-   {
-      path: "",
-      children: [
-         {
-            path: "portal",
-            loadChildren: "./portal/portal-app.module#PortalAppModule"
-         },
-         {
-            path: "em",
-            loadChildren: "./em/em-app.module#EmAppModule"
-         },
-         {
-            path: "**",
-            redirectTo: "portal"
-         }
-      ]}
-];
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { EMAppComponent } from "./app.component";
+import { WidgetModule } from "../widget/widget.module";
+import { MODULE_COMPONENTS } from "./index.components";
+import { EMAppRoutingModule } from "./app-routing.module";
 
 @NgModule({
-   imports: [
-       RouterModule.forRoot(routes, {onSameUrlNavigation: "reload", enableTracing: true})
+   declarations: [
+      EMAppComponent,
+      ...MODULE_COMPONENTS
    ],
-   exports: [
-       RouterModule
+   imports: [
+      CommonModule,
+      FormsModule,
+      WidgetModule,
+      ReactiveFormsModule,
+      NgbModule.forRoot(),
+      EMAppRoutingModule
+   ],
+   bootstrap: [EMAppComponent],
+   entryComponents: [
+   ],
+   providers: [
    ]
 })
-export class AppRoutingModule {
+export class EmAppModule {
 }
