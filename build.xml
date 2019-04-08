@@ -42,10 +42,6 @@
     	<isset property="isWindows"/>
 	</condition>
 
-	<condition property="cmd.ng" value="ng.cmd" else="ng">
-    	<isset property="isWindows"/>
-	</condition>
-
 	<condition property="cmd.mvn" value="mvn.cmd" else="mvn">
     	<isset property="isWindows"/>
 	</condition>
