@@ -446,3 +446,9 @@ org.h2.message.DbException: The connection was not closed by the application and
 Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-197]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
 	... 14 more
+2019-04-10 10:22:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'' (T_USER: ID INT DEFAULT (NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_445302F7_9C98_4A91_8053_7E1CB6294370) NOT NULL NULL_TO_DEFAULT SEQUENCE PUBLIC.SYSTEM_SEQUENCE_445302F7_9C98_4A91_8053_7E1CB6294370)"; SQL statement:
+INSERT INTO "PUBLIC"."T_USER"("ID","NAME","PASSWORD")VALUES(?,?,?) -- (?1, ?2, ?3) [22018-197]
+2019-04-10 10:22:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'' (T_USER: ID INT DEFAULT (NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_445302F7_9C98_4A91_8053_7E1CB6294370) NOT NULL NULL_TO_DEFAULT SEQUENCE PUBLIC.SYSTEM_SEQUENCE_445302F7_9C98_4A91_8053_7E1CB6294370)"; SQL statement:
+INSERT INTO "PUBLIC"."T_USER"("ID","NAME","PASSWORD")VALUES(?,?,?) -- (?1, ?2, ?3) [22018-197]

@@ -1,4 +1,4 @@
-package com.dream.angboot.dao;
+package com.dream.angboot.authority.dao;
 
 import com.dream.angboot.domain.User;
 import org.junit.Test;
