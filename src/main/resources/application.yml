@@ -1,6 +1,13 @@
 spring:
   profiles:
     active: dev
+  redis:
+     host: localhost
+     port: 6379
+  cache:
+     redis:
+        cache-null-values: true
+        use-key-prefix: true
 
 mybatis:
   configuration:
@@ -23,6 +30,7 @@ spring:
 
 server:
   port: 80
+
 
 logging:
   level:
