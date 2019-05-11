@@ -176,35 +176,35 @@
       <codeStyleSettings language="CSS">
         <indentOptions>
           <option name="INDENT_SIZE" value="3" />
-          <option name="CONTINUATION_INDENT_SIZE" value="6" />
+          <option name="CONTINUATION_INDENT_SIZE" value="3" />
           <option name="TAB_SIZE" value="3" />
         </indentOptions>
       </codeStyleSettings>
       <codeStyleSettings language="Groovy">
         <indentOptions>
           <option name="INDENT_SIZE" value="3" />
-          <option name="CONTINUATION_INDENT_SIZE" value="6" />
+          <option name="CONTINUATION_INDENT_SIZE" value="3" />
           <option name="TAB_SIZE" value="3" />
         </indentOptions>
       </codeStyleSettings>
       <codeStyleSettings language="HTML">
         <indentOptions>
-          <option name="INDENT_SIZE" value="3" />
-          <option name="CONTINUATION_INDENT_SIZE" value="6" />
-          <option name="TAB_SIZE" value="3" />
+          <option name="INDENT_SIZE" value="2" />
+          <option name="CONTINUATION_INDENT_SIZE" value="2" />
+          <option name="TAB_SIZE" value="2" />
         </indentOptions>
       </codeStyleSettings>
       <codeStyleSettings language="JAVA">
         <indentOptions>
           <option name="INDENT_SIZE" value="3" />
-          <option name="CONTINUATION_INDENT_SIZE" value="6" />
+          <option name="CONTINUATION_INDENT_SIZE" value="3" />
           <option name="TAB_SIZE" value="3" />
         </indentOptions>
       </codeStyleSettings>
       <codeStyleSettings language="JSON">
         <indentOptions>
           <option name="INDENT_SIZE" value="3" />
-          <option name="CONTINUATION_INDENT_SIZE" value="6" />
+          <option name="CONTINUATION_INDENT_SIZE" value="3" />
           <option name="TAB_SIZE" value="3" />
         </indentOptions>
       </codeStyleSettings>
@@ -225,7 +225,7 @@
       <codeStyleSettings language="SCSS">
         <indentOptions>
           <option name="INDENT_SIZE" value="3" />
-          <option name="CONTINUATION_INDENT_SIZE" value="6" />
+          <option name="CONTINUATION_INDENT_SIZE" value="3" />
           <option name="TAB_SIZE" value="3" />
         </indentOptions>
       </codeStyleSettings>
@@ -240,7 +240,7 @@
       <codeStyleSettings language="XML">
         <indentOptions>
           <option name="INDENT_SIZE" value="3" />
-          <option name="CONTINUATION_INDENT_SIZE" value="6" />
+          <option name="CONTINUATION_INDENT_SIZE" value="3" />
           <option name="TAB_SIZE" value="3" />
         </indentOptions>
       </codeStyleSettings>
