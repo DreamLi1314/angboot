@@ -15,7 +15,7 @@ You can download this app source on [GitHub](https://github.com/DreamLi1314/sree
 ### Start up the application
 First you should perform an init once to install the dependencies needed for your project, but only if you need it on the first boot.
 ``` ant
-ant init
+ant rebuild-all
 ```
 After each start, you only need to run the following command to start the application:
 ```ant
