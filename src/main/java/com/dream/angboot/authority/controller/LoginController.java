@@ -10,7 +10,7 @@ public class LoginController {
    public String login() {
 
 
-      return "redirect:/em";
+      return "redirect:/app/em";
    }
 
 }

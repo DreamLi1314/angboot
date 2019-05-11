@@ -23,16 +23,6 @@ public class AngBootWebMvcConfiguration implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        String serverIndexPath = "/index";
-        String ngIndexPath = "/index.html";
-        String emIndexPath = "/em/index.html";
-
-        registry.addViewController("/").setViewName(serverIndexPath);
         registry.addViewController("/login.html").setViewName("login");
-
-        registry.addRedirectViewController("/portal", ngIndexPath);
-        registry.addRedirectViewController("/portal/**", ngIndexPath);
-        registry.addRedirectViewController("/em", emIndexPath);
-        registry.addRedirectViewController("/em/**", emIndexPath);
     }
 }

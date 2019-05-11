@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+      <profile name="Annotation profile for angboot" enabled="true">
+        <sourceOutputDir name="bin/compile/java/generated-sources/annotations" />
+        <sourceTestOutputDir name="bin/compile/java/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="angboot" />
       </profile>
@@ -16,6 +16,12 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <type id="AngularCLI" />
+  </component>
+  <component name="GantSettings">
+    <option name="SDK_HOME" value="$USER_HOME$/Software/apache-ant-1.10.1" />
   </component>
   <component name="InspectionProjectProfileManager">
     <profile version="1.0">
@@ -163,6 +169,9 @@
       <TypeScriptCodeStyleSettings>
         <option name="FORCE_SEMICOLON_STYLE" value="true" />
         <option name="FORCE_QUOTE_STYlE" value="true" />
+        <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
+        <option name="SPACES_WITHIN_IMPORTS" value="true" />
+        <option name="SPACES_WITHIN_INTERPOLATION_EXPRESSIONS" value="true" />
       </TypeScriptCodeStyleSettings>
       <codeStyleSettings language="CSS">
         <indentOptions>

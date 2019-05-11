@@ -15,11 +15,22 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { EMAppComponent } from "./app.component";
+import { EmMonitorComponent } from "./monitor/em-monitor.component";
 
 const appRoutes: Routes = [
    {
       path: "",
-      component: EMAppComponent
+      component: EMAppComponent,
+      children: [
+         {
+            path: "monitor",
+            component: EmMonitorComponent
+         },
+         {
+            path: "**",
+            redirectTo: "monitor"
+         }
+      ]
    }
 ];
 

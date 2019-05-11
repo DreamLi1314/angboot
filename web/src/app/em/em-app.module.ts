@@ -30,8 +30,8 @@ import { EMAppRoutingModule } from "./app-routing.module";
       CommonModule,
       FormsModule,
       WidgetModule,
+      NgbModule,
       ReactiveFormsModule,
-      NgbModule.forRoot(),
       EMAppRoutingModule
    ],
    bootstrap: [EMAppComponent],

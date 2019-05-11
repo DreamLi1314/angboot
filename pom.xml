@@ -15,11 +15,14 @@
     <description>Boot for angular and spring boot</description>
 
     <properties>
-        <jdk.version>1.8</jdk.version>
-        <project.encoding>utf-8</project.encoding>
+       <jdk.version>1.8</jdk.version>
+       <project.encoding>utf-8</project.encoding>
 
-        <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
-        <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
+       <!-- Thymeleaf Config -->
+       <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
+       <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
+
+       <build.target.directory>bin/compile/java</build.target.directory>
     </properties>
 
     <dependencies>
@@ -129,6 +132,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <directory>${build.target.directory}</directory>
     </build>
 
 </project>

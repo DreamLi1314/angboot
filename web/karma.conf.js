@@ -40,8 +40,8 @@ module.exports = function (config) {
   });
 
   if(addJunitReporter) {
-      const distDir = "./dist";
-      let junitDir = '../target/test-results';
+      const distDir = "../bin/compile/test-dist";
+      let junitDir = '../bin/compile/test-results';
 
       if(!fs.existsSync(path.join(__dirname, junitDir))) {
           junitDir = distDir + '/_test-output';
