@@ -100,6 +100,21 @@
 	  		</if>
 	  	-->
 
+      <local name="config.available"/>
+      <available property="config.available" file="${config.dir}"/>
+      <sequential unless:set="config.available">
+         <mkdir dir="${config.dir}"/>
+         <copy todir="${config.db.dir}">
+            <fileset dir="${install.db.dir}" includes="**/*" />
+         </copy>
+
+         <propertyfile file="${config.dir}/angboot.properties">
+            <entry key="angboot.security.enable" value="false"/>
+         </propertyfile>
+      </sequential>
+
+      <echo message="Start Server Command: -Dangboot.home=${config.dir}/angbootdb/datasource.properties" />
+
 		<exec executable="${cmd.mvn}" failonerror="${error.failonerror}">
 			<arg value="${start.server.command}"/>
 		</exec>

@@ -43,6 +43,13 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
          .antMatchers("/index.html").permitAll()
          .antMatchers("/portal/**").hasAnyRole()
          .antMatchers("/em/**").hasAnyRole("Administrator");
+
+      http.formLogin()
+         .usernameParameter("username")
+         .passwordParameter("pwd")
+         .loginPage("/userlogin");
+
+      http.logout().logoutSuccessUrl("/");
    }
 
    @Override
