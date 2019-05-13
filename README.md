@@ -10,6 +10,7 @@
 #     Maven
 #     Node(npm)
 #     Angular-cli(ng)
+#     Redis
 
 # ********************************************************
 
@@ -17,13 +18,9 @@
 # ****************** Start up the Application ************
 
 # execute:
-#     ant init      # for install dependencies -- just first
-#     ant server	  # start up the application
+#     ant rebuild-all      # for install dependencies -- just first
+#     ant server           # start up the application
 # in your terminal
-
-# if you modify the source code, you can execute
-#		ant build
-# to re-compile the code.
 
 # ********************************************************
 
@@ -39,14 +36,4 @@
 
 # ********************************************************
 
-
-
-
-
-
-# ********************************************************
-
-# For learning purposes only, all copyright belongs to inetsoft.
-
-# ********************************************************
 

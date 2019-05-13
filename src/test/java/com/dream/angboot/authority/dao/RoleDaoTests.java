@@ -14,33 +14,28 @@
 
 package com.dream.angboot.authority.dao;
 
-import com.dream.angboot.domain.User;
+import com.dream.angboot.domain.Role;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import javax.sql.DataSource;
+import org.springframework.util.Assert;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class UserDaoTests {
+public class RoleDaoTests {
 
    @Autowired
-   private DataSource dataSource;
-
-   @Autowired
-   private UserDao userDao;
+   private RoleDao roleDao;
 
    @Test
-   public void testGetUserById() throws Exception {
-      System.out.println(dataSource);
-      System.out.println(dataSource.getConnection());
-      System.out.println(dataSource.getConnection().getCatalog().toString());
+   public void testGetRoleByName() throws Exception {
+      String name = "Everyone";
 
-      User user = userDao.getUserById(1);
+      Role role = roleDao.getRoleByName(name);
 
-      System.out.println(user);
+      Assert.notNull(role, "Get role is null...");
+      Assert.isTrue(name.equals(role.getRoleName()), "Role info error...");
    }
 }

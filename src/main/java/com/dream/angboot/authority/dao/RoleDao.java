@@ -12,10 +12,15 @@
  * person.
  */
 
-package com.dream.angboot.config;
+package com.dream.angboot.authority.dao;
 
-import org.springframework.context.annotation.Configuration;
+import com.dream.angboot.domain.Role;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
-@Configuration
-public class ErrorConfiguration {
+@Mapper
+public interface RoleDao {
+
+   @Select("SELECT * FROM T_ROLE WHERE ROLE_NAME=#{roleName}")
+   Role getRoleByName(String roleName) throws Exception;
 }
