@@ -84,6 +84,11 @@
    <target name="server" description="start up the angular server" depends="build">
   		<echo message="satrt server..." />
 
+      <local name="project.home"/>
+      <pathconvert property="project.home" dirsep="/">
+         <path path="${basedir}"/>
+      </pathconvert>
+
 	  	<!--
 	  		<condition property="sdk.dir" value="${window.sdk.dir}" else="${linux.sdk.dir}">
 	        <os family="windows" />
@@ -107,9 +112,14 @@
          <copy todir="${config.db.dir}">
             <fileset dir="${install.db.dir}" includes="**/*" />
          </copy>
+      </sequential>
 
+      <local name="angboot.properties.available"/>
+      <available property="angboot.properties.available" file="${angboot.properties.available}"/>
+      <sequential unless:set="angboot.properties.available">
          <propertyfile file="${config.dir}/angboot.properties">
             <entry key="angboot.security.enable" value="false"/>
+            <entry key="angboot.home" value="${project.home}/${config.dir}"/>
          </propertyfile>
       </sequential>
 
