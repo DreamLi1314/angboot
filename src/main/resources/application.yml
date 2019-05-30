@@ -13,6 +13,12 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
 
+cas:
+   server-url-prefix: http://localhost:8080/cas
+   server-login-url: http://localhost:8080/cas/login
+   client-host-url: http://localhost:${server.port}
+   validation-type: cas
+
 ---
 
 spring:
