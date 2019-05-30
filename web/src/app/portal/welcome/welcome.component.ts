@@ -35,7 +35,7 @@ export class WelcomeComponent implements OnInit {
          .set("name", "Jack");
 
       this.modelService.getModel("../test/get").subscribe((result) => {
-         console.log("=================result=======", result)
+         console.log("=================result=======", result);
       });
 
       this.modelService.sendModelByForm("../test/post", formParams.toString())
