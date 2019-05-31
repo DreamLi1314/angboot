@@ -41,6 +41,7 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
       http.authorizeRequests()
          .antMatchers("/").permitAll() // index page for all users.
          .antMatchers("/index.html").permitAll()
+         .antMatchers("/api/**").permitAll()
          .antMatchers("/portal/**").hasAnyRole()
          .antMatchers("/em/**").hasAnyRole("Administrator");
 

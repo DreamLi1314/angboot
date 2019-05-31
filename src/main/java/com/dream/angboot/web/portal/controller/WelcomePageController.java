@@ -23,13 +23,19 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 public class WelcomePageController {
 
-   @GetMapping("/test/get")
-   public String get(){
-      return "test success";
+   @GetMapping("/api/portal/test/get")
+   public String get(HttpServletRequest request){
+
+      System.out.println("=========get==========" + request);
+
+      return request.getContentType() + "test success";
    }
 
-   @PostMapping("/test/post")
-   public String postFormValue(HttpServletRequest request) {
+   @PostMapping("/api/portal/test/post")
+   public String post(HttpServletRequest request) {
+
+      System.out.println("=========post==========" + request);
+
       String name = request.getParameter("name");
 
       System.out.println("=========name=====" + name
@@ -38,6 +44,21 @@ public class WelcomePageController {
       );
 
       return "Hello, " + name;
+   }
+
+   @PostMapping("/api/portal/test/postForm")
+   public String postFormValue(HttpServletRequest request) {
+
+      System.out.println("=========postFormValue==========" + request);
+
+      String name = request.getParameter("name");
+
+      System.out.println("=========name=====" + name
+         + "====f1===" + request.getParameter("f1")
+         + "====f2===" + request.getParameter("f2")
+      );
+
+      return "Hello222222, " + name;
    }
 
 }

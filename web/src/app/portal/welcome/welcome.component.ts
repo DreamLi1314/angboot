@@ -34,11 +34,11 @@ export class WelcomeComponent implements OnInit {
          .set("f2", "v2")
          .set("name", "Jack");
 
-      this.modelService.getModel("../test/get").subscribe((result) => {
+      this.modelService.getModel("/api/portal/test/get").subscribe((result) => {
          console.log("=================result=======", result);
       });
 
-      this.modelService.sendModelByForm("../test/post", formParams.toString())
+      this.modelService.sendModelByForm("/api/portal/test/post", formParams.toString())
          .subscribe((result) => {
             this.testValue = result;
          });
