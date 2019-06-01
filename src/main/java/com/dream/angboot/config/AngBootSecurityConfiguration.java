@@ -51,6 +51,8 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
          .loginPage("/userlogin");
 
       http.logout().logoutSuccessUrl("/");
+
+      http.csrf().disable();
    }
 
    @Override

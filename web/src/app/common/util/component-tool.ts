@@ -27,6 +27,7 @@ import { Point } from "../data/point";
 import { Type } from "@angular/core";
 import { SlideOutOptions } from "../../widget/slide-out/slide-out-options";
 import { SlideOutRef } from "../../widget/slide-out/slide-out-ref";
+import { isString } from "util";
 
 /**
  * Common utility methods
@@ -176,7 +177,9 @@ export namespace ComponentTool {
          }
       }
 
-      let messMix: string[] = !!message ?
+      console.log("==message===", message);
+
+      let messMix: string[] = !!message && isString(message) ?
          message.split(MESSAGEDIALOG_MESSAGE_CONNECTION) : [];
 
       dialog.options = options;

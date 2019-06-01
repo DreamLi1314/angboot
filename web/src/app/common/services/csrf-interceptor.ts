@@ -19,6 +19,7 @@ import { Observable } from "rxjs";
 
 const COOKIE_NAME = "XSRF-TOKEN";
 const HEADER_NAME = "X-XSRF-TOKEN";
+// const HEADER_NAME = "_csrf_heard";
 
 /**
  * Handles setting the CSRF token in the HTTP request headers. We're not using Angular's provided

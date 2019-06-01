@@ -21,9 +21,11 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
 import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
 import { CsrfInterceptor } from "./common/services/csrf-interceptor";
 import { HttpDebounceInterceptor } from "./common/services/http-debounce-interceptor";
+import { HttpParamsCodecInterceptor } from "./common/services/http-params-codec-interceptor";
 
 export const httpInterceptorProviders = [
    {provide: HTTP_INTERCEPTORS, useClass: HttpDebounceInterceptor, multi: true},
+   {provide: HTTP_INTERCEPTORS, useClass: HttpParamsCodecInterceptor, multi: true},
    // For POST request throws 403 error in SpringBoot + SpringSecurity
    {provide: HTTP_INTERCEPTORS, useClass: CsrfInterceptor, multi: true}
 ];
@@ -38,7 +40,9 @@ export const httpInterceptorProviders = [
       AppRoutingModule,
       NgbModalModule.forRoot()
    ],
-  providers: [],
+   providers: [
+      httpInterceptorProviders,
+   ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
