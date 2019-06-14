@@ -9,8 +9,6 @@
 #     Ant
 #     Maven
 #     Node(npm)
-#     Angular-cli(ng)
-#     Redis
 
 # ********************************************************
 
@@ -28,11 +26,11 @@
 # ***************** Technical selection ******************
 
 #  Java: Spring Boot + Mybatis
-#  web: Angular2 + Bootstrap + SCSS + Node + Typescript
+#  web: Angular2+ + Bootstrap + SCSS
 #  Server: Jetty9.4.10.v20180503
 #  Database: H2
 #  Project Management Tools: Ant + Maven
-#  Cache: Redis
+#  Cache: Map(Support Redis, EHcache etc.)
 
 # ********************************************************
 

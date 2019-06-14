@@ -22,7 +22,7 @@ public class UserServiceTests {
 
       // TODO: This should check the number of method calls.
       // because deserialization will create a new object.
-//      Assert.assertTrue("The user2 should get from cache.", user1 == user2);
+      Assert.assertTrue("The user2 should get from cache.", user1 == user2);
    }
 
 }

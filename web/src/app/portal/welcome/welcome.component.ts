@@ -39,7 +39,13 @@ export class WelcomeComponent implements OnInit {
          console.log("=================result=======", result);
       });
 
-      this.modelService.sendModelByForm("/api/portal/test/post", formParams.toString())
+      this.modelService.sendModel("/api/portal/test/post", formParams.toString())
+         .subscribe((result: any) => {
+            console.log("====result====", result);
+            this.testValue = result.body.message;
+         });
+
+      this.modelService.sendModelByForm("/api/portal/test/postForm", formParams.toString())
          .subscribe((result: any) => {
             console.log("====result====", result);
             this.testValue = result.body.message;

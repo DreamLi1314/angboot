@@ -6,8 +6,6 @@ Before installing and using this product, you should have installed the followin
 - Ant
 - Maven
 - Node(npm)
-- Angular-cli(ng)
-- Redis
 
 ### Download the app source
 
