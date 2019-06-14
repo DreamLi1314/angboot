@@ -12,43 +12,12 @@
  * person.
  */
 
-import { Component, OnInit } from "@angular/core";
-import { ModelService } from "../../widget/services/model.service";
-import { HttpParams } from "@angular/common/http";
+import { Component } from "@angular/core";
 
 @Component({
    selector: "portal-welcome",
    templateUrl: "welcome.component.html",
    styleUrls: ["welcome.component.scss"]
 })
-export class WelcomeComponent implements OnInit {
-   testValue: string = null;
-
-   constructor(private modelService: ModelService) {
-
-   }
-
-   ngOnInit(): void {
-      let formParams = new HttpParams()
-         .set("f1", "v1")
-         .set("f2", "v2")
-         .set("name", "Jack");
-
-      this.modelService.getModel<string>("/api/portal/test/get")
-         .subscribe((result: string) => {
-         console.log("=================result=======", result);
-      });
-
-      this.modelService.sendModel("/api/portal/test/post", formParams.toString())
-         .subscribe((result: any) => {
-            console.log("====result====", result);
-            this.testValue = result.body.message;
-         });
-
-      this.modelService.sendModelByForm("/api/portal/test/postForm", formParams.toString())
-         .subscribe((result: any) => {
-            console.log("====result====", result);
-            this.testValue = result.body.message;
-         });
-   }
+export class WelcomeComponent {
 }

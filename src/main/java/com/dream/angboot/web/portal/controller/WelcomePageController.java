@@ -14,52 +14,9 @@
 
 package com.dream.angboot.web.portal.controller;
 
-import com.dream.angboot.web.portal.model.WelcomePageModel;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.servlet.http.HttpServletRequest;
 
 @RestController
 public class WelcomePageController {
-
-   @GetMapping("/api/portal/test/get")
-   public WelcomePageModel get(HttpServletRequest request){
-
-      System.out.println("=========get==========" + request);
-
-      return new WelcomePageModel("get success");
-   }
-
-   @PostMapping("/api/portal/test/post")
-   public WelcomePageModel post(HttpServletRequest request) {
-
-      System.out.println("=========post==========" + request);
-
-      String name = request.getParameter("name");
-
-      System.out.println("=========name=====" + name
-         + "====f1===" + request.getParameter("f1")
-         + "====f2===" + request.getParameter("f2")
-      );
-
-      return new WelcomePageModel("post success");
-   }
-
-   @PostMapping("/api/portal/test/postForm")
-   public WelcomePageModel postFormValue(HttpServletRequest request) {
-
-      System.out.println("=========postFormValue==========" + request);
-
-      String name = request.getParameter("name");
-
-      System.out.println("=========name=====" + name
-         + "====f1===" + request.getParameter("f1")
-         + "====f2===" + request.getParameter("f2")
-      );
-
-      return new WelcomePageModel("postFormValue success");
-   }
 
 }
