@@ -23,6 +23,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 /**
  * Security Configuration.
@@ -43,7 +44,7 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
          .antMatchers("/index.html").permitAll()
          .antMatchers("/api/**").permitAll()
          .antMatchers("/app/portal/**").permitAll()
-         .antMatchers("/app/em/**").hasAnyRole("Administrator");
+         .antMatchers("/app/em/**").hasRole("Administrator");
 
       http.formLogin()
          .usernameParameter("username")
@@ -57,6 +58,8 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
    @Override
    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+      auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder())
+         .withUser("admin").password(new BCryptPasswordEncoder().encode("admin")).roles("Administrator");
    }
 
    private final UserDao userDao;

@@ -7,11 +7,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class LoginController {
 
-   @PostMapping("/login")
-   public String login() {
-      return "redirect:/app/em";
-   }
-
    @GetMapping("/userlogin")
    public String gotoLoginPage() {
       return "login";
