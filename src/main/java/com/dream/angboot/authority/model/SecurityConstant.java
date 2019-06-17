@@ -12,17 +12,11 @@
  * person.
  */
 
-package com.dream.angboot.domain;
+package com.dream.angboot.authority.model;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-
-import java.io.Serializable;
-
-@Data
-@NoArgsConstructor
-public class Role implements Serializable {
-   private Integer roleId;
-   @NonNull private String roleName;
+public class SecurityConstant {
+   /**
+    * admin role.
+    */
+   public static final String ROLE_ADMIN = "ADMIN";
 }

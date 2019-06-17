@@ -16,6 +16,7 @@ package com.dream.angboot.config;
 
 import com.dream.angboot.authority.dao.RoleDao;
 import com.dream.angboot.authority.dao.UserDao;
+import com.dream.angboot.authority.model.SecurityConstant;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
+import javax.sql.DataSource;
+
 /**
  * Security Configuration.
  */
@@ -32,19 +35,21 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
    @Autowired
-   public AngBootSecurityConfiguration(UserDao userDao, RoleDao roleDao) {
+   public AngBootSecurityConfiguration(UserDao userDao, RoleDao roleDao, DataSource dataSource) {
       this.userDao = userDao;
       this.roleDao = roleDao;
+      this.dataSource = dataSource;
    }
 
    @Override
    protected void configure(HttpSecurity http) throws Exception {
       http.authorizeRequests()
          .antMatchers("/").permitAll() // index page for all users.
-         .antMatchers("/index.html").permitAll()
+         .antMatchers("/index.html", "/userlogin").permitAll()
          .antMatchers("/api/**").permitAll()
          .antMatchers("/app/portal/**").permitAll()
-         .antMatchers("/app/em/**").hasRole("Administrator");
+         .antMatchers("/app/em/**").hasRole(SecurityConstant.ROLE_ADMIN)
+         ;
 
       http.formLogin()
          .usernameParameter("username")
@@ -58,12 +63,18 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
    @Override
    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-      auth.inMemoryAuthentication().passwordEncoder(new BCryptPasswordEncoder())
-         .withUser("admin").password(new BCryptPasswordEncoder().encode("admin")).roles("Administrator");
+      auth.jdbcAuthentication()
+         .dataSource(dataSource)
+         .passwordEncoder(new BCryptPasswordEncoder())
+         .rolePrefix("")
+         .usersByUsernameQuery("SELECT name USERNAME, password PASSWORD, enable ENABLED FROM T_USER WHERE name=?")
+         .authoritiesByUsernameQuery("SELECT USERNAME, ROLE AUTHORITY FROM T_USER_ROLE WHERE USERNAME=?")
+         ;
    }
 
    private final UserDao userDao;
    private final RoleDao roleDao;
+   private final DataSource dataSource;
 
    private static final Logger LOGGER = LoggerFactory.getLogger(AngBootSecurityConfiguration.class);
 }
