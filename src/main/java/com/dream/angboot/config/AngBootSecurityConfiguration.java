@@ -66,7 +66,6 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
       auth.jdbcAuthentication()
          .dataSource(dataSource)
          .passwordEncoder(new BCryptPasswordEncoder())
-         .rolePrefix("")
          .usersByUsernameQuery("SELECT name USERNAME, password PASSWORD, enable ENABLED FROM T_USER WHERE name=?")
          .authoritiesByUsernameQuery("SELECT USERNAME, ROLE AUTHORITY FROM T_USER_ROLE WHERE USERNAME=?")
          ;
