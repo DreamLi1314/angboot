@@ -56,6 +56,7 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
          .passwordParameter("pwd")
          .loginPage("/userlogin");
 
+      http.logout().permitAll();
       http.logout().logoutSuccessUrl("/");
 
       http.csrf().disable();
