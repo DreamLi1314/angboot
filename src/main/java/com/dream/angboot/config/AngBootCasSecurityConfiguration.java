@@ -26,7 +26,6 @@ import org.springframework.security.cas.web.CasAuthenticationFilter;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
 
 @Configuration
-@EnableConfigurationProperties({CasClientProperties.class, CasServerProperties.class})
 public class AngBootCasSecurityConfiguration {
 
    @Autowired
