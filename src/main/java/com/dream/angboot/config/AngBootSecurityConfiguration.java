@@ -20,6 +20,8 @@ import com.dream.angboot.authority.model.SecurityConstant;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -41,14 +43,19 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
       this.dataSource = dataSource;
    }
 
+   @Bean
+   public AuthenticationManager authenticationManager() throws Exception {
+      return super.authenticationManager();
+   }
+
    @Override
    protected void configure(HttpSecurity http) throws Exception {
       http.authorizeRequests()
-         .antMatchers("/").permitAll() // index page for all users.
-         .antMatchers("/index.html", "/userlogin").permitAll()
-         .antMatchers("/api/**").permitAll()
-         .antMatchers("/app/portal/**").permitAll()
-         .antMatchers("/app/em/**").hasRole(SecurityConstant.ROLE_ADMIN)
+         .antMatchers("/", "/index.html").permitAll() // index page for all users.
+         .antMatchers("/userlogin").permitAll() // login for all users.
+         .antMatchers("/api/**").permitAll() // public api.
+         .antMatchers("/app/portal/**").permitAll() // portal for all users.
+         .antMatchers("/app/em/**").hasRole(SecurityConstant.ROLE_ADMIN) // EM need role.
          ;
 
       http.formLogin()
