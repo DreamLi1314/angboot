@@ -37,6 +37,7 @@ import javax.sql.DataSource;
 public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
    @Autowired
+   @SuppressWarnings("all")
    public AngBootSecurityConfiguration(UserDao userDao, RoleDao roleDao, DataSource dataSource) {
       this.userDao = userDao;
       this.roleDao = roleDao;
