@@ -459,17 +459,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: joda-time:joda-time:2.10.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.10.1/joda-time-2.10.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.10.1/joda-time-2.10.1-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: junit:junit:4.12">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/" />
@@ -523,17 +512,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/2.3/json-smart-2.3-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: net.unicon.cas:cas-client-autoconfig-support:2.3.0-GA">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/unicon/cas/cas-client-autoconfig-support/2.3.0-GA/cas-client-autoconfig-support-2.3.0-GA.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/net/unicon/cas/cas-client-autoconfig-support/2.3.0-GA/cas-client-autoconfig-support-2.3.0-GA-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/unicon/cas/cas-client-autoconfig-support/2.3.0-GA/cas-client-autoconfig-support-2.3.0-GA-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.apache.logging.log4j:log4j-api:2.11.2">
@@ -668,17 +646,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/jasig/cas/client/cas-client-core/3.5.1/cas-client-core-3.5.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.jasig.cas.client:cas-client-support-saml:3.5.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jasig/cas/client/cas-client-support-saml/3.5.1/cas-client-support-saml-3.5.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jasig/cas/client/cas-client-support-saml/3.5.1/cas-client-support-saml-3.5.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/jasig/cas/client/cas-client-support-saml/3.5.1/cas-client-support-saml-3.5.1-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: org.jboss.logging:jboss-logging:3.3.2.Final">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar!/" />
@@ -778,15 +745,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.projectlombok:lombok:1.18.8">
+    <library name="Maven: org.projectlombok:lombok:1.18.6">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.6/lombok-1.18.6.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.8/lombok-1.18.8-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.6/lombok-1.18.6-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.8/lombok-1.18.8-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.6/lombok-1.18.6-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.skyscreamer:jsonassert:1.5.0">
