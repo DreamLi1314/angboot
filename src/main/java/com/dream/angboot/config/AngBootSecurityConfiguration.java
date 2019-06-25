@@ -44,7 +44,7 @@ import javax.sql.DataSource;
 @EnableWebSecurity
 public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-   @Autowired
+   @Autowired(required = false)
    @SuppressWarnings("all")
    public AngBootSecurityConfiguration(UserDao userDao,
                                        RoleDao roleDao,
@@ -87,15 +87,17 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
       // disable csrf for 403 error.
       http.csrf().disable();
 
-      // CAS Configuration
-      http.exceptionHandling().authenticationEntryPoint(casAuthenticationEntryPoint);
-      // 单点注销的过滤器, 必须配置在SpringSecurity的过滤器链中, 如果直接配置在Web容器中, 貌似是不起作用的.
-      SingleSignOutFilter singleSignOutFilter = new SingleSignOutFilter();
-      singleSignOutFilter.setCasServerUrlPrefix(this.serverProperties.getCasServerUrlPrefix());
+      if(AngBootEnv.casEnable) {
+         // CAS Configuration
+         http.exceptionHandling().authenticationEntryPoint(casAuthenticationEntryPoint);
+         // 单点注销的过滤器, 必须配置在SpringSecurity的过滤器链中, 如果直接配置在Web容器中, 貌似是不起作用的.
+         SingleSignOutFilter singleSignOutFilter = new SingleSignOutFilter();
+         singleSignOutFilter.setCasServerUrlPrefix(this.serverProperties.getCasServerUrlPrefix());
 
-      http.addFilter(casAuthenticationFilter(authenticationManager(), serviceProperties))
-         .addFilterBefore(logoutFilter, LogoutFilter.class)
-         .addFilterBefore(singleSignOutFilter, CasAuthenticationFilter.class);
+         http.addFilter(casAuthenticationFilter(authenticationManager(), serviceProperties))
+            .addFilterBefore(logoutFilter, LogoutFilter.class)
+            .addFilterBefore(singleSignOutFilter, CasAuthenticationFilter.class);
+      }
    }
 
    @Override
