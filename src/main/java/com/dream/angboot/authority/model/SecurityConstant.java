@@ -25,6 +25,8 @@ public class SecurityConstant {
     */
    public static final String ROLE_PREFIX = "";
 
+   public static final String LOGIN_PAGE_URL = "/userlogin";
+
    /*
     * Authentication provider key.
     */
