@@ -26,4 +26,7 @@ import org.springframework.context.annotation.PropertySource;
 @PropertySource("classpath:config/cas/cas-server.properties")
 @ConfigurationProperties(prefix = "angboot.cas.server")
 public class CasServerProperties {
+   private String casServerUrlPrefix;
+   private String loginUrl;
+   private String logoutUrl;
 }

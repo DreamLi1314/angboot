@@ -14,4 +14,5 @@ public class User implements Serializable {
    private String name;
    @NonNull
    private String password;
+   private boolean enable;
 }

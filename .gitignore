@@ -28,4 +28,7 @@ web/package-lock.json
 
 # include dir
 !build/**
+
+# Env
 angboot.iws
+.idea

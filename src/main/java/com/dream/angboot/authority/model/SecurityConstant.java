@@ -15,8 +15,18 @@
 package com.dream.angboot.authority.model;
 
 public class SecurityConstant {
-   /**
+   /*
     * admin role.
     */
    public static final String ROLE_ADMIN = "ADMIN";
+
+   /*
+    * role prefix.
+    */
+   public static final String ROLE_PREFIX = "";
+
+   /*
+    * Authentication provider key.
+    */
+   public static final String AUTHENTICATION_PROVIDER_KEY = "angboot_cas_provider";
 }

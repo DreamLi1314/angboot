@@ -26,7 +26,9 @@ import org.springframework.context.annotation.PropertySource;
 @PropertySource("classpath:config/cas/cas-client.properties")
 @ConfigurationProperties(prefix = "angboot.cas.client")
 public class CasClientProperties {
+   private String casClientUrlPrefix;
    private String service;
    private boolean sendRenew;
    private String filterProcessesUrl;
+   private String logoutUrl;
 }

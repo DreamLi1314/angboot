@@ -26,7 +26,9 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.sql.DataSource;
 
@@ -38,15 +40,24 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
    @Autowired
    @SuppressWarnings("all")
-   public AngBootSecurityConfiguration(UserDao userDao, RoleDao roleDao, DataSource dataSource) {
+   public AngBootSecurityConfiguration(UserDao userDao, RoleDao roleDao,
+                                       DataSource dataSource,
+                                       UserDetailsService userDetailsService)
+   {
       this.userDao = userDao;
       this.roleDao = roleDao;
       this.dataSource = dataSource;
+      this.userDetailsService = userDetailsService;
    }
 
    @Bean
    public AuthenticationManager authenticationManager() throws Exception {
       return super.authenticationManager();
+   }
+
+   @Bean
+   public PasswordEncoder passwordEncoder() {
+      return new BCryptPasswordEncoder();
    }
 
    @Override
@@ -72,17 +83,19 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
    @Override
    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-      auth.jdbcAuthentication()
-         .dataSource(dataSource)
-         .passwordEncoder(new BCryptPasswordEncoder())
-         .usersByUsernameQuery("SELECT name USERNAME, password PASSWORD, enable ENABLED FROM T_USER WHERE name=?")
-         .authoritiesByUsernameQuery("SELECT USERNAME, ROLE AUTHORITY FROM T_USER_ROLE WHERE USERNAME=?")
-         ;
+//      auth.jdbcAuthentication()
+//         .dataSource(dataSource)
+//         .passwordEncoder(new BCryptPasswordEncoder())
+//         .usersByUsernameQuery("SELECT name USERNAME, password PASSWORD, enable ENABLED FROM T_USER WHERE name=?")
+//         .authoritiesByUsernameQuery("SELECT USERNAME, ROLE AUTHORITY FROM T_USER_ROLE WHERE USERNAME=?")
+//         ;
+      auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
    }
 
    private final UserDao userDao;
    private final RoleDao roleDao;
    private final DataSource dataSource;
+   private final UserDetailsService userDetailsService;
 
    private static final Logger LOGGER = LoggerFactory.getLogger(AngBootSecurityConfiguration.class);
 }
