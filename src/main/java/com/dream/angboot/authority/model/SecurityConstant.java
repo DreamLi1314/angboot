@@ -25,10 +25,18 @@ public class SecurityConstant {
     */
    public static final String ROLE_PREFIX = "";
 
+   /*
+    * customer go to login page url.
+    */
    public static final String LOGIN_PAGE_URL = "/userlogin";
 
    /*
     * Authentication provider key.
     */
    public static final String AUTHENTICATION_PROVIDER_KEY = "angboot_cas_provider";
+
+   /*
+    * the key of cas enabled property.
+    */
+   public static final String CAS_ENABLED_KEY = "angboot.cas.enabled";
 }

@@ -17,12 +17,12 @@ package com.dream.angboot.config;
 import com.dream.angboot.authority.model.CasClientProperties;
 import com.dream.angboot.authority.model.CasServerProperties;
 import com.dream.angboot.authority.model.SecurityConstant;
+import com.dream.angboot.util.ConditionalOnCasEnable;
 import org.jasig.cas.client.validation.Cas20ServiceTicketValidator;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.ProviderManager;
@@ -40,7 +40,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Configuration
-@ConditionalOnProperty(prefix = "angboot.cas", name = "enabled", havingValue = "true")
+@Conditional(ConditionalOnCasEnable.class)
 public class AngBootCasSecurityConfiguration {
 
    @Autowired

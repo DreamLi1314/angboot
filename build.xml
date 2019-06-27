@@ -129,17 +129,16 @@
       <if>
          <isset property="config.available"/>
          <else>
-            <property name="angboot.home" value="${angboot.home}" />
+            <property file="${config.location}/angboot.properties"/>
+            <property name="config.location" value="${angboot.home}" />
          </else>
       </if>
 
       <echo message="Start Server Command: -Dangboot.home=${config.dir}/angbootdb/datasource.properties" />
 
-      <property file="build.properties"/>
-
       <exec executable="${cmd.mvn}" failonerror="${error.failonerror}">
          <arg value="${start.server.command}"/>
-         <arg value="-Dspring-boot.run.arguments=angboot.home=${angboot.home}"/>
+         <arg value="-Dspring-boot.run.arguments=angboot.home=${config.location}"/>
       </exec>
    </target>
 

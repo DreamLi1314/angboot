@@ -1,41 +1,29 @@
 package com.dream.angboot;
 
+import com.dream.angboot.util.AngBootUtil;
+import com.dream.angboot.util.ConfigurationContext;
 import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.ApplicationArguments;
-import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 
-import java.util.Arrays;
 
 @SpringBootApplication
 @MapperScan(basePackages = "com.dream.angboot.authority.dao")
 @EnableCaching
-public class AngbootApplication implements ApplicationRunner {
+public class AngbootApplication {
 
-    public static void main(String[] args) {
-        System.out.println("============main======args==============" + Arrays.asList(args)
-            + "====home==" + System.getProperty("angboot.home")
-        );
-        SpringApplication.run(AngbootApplication.class, args);
-    }
+   public static void main(String[] args) {
+      String home = AngBootUtil.getAngBootHome(args);
 
-    @Override
-    public void run(ApplicationArguments args) throws Exception {
-        logger.info("\n\n\n\n=======Application started with command-line arguments: {}", Arrays.toString(args.getSourceArgs()));
-        logger.info("NonOptionArgs: {}", args.getNonOptionArgs());
-        logger.info("OptionNames: {}", args.getOptionNames());
+      ConfigurationContext.getContext().setHome(home);
 
-        for (String name : args.getOptionNames()){
-            logger.info("arg-" + name + "=" + args.getOptionValues(name));
-        }
+      LOGGER.info("AngBoot properties use {}/angboot.properties", home);
 
-        boolean containsOption = args.containsOption("sree.home");
-        logger.info("Contains person.name: " + containsOption);
-    }
+      SpringApplication.run(AngbootApplication.class, args);
+   }
 
-    private Logger logger = LoggerFactory.getLogger(getClass());
+   private static final Logger LOGGER = LoggerFactory.getLogger(AngbootApplication.class);
 }

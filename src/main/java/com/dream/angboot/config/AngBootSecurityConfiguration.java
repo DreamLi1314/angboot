@@ -18,13 +18,15 @@ import com.dream.angboot.authority.dao.RoleDao;
 import com.dream.angboot.authority.dao.UserDao;
 import com.dream.angboot.authority.model.CasServerProperties;
 import com.dream.angboot.authority.model.SecurityConstant;
+import com.dream.angboot.util.AngBootEnv;
+import com.dream.angboot.util.ConditionalOnCasEnable;
 import org.jasig.cas.client.session.SingleSignOutFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.cas.ServiceProperties;
 import org.springframework.security.cas.web.CasAuthenticationEntryPoint;
 import org.springframework.security.cas.web.CasAuthenticationFilter;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -44,26 +46,23 @@ import javax.sql.DataSource;
 @EnableWebSecurity
 public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-   @Autowired(required = false)
    @SuppressWarnings("all")
-   public AngBootSecurityConfiguration(UserDao userDao,
-                                       RoleDao roleDao,
-                                       DataSource dataSource,
-                                       LogoutFilter logoutFilter,
-                                       ServiceProperties serviceProperties,
-                                       CasServerProperties serverProperties,
-                                       UserDetailsService userDetailsService,
-                                       CasAuthenticationEntryPoint casAuthenticationEntryPoint)
-   {
-      this.userDao = userDao;
-      this.roleDao = roleDao;
-      this.dataSource = dataSource;
-      this.logoutFilter = logoutFilter;
-      this.serverProperties = serverProperties;
-      this.serviceProperties = serviceProperties;
-      this.userDetailsService = userDetailsService;
-      this.casAuthenticationEntryPoint = casAuthenticationEntryPoint;
-   }
+//   public AngBootSecurityConfiguration(UserDao userDao,
+//                                       RoleDao roleDao,
+//                                       DataSource dataSource,
+//                                       LogoutFilter logoutFilter,
+//                                       CasServerProperties serverProperties,
+//                                       UserDetailsService userDetailsService,
+//                                       CasAuthenticationEntryPoint casAuthenticationEntryPoint)
+//   {
+//      this.userDao = userDao;
+//      this.roleDao = roleDao;
+//      this.dataSource = dataSource;
+//      this.logoutFilter = logoutFilter;
+//      this.serverProperties = serverProperties;
+//      this.userDetailsService = userDetailsService;
+//      this.casAuthenticationEntryPoint = casAuthenticationEntryPoint;
+//   }
 
    @Override
    protected void configure(HttpSecurity http) throws Exception {
@@ -87,14 +86,14 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
       // disable csrf for 403 error.
       http.csrf().disable();
 
-      if(AngBootEnv.casEnable) {
+      if(AngBootEnv.getBoolean(SecurityConstant.CAS_ENABLED_KEY)) {
          // CAS Configuration
          http.exceptionHandling().authenticationEntryPoint(casAuthenticationEntryPoint);
          // 单点注销的过滤器, 必须配置在SpringSecurity的过滤器链中, 如果直接配置在Web容器中, 貌似是不起作用的.
          SingleSignOutFilter singleSignOutFilter = new SingleSignOutFilter();
          singleSignOutFilter.setCasServerUrlPrefix(this.serverProperties.getCasServerUrlPrefix());
 
-         http.addFilter(casAuthenticationFilter(authenticationManager(), serviceProperties))
+         http.addFilter(casAuthenticationFilter(authenticationManager()))
             .addFilterBefore(logoutFilter, LogoutFilter.class)
             .addFilterBefore(singleSignOutFilter, CasAuthenticationFilter.class);
       }
@@ -113,17 +112,11 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 
    @Bean
-   public CasAuthenticationFilter casAuthenticationFilter(AuthenticationManager authenticationManager,
-                                                          ServiceProperties serviceProperties)
+   @Conditional(ConditionalOnCasEnable.class)
+   public CasAuthenticationFilter casAuthenticationFilter(AuthenticationManager authenticationManager)
    {
       CasAuthenticationFilter casAuthenticationFilter = new CasAuthenticationFilter();
       casAuthenticationFilter.setAuthenticationManager(authenticationManager);
-//      casAuthenticationFilter.setServiceProperties(serviceProperties);
-//      casAuthenticationFilter.setFilterProcessesUrl(this.clientProperties.getFilterProcessesUrl());
-//      casAuthenticationFilter.setContinueChainBeforeSuccessfulAuthentication(false);
-//      casAuthenticationFilter.setAuthenticationSuccessHandler(
-//         new SimpleUrlAuthenticationSuccessHandler("/")
-//      );
 
       return casAuthenticationFilter;
    }
@@ -133,15 +126,17 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
       return new BCryptPasswordEncoder();
    }
 
+   @Autowired
+   private UserDetailsService userDetailsService;
 
-   private final UserDao userDao;
-   private final RoleDao roleDao;
-   private final DataSource dataSource;
-   private final LogoutFilter logoutFilter;
-   private final ServiceProperties serviceProperties;
-   private final CasServerProperties serverProperties;
-   private final UserDetailsService userDetailsService;
-   private final CasAuthenticationEntryPoint casAuthenticationEntryPoint;
+   @Autowired(required = false)
+   private LogoutFilter logoutFilter;
+
+   @Autowired(required = false)
+   private CasServerProperties serverProperties;
+
+   @Autowired(required = false)
+   private CasAuthenticationEntryPoint casAuthenticationEntryPoint;
 
    private static final Logger LOGGER = LoggerFactory.getLogger(AngBootSecurityConfiguration.class);
 }
