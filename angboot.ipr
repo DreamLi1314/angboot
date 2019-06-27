@@ -38,6 +38,11 @@
     </profile>
     <version value="1.0" />
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="angboot" options="-parameters" />
+    </option>
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -175,7 +180,7 @@
           <option name="TAB_SIZE" value="3" />
         </value>
       </option>
-      <TypeScriptCodeStyleSettings>
+      <TypeScriptCodeStyleSettings version="0">
         <option name="FORCE_SEMICOLON_STYLE" value="true" />
         <option name="FORCE_QUOTE_STYlE" value="true" />
         <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
