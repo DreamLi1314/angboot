@@ -30,5 +30,4 @@ web/package-lock.json
 !build/**
 
 # Env
-angboot.iws
 .idea
