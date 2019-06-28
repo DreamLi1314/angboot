@@ -57,38 +57,12 @@ public class AngBootEnv {
          ConfigurationContext.getContext().getHome();
 
       Properties angBootProperties
-         = loadProperties(configHome, "angboot.properties");
+         = AngBootUtil.loadProperties(configHome, "angboot.properties");
       Properties defaultProperties
-         = loadProperties(AngBootEnv.class.getResource("/config").getPath(),
-         "default.properties");
+         = AngBootUtil.loadProperties(
+            AngBootEnv.class.getResource("/config").getPath(), "default.properties");
 
       putProperties(new DefaultProperties(angBootProperties, defaultProperties));
-   }
-
-   private static Properties loadProperties(String parentPath, String propName) {
-      Properties properties = new Properties();
-      InputStream inp;
-
-      try {
-         inp = new FileInputStream(
-            FileSystemService.getInstance().getFile(parentPath, propName));
-      }
-      catch(IOException ignore) {
-         LOGGER.error("Found {} failed in {}.", propName, parentPath);
-         inp = AngBootEnv.class.getResourceAsStream(File.separator + propName);
-      }
-
-      try {
-         if(inp != null) {
-            properties.load(inp);
-            inp.close();
-         }
-      }
-      catch (Exception e) {
-         e.printStackTrace();
-      }
-
-      return properties;
    }
 
    /**

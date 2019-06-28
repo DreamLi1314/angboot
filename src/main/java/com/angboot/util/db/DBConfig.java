@@ -14,13 +14,50 @@
 
 package com.angboot.util.db;
 
+import com.angboot.util.AngBootUtil;
+import com.angboot.util.ConfigurationContext;
+import com.angboot.util.FileSystemService;
+import com.angboot.util.SingletonManager;
+
+import java.io.File;
 import java.util.Properties;
 
 public class DBConfig {
+
+   public DBConfig() {
+      String home = ConfigurationContext.getContext().getHome();
+      String dbPropFullPath = home + File.separator + DB_ROOT_FOLDER
+         + File.separator + DB_PROPERTIES_NAME;
+
+      File dbPropFile = FileSystemService.getInstance().getFile(dbPropFullPath);
+
+      if(!dbPropFile.exists()) {
+         // TODO create file; init database.
+      }
+
+      this.dbProperties = AngBootUtil.loadProperties(dbPropFile);
+   }
+
+   /**
+    * Gets the database configuration.
+    */
+   public static DBConfig getDBConfig() {
+      return SingletonManager.getInstance(DBConfig.class);
+   }
+
+   /**
+    * Reset the database config.
+    */
+   public static synchronized void reset() {
+      SingletonManager.reset(DBConfig.class);
+   }
 
    public Properties getDbProperties() {
       return dbProperties;
    }
 
    private Properties dbProperties;
+
+   private static final String DB_ROOT_FOLDER = "angbootdb";
+   private static final String DB_PROPERTIES_NAME = "datasource.properties";
 }

@@ -14,15 +14,26 @@
 
 package com.angboot.util;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Arrays;
+import java.util.Properties;
 
 /**
  * Angboot util.
  */
 public final class AngBootUtil {
 
+   /**
+    * get config home.
+    * @param args input args.
+    */
    public static String getAngBootHome(String[] args) {
       String home = null;
 
@@ -44,5 +55,66 @@ public final class AngBootUtil {
       return home;
    }
 
+   /**
+    * Load properties file from <b>parentPath/propName</b>.
+    *    if not exist, from clazz path load properties.
+    * @param parentPath parent path. <b>nullable</b>.
+    * @param propName properties file name.
+    */
+   public static Properties loadProperties(String parentPath,
+                                           String propName)
+   {
+      if(StringUtils.isEmpty(propName)) {
+         LOGGER.info("Load properties file is null.");
+         return null;
+      }
+
+      String fullPath = propName;
+
+      if(!StringUtils.isEmpty(parentPath)) {
+         fullPath = propName.startsWith(File.separator)
+            ? parentPath + propName
+            : parentPath + File.separator + propName;
+      }
+
+      return AngBootUtil.loadProperties(fullPath);
+   }
+
+   public static Properties loadProperties(String fullPath) {
+      File propFile = FileSystemService.getInstance().getFile(fullPath);
+
+      if(!propFile.exists()) {
+         return new Properties();
+      }
+
+      return AngBootUtil.loadProperties(propFile);
+   }
+
+   public static Properties loadProperties(File propFile) {
+      Properties properties = new Properties();
+      InputStream inp = null;
+
+      try {
+         inp = new FileInputStream(propFile);
+      }
+      catch(IOException ignore) {
+         LOGGER.error("Found {} failed.", propFile.getAbsolutePath());
+      }
+
+      try {
+         if(inp != null) {
+            properties.load(inp);
+            inp.close();
+         }
+      }
+      catch (Exception e) {
+         e.printStackTrace();
+      }
+
+      return properties;
+   }
+
    public static final String ANGBOOT_HOME_KEY = "angboot.home";
+
+   private static final Logger LOGGER = LoggerFactory.getLogger(AngBootUtil.class);
 }

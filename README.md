@@ -25,9 +25,9 @@
 
 # ***************** Technical selection ******************
 
-#  Java: Spring Boot + Mybatis
-#  web: Angular2+ + Bootstrap + SCSS
-#  Server: Jetty9.4.10.v20180503
+#  Java: Spring Boot + SpringSecurity + Mybatis + SSO(CAS)
+#  web: Angular6 + Bootstrap + SCSS
+#  Server: Tomcat
 #  Database: H2
 #  Project Management Tools: Ant + Maven
 #  Cache: Map(Support Redis, EHcache etc.)
