@@ -121,7 +121,6 @@
 
       <sequential unless:set="angboot.properties.available">
          <propertyfile file="${config.dir}/angboot.properties">
-            <entry key="angboot.security.enable" value="false"/>
             <entry key="angboot.home" value="${config.location}"/>
          </propertyfile>
       </sequential>
