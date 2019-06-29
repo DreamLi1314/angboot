@@ -33,14 +33,12 @@ import java.util.Map;
 
 @Configuration
 @ConditionalOnClass(DruidDataSource.class)
-@PropertySource("classpath:config/db/datasource.properties")
 public class DruidConfiguration {
 
     @Bean
-    @ConfigurationProperties(prefix = "sb.datasource")
     public DataSource dataSource() {
        DruidDataSource druid = new DruidDataSource();
-//       druid.configFromPropety(DBConfig.getDBConfig().getDbProperties());
+       druid.configFromPropety(DBConfig.getDBConfig().getDbProperties());
 
        return druid;
     }
@@ -76,5 +74,4 @@ public class DruidConfiguration {
 
         return bean;
     }
-
 }
