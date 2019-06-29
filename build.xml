@@ -115,7 +115,7 @@
       </sequential>
 
       <local name="angboot.properties.available"/>
-      <available property="angboot.properties.available" file="${angboot.properties.available}"/>
+      <available property="angboot.properties.available" file="${config.dir}"/>
 
       <property name="config.location" value="${project.home}/${config.dir}"/>
 
@@ -126,14 +126,14 @@
       </sequential>
 
       <if>
-         <isset property="config.available"/>
-         <else>
+         <isset property="angboot.properties.available"/>
+         <then>
             <property file="${config.location}/angboot.properties"/>
-            <property name="config.location" value="${angboot.home}" />
-         </else>
+            <changeProperty name="config.location" value="${angboot.home}" />
+         </then>
       </if>
 
-      <echo message="Start Server Command: -Dangboot.home=${config.dir}/angbootdb/datasource.properties" />
+      <echo message="AngBoot Home is ${config.location}" />
 
       <exec executable="${cmd.mvn}" failonerror="${error.failonerror}">
          <arg value="${start.server.command}"/>
@@ -227,4 +227,11 @@
       </exec>
       <echo message="generate index files success..." />
    </target>
+
+   <scriptdef name="changeProperty" language="javascript"
+              description="Allows to assign @{property} new value">
+      <attribute name="name"/>
+      <attribute name="value"/>
+      project.setProperty(attributes.get("name"), attributes.get("value"));
+   </scriptdef>
 </project>

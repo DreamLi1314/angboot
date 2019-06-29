@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="331b2967-27ef-4cce-a7ee-eda3f809d5eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/angboot.iws" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/install/angbootdb/datasource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/install/angbootdb/datasource.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/angboot/config/DruidConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/angboot/config/DruidConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/db/datasource.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/db/h2/AngBoot_db.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/db/h2/AngBoot_db.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/db/init_role.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -184,43 +178,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/angboot/config/DruidConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+            <state relative-caret-position="133">
+              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.14/druid-1.1.14-sources.jar!/com/alibaba/druid/pool/DruidDataSource.java">
+        <entry file="file://$PROJECT_DIR$/build/install/angbootdb/datasource.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="203" column="59" selection-start-line="203" selection-start-column="54" selection-end-line="203" selection-end-column="59" />
-              <folding>
-                <element signature="e#8959#8960#0" expanded="true" />
-                <element signature="e#8986#8987#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.14/druid-1.1.14-sources.jar!/com/alibaba/druid/pool/DruidAbstractDataSource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="987" column="17" selection-start-line="987" selection-start-column="13" selection-end-line="987" selection-end-column="17" />
-              <folding>
-                <element signature="e#41949#41950#0" expanded="true" />
-                <element signature="e#41981#41982#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="52">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build/install/angbootdb/datasource.properties">
+        <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="259">
+              <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/app/portal/app-routing.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-181">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -237,7 +235,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/angboot/AngbootApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="240">
               <caret line="34" column="26" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="26" />
             </state>
           </provider>
@@ -254,9 +252,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>test</find>
-      <find>gene</find>
-      <find>installDependencies</find>
       <find>rebuild-all</find>
       <find>server</find>
       <find>copy</find>
@@ -281,9 +276,12 @@
       <find>PROPERTIES_KEY</find>
       <find>-Dspring-boot.run.arguments=angboot.home=/Users/dreamli/Workspace/MyRepository/angboot/bin/config</find>
       <find>iws</find>
-      <find>name</find>
       <find>sb.datasource</find>
       <find>driver</find>
+      <find>name</find>
+      <find>config.available</find>
+      <find>contrib</find>
+      <find>&lt;property file</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -331,7 +329,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/config/AngBootEnv.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/build.properties" />
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/util/AngBootUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/util/ConfigurationContext.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/util/SingletonManager.java" />
@@ -339,7 +336,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/util/ConditionalOnCasEnable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/config/AngBootCasSecurityConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/config/AngBootSecurityConfiguration.java" />
-        <option value="$PROJECT_DIR$/bin/config/angboot.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/AngbootApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/util/AngBootEnv.java" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -350,6 +346,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/angboot/config/DruidConfiguration.java" />
         <option value="$PROJECT_DIR$/bin/config/angbootdb/datasource.properties" />
         <option value="$PROJECT_DIR$/build/install/angbootdb/datasource.properties" />
+        <option value="$PROJECT_DIR$/bin/config/angboot.properties" />
+        <option value="$PROJECT_DIR$/build.xml" />
       </list>
     </option>
   </component>
@@ -584,7 +582,30 @@
             <path>
               <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="antlib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
@@ -625,6 +646,32 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="portal" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -641,6 +688,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561739415444" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/test" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -649,22 +697,22 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/web/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bin/test" />
+      <recent name="$PROJECT_DIR$/bin" />
+      <recent name="$PROJECT_DIR$/build/install/angbootdb" />
       <recent name="$PROJECT_DIR$/build/install/angbootdb/h2" />
       <recent name="$PROJECT_DIR$/src/main/resources/config/db" />
-      <recent name="$PROJECT_DIR$/web/src/app/common/util" />
-      <recent name="$PROJECT_DIR$/web/src/app/common/services" />
-      <recent name="$PROJECT_DIR$/src/main/resources/config/db/h2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.dream.angboot.util" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/build/install/angbootdb" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bin/test" />
       <recent name="$PROJECT_DIR$/build/install/angbootdb/h2" />
       <recent name="$PROJECT_DIR$/src/main/resources/config/db" />
-      <recent name="$PROJECT_DIR$/src/main/resources/config/db/h2" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/web/src/app/common/util" />
+      <recent name="$PROJECT_DIR$/web/src/app/common/services" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -851,7 +899,7 @@
       <workItem from="1561631884923" duration="13118000" />
       <workItem from="1561735850922" duration="3117000" />
       <workItem from="1561740066798" duration="295000" />
-      <workItem from="1561788929865" duration="2894000" />
+      <workItem from="1561788929865" duration="8442000" />
     </task>
     <servers />
   </component>
@@ -888,7 +936,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145727000" />
+    <option name="totallyTimeSpent" value="151275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="960" extended-state="0" />
@@ -959,37 +1007,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.4.RELEASE/spring-security-config-5.1.4.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6708">
-          <caret line="327" column="10" selection-start-line="327" selection-start-column="10" selection-end-line="327" selection-end-column="10" />
-          <folding>
-            <element signature="e#13656#13868#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.4.RELEASE/spring-security-core-5.1.4.RELEASE-sources.jar!/org/springframework/security/authentication/AuthenticationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="57" column="9" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.3.RELEASE/spring-boot-autoconfigure-2.1.3.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/condition/ConditionOutcome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="35" column="64" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE-sources.jar!/org/springframework/context/annotation/Conditional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1118">
-          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.3.RELEASE/spring-boot-autoconfigure-2.1.3.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/condition/SpringBootCondition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
@@ -1155,20 +1172,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3718">
-          <caret line="143" selection-start-line="143" selection-end-line="143" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-cas/5.1.4.RELEASE/spring-security-cas-5.1.4.RELEASE.jar!/org/springframework/security/cas/ServiceProperties.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1290,13 +1293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/angboot/AngbootApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angboot.iws">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
@@ -1306,8 +1302,8 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.14/druid-1.1.14-sources.jar!/com/alibaba/druid/pool/DruidAbstractDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="987" column="17" selection-start-line="987" selection-start-column="13" selection-end-line="987" selection-end-column="17" />
+        <state relative-caret-position="158">
+          <caret line="982" column="8" selection-start-line="982" selection-start-column="8" selection-end-line="982" selection-end-column="8" />
           <folding>
             <element signature="e#41949#41950#0" expanded="true" />
             <element signature="e#41981#41982#0" expanded="true" />
@@ -1317,8 +1313,8 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.14/druid-1.1.14-sources.jar!/com/alibaba/druid/pool/DruidDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="203" column="59" selection-start-line="203" selection-start-column="54" selection-end-line="203" selection-end-column="59" />
+        <state relative-caret-position="2081">
+          <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
           <folding>
             <element signature="e#8959#8960#0" expanded="true" />
             <element signature="e#8986#8987#0" expanded="true" />
@@ -1328,29 +1324,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/angboot/config/DruidConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/config/angboot.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/config/angbootdb/datasource.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="28" />
+        <state relative-caret-position="133">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/install/angbootdb/datasource.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="52">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/angboot/AngbootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/test/angbootdb/datasource.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="30" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/config/angboot.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/app/portal/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-181">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/test/angboot.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
         </state>
       </provider>
     </entry>
