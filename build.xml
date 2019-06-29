@@ -105,20 +105,28 @@
          </if>
       -->
 
-      <local name="config.available"/>
-      <available property="config.available" file="${config.dir}"/>
-      <sequential unless:set="config.available">
-         <mkdir dir="${config.dir}"/>
+      <local name="runtime.db.available"/>
+      <available property="runtime.db.available" file="${config.db.dir}"/>
+      <sequential unless:set="runtime.db.available">
+         <mkdir dir="${config.db.dir}"/>
          <copy todir="${config.db.dir}">
             <fileset dir="${install.db.dir}" includes="**/*" />
          </copy>
       </sequential>
 
+      <local name="config.available"/>
+      <available property="config.available" file="${config.dir}"/>
+      <sequential unless:set="config.available">
+         <mkdir dir="${config.dir}"/>
+         <copy todir="${config.dir}">
+            <fileset dir="${install.dir}" includes="**/*" />
+         </copy>
+      </sequential>
+
       <local name="angboot.properties.available"/>
-      <available property="angboot.properties.available" file="${config.dir}"/>
+      <available property="angboot.properties.available" file="${config.dir}/angboot.properties"/>
 
       <property name="config.location" value="${project.home}/${config.dir}"/>
-
       <sequential unless:set="angboot.properties.available">
          <propertyfile file="${config.dir}/angboot.properties">
             <entry key="angboot.home" value="${config.location}"/>
@@ -133,7 +141,7 @@
          </then>
       </if>
 
-      <echo message="AngBoot Home is ${config.location}" />
+      <echo>### AngBoot Home is ${config.location}!</echo>
 
       <exec executable="${cmd.mvn}" failonerror="${error.failonerror}">
          <arg value="${start.server.command}"/>

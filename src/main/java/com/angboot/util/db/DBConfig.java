@@ -26,8 +26,7 @@ public class DBConfig {
 
    public DBConfig() {
       String home = ConfigurationContext.getContext().getHome();
-      String dbPropFullPath = home + File.separator + DB_ROOT_FOLDER
-         + File.separator + DB_PROPERTIES_NAME;
+      String dbPropFullPath = home + File.separator + DB_PROPERTIES_NAME;
 
       File dbPropFile = FileSystemService.getInstance().getFile(dbPropFullPath);
 
@@ -58,6 +57,5 @@ public class DBConfig {
 
    private Properties dbProperties;
 
-   private static final String DB_ROOT_FOLDER = "angbootdb";
    private static final String DB_PROPERTIES_NAME = "datasource.properties";
 }

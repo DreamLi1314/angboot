@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="331b2967-27ef-4cce-a7ee-eda3f809d5eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/angboot.iws" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/install/angbootdb/datasource.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/install/angbootdb/h2/AngBoot_db.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/install/angbootdb/h2/AngBoot_db.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/install/angbootdb/init_role.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/install/angbootdb/init_user_role.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/angboot/util/db/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/angboot/util/db/DBConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -148,10 +156,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/angboot/util/db/DBConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="54" column="36" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="36" />
+            <state relative-caret-position="188">
+              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1711#1712#0" expanded="true" />
+                <element signature="e#1743#1744#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -169,8 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/angboot/util/AngBootUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1638">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="139">
+              <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -184,20 +194,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/install/angbootdb/datasource.properties">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build/install/datasource.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="338">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+            <state relative-caret-position="212">
+              <caret line="110" column="32" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -217,8 +227,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="182">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -252,7 +262,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rebuild-all</find>
       <find>server</find>
       <find>copy</find>
       <find>&lt;exec</find>
@@ -282,6 +291,7 @@
       <find>config.available</find>
       <find>contrib</find>
       <find>&lt;property file</find>
+      <find>Found</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -297,7 +307,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/config/AngBootWebMvcConfiguration.java" />
         <option value="$PROJECT_DIR$/web/angular.json" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/test/java/com/dream/angboot/authority/dao/RoleDaoTests.java" />
@@ -328,7 +337,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/authority/model/CasServerProperties.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/config/AngBootEnv.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/build.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/util/AngBootUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/util/ConfigurationContext.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dream/angboot/util/SingletonManager.java" />
@@ -341,13 +349,15 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/angboot/util/AngBootEnv.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/angboot/util/AngBootUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/angboot/util/db/DBConfig.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/angboot/config/DruidConfiguration.java" />
         <option value="$PROJECT_DIR$/bin/config/angbootdb/datasource.properties" />
         <option value="$PROJECT_DIR$/build/install/angbootdb/datasource.properties" />
         <option value="$PROJECT_DIR$/bin/config/angboot.properties" />
         <option value="$PROJECT_DIR$/build.xml" />
+        <option value="$PROJECT_DIR$/build.properties" />
+        <option value="$PROJECT_DIR$/build/install/datasource.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/angboot/util/db/DBConfig.java" />
       </list>
     </option>
   </component>
@@ -582,95 +592,13 @@
             <path>
               <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="antlib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="angboot" type="462c0819:PsiDirectoryNode" />
               <item name="build" type="462c0819:PsiDirectoryNode" />
               <item name="install" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="install" type="462c0819:PsiDirectoryNode" />
-              <item name="angbootdb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="portal" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -698,11 +626,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build/install" />
+      <recent name="$PROJECT_DIR$/build/angbootdb" />
       <recent name="$PROJECT_DIR$/bin/test" />
       <recent name="$PROJECT_DIR$/bin" />
       <recent name="$PROJECT_DIR$/build/install/angbootdb" />
-      <recent name="$PROJECT_DIR$/build/install/angbootdb/h2" />
-      <recent name="$PROJECT_DIR$/src/main/resources/config/db" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.dream.angboot.util" />
@@ -899,7 +827,7 @@
       <workItem from="1561631884923" duration="13118000" />
       <workItem from="1561735850922" duration="3117000" />
       <workItem from="1561740066798" duration="295000" />
-      <workItem from="1561788929865" duration="8442000" />
+      <workItem from="1561788929865" duration="10365000" />
     </task>
     <servers />
   </component>
@@ -936,7 +864,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151275000" />
+    <option name="totallyTimeSpent" value="153198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="960" extended-state="0" />
@@ -1007,13 +935,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.3.RELEASE/spring-boot-autoconfigure-2.1.3.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/condition/SpringBootCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.5.RELEASE/spring-context-5.1.5.RELEASE-sources.jar!/org/springframework/context/annotation/Condition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="676">
@@ -1262,27 +1183,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/angboot/util/db/DBConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="54" column="36" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/angboot/util/AngBootEnv.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1014">
           <caret line="62" column="12" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/angboot/util/AngBootUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
@@ -1329,13 +1233,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/install/angbootdb/datasource.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/angboot/AngbootApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1352,13 +1249,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/config/angboot.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/app/app-routing.module.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -1383,17 +1273,53 @@
     <entry file="file://$PROJECT_DIR$/bin/test/angboot.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
+    <entry file="file://$PROJECT_DIR$/bin/config/angboot.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="52">
+          <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+        <state relative-caret-position="212">
+          <caret line="110" column="32" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/angboot/util/AngBootUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="92" column="34" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/angboot/util/db/DBConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1711#1712#0" expanded="true" />
+            <element signature="e#1743#1744#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/config/datasource.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/install/datasource.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
