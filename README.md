@@ -8,7 +8,7 @@
 #     JDK: version >= 1.8
 #     Ant
 #     Maven
-#     Node(npm)
+#     Node(npm) (Config NODE_HOME system environment variable)
 
 # ********************************************************
 
