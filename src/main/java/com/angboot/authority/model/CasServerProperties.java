@@ -14,18 +14,23 @@
 
 package com.angboot.authority.model;
 
+import com.angboot.util.AngBootEnv;
+import com.angboot.util.ConditionalOnCasEnable;
 import lombok.Data;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnResource;
-import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 
 @Data
 @Configuration
-@ConditionalOnResource(resources = {"classpath:config/cas/cas-server.properties"})
-@PropertySource("classpath:config/cas/cas-server.properties")
-@ConfigurationProperties(prefix = "angboot.cas.server")
+@Conditional(ConditionalOnCasEnable.class)
 public class CasServerProperties {
+
+   public CasServerProperties() {
+      this.casServerUrlPrefix = AngBootEnv.getProperty("angboot.cas.server.casServerUrlPrefix");
+      this.loginUrl = AngBootEnv.getProperty("angboot.cas.server.loginUrl");
+      this.logoutUrl = AngBootEnv.getProperty("angboot.cas.server.logoutUrl");
+   }
+
    private String casServerUrlPrefix;
    private String loginUrl;
    private String logoutUrl;

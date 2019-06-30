@@ -17,6 +17,7 @@ package com.angboot.config;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
+import com.angboot.util.AngBootEnv;
 import com.angboot.util.db.DBConfig;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -46,12 +47,14 @@ public class DruidConfiguration {
     // 1. Config servlet of Druid
     @Bean
     public ServletRegistrationBean statViewServlet() {
-        ServletRegistrationBean bean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
+        ServletRegistrationBean bean = new ServletRegistrationBean(
+           new StatViewServlet(),
+           AngBootEnv.getProperty("druid.manage.path"));
 
         Map<String, String> initParams = new HashMap<>(10);
-        initParams.put("loginUsername", "admin");
-        initParams.put("loginPassword", "admin");
-        initParams.put("deny", "localhost");
+        initParams.put("loginUsername", AngBootEnv.getProperty("druid.login.name"));
+        initParams.put("loginPassword", AngBootEnv.getProperty("druid.login.password"));
+        initParams.put("deny", "localhost"); // will pop up parse ip error.
         initParams.put("allow", "127.0.0.1");
 
         bean.setInitParameters(initParams);
@@ -62,13 +65,15 @@ public class DruidConfiguration {
     // 2. Config filter of Druid
     @Bean
     public FilterRegistrationBean<WebStatFilter> statViewFilter() {
-        FilterRegistrationBean<WebStatFilter> bean = new FilterRegistrationBean(new WebStatFilter());
+        FilterRegistrationBean<WebStatFilter> bean =
+           new FilterRegistrationBean(new WebStatFilter());
         bean.setUrlPatterns(Arrays.asList("/*"));
 
         Map<String, String> initParams = new HashMap<>(10);
 
         // Don't intercept static resource.
-        initParams.put("exclusions", "*.js, *.css, *.html, /druid/*");
+        initParams.put("exclusions",
+           "*.js, *.css, *.html," + AngBootEnv.getProperty("druid.manage.path"));
 
         bean.setInitParameters(initParams);
 

@@ -1,17 +1,19 @@
-## Manual
-### Foreword
+# Manual
+## 1.Foreword
 
+### 1.1 Pre-Condition
 Before installing and using this product, you should have installed the following software and configure the corresponding environment variables:
 - JDK: version >= 1.8
 - Ant
 - Maven
-- Node(npm)
+- Node(npm) (need NODE_HOME environment variable)
 
-### Download the app source
+### 1.2 Download the app source
 
-You can download this app source on [GitHub](https://github.com/DreamLi1314/sree).
+You can download this app source on [GitHub](https://github.com/DreamLi1314/angboot).
 
-### Start up the application
+## 2. Build Project
+### 2.1 Start up the application
 First you should perform an init once to install the dependencies needed for your project, but only if you need it on the first boot.
 ``` ant
 ant rebuild-all
@@ -21,7 +23,7 @@ After each start, you only need to run the following command to start the applic
 ant server
 ```
 
-### Modify the code for yourself
+### 2.2 Modify the code for yourself
 When you modify the source code, you can execute the following command to compile the source code:
 ```ant
 ant build
@@ -35,14 +37,14 @@ Of course, our Angular code also supports hot deployment. Execute the following 
 ant watch
 ```
 
-### Rebuild and clean the application
-#### Clean
+### 2.3 Rebuild and clean the application
+#### 2.3.1 Clean
 You can use the following command to clean up the program output file:
 ```ant
 ant clean
 ```
 
-#### Rebuild
+#### 2.3.2 Rebuild
 You can rebuild your code with the following command if needed, for example: When you encounter a cache that is not easy to clean:
 ```ant
 ant rebuild
@@ -51,4 +53,24 @@ ant rebuild
 Similarly, you can also rebuild all external code (node dependencies) with the following command:
 ```ant
 ant rebuild-all
+```
+
+## 3. Configuration
+### 3.1 Enable CAS for SSO
+You need config follow property to `bin/config/angboot.properties`
+```properties
+# cas enable
+angboot.cas.enabled=true
+
+# cas client configuration
+angboot.cas.client.casClientUrlPrefix=http://localhost
+angboot.cas.client.service=http://localhost/login/cas
+angboot.cas.client.sendRenew=false
+angboot.cas.client.filterProcessesUrl=/login/cas
+angboot.cas.client.logoutUrl=/logout
+
+# cas server configuration
+angboot.cas.server.casServerUrlPrefix=http://localhost:10080/cas
+angboot.cas.server.loginUrl=http://localhost:10080/cas/login
+angboot.cas.server.logoutUrl=http://localhost:10080/cas/logout
 ```

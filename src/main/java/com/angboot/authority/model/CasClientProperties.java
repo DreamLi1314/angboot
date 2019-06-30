@@ -14,18 +14,25 @@
 
 package com.angboot.authority.model;
 
+import com.angboot.util.AngBootEnv;
+import com.angboot.util.ConditionalOnCasEnable;
 import lombok.Data;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnResource;
-import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 
 @Data
 @Configuration
-@ConditionalOnResource(resources = {"classpath:config/cas/cas-client.properties"})
-@PropertySource("classpath:config/cas/cas-client.properties")
-@ConfigurationProperties(prefix = "angboot.cas.client")
+@Conditional(ConditionalOnCasEnable.class)
 public class CasClientProperties {
+
+   public CasClientProperties() {
+      this.casClientUrlPrefix = AngBootEnv.getProperty("angboot.cas.client.casClientUrlPrefix");
+      this.service = AngBootEnv.getProperty("angboot.cas.client.service");
+      this.sendRenew = AngBootEnv.getBoolean("angboot.cas.client.sendRenew");
+      this.filterProcessesUrl = AngBootEnv.getProperty("angboot.cas.client.filterProcessesUrl");
+      this.logoutUrl = AngBootEnv.getProperty("angboot.cas.client.logoutUrl");
+   }
+
    private String casClientUrlPrefix;
    private String service;
    private boolean sendRenew;
