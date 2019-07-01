@@ -6,7 +6,7 @@ Before installing and using this product, you should have installed the followin
 - JDK: version >= 1.8
 - Ant
 - Maven
-- Node(npm) (Config NODE_HOME system environment variable)
+- Node(npm)
 
 ### 1.2 Download the app source
 

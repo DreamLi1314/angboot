@@ -24,73 +24,30 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @SuppressWarnings("unchecked")
 public class ConfigurationContext {
-   /**
-    * Gets the shared instance of the configuration context.
-    *
-    * @return the configuration context.
-    */
    public static ConfigurationContext getContext() {
       return SingletonManager.getInstance(ConfigurationContext.class);
    }
 
-   /**
-    * Gets the configuration home directory.
-    *
-    * @return the home directory.
-    */
    public String getHome() {
       return home;
    }
 
-   /**
-    * Sets the configuration home directory.
-    *
-    * @param home the home directory.
-    */
    public void setHome(String home) {
       String oldHome = this.home;
       this.home = home == null ? "." : home;
       support.firePropertyChange("home", oldHome, this.home);
    }
 
-   /**
-    * Gets a stored value.
-    *
-    * @param key the key associated with the value.
-    *
-    * @param <T> the type of the value.
-    *
-    * @return the value or <tt>null</tt> if not set.
-    */
    public <T> T get(String key) {
       return (T) data.get(key);
    }
 
-   /**
-    * Sets a stored value.
-    *
-    * @param key   the key associated with the value.
-    * @param value the value to store.
-    *
-    * @param <T> the type of the value.
-    *
-    * @return the previous value associated with the key or <tt>null</tt> if none.
-    */
    public <T> T put(String key, Object value) {
       T oldValue = (T) data.put(key, value);
       support.firePropertyChange(key, oldValue, value);
       return oldValue;
    }
 
-   /**
-    * Removes a stored value.
-    *
-    * @param key the key associated with the value.
-    *
-    * @param <T> the type of the value.
-    *
-    * @return the value that was associated with the key or <tt>null</tt> if none.
-    */
    public <T> T remove(String key) {
       T oldValue = (T) data.remove(key);
       support.firePropertyChange(key, oldValue, null);

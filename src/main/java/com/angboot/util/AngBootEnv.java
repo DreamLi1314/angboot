@@ -26,26 +26,18 @@ import java.util.Hashtable;
 import java.util.Properties;
 
 public class AngBootEnv {
-   /**
-    * Gets the internal property map.
-    *
-    * @return the properties.
-    */
    public static Properties getInternalProperties() {
       return (Properties)
          ConfigurationContext.getContext().get(PROPERTIES_KEY);
    }
 
-   /**
-    * Clear and reload the properties.
-    */
    public static synchronized void clear() {
       ConfigurationContext.getContext().remove(PROPERTIES_KEY);
    }
 
    /**
     * Initialize the properties with the specific location of
-    * stylereport.properties or .stylereport. This is called automatically
+    * angboot.properties . This is called automatically
     * before any method in this class is used for the first time.
     */
    static synchronized void init() {
@@ -65,16 +57,10 @@ public class AngBootEnv {
       putProperties(new DefaultProperties(angBootProperties, defaultProperties));
    }
 
-   /**
-    * Put properties.
-    */
    private static void putProperties(Properties prop) {
       ConfigurationContext.getContext().put(PROPERTIES_KEY, prop);
    }
 
-   /**
-    * Get a property value.
-    */
    public static String getProperty(String name) {
       init();
 

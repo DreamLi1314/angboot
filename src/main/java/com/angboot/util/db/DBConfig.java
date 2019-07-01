@@ -37,16 +37,10 @@ public class DBConfig {
       this.dbProperties = AngBootUtil.loadProperties(dbPropFile);
    }
 
-   /**
-    * Gets the database configuration.
-    */
    public static DBConfig getDBConfig() {
       return SingletonManager.getInstance(DBConfig.class);
    }
 
-   /**
-    * Reset the database config.
-    */
    public static synchronized void reset() {
       SingletonManager.reset(DBConfig.class);
    }

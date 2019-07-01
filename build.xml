@@ -48,11 +48,9 @@
 
    <!-- define our main target -->
    <target name="installDependencies">
-      <echo message="start install package..." />
-    <exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
-       <arg value="install" />
-    </exec>
-    <echo message="install package success..." />
+      <exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
+         <arg value="install" />
+      </exec>
    </target>
 
    <target name="init">
@@ -60,20 +58,16 @@
    </target>
 
    <target name="build-angulalr" unless="skip.angular">
-      <echo message="start build angular..." />
       <exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
          <arg value="run"/>
          <arg value="build"/>
       </exec>
-      <echo message="build angular success..." />
    </target>
 
    <target name="build-java" unless="skip.java">
-      <echo message="start compile java source...." />
       <exec executable="${cmd.mvn}" failonerror="${error.failonerror}">
          <arg value="compile" />
       </exec>
-      <echo message="compile java source success...." />
    </target>
 
    <target name="build">
@@ -82,8 +76,6 @@
    </target>
 
    <target name="server" description="start up the angular server" depends="build">
-      <echo message="satrt server..." />
-
       <local name="project.home"/>
       <pathconvert property="project.home" dirsep="/">
          <path path="${basedir}"/>
@@ -150,77 +142,54 @@
    </target>
 
    <target name="clean">
-      <echo message="Start clean target/dist/chunk..." />
       <delete dir="${web.app.dist}" />
       <delete dir="${target.dir}" />
       <delete dir="${web.dir}/dist" />
-      <echo message="Clean output success..." />
    </target>
 
    <target name="clean-all" depends="clean">
-      <echo message="Start clean ${web.dir}\\node_modules..." />
       <delete dir="${web.dir}\\node_modules" />
-      <echo message="Clean ${web.dir}\\node_modules success..." />
    </target>
 
    <target name="rebuild">
-      <echo message="Start rebuild...." />
       <antcall target="clean" />
       <antcall target="build" />
-      <echo message="Rebuild Success..." />
    </target>
 
    <target name="test-java">
-      <echo message="Start test java..." />
-
       <exec executable="${cmd.mvn}" failonerror="${error.failonerror}">
          <arg value="test"/>
       </exec>
-
-      <echo message="test java success..."/>
    </target>
 
    <target name="lint-angular">
-      <echo message="Start lint angular..." />
-
       <exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
          <arg value="run"/>
          <arg line="lint" />
       </exec>
-
-      <echo message="lint angular success..."/>
    </target>
 
    <target name="test-angular">
-      <echo message="Start test angular..." />
-
       <exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
          <arg value="run"/>
          <arg line="test" />
       </exec>
-
-      <echo message="test angular success..."/>
    </target>
 
    <target name="test">
-      <echo message="Start test project..." />
       <antcall target="test-java" />
       <antcall target="test-angular" />
-      <echo message="test project success..."/>
    </target>
 
    <target name="rebuild-all">
-      <echo message="Start rebuild all..." />
       <antcall target="clean-all" />
       <antcall target="init" />
       <antcall target="lint-angular"/>
       <antcall target="build" />
       <antcall target="test" />
-      <echo message="Rebuild all success..." />
    </target>
 
    <target name="watch">
-      <echo message="Start watch app build..." />
       <exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
          <arg value="run"/>
          <arg line="build:watch" />
@@ -228,12 +197,10 @@
    </target>
 
    <target name="angular.generate-index-files">
-      <echo message="generate index files start..." />
       <exec executable="${cmd.npm}" failonerror="${error.failonerror}" dir="${web.dir}">
          <arg value="run"/>
          <arg value="generate-index-files"/>
       </exec>
-      <echo message="generate index files success..." />
    </target>
 
    <scriptdef name="changeProperty" language="javascript"

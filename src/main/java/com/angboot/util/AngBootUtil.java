@@ -31,8 +31,7 @@ import java.util.Properties;
 public final class AngBootUtil {
 
    /**
-    * get config home.
-    * @param args input args.
+    * @param args command line arguments.
     */
    public static String getAngBootHome(String[] args) {
       String home = null;
