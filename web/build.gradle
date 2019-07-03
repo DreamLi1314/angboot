@@ -1,0 +1,11 @@
+plugins {
+}
+
+group = 'org.angboot'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
