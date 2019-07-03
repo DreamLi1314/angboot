@@ -6,9 +6,7 @@
 #   and configure the corresponding environment variables:
 
 #     JDK: version >= 1.8
-#     Ant
-#     Maven
-#     Node(npm)
+#     Node(npm): For Angular
 
 # ********************************************************
 
@@ -16,8 +14,8 @@
 # ****************** Start up the Application ************
 
 # execute:
-#     ant rebuild-all      # for install dependencies -- just first
-#     ant server           # start up the application
+#     gradlew[.bat] build      # for install dependencies -- just first
+#     gradlew[.bat] server           # start up the application
 # in your terminal
 
 # ********************************************************
@@ -26,10 +24,10 @@
 # ***************** Technical selection ******************
 
 #  Java: Spring Boot + SpringSecurity + Mybatis + SSO(CAS)
-#  web: Angular6 + Bootstrap + SCSS
+#  web: Angular7 + Bootstrap + SCSS
 #  Server: Tomcat
 #  Database: H2
-#  Project Management Tools: Ant + Maven
+#  Project Management Tools: Gradle
 #  Cache: Map(Support Redis, EHcache etc.)
 
 # ********************************************************

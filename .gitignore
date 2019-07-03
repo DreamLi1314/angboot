@@ -2,7 +2,7 @@
 #!build/**
 
 # Environment
-#.idea/
+.idea/
 .gradle
 MANIFEST.MF
 .DS_Store
