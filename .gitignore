@@ -31,3 +31,4 @@ web/package-lock.json
 
 # Env
 .idea
+*.iws
