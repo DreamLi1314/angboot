@@ -5,7 +5,6 @@ plugins {
 
 apply plugin: 'io.spring.dependency-management'
 
-group = 'org.angboot'
 sourceCompatibility = '1.8'
 
 configurations {
@@ -16,10 +15,6 @@ configurations {
    compileOnly {
       extendsFrom annotationProcessor
    }
-}
-
-repositories {
-   mavenCentral()
 }
 
 dependencies {
