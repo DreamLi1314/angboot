@@ -64,7 +64,7 @@ public class AngBootUserDetailsService implements UserDetailsService {
       List<User> users = this.userService.getUserByName(username);
 
       return users.stream()
-         .map(user -> new org.springframework.security.core.userdetails.User(user.getName(), user.getPassword(), user.isEnable(), true, true, true, AuthorityUtils.NO_AUTHORITIES))
+         .map(user -> new org.springframework.security.core.userdetails.User(user.getUserName(), user.getPassword(), user.isEnabled(), true, true, true, AuthorityUtils.NO_AUTHORITIES))
          .collect(Collectors.toList());
    }
 

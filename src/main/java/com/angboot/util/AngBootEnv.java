@@ -16,12 +16,11 @@ package com.angboot.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.util.ResourceUtils;
 import org.springframework.util.StringUtils;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
+import java.net.URISyntaxException;
 import java.util.Hashtable;
 import java.util.Properties;
 
@@ -50,9 +49,15 @@ public class AngBootEnv {
 
       Properties angBootProperties
          = AngBootUtil.loadProperties(configHome, "angboot.properties");
-      Properties defaultProperties
-         = AngBootUtil.loadProperties(
-            AngBootEnv.class.getResource("/config").getPath(), "default.properties");
+
+      Properties defaultProperties = null;
+
+      try {
+         defaultProperties = AngBootUtil.loadProperties(
+            ResourceUtils.getFile("classpath:config/").getPath(), "default.properties");
+      } catch (FileNotFoundException e) {
+         e.printStackTrace();
+      }
 
       putProperties(new DefaultProperties(angBootProperties, defaultProperties));
    }

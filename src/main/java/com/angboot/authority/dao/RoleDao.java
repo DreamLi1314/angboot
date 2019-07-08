@@ -21,6 +21,6 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 public interface RoleDao {
 
-   @Select("SELECT * FROM T_ROLE WHERE ROLE_NAME=#{roleName}")
+   @Select("SELECT * FROM t_roles WHERE role_name=#{roleName}")
    Role getRoleByName(String roleName) throws Exception;
 }

@@ -24,10 +24,10 @@ import java.util.List;
 @Mapper
 public interface UserDao {
 
-    @Select("SELECT * FROM T_USER  where id=#{id}")
+    @Select("SELECT * FROM t_users where id=#{id}")
     User getUserById(Integer id);
 
-    @Select("SELECT name, password, enable FROM T_USER WHERE name=#{userName}")
+    @Select("SELECT userName, password, enabled FROM t_users WHERE userName=#{userName}")
     List<User> getUserByName(String userName);
 
 }

@@ -21,10 +21,6 @@ import java.util.List;
 
 @Mapper
 public interface AuthorizationDao {
-   @Select("SELECT USERNAME, ROLE FROM T_USER_ROLE WHERE USERNAME=#{name}")
-   @Results(id = "authenticationResultMap", value = {
-      @Result(column="USERNAME", property="name"),
-      @Result(column="ROLE", property="authority")
-   })
+   @Select("SELECT username, authority FROM t_authorities WHERE username=#{name}")
    public List<Authorization> getAuthenticationByName(String name);
 }

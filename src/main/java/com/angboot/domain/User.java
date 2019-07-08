@@ -25,8 +25,8 @@ import java.io.Serializable;
 public class User implements Serializable {
    private Integer id;
    @NonNull
-   private String name;
+   private String userName;
    @NonNull
    private String password;
-   private boolean enable;
+   private boolean enabled;
 }

@@ -22,6 +22,6 @@ import lombok.NonNull;
 @NoArgsConstructor
 public class Authorization {
    @NonNull
-   private String name;
+   private String userName;
    private String authority;
 }
