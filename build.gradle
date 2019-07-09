@@ -1,13 +1,9 @@
 allprojects {
    group = 'org.angboot'
 
-   repositories {
-      mavenLocal()
-      mavenCentral()
-   }
-
    wrapper {
       gradleVersion = '5.4.1'
    }
 }
+
 

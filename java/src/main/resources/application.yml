@@ -1,0 +1,25 @@
+spring:
+   profiles:
+      active: dev
+
+---
+
+spring:
+   profiles: dev
+
+server:
+   port: 80
+
+---
+
+spring:
+   profiles: test
+server:
+   port: 10001
+
+---
+
+spring:
+   profiles: prod
+server:
+   port: 8080
