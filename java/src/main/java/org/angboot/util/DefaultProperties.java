@@ -47,6 +47,7 @@ public class DefaultProperties extends Properties {
    }
 
    @Override
+   @Deprecated
    public void save(OutputStream out, String comments) {
       throw new UnsupportedOperationException("This method has deprecated. " +
          "please call <store(OutputStream out, String comments)> method!");

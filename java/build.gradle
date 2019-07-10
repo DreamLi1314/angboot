@@ -97,6 +97,9 @@ task prepareAseets(dependsOn: [prepareData, prepareConfig]) {
 build.dependsOn prepareAseets
 
 task server() {
+   group 'application'
+   description 'run the application'
+
    doLast {
       def propFile = file("$buildDir/config/angboot.properties")
       def angbootProp =  new Properties()
