@@ -12,26 +12,15 @@
  * person.
  */
 
-package org.angboot;
+package org.angboot.authority.dao;
 
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.ApplicationContext;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.angboot.domain.Authorization;
+import org.apache.ibatis.annotations.*;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
-public class AngbootApplicationTests {
+import java.util.List;
 
-    @Autowired
-    private ApplicationContext applicationContext;
-
-    @Test
-    public void contextLoads() {
-        Assert.assertNotNull("ApplicationContext has not been initialization...", applicationContext);
-    }
-
+@Mapper
+public interface AuthorizationDao {
+   @Select("SELECT username, authority FROM t_authorities WHERE username=#{name}")
+   public List<Authorization> getAuthenticationByName(String name);
 }

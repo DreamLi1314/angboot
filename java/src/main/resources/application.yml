@@ -2,13 +2,40 @@ spring:
    profiles:
       active: dev
 
+mybatis:
+   configuration:
+      map-underscore-to-camel-case: true
+
 ---
 
 spring:
    profiles: dev
+   devtools:
+      restart:
+         additional-paths:
+            - src/main/java
+            - application.yml
+         exclude: static/**,public/**
+   thymeleaf:
+      cache: false
+      session:
+         store-type: none
 
 server:
    port: 80
+
+logging:
+   level:
+      org.dream.angboot: debug
+
+management:
+   endpoints:
+      web:
+         exposure:
+            include: "*"
+   endpoint:
+      health:
+         show-details: always
 
 ---
 
@@ -21,5 +48,5 @@ server:
 
 spring:
    profiles: prod
-server:
-   port: 8080
+
+

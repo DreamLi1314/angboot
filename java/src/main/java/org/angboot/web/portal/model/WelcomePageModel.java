@@ -12,26 +12,24 @@
  * person.
  */
 
-package org.angboot;
+package org.angboot.web.portal.model;
 
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.ApplicationContext;
-import org.springframework.test.context.junit4.SpringRunner;
+public class WelcomePageModel {
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
-public class AngbootApplicationTests {
+   public WelcomePageModel() {
+   }
 
-    @Autowired
-    private ApplicationContext applicationContext;
+   public WelcomePageModel(String message) {
+      this.message = message;
+   }
 
-    @Test
-    public void contextLoads() {
-        Assert.assertNotNull("ApplicationContext has not been initialization...", applicationContext);
-    }
+   public String getMessage() {
+      return message;
+   }
 
+   public void setMessage(String message) {
+      this.message = message;
+   }
+
+   private String message;
 }
