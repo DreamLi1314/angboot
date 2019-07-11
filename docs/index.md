@@ -27,29 +27,29 @@ gradlew build
 ```
 If you only modified the java code, you can also compile the Java source code and launch the application by executing the following command:
 ``` shell
-gradle classes
+gradlew classes
 ```
 Of course, our Angular code also supports hot deployment. Execute the following command and refresh the browser after successful compilation to apply the modified code:
 ``` shell
-gradle web:watch
+gradlew web:watch
 ```
 
 ### 2.3 Rebuild and clean the application
 #### 2.3.1 Clean
 You can use the following command to clean up the program output file:
 ``` shell
-gradle clean
+gradlew clean
 ```
 
 #### 2.3.2 Rebuild
 You can also rebuild external code (node dependencies) with the following command:
 ``` shell
-gradle rebuild
+gradlew rebuild
 ```
 
 ## 3. Configuration
 ### 3.1 Enable CAS for SSO
-You need config follow property to `bin/config/angboot.properties`
+You need config follow property to `angboot/java/build/config/angboot.properties`
 ```properties
 # cas enable
 angboot.cas.enabled=true
