@@ -1,0 +1,187 @@
+/*!
+ * Copyright (c) 2017, InetSoft Technology Corp, All Rights Reserved.
+ *
+ * The software and information contained herein are copyrighted and
+ * proprietary to InetSoft Technology Corp. This software is furnished
+ * pursuant to a written license agreement and may be used, copied,
+ * transmitted, and stored only in accordance with the terms of such
+ * license and with the inclusion of the above copyright notice. Please
+ * refer to the file "COPYRIGHT" for further copyright and licensing
+ * information. This software and information or any other copies
+ * thereof may not be provided or otherwise made available to any other
+ * person.
+ */
+
+.has-float-label {
+  &.disabled {
+    label, > span {
+      color: $dropdown-link-disabled-color;
+
+    }
+
+    > dropdown-view > .input-group > button {
+      background-color: $input-disabled-bg;
+
+      &:active {
+        border-color: $input-border-color;
+      }
+    }
+  }
+
+  .form-control:placeholder-shown:not(:focus) + * {
+    font-size: 100%;
+    top: .75em;
+    opacity: 1;
+    background: none;
+    font-weight: normal;
+  }
+
+  .form-control-sm:placeholder-shown:not(:focus) + * {
+    top: .5em;
+  }
+
+  .form-control:placeholder-shown:not(:focus) + button {
+    font-size: 100%;
+    top: 0;
+  }
+
+  > span.invalid-feedback {
+    position: relative;
+    top: -1em;
+    left: 1em;
+    margin-right: 2em;
+    margin-bottom: -1em;
+    float: left;
+  }
+
+  > .form-control.is-invalid + span::after,
+  > span.invalid-feedback::after {
+    top: calc(50% - .5em);
+    height: 1em;
+  }
+
+  > span.helper-text {
+    top: auto;
+    bottom: -1em;
+  }
+
+  > .form-control.is-invalid ~ span.helper-text {
+    display: none;
+  }
+
+  .form-control.date-picker-input + .dropdown-menu,
+  .dropdown-menu {
+    opacity: 1 !important;
+  }
+
+  > span , label {
+    color: #495057;
+    font-size: 85%;
+    font-weight: bold;
+
+    margin-top: -10px;
+    background:
+      linear-gradient(60deg, transparent 5px, white 5px),
+      linear-gradient(300deg, transparent 5px, white 5px);
+    background-position: bottom left, bottom right; 
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 10px;
+    padding-bottom: 1px;
+  }
+
+  span::after {
+    background: none;
+  }
+
+  .form-control:disabled, .form-control[readonly] {
+    opacity: 0.5;
+  }
+}
+
+.input-group {
+  > span.invalid-feedback {
+    position: absolute;
+    cursor: text;
+    font-size: 85%;
+    opacity: 1;
+    bottom: -.5em;
+    left: 0.75rem;
+    z-index: 3;
+    line-height: 1;
+    padding: 0 1px;
+
+    &::after {
+      content: " ";
+      display: block;
+      position: absolute;
+      background: white;
+      height: 1em;
+      top: calc(50% - .5em);
+      left: -.2em;
+      right: -.2em;
+      z-index: -1;
+    }
+  }
+}
+
+.container-fluid > fieldset > legend {
+  margin-left: -($grid-gutter-width / 2);
+}
+
+:not(.modal-body) > fieldset:first-child {
+  margin-top: .5rem;
+}
+
+fieldset legend {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+fieldset.float-title {
+  border: 1px solid $input-border-color;
+  border-radius: 3px;
+  padding-bottom: 0.5em;
+
+  legend {
+    font-size: 85%;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 1em;
+    width: unset;
+  }
+}
+
+// override bootstrap form-check layout for better alignment
+.form-check-label {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.form-check-input {
+  position: static;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0.5rem;	
+}	
+
+.form-check { 
+  padding-left: unset;
+  display: flex;
+  align-items: center;
+}
+
+.form-check-inline {
+  display: inline-flex;
+}
+
+.form-inline {
+  @include media-breakpoint-up(sm) {
+    .form-check-label {
+      padding-left: 0;
+    }
+  }
+}
+
+

@@ -1,9 +1,10 @@
 allprojects {
    group = 'org.angboot'
+   version = '0.1.0-SNAPSHOT'
+}
 
-   wrapper {
-      gradleVersion = '5.4.1'
-   }
+wrapper {
+   gradleVersion = '5.4.1'
 }
 
 
