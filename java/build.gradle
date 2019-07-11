@@ -94,7 +94,7 @@ task prepareConfig(type: Copy) {
 task prepareAseets(dependsOn: [prepareData, prepareConfig]) {
 }
 
-build.dependsOn prepareAseets
+compileJava.dependsOn prepareAseets
 
 task server() {
    group 'application'
@@ -113,4 +113,9 @@ task server() {
          args = ['--stop-port', '8082', '--stop-key', 'stop', "angboot.home=$angbootHome"]
       }
    }
+}
+
+task rebuild(type: Delete, dependsOn: [clean]) {
+   group 'rebuild'
+   delete = ['.gradle']
 }

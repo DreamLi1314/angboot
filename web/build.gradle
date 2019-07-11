@@ -30,3 +30,16 @@ task build(dependsOn: compile) {
    group 'build'
    description = 'Build web'
 }
+
+task cleanChunk(type: Delete) {
+   delete = ['../java/build/resources/main/static/app']
+}
+
+task clean(dependsOn: [cleanChunk]) {
+   group 'build'
+}
+
+task rebuild(type: Delete, dependsOn: [cleanChunk]) {
+   group 'rebuild'
+   delete = ['node_modules', '.gradle']
+}

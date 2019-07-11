@@ -6,7 +6,6 @@
 #   and configure the corresponding environment variables:
 
 #     JDK: version >= 1.8
-#     Node(npm): For Angular
 
 # ********************************************************
 
@@ -14,8 +13,8 @@
 # ****************** Start up the Application ************
 
 # execute:
-#     gradlew[.bat] build      # for install dependencies -- just first
-#     gradlew[.bat] server           # start up the application
+#     gradlew build            # for install dependencies -- just first
+#     gradlew server           # start up the application
 # in your terminal
 
 # ********************************************************
