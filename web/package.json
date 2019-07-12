@@ -1,6 +1,6 @@
 {
   "name": "angboot-web",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "ng": "node --max-old-space-size=6000 ./node_modules/@angular/cli/bin/ng",
     "start": "npm run ng -- serve",
