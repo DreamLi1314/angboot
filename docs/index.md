@@ -13,38 +13,38 @@ You can download this app source on [GitHub](https://github.com/DreamLi1314/angb
 ### 2.1 Start up the application
 First you should perform an init once to install the dependencies needed for your project, but only if you need it on the first boot.
 ``` shell
-gradlew build
+gradlew[.bat] build
 ```
 After each start, you only need to run the following command to start the application:
 ``` shell
-gradlew server
+gradlew[.bat] server
 ```
 
 ### 2.2 Modify the code for yourself
 When you modify the source code, you can execute the following command to compile the source code:
 ``` shell
-gradlew build
+gradlew[.bat] build
 ```
 If you only modified the java code, you can also compile the Java source code and launch the application by executing the following command:
 ``` shell
-gradlew classes
+gradlew[.bat] classes
 ```
 Of course, our Angular code also supports hot deployment. Execute the following command and refresh the browser after successful compilation to apply the modified code:
 ``` shell
-gradlew web:watch
+gradlew[.bat] web:watch
 ```
 
 ### 2.3 Rebuild and clean the application
 #### 2.3.1 Clean
 You can use the following command to clean up the program output file:
 ``` shell
-gradlew clean
+gradlew[.bat] clean
 ```
 
 #### 2.3.2 Rebuild
 You can also rebuild external code (node dependencies) with the following command:
 ``` shell
-gradlew rebuild
+gradlew[.bat] rebuild
 ```
 
 ## 3. Configuration
