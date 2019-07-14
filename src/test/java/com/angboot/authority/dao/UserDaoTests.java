@@ -19,12 +19,15 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.util.Assert;
 
 import javax.sql.DataSource;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(properties = "spring.main.allow-bean-definition-overriding=true")
+@ActiveProfiles("test")
 public class UserDaoTests {
 
    @Autowired
@@ -35,12 +38,8 @@ public class UserDaoTests {
 
    @Test
    public void testGetUserById() throws Exception {
-      System.out.println(dataSource);
-      System.out.println(dataSource.getConnection());
-      System.out.println(dataSource.getConnection().getCatalog());
-
       User user = userDao.getUserById(1);
 
-      System.out.println(user);
+      Assert.notNull(user, "default user is null.");
    }
 }

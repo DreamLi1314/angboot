@@ -19,11 +19,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.Assert;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@ActiveProfiles("test")
 public class RoleDaoTests {
 
    @Autowired
@@ -31,7 +33,7 @@ public class RoleDaoTests {
 
    @Test
    public void testGetRoleByName() throws Exception {
-      String name = "Everyone";
+      String name = "ROLE_GUEST";
 
       Role role = roleDao.getRoleByName(name);
 
