@@ -1,0 +1,9 @@
+2019-07-14 11:33:21 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_USERS" not found; SQL statement:
+SELECT * FROM t_users where id=? [42102-199]
+2019-07-14 11:35:06 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_USERS" not found; SQL statement:
+SELECT * FROM t_users where id=? [42102-199]
+2019-07-14 11:38:01 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_USERS" not found; SQL statement:
+SELECT * FROM t_users where id=? [42102-199]

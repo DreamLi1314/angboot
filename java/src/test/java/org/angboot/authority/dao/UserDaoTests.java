@@ -12,28 +12,34 @@
  * person.
  */
 
-package org.angboot;
+package org.angboot.authority.dao;
 
-import org.junit.Assert;
+import org.angboot.domain.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.util.Assert;
+
+import javax.sql.DataSource;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(properties = "spring.main.allow-bean-definition-overriding=true")
 @ActiveProfiles("test")
-public class AngbootApplicationTests {
+public class UserDaoTests {
 
-    @Autowired
-    private ApplicationContext applicationContext;
+   @Autowired
+   private DataSource dataSource;
 
-    @Test
-    public void contextLoads() {
-        Assert.assertNotNull("ApplicationContext has not been initialization...", applicationContext);
-    }
+   @Autowired
+   private UserDao userDao;
 
+   @Test
+   public void testGetUserById() throws Exception {
+      User user = userDao.getUserById(1);
+
+      Assert.notNull(user, "default user is null.");
+   }
 }

@@ -12,28 +12,32 @@
  * person.
  */
 
-package org.angboot;
+package org.angboot.authority.dao;
 
-import org.junit.Assert;
+import org.angboot.domain.Role;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.util.Assert;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(properties = "spring.main.allow-bean-definition-overriding=true")
+@SpringBootTest
 @ActiveProfiles("test")
-public class AngbootApplicationTests {
+public class RoleDaoTests {
 
-    @Autowired
-    private ApplicationContext applicationContext;
+   @Autowired
+   private RoleDao roleDao;
 
-    @Test
-    public void contextLoads() {
-        Assert.assertNotNull("ApplicationContext has not been initialization...", applicationContext);
-    }
+   @Test
+   public void testGetRoleByName() throws Exception {
+      String name = "ROLE_GUEST";
 
+      Role role = roleDao.getRoleByName(name);
+
+      Assert.notNull(role, "Get role is null...");
+      Assert.isTrue(name.equals(role.getRoleName()), "Role info error...");
+   }
 }
