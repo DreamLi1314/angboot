@@ -1,0 +1,29 @@
+language: java
+
+# cache
+before_cache:
+   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+   directories:
+      - $HOME/.gradle/caches/
+      - $HOME/.gradle/wrapper/
+
+# install
+install: skip
+
+# build
+script:
+   - gradlew rebuild
+
+# notifications
+notifications:
+   email:
+      recipients:
+         - dreamli@inetsoft.com
+         - 243853974@qq.com
+      on_success: change
+      on_failure: always
+      on_cancel: never
+      on_error: never
+      on_start: never

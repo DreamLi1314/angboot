@@ -116,7 +116,11 @@ task server() {
    }
 }
 
-task rebuild(type: Delete, dependsOn: [clean]) {
-   group 'rebuild'
+task cleanAll(type: Delete, dependsOn: [clean]) {
+   group 'build'
    delete = ['.gradle']
+}
+
+task rebuild(dependsOn: [cleanAll, build]) {
+   group 'rebuild'
 }
