@@ -76,6 +76,7 @@ task prepareConfig(type: Copy) {
    if(!workHomeDir.exists()) {
       from 'src/main/resources/install/config'
       into "$buildDir/config"
+      exclude '*.sql'
 
       filesMatching('datasource.properties') {
          String replacement = file("$buildDir/data").getCanonicalPath().replace('\\', '/')
@@ -115,7 +116,11 @@ task server() {
    }
 }
 
-task rebuild(type: Delete, dependsOn: [clean]) {
-   group 'rebuild'
+task cleanAll(type: Delete, dependsOn: [clean]) {
+   group 'build'
    delete = ['.gradle']
+}
+
+task rebuild(dependsOn: [cleanAll, build]) {
+   group 'rebuild'
 }

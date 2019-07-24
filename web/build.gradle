@@ -32,6 +32,7 @@ task build(dependsOn: compile) {
 }
 
 task cleanChunk(type: Delete) {
+   group 'build'
    delete = ['../java/build/resources/main/static/app']
 }
 
@@ -39,9 +40,13 @@ task clean(dependsOn: [cleanChunk]) {
    group 'build'
 }
 
-task rebuild(type: Delete, dependsOn: [cleanChunk]) {
-   group 'rebuild'
+task cleanAll(type: Delete, dependsOn: [clean]) {
+   group 'build'
    delete = ['node_modules', '.gradle']
+}
+
+task rebuild(dependsOn: [cleanAll, build]) {
+   group 'rebuild'
 }
 
 task watch(type: NpmTask, dependsOn: npmInstall) {
