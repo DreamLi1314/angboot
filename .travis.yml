@@ -14,7 +14,7 @@ install: skip
 
 # build
 script:
-   - gradlew rebuild
+   - ./gradlew rebuild
 
 # notifications
 notifications:
