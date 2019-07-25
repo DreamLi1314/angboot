@@ -1,11 +1,11 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
 
-const fs = require('fs');
-const path = require('path');
+var fs = require('fs');
+var path = require('path');
 
 module.exports = function (config) {
-  const addJunitReporter =
+   var addJunitReporter =
      (config.singleRun && !(config.angularCli && config.angularCli.codeCoverage));
 
   config.set({
@@ -39,27 +39,37 @@ module.exports = function (config) {
     browserNoActivityTimeout: 120000
   });
 
-  if(addJunitReporter) {
-      const distDir = "../bin/compile/test-dist";
-      let junitDir = '../bin/compile/test-results';
+   if(addJunitReporter) {
+      var dist = "./dist";
+      var testDir = dist + "/test";
+      var distDir = testDir + "/test-dist";
+      var junitDir = testDir + '/test-results';
+
+      if(!fs.existsSync(path.join(__dirname, dist))) {
+         fs.mkdirSync(path.join(__dirname, dist));
+      }
+
+      if(!fs.existsSync(path.join(__dirname, testDir))) {
+         fs.mkdirSync(path.join(__dirname, testDir));
+      }
 
       if(!fs.existsSync(path.join(__dirname, junitDir))) {
-          junitDir = distDir + '/_test-output';
+         junitDir = distDir + '/_test-output';
 
-          if(!fs.existsSync(path.join(__dirname, distDir))) {
-              fs.mkdirSync(path.join(__dirname, distDir));
-          }
+         if(!fs.existsSync(path.join(__dirname, distDir))) {
+            fs.mkdirSync(path.join(__dirname, distDir));
+         }
 
-          if(!fs.existsSync(path.join(__dirname, junitDir))) {
-              fs.mkdirSync(path.join(__dirname, junitDir));
-          }
+         if(!fs.existsSync(path.join(__dirname, junitDir))) {
+            fs.mkdirSync(path.join(__dirname, junitDir));
+         }
       }
 
       config.plugins.push(require("./karma-junit-reporter"));
       config.reporters.push("junit");
       config.junitReporter = {
-          outDir: junitDir,
-          package: 'angboot.web.client.unit'
+         outDir: junitDir,
+         package: 'angboot.web.client.unit'
       };
-  }
+   }
 };
