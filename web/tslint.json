@@ -11,7 +11,7 @@
     "class-name": true,
     "comment-format": false,
     "curly": true,
-    "deprecation": true,
+    "deprecation": false,
     "eofline": false,
     "file-header": [
       true,

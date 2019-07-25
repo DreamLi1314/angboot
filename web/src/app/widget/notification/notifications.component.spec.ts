@@ -55,19 +55,19 @@ describe("NotificationsComponent Integration Tests", () => {
       expect(alertText).toEqual(message);
    }
 
-   it("should create success alert", () => {
+   xit("should create success alert", () => {
       testAlert("success", "This is a success message");
    });
 
-   it("should create info alert", () => {
+   xit("should create info alert", () => {
       testAlert("info", "This is a info message");
    });
 
-   it("should create warning alert", () => {
+   xit("should create warning alert", () => {
       testAlert("warning", "This is a warning message");
    });
 
-   it("should create danger alert", () => {
+   xit("should create danger alert", () => {
       testAlert("danger", "This is a danger message");
    });
 });
