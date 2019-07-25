@@ -12,6 +12,7 @@ You should have installed the following software and configure the corresponding
 * Server: Tomcat
 * Database: H2
 * Project Management Tools: Gradle
+* CI Tools: [Travis](https://travis-ci.org/DreamLi1314/angboot)(Default), Jenkins
 * Cache: Map(Support Redis, Ehcache etc.)
 
 ## 3. Run application
@@ -24,3 +25,8 @@ gradlew[.bat] build
 gradlew[.bat] server
 ```
 
+## 4. Getting help
+To see [User Manual](https://dreamli1314.github.io/angboot/).
+
+## 5. License
+AngBoot is Open Source software released under the Apache 2.0 license.

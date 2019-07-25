@@ -110,7 +110,10 @@ task server() {
       javaexec {
          classpath sourceSets.main.runtimeClasspath
          main = 'org.angboot.AngbootApplication'
-         jvmArgs = ['-Dspring.profiles.active=dev']
+         jvmArgs = [
+            '-Dspring.profiles.active=dev',
+            '-Djava.rmi.server.hostname=127.0.0.1',
+            '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5009']
          args = ['--stop-port', '8082', '--stop-key', 'stop', "angboot.home=$angbootHome"]
       }
    }
