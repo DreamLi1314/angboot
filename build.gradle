@@ -1,10 +1,22 @@
+buildscript {
+   repositories {
+      maven{
+         url 'http://maven.aliyun.com/nexus/content/groups/public/'
+      }
+   }
+}
+
 allprojects {
    group = 'org.angboot'
    version = '0.1.0-SNAPSHOT'
+
+   repositories {
+      maven{
+         url 'http://maven.aliyun.com/nexus/content/groups/public/'
+      }
+   }
 }
 
 wrapper {
    gradleVersion = '5.4.1'
 }
-
-

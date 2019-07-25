@@ -16,8 +16,8 @@ package org.angboot.authority.service;
 
 import org.angboot.authority.model.SecurityConstant;
 import org.angboot.domain.User;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.security.core.GrantedAuthority;
@@ -42,7 +42,7 @@ public class AngBootUserDetailsService implements UserDetailsService {
    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
       List<UserDetails> users = this.loadUsersByUsername(username);
       if (users.size() == 0) {
-         this.logger.debug("Query returned no results for user '" + username + "'");
+         this.LOGGER.debug("Query returned no results for user '" + username + "'");
          throw new UsernameNotFoundException(this.messages.getMessage("JdbcDaoImpl.notFound", new Object[]{username}, "Username {0} not found"));
       } else {
          UserDetails user = users.get(0);
@@ -52,7 +52,7 @@ public class AngBootUserDetailsService implements UserDetailsService {
          List<GrantedAuthority> dbAuths = new ArrayList(dbAuthsSet);
 
          if (dbAuths.size() == 0) {
-            this.logger.debug("User '" + username + "' has no authorities and will be treated as 'not found'");
+            this.LOGGER.debug("User '" + username + "' has no authorities and will be treated as 'not found'");
             throw new UsernameNotFoundException(this.messages.getMessage("JdbcDaoImpl.noAuthority", new Object[]{username}, "User {0} has no GrantedAuthority"));
          } else {
             return this.createUserDetails(username, user, dbAuths);
@@ -85,5 +85,5 @@ public class AngBootUserDetailsService implements UserDetailsService {
 
    private MessageSourceAccessor messages = SpringSecurityMessageSource.getAccessor();
 
-   private final Log logger = LogFactory.getLog(this.getClass());
+   private static final Logger LOGGER = LoggerFactory.getLogger(AngBootUserDetailsService.class);
 }
