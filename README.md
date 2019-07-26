@@ -1,5 +1,5 @@
-# [angboot](https://dreamli1314.github.io/angboot/) [![Build Status](https://travis-ci.org/DreamLi1314/angboot.svg?branch=master)](https://travis-ci.org/DreamLi1314/angboot)
-![icon](https://raw.githubusercontent.com/DreamLi1314/angboot/0.1.x/web/src/favicon.ico)
+# <a href="https://dreamli1314.github.io/angboot/"><img width="60px" align="center" src="https://raw.githubusercontent.com/DreamLi1314/angboot/master/web/src/favicon.ico" alt="icon"/></a> [angboot](https://dreamli1314.github.io/angboot/) 
+[![Build Status](https://travis-ci.org/DreamLi1314/angboot.svg?branch=master)](https://travis-ci.org/DreamLi1314/angboot)
 ## 1 Prerequisites
 You should have installed the following software and configure the corresponding environment variables:
 
