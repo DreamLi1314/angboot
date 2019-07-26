@@ -10,7 +10,7 @@ before_install:
    - chmod +x mvnw
    - chmod +x mvnw.cmd
 
-install: ant deps
+install: skip
 
 # build
 script:
