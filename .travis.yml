@@ -1,0 +1,29 @@
+language: java
+
+# cache
+cache:
+   npm: false
+
+# install
+before_install:
+   # For permission denied in travis-ci
+   - chmod +x mvnw
+   - chmod +x mvnw.cmd
+
+install: ant deps
+
+# build
+script:
+   - ant rebuild-all
+
+# notifications
+notifications:
+   email:
+      recipients:
+         - dreamli@inetsoft.com
+         - 243853974@qq.com
+      on_success: change
+      on_failure: always
+      on_cancel: never
+      on_error: never
+      on_start: never

@@ -42,7 +42,7 @@
       <isset property="isWindows"/>
    </condition>
 
-   <condition property="cmd.mvn" value="mvn.cmd" else="mvn">
+   <condition property="cmd.mvn" value="mvnw.cmd" else="mvnw">
       <isset property="isWindows"/>
    </condition>
 
