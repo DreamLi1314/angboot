@@ -2,6 +2,8 @@ language: java
 
 # cache
 cache:
+   directories:
+      - $HOME/.m2
    npm: false
 
 # install
@@ -22,10 +24,12 @@ script:
 notifications:
    email:
       recipients:
-         - dreamli@inetsoft.com
          - 243853974@qq.com
       on_success: change
       on_failure: always
       on_cancel: never
       on_error: never
       on_start: never
+
+after_success:
+   - bash <(curl -s https://codecov.io/bash)
