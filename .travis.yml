@@ -1,5 +1,9 @@
 language: java
 
+env:
+   global:
+      - CODECOV_TOKEN="1eb18219-afec-47c9-8f90-1210b4ec4d07"
+
 # cache
 before_cache:
    - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
