@@ -45,7 +45,7 @@ task cleanAll(type: Delete, dependsOn: [clean]) {
    delete = ['node_modules', '.gradle']
 }
 
-task rebuild(dependsOn: [cleanAll, build]) {
+task rebuild(dependsOn: [cleanAll, build, test]) {
    group 'rebuild'
 }
 
