@@ -10,11 +10,35 @@ allprojects {
    group = 'org.angboot'
    version = '0.1.0-SNAPSHOT'
 
+   apply plugin: 'jacoco'
+
    repositories {
       maven{
          url 'http://maven.aliyun.com/nexus/content/groups/public/'
       }
    }
+}
+
+task clean(type: Delete) {
+   group 'build'
+   delete = ['build']
+}
+
+task codeCoverageReport(type: JacocoReport) {
+   // Gather execution data from all subprojects
+   // (change this if you e.g. want to calculate unit test/integration test coverage separately)
+   executionData fileTree(project.rootDir.absolutePath).include("**/build/jacoco/*.exec")
+
+   reports {
+      xml.enabled true
+      html.enabled false
+      csv.enabled false
+   }
+}
+
+// always run the tests before generating the report
+codeCoverageReport.dependsOn {
+   subprojects*.test
 }
 
 wrapper {
