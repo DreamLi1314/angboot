@@ -28,6 +28,7 @@ web/package-lock.json
 
 # include dir
 !build/**
+!.mvn/**
 
 # Env
 .idea
