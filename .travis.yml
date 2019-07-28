@@ -20,6 +20,7 @@ install: skip
 # build
 script:
    - ./gradlew rebuild
+   - ./gradlew codeCoverageReport
 
 # notifications
 notifications:

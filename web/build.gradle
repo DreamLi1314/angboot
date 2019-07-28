@@ -33,7 +33,7 @@ task build(dependsOn: compile) {
 
 task cleanChunk(type: Delete) {
    group 'build'
-   delete = ['../java/build/resources/main/static/app']
+   delete = ['../java/build/resources/main/static/app', 'dist']
 }
 
 task clean(dependsOn: [cleanChunk]) {
