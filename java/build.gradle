@@ -69,8 +69,6 @@ jacocoTestReport {
    }
 }
 
-check.dependsOn jacocoTestReport
-
 task prepareData(type: Copy) {
    def dataDir = file("$buildDir/data")
 
