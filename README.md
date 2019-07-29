@@ -2,7 +2,9 @@
 [![Build Status](https://travis-ci.org/DreamLi1314/angboot.svg?branch=master)](https://travis-ci.org/DreamLi1314/angboot)
 [![Gitter](https://badges.gitter.im/Angboot/Angboot.svg)](https://gitter.im/Angboot/Angboot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![codecov](https://codecov.io/gh/DreamLi1314/angboot/branch/master/graph/badge.svg)](https://codecov.io/gh/DreamLi1314/angboot)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/dreamli1314/angboot.svg)](http://isitmaintained.com/project/dreamli1314/angboot "Percentage of issues still open")
 ![GitHub release](https://img.shields.io/github/release-pre/dreamli1314/angboot)
+![GitHub](https://img.shields.io/github/license/dreamli1314/angboot)
 
 ## 1. Prerequisites
 You should have installed the following software and configure the corresponding environment variables:

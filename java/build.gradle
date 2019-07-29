@@ -61,6 +61,16 @@ dependencies {
    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+jacocoTestReport {
+   reports {
+      xml.enabled = true
+      xml.destination file("${buildDir}/reports/jacoco")
+      html.enabled = true
+   }
+}
+
+check.dependsOn jacocoTestReport
+
 task prepareData(type: Copy) {
    def dataDir = file("$buildDir/data")
 
