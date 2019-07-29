@@ -1,8 +1,8 @@
 language: java
+sudo: false
 
-env:
-   global:
-      - CODECOV_TOKEN="1eb18219-afec-47c9-8f90-1210b4ec4d07"
+jdk:
+   - openjdk8
 
 # cache
 before_cache:
@@ -40,4 +40,4 @@ notifications:
       on_start: never
 
 after_success:
-   - bash <(curl -s https://codecov.io/bash) -t 1eb18219-afec-47c9-8f90-1210b4ec4d07
+   - bash <(curl -s https://codecov.io/bash)
