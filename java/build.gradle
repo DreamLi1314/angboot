@@ -134,5 +134,3 @@ jacocoTestReport {
       html.enabled false
    }
 }
-
-jacocoTestReport.dependsOn test

@@ -26,7 +26,7 @@ task compile(type: NpmTask, dependsOn: npmInstall) {
    args = ['run', 'build']
 }
 
-task build(dependsOn: compile) {
+task build(dependsOn: [compile, test]) {
    group 'build'
    description = 'Build web'
 }
@@ -63,7 +63,7 @@ task cleanAll(type: Delete, dependsOn: [clean]) {
    delete = ['node_modules', '.gradle']
 }
 
-task rebuild(dependsOn: [cleanAll, build, test]) {
+task rebuild(dependsOn: [cleanAll, build]) {
    group 'rebuild'
 }
 

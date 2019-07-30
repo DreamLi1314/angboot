@@ -25,10 +25,13 @@ install: skip
 
 # build
 script:
-   - ./gradlew rebuild
+   - ./gradlew cleanAll
+   - ./gradlew java:build
    - ./gradlew jacocoTestReport
+   - ./gradlew web:build
    - ./gradlew webCodeTestReport
    - ./gradlew codeCoverageReport
+   - ./gradlew cleanAll
 
 # notifications
 notifications:
