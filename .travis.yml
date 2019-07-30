@@ -31,7 +31,6 @@ script:
    - ./gradlew web:build
    - ./gradlew webCodeTestReport
    - ./gradlew codeCoverageReport
-   - ./gradlew cleanAll
 
 # notifications
 notifications:
