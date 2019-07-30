@@ -26,11 +26,6 @@ task compile(type: NpmTask, dependsOn: npmInstall) {
    args = ['run', 'build']
 }
 
-task build(dependsOn: compile) {
-   group 'build'
-   description = 'Build web'
-}
-
 task lint(type: NpmTask, dependsOn: npmInstall) {
    group 'verification'
    description = 'Runs the linter on the TypeScript source code'
@@ -41,6 +36,17 @@ task test(type: NpmTask, dependsOn: lint) {
    group 'verification'
    description = "Runs the tests, including linting"
    args = ['run', 'test']
+}
+
+task build(dependsOn: [compile, test]) {
+   group 'build'
+   description = 'Build web'
+}
+
+task webCodeTestReport(type: NpmTask) {
+   group 'verification'
+   description = "Runs the report-coverage after test."
+   args = ['run', 'report-coverage']
 }
 
 task cleanChunk(type: Delete) {
@@ -57,7 +63,7 @@ task cleanAll(type: Delete, dependsOn: [clean]) {
    delete = ['node_modules', '.gradle']
 }
 
-task rebuild(dependsOn: [cleanAll, build, test]) {
+task rebuild(dependsOn: [cleanAll, build]) {
    group 'rebuild'
 }
 
