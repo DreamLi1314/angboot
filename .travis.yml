@@ -27,6 +27,7 @@ install: skip
 script:
    - ./gradlew rebuild
    - ./gradlew jacocoTestReport
+   - ./gradlew webCodeTestReport
    - ./gradlew codeCoverageReport
 
 # notifications

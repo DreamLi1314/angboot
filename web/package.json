@@ -13,7 +13,8 @@
     "test:app": "npm run ng -- test angboot-web",
     "lint": "tsc -p rules/tsconfig.json && npm run ng -- lint",
     "e2e": "npm run ng -- e2e --serve false",
-    "generate-index-files": "node ./generate-index-files.js"
+    "generate-index-files": "node ./generate-index-files.js",
+    "report-coverage": "codecov"
   },
   "private": true,
   "dependencies": {
@@ -46,6 +47,8 @@
     "@types/jasminewd2": "^2.0.2",
     "@types/jquery": "^2.0.49",
     "@types/node": "^6.0.101",
+    "clean-webpack-plugin": "1.0.1",
+    "codecov": "^3.5.0",
     "codelyzer": "^4.2.1",
     "concurrently": "^3.5.1",
     "jasmine-core": "~2.8.0",
@@ -53,7 +56,7 @@
     "js-yaml": "^3.13.1",
     "karma": "~3.0.0",
     "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~1.4.2",
+    "karma-coverage": "^1.1.2",
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.1.2",

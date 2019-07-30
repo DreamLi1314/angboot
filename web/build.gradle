@@ -43,6 +43,12 @@ task test(type: NpmTask, dependsOn: lint) {
    args = ['run', 'test']
 }
 
+task webCodeTestReport(type: NpmTask) {
+   group 'verification'
+   description = "Runs the report-coverage after test."
+   args = ['run', 'report-coverage']
+}
+
 task cleanChunk(type: Delete) {
    group 'build'
    delete = ['../java/build/resources/main/static/app', 'dist']
