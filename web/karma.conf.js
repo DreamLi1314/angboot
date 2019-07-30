@@ -39,22 +39,22 @@ module.exports = function (config) {
             },
             {
                type: 'html',
-               subdir: './build'
+               subdir: '../build/coverage'
             },
             {
                // generates ./build/coverage/lcov.info
                type:'lcovonly',
-               subdir: './build'
+               subdir: '../build/coverage'
             },
             {
                // generates ./build/coverage/coverage-final.json
                type:'json',
-               subdir: './build'
+               subdir: '../build/coverage'
             }
          ]
       },
       preprocessors: {
-         'src/**/*.js': ['coverage']
+         'src/**/*.ts': ['coverage']
       },
       port: 9876,
       colors: true,
