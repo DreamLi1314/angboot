@@ -54,7 +54,7 @@ module.exports = function (config) {
          ]
       },
       preprocessors: {
-         'src/**/*.js': ['coverage']
+         'src/**/*.ts': ['coverage']
       },
       port: 9876,
       colors: true,
