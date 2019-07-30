@@ -10,14 +10,14 @@ allprojects {
    group = 'org.angboot'
    version = '0.1.0-SNAPSHOT'
 
-   apply plugin: 'jacoco'
-
    repositories {
       maven{
          url 'http://maven.aliyun.com/nexus/content/groups/public/'
       }
    }
 }
+
+apply plugin: 'jacoco'
 
 task clean(type: Delete) {
    group 'build'
