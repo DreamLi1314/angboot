@@ -3,49 +3,67 @@
 
 var fs = require('fs');
 var path = require('path');
-var CleanPlugin = require('clean-webpack-plugin');
 
 module.exports = function (config) {
    var addJunitReporter =
-     (config.singleRun && !(config.angularCli && config.angularCli.codeCoverage));
+      (config.singleRun && !(config.angularCli && config.angularCli.codeCoverage));
 
-  config.set({
-    basePath: '',
-    frameworks: ['jasmine', '@angular-devkit/build-angular'],
-    plugins: [
-      new CleanPlugin(['coverage']),
-      require('karma-coverage'),
-      require('karma-jasmine'),
-      require('karma-chrome-launcher'),
-      require('karma-jasmine-html-reporter'),
-      require('@angular-devkit/build-angular/plugins/karma')
-    ],
-    client: {
-      clearContext: false // leave Jasmine Spec Runner output visible in browser
-    },
-    angularCli: {
-        environment: 'dev'
-    },
-    reporters: ['progress', 'kjhtml', 'coverage'],
-     coverageReporter:{
-        reporters: [{
-           type:'text-summary'
-        }, {
-           type: 'html',
-           dir: './build/reports/jacoco'
-        }]
-     },
-     preprocessors: {
-        'src/**/*.js': ['coverage']
-     },
-    port: 9876,
-    colors: true,
-    logLevel: config.LOG_INFO,
-    autoWatch: true,
-    browsers: ['Chrome'],
-    singleRun: false,
-    browserNoActivityTimeout: 120000
-  });
+   config.set({
+      basePath: '',
+      frameworks: [
+         'jasmine',
+         '@angular-devkit/build-angular'
+      ],
+      plugins: [
+         require('karma-coverage'),
+         require('karma-jasmine'),
+         require('karma-chrome-launcher'),
+         require('karma-jasmine-html-reporter'),
+         require('@angular-devkit/build-angular/plugins/karma')
+      ],
+      client: {
+         clearContext: false // leave Jasmine Spec Runner output visible in browser
+      },
+      angularCli: {
+         environment: 'dev'
+      },
+      reporters: [
+         'progress',
+         'kjhtml',
+         'coverage'
+      ],
+      coverageReporter: {
+         reporters: [
+            {
+               type:'text-summary'
+            },
+            {
+               type: 'xml',
+               subdir: './build'
+            },
+            {
+               // generates ./build/coverage/lcov.info
+               type:'lcovonly',
+               subdir: './build'
+            },
+            {
+               // generates ./build/coverage/coverage-final.json
+               type:'json',
+               subdir: './build'
+            }
+         ]
+      },
+      preprocessors: {
+         'src/**/*.js': ['coverage']
+      },
+      port: 9876,
+      colors: true,
+      logLevel: config.LOG_INFO,
+      autoWatch: true,
+      browsers: ['Chrome'],
+      singleRun: false,
+      browserNoActivityTimeout: 120000
+   });
 
    if(addJunitReporter) {
       var dist = "./build";

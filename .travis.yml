@@ -29,7 +29,6 @@ script:
    - ./gradlew java:build
    - ./gradlew jacocoTestReport
    - ./gradlew web:build
-   - ./gradlew webCodeTestReport
    - ./gradlew codeCoverageReport
 
 # notifications
@@ -46,3 +45,4 @@ notifications:
 after_success:
    - bash <(curl -s https://codecov.io/bash)
    - ./gradlew webCodeTestReport
+   - ./gradlew cleanAll
