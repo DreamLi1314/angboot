@@ -26,11 +26,6 @@ task compile(type: NpmTask, dependsOn: npmInstall) {
    args = ['run', 'build']
 }
 
-task build(dependsOn: [compile, test]) {
-   group 'build'
-   description = 'Build web'
-}
-
 task lint(type: NpmTask, dependsOn: npmInstall) {
    group 'verification'
    description = 'Runs the linter on the TypeScript source code'
@@ -41,6 +36,11 @@ task test(type: NpmTask, dependsOn: lint) {
    group 'verification'
    description = "Runs the tests, including linting"
    args = ['run', 'test']
+}
+
+task build(dependsOn: [compile, test]) {
+   group 'build'
+   description = 'Build web'
 }
 
 task webCodeTestReport(type: NpmTask) {

@@ -24,6 +24,10 @@ task clean(type: Delete) {
    delete = ['build']
 }
 
+task cleanAll(type: Delete, dependsOn: [clean]) {
+   group 'build'
+}
+
 task codeCoverageReport(type: JacocoReport) {
    // Gather execution data from all subprojects
    // (change this if you e.g. want to calculate unit test/integration test coverage separately)
