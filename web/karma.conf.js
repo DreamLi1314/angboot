@@ -38,7 +38,7 @@ module.exports = function (config) {
                type:'text-summary'
             },
             {
-               type: 'xml',
+               type: 'html',
                subdir: './build'
             },
             {
