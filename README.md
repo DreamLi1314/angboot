@@ -32,8 +32,12 @@ gradlew[.bat] build
 gradlew[.bat] server
 ```
 
-## 4. Getting help
+## 4. Versions
+* [0.0.0](https://github.com/DreamLi1314/angboot/tree/0.0.0)
+* [0.1.x](https://github.com/DreamLi1314/angboot/tree/0.1.x)
+
+## 5. Getting help
 To see [User Manual](https://dreamli1314.github.io/angboot/).
 
-## 5. License
+## 6. License
 AngBoot is Open Source software released under the Apache 2.0 license.
