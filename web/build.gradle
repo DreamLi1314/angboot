@@ -51,7 +51,7 @@ task webCodeTestReport(type: NpmTask) {
 
 task cleanChunk(type: Delete) {
    group 'build'
-   delete = ['../java/build/resources/main/static/app', 'dist']
+   delete = ['../java/build/resources/main/static/app', 'dist', 'build']
 }
 
 task clean(dependsOn: [cleanChunk]) {
