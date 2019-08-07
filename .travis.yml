@@ -5,21 +5,16 @@ jdk:
    - openjdk8
 
 # cache
-before_cache:
-   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
-   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
-cache:
-   directories:
-      - $HOME/.gradle/caches/
-      - $HOME/.gradle/wrapper/
-   npm: false
+cache: false
 
 # install
 before_install:
 # For permission denied in travis-ci
    - chmod +x gradlew
-   - "export DISPLAY=:99.0"
-   - "sh -e /etc/init.d/xvfb start"
+
+services:
+# For karma test to start browser.
+   - xvfb
 
 install: skip
 
