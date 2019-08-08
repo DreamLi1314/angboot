@@ -13,14 +13,17 @@ You should have installed the following software and configure the corresponding
 * JDK: version >= 1.8
 
 ## 2. Technical selection
-
-* Java: Spring Boot + SpringSecurity + Mybatis + SSO(CAS)
-* web: Angular7 + Bootstrap + SCSS
+* Java(Basic Framework): Spring Boot 2.1.6
+* Security: SpringSecurity
+* ORM: Mybatis
+* SSO: CAS
+* Web: Angular7 + Bootstrap4 + SCSS
 * Server: Tomcat
-* Database: H2
+* Database: H2 + Druid
 * Project Management Tools: Gradle
 * CI Tools: [Travis](https://travis-ci.org/DreamLi1314/angboot)(Default), Jenkins
 * Cache: Map(Support Redis, Ehcache etc.)
+* RPC: Dubbo
 
 ## 3. Run application
 > execute follow command for install dependencies in your terminal, Note: **just first**.
@@ -40,8 +43,13 @@ gradlew[.bat] server
 To see [User Manual](https://dreamli1314.github.io/angboot/).
 
 ## 6. Todo list of this version
+* Split module, microservitization project.
+* Add dependency that the distributed framework `Dubbo`.
+
+## 7. Change Log
+### Version 0.1.x:
 * project management tools from `ant + maven` to `gradle`.
-* upgrade angular from v6 to v7.
+* upgrade angular from `v6` to `v7`.
 
 ## License
 AngBoot is Open Source software released under the Apache 2.0 license.
