@@ -39,5 +39,9 @@ gradlew[.bat] server
 ## 5. Getting help
 To see [User Manual](https://dreamli1314.github.io/angboot/).
 
-## 6. License
+## 6. Todo list of this version
+* project management tools from `ant + maven` to `gradle`.
+* upgrade angular from v6 to v7.
+
+## License
 AngBoot is Open Source software released under the Apache 2.0 license.
