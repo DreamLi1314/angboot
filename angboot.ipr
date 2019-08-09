@@ -5,6 +5,8 @@
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="angboot.java.authority.main" target="1.8" />
+      <module name="angboot.java.authority.test" target="1.8" />
       <module name="angboot.java.client.main" target="1.8" />
       <module name="angboot.java.client.test" target="1.8" />
       <module name="angboot.java.interfaces.main" target="1.8" />
@@ -74,6 +76,8 @@
       <module fileurl="file://$PROJECT_DIR$/angboot.iml" filepath="$PROJECT_DIR$/angboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/angboot.java.iml" filepath="$PROJECT_DIR$/java/angboot.java.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/authority/angboot.java.authority.iml" filepath="$PROJECT_DIR$/java/authority/angboot.java.authority.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/authority/angboot.java.authority.main.iml" filepath="$PROJECT_DIR$/java/authority/angboot.java.authority.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/authority/angboot.java.authority.test.iml" filepath="$PROJECT_DIR$/java/authority/angboot.java.authority.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/client/angboot.java.client.iml" filepath="$PROJECT_DIR$/java/client/angboot.java.client.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/client/angboot.java.client.main.iml" filepath="$PROJECT_DIR$/java/client/angboot.java.client.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/client/angboot.java.client.test.iml" filepath="$PROJECT_DIR$/java/client/angboot.java.client.test.iml" />
@@ -84,10 +88,10 @@
       <module fileurl="file://$PROJECT_DIR$/java/models/angboot.java.models.main.iml" filepath="$PROJECT_DIR$/java/models/angboot.java.models.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/models/angboot.java.models.test.iml" filepath="$PROJECT_DIR$/java/models/angboot.java.models.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/angboot.web.iml" filepath="$PROJECT_DIR$/web/angboot.web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/master.angboot.java.iml" filepath="$PROJECT_DIR$/java/master.angboot.java.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/org.angboot.angboot.java.iml" filepath="$PROJECT_DIR$/java/org.angboot.angboot.java.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/org.angboot.angboot.java.main.iml" filepath="$PROJECT_DIR$/java/org.angboot.angboot.java.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/org.angboot.angboot.java.test.iml" filepath="$PROJECT_DIR$/java/org.angboot.angboot.java.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/v_0.2.0.angboot.java.iml" filepath="$PROJECT_DIR$/java/v_0.2.0.angboot.java.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
@@ -294,6 +298,13 @@
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/caches/modules-2/files-2.1/net.minidev/json-smart/2.3/36c61f1b839bde5b284528cb76f6811efbe0f08b/json-smart-2.3-sources.jar!/" />
       </SOURCES>
+    </library>
+    <library name="Gradle: org.angboot.interfaces:0.1.0-SNAPSHOT:">
+      <CLASSES>
+        <root url="file://$PROJECT_DIR$/Could not find org.angboot.interfaces:0.1.0-SNAPSHOT:." />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
     </library>
     <library name="Gradle: org.apache.logging.log4j:log4j-api:2.11.2">
       <CLASSES>
