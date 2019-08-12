@@ -1,13 +1,5 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
-buildscript {
-   ext {
-      apiVersion = "0.1.0-SNAPSHOT"
-      springBootVersion = '2.1.6.RELEASE'
-      lombokVersion = '1.18.8'
-   }
-}
-
 plugins {
    id 'org.springframework.boot' version '2.1.6.RELEASE'
    id 'java'
@@ -22,7 +14,7 @@ configurations {
    api
    tools
    developmentOnly
-   implementation.extendsFrom(api)
+   compile.extendsFrom(api)
    compileOnly.extendsFrom(tools, annotationProcessor)
 }
 
@@ -32,6 +24,10 @@ repositories {
 }
 
 dependencies {
+   // modules
+   api project(':java:models')
+   api project(':java:interfaces')
+
    // spring boot
    implementation 'org.springframework.boot:spring-boot-starter-web'
    implementation 'org.springframework.boot:spring-boot-starter-cache'
@@ -60,10 +56,6 @@ dependencies {
    // tools
    tools "org.projectlombok:lombok:$lombokVersion"
    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
-
-   // api
-   api "org.angboot.interfaces:$apiVersion"
-   api "org.angboot.models:$apiVersion"
 
    // test
    testImplementation 'org.springframework.boot:spring-boot-starter-test'

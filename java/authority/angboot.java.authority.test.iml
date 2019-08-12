@@ -7,6 +7,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="angboot.java.authority.main" />
+    <orderEntry type="module" module-name="angboot.java.models.main" />
+    <orderEntry type="module" module-name="angboot.java.interfaces.main" />
   </component>
   <component name="TestModuleProperties" production-module="angboot.java.authority.main" />
 </module>
