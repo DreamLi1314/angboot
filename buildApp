@@ -1,1 +1,2 @@
+#!/usr/bin/env sh
 ./gradlew java:authority:build java:client:build web:build
