@@ -4,6 +4,8 @@ plugins {
 
 sourceCompatibility = '1.8'
 
+apply plugin: 'jacoco'
+
 configurations {
    api
    compile.extendsFrom(api)
@@ -18,4 +20,11 @@ dependencies {
    // modules
    api project(':java:models')
    api project(':java:interfaces')
+}
+
+jacocoTestReport {
+   reports {
+      xml.enabled true
+      html.enabled false
+   }
 }

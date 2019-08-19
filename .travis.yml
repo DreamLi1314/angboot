@@ -21,9 +21,8 @@ install: skip
 # build
 script:
    - ./gradlew cleanAll
-   - ./gradlew java:build
+   - ./gradlew buildApp
    - ./gradlew jacocoTestReport
-   - ./gradlew web:build
    - ./gradlew codeCoverageReport
 
 # notifications

@@ -124,10 +124,6 @@ task cleanAll(type: Delete, dependsOn: [clean]) {
    delete = ['.gradle']
 }
 
-task rebuild(dependsOn: [cleanAll, build]) {
-   group 'rebuild'
-}
-
 jacocoTestReport {
    reports {
       xml.enabled true

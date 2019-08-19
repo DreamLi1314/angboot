@@ -63,10 +63,6 @@ task cleanAll(type: Delete, dependsOn: [clean]) {
    delete = ['node_modules', '.gradle']
 }
 
-task rebuild(dependsOn: [cleanAll, build]) {
-   group 'rebuild'
-}
-
 task watch(type: NpmTask, dependsOn: npmInstall) {
    group 'build'
    description 'watch angular compile'

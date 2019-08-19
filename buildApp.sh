@@ -1,0 +1,1 @@
+./gradlew java:authority:build java:client:build web:build

@@ -28,7 +28,7 @@ You should have installed the following software and configure the corresponding
 ## 3. Run application
 > execute follow command for install dependencies in your terminal, Note: **just first**.
 ```
-gradlew[.bat] build
+gradlew[.bat] buildApp
 ```
 > execute follow command for start up application
 ```
