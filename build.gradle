@@ -42,7 +42,7 @@ task cleanAll(type: Delete, dependsOn: [clean]) {
 task buildApp(type: Exec) {
    group 'build'
 
-   def cmd = isWindows ? 'buildApp.bat' : './buildApp';
+   def cmd = isWindows ? 'buildApp.bat' : './buildApp'
 
    executable cmd
 }
