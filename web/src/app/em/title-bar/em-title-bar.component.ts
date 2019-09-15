@@ -1,8 +1,8 @@
-/*!
- * Copyright (c) 2017, InetSoft Technology Corp, All Rights Reserved.
+/*
+ * Copyright (c) 2019, AngBoot Technology Corp, All Rights Reserved.
  *
  * The software and information contained herein are copyrighted and
- * proprietary to InetSoft Technology Corp. This software is furnished
+ * proprietary to AngBoot Technology Corp. This software is furnished
  * pursuant to a written license agreement and may be used, copied,
  * transmitted, and stored only in accordance with the terms of such
  * license and with the inclusion of the above copyright notice. Please
@@ -12,7 +12,12 @@
  * person.
  */
 
-@import 'asset-variables';
-@import 'vs-variables';
-@import 'ws-variables';
+import { Component } from "@angular/core";
 
+@Component({
+   selector: "em-title-bar",
+   templateUrl: "em-title-bar.component.html",
+   styleUrls: ["em-title-bar.component.scss"]
+})
+export class EmTitleBarComponent {
+}

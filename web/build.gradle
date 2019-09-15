@@ -20,6 +20,12 @@ node {
    workDir = file("${project.gradle.gradleUserHomeDir}/caches/tools")
 }
 
+task generateIndexFiles(type: NpmTask, dependsOn: npmInstall) {
+   group 'build'
+   description 'Generate index files.'
+   args = ['run', 'generate-index-files']
+}
+
 task compile(type: NpmTask, dependsOn: npmInstall) {
    group 'build'
    description 'Compile angular'

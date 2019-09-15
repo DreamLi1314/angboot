@@ -21,7 +21,9 @@
 
 import { Type } from "@angular/core";
 import { EmMonitorComponent } from "./monitor/em-monitor.component";
+import { EmTitleBarComponent } from "./title-bar/em-title-bar.component";
 
 export const MODULE_COMPONENTS: Type<any>[] = [
-   EmMonitorComponent
+   EmMonitorComponent,
+   EmTitleBarComponent
 ];

@@ -1,8 +1,10 @@
-@import 'variables/_variables';
-@import './_mixins';
-@import './_forms';
-@import './_layout';
-@import './_themeable';
-@import './_handles';
-@import "icons";
-@import "./portal/portal";
+
+@import "./internal/bootstrap-override";
+@import "./internal/html-override";
+
+// customer style
+@import "variable";
+@import "layout";
+@import "color";
+@import "icon";
+
