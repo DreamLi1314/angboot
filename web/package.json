@@ -1,6 +1,6 @@
 {
   "name": "angboot-web",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "scripts": {
     "ng": "node --max-old-space-size=6000 ./node_modules/@angular/cli/bin/ng",
     "start": "npm run ng -- serve",
@@ -14,7 +14,7 @@
     "lint": "tsc -p rules/tsconfig.json && npm run ng -- lint",
     "e2e": "npm run ng -- e2e --serve false",
     "generate-index-files": "node ./generate-index-files.js",
-    "report-coverage": "codecov --token=1eb18219-afec-47c9-8f90-1210b4ec4d07"
+    "report-coverage": "codecov --token=1eb18219-afec-47c9-8f90-1210b4ec4d07",
   },
   "private": true,
   "dependencies": {
@@ -36,8 +36,7 @@
     "rxjs": "^6.5.2",
     "split.js": "^1.5.11",
     "stompjs": "^2.3.3",
-    "zone.js": "^0.8.19",
-    "font-awesome": "^4.7.0"
+    "zone.js": "^0.8.19"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.8",
