@@ -1,66 +1,9 @@
-$portal-navbar-height: 52px;
+$em-title-bar-height: 52px;
 
-.title-bar-icon {
-   height: 33px !important;
-   width: 33px !important;
-}
-
-.em-title-body {
-   padding: 0px;
-   margin: 0px;
-   height: 50px;
-}
-
-.logo-icon-size {
+.em-title-icon-size {
    font-size: 24px;
    text-align: center;
-   vertical-align: center;
-   min-width: 50px;
-   height: 50px;
-   width: 50px;
-   margin-right: 10px;
-}
-
-.nav-icon-size {
-   font-size: 24px !important;
-   color: #ffffff;
-   text-align: center;
-   vertical-align: center;
-}
-
-.em-toolbar-icon {
    vertical-align: middle;
-}
-
-.em-navbar {
-   padding: 0;
-   height: $portal-navbar-height;
-
-   .navbar-nav {
-      flex-direction: row;
-   }
-
-   .nav-item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 42px;
-      height: 52px;
-      //margin: 0px 5px;
-
-      &.disabled {
-         background-color: transparent;
-         opacity: 0.3;
-         cursor: default;
-         pointer-events: none;
-      }
-
-      a :active, :visited, :link {
-         background-color: #424242;
-      }
-   }
-
-   .nav-link {
-      cursor: pointer;
-   }
+   height: $em-title-bar-height;
+   min-width: $em-title-bar-height;
 }
