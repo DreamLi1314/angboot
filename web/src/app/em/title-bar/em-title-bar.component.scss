@@ -5,5 +5,15 @@ $em-title-bar-height: 52px;
    text-align: center;
    vertical-align: middle;
    height: $em-title-bar-height;
+}
+
+.em-angboot-icon-size {
+   @extend .em-title-icon-size;
    min-width: $em-title-bar-height;
+   margin-right: 5px;
+}
+
+.em-tile-bar-icon-size {
+   @extend .em-title-icon-size;
+   min-width: 42px;
 }

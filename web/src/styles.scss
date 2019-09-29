@@ -1,3 +1,10 @@
+$angboot-orange: #ed711c;
+
+$primary: $angboot-orange;
+
+$input-btn-focus-color: $primary;
+
+
 @import '~bootstrap/scss/bootstrap';
 @import "~bootstrap-float-label/bootstrap-float-label";
 
