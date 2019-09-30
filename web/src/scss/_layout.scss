@@ -4,3 +4,21 @@
    width: 100%;
    background: $bg-title-bar-container;
 }
+
+.base-title-bar-icon-size {
+   font-size: 24px;
+   text-align: center;
+   vertical-align: middle;
+   height: $title-bar-height;
+}
+
+.angboot-icon-size {
+   @extend .base-title-bar-icon-size;
+   min-width: $title-bar-height;
+   margin-right: 5px;
+}
+
+.tile-bar-icon-size {
+   @extend .base-title-bar-icon-size;
+   min-width: 42px;
+}
