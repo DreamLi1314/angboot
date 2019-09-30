@@ -15,33 +15,33 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { MatToolbarModule } from "@angular/material";
+import {
+   MatButtonModule, MatInputModule, MatSidenavModule, MatSnackBarModule, MatToolbarModule
+} from "@angular/material";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { EMAppComponent } from "./app.component";
-import { MODULE_COMPONENTS } from "./index.components";
-import { EMAppRoutingModule } from "./app-routing.module";
-import { EmMonitorModule } from "./monitor/em-monitor.module";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { WidgetModule } from "../../widget/widget.module";
+import { EmMonitorRoutingModule } from "./em-monitor-routing.module";
+import { EmMonitorComponent } from "./em-monitor.component";
 
 @NgModule({
    declarations: [
-      EMAppComponent,
-      ...MODULE_COMPONENTS
+      EmMonitorComponent,
    ],
    imports: [
       CommonModule,
       FormsModule,
       ReactiveFormsModule,
-      EMAppRoutingModule,
-      EmMonitorModule,
-      MatToolbarModule
-   ],
-   bootstrap: [
-      EMAppComponent
+      EmMonitorRoutingModule,
+      MatButtonModule,
+      MatSnackBarModule,
+      MatSidenavModule,
+      MatInputModule
    ],
    entryComponents: [
    ],
    providers: [
    ]
 })
-export class EmAppModule {
+export class EmMonitorModule {
 }

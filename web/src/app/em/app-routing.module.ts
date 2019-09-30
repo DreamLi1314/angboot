@@ -24,7 +24,7 @@ const appRoutes: Routes = [
       children: [
          {
             path: "monitor",
-            component: EmMonitorComponent
+            loadChildren: "./monitor/em-monitor.module#EmMonitorModule"
          },
          {
             path: "**",

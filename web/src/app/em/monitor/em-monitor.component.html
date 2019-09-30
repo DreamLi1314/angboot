@@ -1,1 +1,15 @@
-Monitor....
+<mat-drawer-container class="em-monitor-container" autosize>
+  <mat-drawer #drawer mode="side" opened class="em-monitor-left-sidenav">
+    <div class="mat-drawer-inner-container">
+      Monitoring
+    </div>
+  </mat-drawer>
+
+  <div class="em-monitor-right-sidenav">
+    Monitor content...
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div>
+
+</mat-drawer-container>

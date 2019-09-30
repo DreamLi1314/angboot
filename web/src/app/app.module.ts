@@ -12,6 +12,7 @@
  * person.
  */
 
+import { CommonModule } from "@angular/common";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
@@ -22,6 +23,7 @@ import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
 import { CsrfInterceptor } from "./common/services/csrf-interceptor";
 import { HttpDebounceInterceptor } from "./common/services/http-debounce-interceptor";
 import { HttpParamsCodecInterceptor } from "./common/services/http-params-codec-interceptor";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export const httpInterceptorProviders = [
    {provide: HTTP_INTERCEPTORS, useClass: HttpDebounceInterceptor, multi: true},
@@ -35,7 +37,8 @@ export const httpInterceptorProviders = [
       AppComponent
    ],
    imports: [
-      BrowserModule,
+      CommonModule,
+      BrowserAnimationsModule,
       HttpClientModule,
       AppRoutingModule,
       NgbModalModule.forRoot()
