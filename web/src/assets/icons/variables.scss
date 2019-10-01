@@ -1,7 +1,11 @@
 $edit-icon: "\e900";
 $home-icon: "\e901";
+$icon-menu-off: "\e902";
+$icon-menu-on: "\e903";
 
 $angboot-base-map: (
    edit-icon: $edit-icon,
-   home-icon: $home-icon
+   home-icon: $home-icon,
+   icon-menu-off: $icon-menu-off,
+   icon-menu-on: $icon-menu-on
 );

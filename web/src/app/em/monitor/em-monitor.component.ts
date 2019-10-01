@@ -12,12 +12,28 @@
  * person.
  */
 
-import { Component } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { MatDrawer } from "@angular/material";
+import { BaseSubscription } from "../../widget/base/BaseSubscription";
+import { SidenavService } from "../service/SidenavService";
 
 @Component({
    selector: "em-monitor",
    templateUrl: "em-monitor.component.html",
    styleUrls: ["em-monitor.component.scss"]
 })
-export class EmMonitorComponent {
+export class EmMonitorComponent extends BaseSubscription implements OnInit {
+   @ViewChild("drawer") sidenav: MatDrawer;
+
+   constructor(private sidenavService: SidenavService) {
+      super();
+   }
+
+   ngOnInit(): void {
+      this.subscriptions.add(this.sidenavService.onSidenavToggle.subscribe(() => {
+         this.sidenav.toggle();
+      }));
+   }
+
+
 }

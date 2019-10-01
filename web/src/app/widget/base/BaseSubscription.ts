@@ -12,23 +12,16 @@
  * person.
  */
 
-import { Component } from "@angular/core";
-import { SidenavService } from "../service/SidenavService";
+import { OnDestroy } from "@angular/core";
+import { Subscription } from "rxjs";
 
-@Component({
-   selector: "em-tool-bar",
-   templateUrl: "em-tool-bar.component.html",
-   styleUrls: ["em-tool-bar.component.scss"]
-})
-export class EmToolBarComponent {
-   constructor(private sidenavService: SidenavService) {}
+export class BaseSubscription implements OnDestroy {
+   protected subscriptions = new Subscription();
 
-   get isToggle(): boolean {
-      return this.sidenavService.isToggle;
+   ngOnDestroy(): void {
+      if(!!this.subscriptions) {
+         this.subscriptions.unsubscribe();
+         this.subscriptions = null;
+      }
    }
-
-   toggle(): void {
-      this.sidenavService.toggle();
-   }
-
 }

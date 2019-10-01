@@ -12,23 +12,24 @@
  * person.
  */
 
-import { Component } from "@angular/core";
-import { SidenavService } from "../service/SidenavService";
+import { Injectable, OnDestroy } from "@angular/core";
+import { Subject } from "rxjs";
 
-@Component({
-   selector: "em-tool-bar",
-   templateUrl: "em-tool-bar.component.html",
-   styleUrls: ["em-tool-bar.component.scss"]
-})
-export class EmToolBarComponent {
-   constructor(private sidenavService: SidenavService) {}
+@Injectable()
+export class SidenavService implements OnDestroy {
+   isToggle: boolean = true;
+   onSidenavToggle = new Subject<void>();
 
-   get isToggle(): boolean {
-      return this.sidenavService.isToggle;
+   ngOnDestroy(): void {
+      if(!!this.onSidenavToggle) {
+         this.onSidenavToggle.unsubscribe();
+         this.onSidenavToggle = null;
+      }
    }
 
-   toggle(): void {
-      this.sidenavService.toggle();
-   }
+   toggle: () => void = () => {
+      this.isToggle = !this.isToggle;
+      this.onSidenavToggle.next();
+   };
 
 }

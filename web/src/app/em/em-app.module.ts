@@ -15,12 +15,13 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { MatToolbarModule } from "@angular/material";
+import { MatButtonModule, MatToolbarModule } from "@angular/material";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { EMAppComponent } from "./app.component";
 import { MODULE_COMPONENTS } from "./index.components";
 import { EMAppRoutingModule } from "./app-routing.module";
 import { EmMonitorModule } from "./monitor/em-monitor.module";
+import { SidenavService } from "./service/SidenavService";
 
 @NgModule({
    declarations: [
@@ -33,7 +34,8 @@ import { EmMonitorModule } from "./monitor/em-monitor.module";
       ReactiveFormsModule,
       EMAppRoutingModule,
       EmMonitorModule,
-      MatToolbarModule
+      MatToolbarModule,
+      MatButtonModule
    ],
    bootstrap: [
       EMAppComponent
@@ -41,6 +43,7 @@ import { EmMonitorModule } from "./monitor/em-monitor.module";
    entryComponents: [
    ],
    providers: [
+      SidenavService
    ]
 })
 export class EmAppModule {

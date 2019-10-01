@@ -8,5 +8,11 @@
   // clear color
   color: #ffffff;
   // clear radius
-  border-radius: 0rem;
+  border-radius: 0px;
+
+}
+
+.btn:hover, .btn:focus {
+  // clear display border after click btn.
+  box-shadow: none;
 }
