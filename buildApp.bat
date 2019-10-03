@@ -1,1 +1,1 @@
-gradlew java:authority:build java:client:build web:build
+gradlew providers:authority:build client:server:build web:build

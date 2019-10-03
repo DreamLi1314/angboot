@@ -3,5 +3,3 @@ rootProject.name = 'angboot'
 include 'api:interfaces', 'api:models'
 include 'providers:authority'
 include 'client:server', 'client:web'
-
-enableFeaturePreview('STABLE_PUBLISHING')
