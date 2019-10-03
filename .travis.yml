@@ -3,7 +3,7 @@ sudo: false
 
 jdk:
    - openjdk8
-   - oraclejdk8
+#   - oraclejdk8 # CI can't download oracle jdk8
 
 # cache
 cache: false

@@ -2,308 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83fa93de-1df5-41eb-96c5-dd710bd06a47" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/angboot.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angboot.iws" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/angboot.java.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/authority/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/authority/angboot.java.authority.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/authority/angboot.java.authority.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/authority/angboot.java.authority.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/authority/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/authority/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/angboot.java.client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/angboot.java.client.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/angboot.java.client.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/AngbootApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/authority/controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/authority/dao/AuthorizationDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/authority/dao/RoleDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/authority/dao/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/authority/model/CasClientProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/authority/model/CasServerProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/authority/model/SecurityConstant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/authority/service/AngBootUserDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/authority/service/AuthorizationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/authority/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/config/AngBootCasSecurityConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/config/AngBootErrorConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/config/AngBootSecurityConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/config/AngBootWebMvcConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/config/DruidConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/config/MybatisConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/util/AngBootEnv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/util/AngBootUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/util/ConditionalOnCasEnable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/util/ConfigurationContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/util/DefaultProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/util/FileSystemService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/util/SingletonManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/util/db/DBConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/java/org/angboot/web/portal/controller/WelcomePageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/banner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/config/default.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/install/angbootdb/AngBoot_db.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/install/angbootdb/AngBoot_db.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/install/config/datasource.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/install/config/init_authorities.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/install/config/init_roles.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/install/config/init_users.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/public/bootstrap-float-label.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/public/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/test/java/org/angboot/AngbootApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/test/java/org/angboot/authority/dao/RoleDaoTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/test/java/org/angboot/authority/dao/UserDaoTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/test/java/org/angboot/authority/service/UserServiceTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/test/java/org/angboot/config/TestDatasourceConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/test/resources/angbootdb/AngBoot_db.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/test/resources/angbootdb/AngBoot_db.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/client/src/test/resources/config/test_datasource.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/angboot.java.interfaces.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/angboot.java.interfaces.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/angboot.java.interfaces.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/banner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/config/default.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/install/angbootdb/AngBoot_db.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/install/angbootdb/AngBoot_db.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/install/config/datasource.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/install/config/init_authorities.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/install/config/init_roles.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/install/config/init_users.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/public/bootstrap-float-label.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/public/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/interfaces/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/angboot.java.models.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/angboot.java.models.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/angboot.java.models.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/java/org/angboot/domain/Authorization.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/java/org/angboot/domain/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/java/org/angboot/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/java/org/angboot/web/portal/model/WelcomePageModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/banner.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/config/default.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/install/angbootdb/AngBoot_db.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/install/angbootdb/AngBoot_db.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/install/config/datasource.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/install/config/init_authorities.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/install/config/init_roles.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/install/config/init_users.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/public/bootstrap-float-label.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/public/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/models/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/.node-version" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/.npm-version" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/.nvmrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/angboot.web.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/generate-index-files.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jasmine-junit-reporter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/junit-report-builder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/karma-junit-reporter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/rules/noCrossDependenciesRule.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/rules/noCrossDependenciesRule.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/rules/noCrossDependenciesRule.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/rules/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/action/assembly-action-event.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/action/assembly-action-group.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/action/assembly-action.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/data/dimension.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/data/notification.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/data/point.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/data/rectangle.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/services/csrf-interceptor.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/services/http-debounce-interceptor.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/services/http-params-codec-interceptor.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/services/ui-context.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/test/test-module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/test/test-utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/util/component-tool.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/util/gui-tool.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/util/net-tool.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/util/tool.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/common/util/uri-codec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/em-app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/index.components.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/index.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/service/SidenavService.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/index.components.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/index.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/portal-app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/welcome/welcome.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/welcome/welcome.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/portal/welcome/welcome.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/base/BaseSubscription.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/dialog/message-dialog.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/dialog/message-dialog.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/dialog/message-dialog.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/directive/block-mouse.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/directive/default-focus.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/directive/enter-click.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/directive/enter-submit.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/directive/fixed-dropdown.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/directive/input-trim.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/directive/out-of-zone.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/directive/resizable-table.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/directive/selection-box.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/directive/sort-column.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/directive/tooltip-if.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/directive/touch-scroll.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/dom-service/animation-frame-batcher.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/dom-service/dom.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/dropdown-view/dropdown-view.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/dropdown-view/dropdown-view.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/dropdown-view/dropdown-view.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/error/error.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/error/error.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/error/error.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/expand-string/expand-string.directive.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/expand-string/expand-string.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/actions-contextmenu-anchor.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/actions-contextmenu.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/actions-contextmenu.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/actions-contextmenu.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/actions-contextmenu.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/contextmenu-dropdown-anchor.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/dropdown-options.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/dropdown-stack.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/fixed-dropdown-contextmenu.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/fixed-dropdown-contextmenu.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/fixed-dropdown-ref.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/fixed-dropdown.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/fixed-dropdown.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/fixed-dropdown/fixed-dropdown.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/index.components.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/index.directives.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/index.pipes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/index.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/notification/notifications.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/notification/notifications.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/notification/notifications.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/notification/notifications.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/pipe/number-to-array.pipe.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/pipe/truncate.pipe.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/services/debounce.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/services/model.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/slide-out/apply-button.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/slide-out/apply-button.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/slide-out/apply-button.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/slide-out/dialog-service.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/slide-out/slide-out-backdrop.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/slide-out/slide-out-options.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/slide-out/slide-out-ref.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/slide-out/slide-out.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/slide-out/slide-out.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/slide-out/slide-out.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/slide-out/slide-out.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/split/split-pane.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/split/split-pane.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/split/split-pane.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/tooltip/tooltip.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/tooltip/tooltip.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/tooltip/tooltip.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/tooltip/tooltip.directive.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/tooltip/tooltip.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/tree/model/tree-node-model.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/tree/node/tree-node.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/tree/node/tree-node.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/tree/node/tree-node.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/tree/repository-tree.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/tree/repository-tree.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/tree/repository-tree.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/widget/widget.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/icons/fonts/angboot.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/icons/fonts/angboot.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/icons/fonts/angboot.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/icons/fonts/angboot.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/icons/icons_svg/edit.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/icons/icons_svg/home.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/icons/icons_svg/menu off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/icons/icons_svg/menu on.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/icons/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/assets/icons/variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/scss/_color.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/scss/_icon.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/scss/_imports.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/scss/_layout.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/scss/_variable.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/scss/internal/_bootstrap-override.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/scss/internal/html-override.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/typings.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -460,11 +159,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/providers/authority/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="182">
               <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -557,7 +265,6 @@
         <option value="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.spec.ts" />
         <option value="$PROJECT_DIR$/web/src/app/portal/app.component.html" />
         <option value="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.html" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/web/src/main.ts" />
         <option value="$PROJECT_DIR$/web/src/scss/internal/html-override.scss" />
         <option value="$PROJECT_DIR$/web/src/index.html" />
@@ -592,6 +299,7 @@
         <option value="$PROJECT_DIR$/api/models/build.gradle" />
         <option value="$PROJECT_DIR$/api/interfaces/build.gradle" />
         <option value="$PROJECT_DIR$/providers/authority/build.gradle" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -817,7 +525,7 @@
       <workItem from="1569807533868" duration="7216000" />
       <workItem from="1569920026217" duration="8000000" />
       <workItem from="1570071484249" duration="22000" />
-      <workItem from="1570071533543" duration="1244000" />
+      <workItem from="1570071533543" duration="1656000" />
     </task>
     <servers />
   </component>
@@ -830,13 +538,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68504000" />
+    <option name="totallyTimeSpent" value="68916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="961" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22911549" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22911549" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -853,7 +561,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.3276492" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32886723" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32886723" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5006142" side_tool="true" weight="0.25700366" />
       <window_info anchor="bottom" id="Problems" order="12" />
@@ -867,7 +575,7 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.32942432" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.2837838" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.2837838" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -878,7 +586,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/index.yaml" />
     <entry file="file://$PROJECT_DIR$/web/package.json" />
     <entry file="file://$PROJECT_DIR$/web/src/app/em/app-routing.module.ts" />
     <entry file="file://$PROJECT_DIR$/web/angular.json" />
@@ -984,6 +691,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
     </entry>
