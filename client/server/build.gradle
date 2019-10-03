@@ -1,0 +1,132 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+plugins {
+   id 'org.springframework.boot' version '2.1.6.RELEASE'
+   id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'jacoco'
+
+sourceCompatibility = '1.8'
+
+configurations {
+   api
+   tools
+   developmentOnly
+   compile.extendsFrom(api)
+   compileOnly.extendsFrom(tools, annotationProcessor)
+}
+
+repositories {
+   mavenLocal()
+   mavenCentral()
+}
+
+dependencies {
+   // modules
+   api project(':api:models')
+   api project(':api:interfaces')
+
+   // spring boot
+   implementation 'org.springframework.boot:spring-boot-starter-web'
+   implementation 'org.springframework.boot:spring-boot-starter-cache'
+   implementation 'org.springframework.boot:spring-boot-starter-security'
+   implementation 'org.springframework.boot:spring-boot-starter-actuator'
+   implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+   // spring
+   implementation 'org.springframework.security:spring-security-cas'
+
+   // mybatis
+   implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.1'
+
+   // database
+   runtimeOnly 'com.h2database:h2'
+   implementation 'com.alibaba:druid:1.1.18'
+
+   // webjars
+   implementation 'org.webjars:jquery:3.3.1-2'
+   implementation 'org.webjars:bootstrap:4.3.1'
+
+   // only development
+   developmentOnly 'org.springframework.boot:spring-boot-devtools'
+   annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+   // tools
+   tools "org.projectlombok:lombok:$lombokVersion"
+   annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+
+   // test
+   testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+task prepareData(type: Copy) {
+   def dataDir = file("$buildDir/data")
+
+   if(!dataDir.exists()) {
+      from 'src/main/resources/install/angbootdb'
+      into "$buildDir/data/angbootdb"
+   }
+}
+
+task prepareConfig(type: Copy) {
+   def workHomeDir = file("$buildDir/config")
+
+   if(!workHomeDir.exists()) {
+      from 'src/main/resources/install/config'
+      into "$buildDir/config"
+      exclude '*.sql'
+
+      filesMatching('datasource.properties') {
+         String replacement = file("$buildDir/data").getCanonicalPath().replace('\\', '/')
+         filter ReplaceTokens, tokens: ['DATA_DIR': replacement]
+      }
+
+      doLast {
+         String angbootHome = workHomeDir.getCanonicalPath()
+         ant.propertyfile(file: file("$buildDir/config/angboot.properties")) {
+            entry(key: 'angboot.home', value: angbootHome)
+         }
+      }
+   }
+}
+
+task prepareAseets(dependsOn: [prepareData, prepareConfig]) {
+}
+
+//compileJava.dependsOn prepareAseets
+
+task server(dependsOn: prepareAseets) {
+   group 'application'
+   description 'run the application'
+
+   doLast {
+      def propFile = file("$buildDir/config/angboot.properties")
+      def angbootProp =  new Properties()
+      angbootProp.load(new FileInputStream(propFile))
+      String angbootHome =  angbootProp.getProperty("angboot.home")
+
+      javaexec {
+         classpath sourceSets.main.runtimeClasspath
+         main = 'org.angboot.AngbootApplication'
+         jvmArgs = [
+            '-Dspring.profiles.active=dev',
+            '-Djava.rmi.server.hostname=127.0.0.1',
+            '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5009']
+         args = ['--stop-port', '8082', '--stop-key', 'stop', "angboot.home=$angbootHome"]
+      }
+   }
+}
+
+task cleanAll(type: Delete, dependsOn: [clean]) {
+   group 'build'
+   delete = ['.gradle']
+}
+
+jacocoTestReport {
+   reports {
+      xml.enabled true
+      html.enabled false
+   }
+}

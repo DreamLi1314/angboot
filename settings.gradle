@@ -1,2 +1,5 @@
 rootProject.name = 'angboot'
-include 'java', 'web'
+
+include 'api:interfaces', 'api:models'
+include 'providers:authority'
+include 'client:server', 'client:web'

@@ -1,0 +1,26 @@
+plugins {
+   id 'java'
+}
+
+sourceCompatibility = '1.8'
+
+configurations {
+   tools
+   compileOnly.extendsFrom(tools, annotationProcessor)
+}
+
+repositories {
+   mavenLocal()
+   mavenCentral()
+}
+
+dependencies {
+   // tools
+   tools "org.projectlombok:lombok:$lombokVersion"
+   annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+}
+
+task cleanAll(type: Delete, dependsOn: [clean]) {
+   group 'build'
+   delete = ['.gradle']
+}

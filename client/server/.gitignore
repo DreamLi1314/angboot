@@ -1,0 +1,22 @@
+# Include dir
+#!build/**
+
+# Environment
+.idea/
+.gradle
+MANIFEST.MF
+.DS_Store
+
+# Compiled class file
+*.class
+/target
+/bin
+/out
+/build
+
+# Log file
+*.log
+*.log.gz
+
+# Package Files #
+

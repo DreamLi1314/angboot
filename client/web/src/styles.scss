@@ -1,0 +1,16 @@
+$angboot-orange: #ed711c;
+
+$angboot-default-icon-color: #6d6d6d;
+$angboot-text-dark: #202020;
+$angboot-text-light: #fff;
+
+$primary: $angboot-orange;
+
+$input-btn-focus-color: $primary;
+
+
+@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap-float-label/bootstrap-float-label";
+
+@import "./assets/icons/style.scss";
+@import './scss/_imports';

@@ -1,3 +1,5 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
 buildscript {
    repositories {
       maven{
@@ -15,6 +17,15 @@ allprojects {
          url 'http://maven.aliyun.com/nexus/content/groups/public/'
       }
    }
+
+   buildscript {
+      ext {
+         apiVersion = "0.1.0-SNAPSHOT"
+         springBootVersion = '2.1.6.RELEASE'
+         lombokVersion = '1.18.8'
+         isWindows = Os.isFamily(Os.FAMILY_WINDOWS)
+      }
+   }
 }
 
 apply plugin: 'jacoco'
@@ -26,6 +37,14 @@ task clean(type: Delete) {
 
 task cleanAll(type: Delete, dependsOn: [clean]) {
    group 'build'
+}
+
+task buildApp(type: Exec) {
+   group 'build'
+
+   def cmd = isWindows ? 'buildApp.bat' : './buildApp'
+
+   executable cmd
 }
 
 task codeCoverageReport(type: JacocoReport) {

@@ -13,7 +13,7 @@ You can download this app source on [GitHub](https://github.com/DreamLi1314/angb
 ### 2.1 Start up the application
 First you should perform an init once to install the dependencies needed for your project, but only if you need it on the first boot.
 ``` shell
-gradlew[.bat] build
+gradlew[.bat] buildApp
 ```
 After each start, you only need to run the following command to start the application:
 ``` shell
@@ -23,7 +23,7 @@ gradlew[.bat] server
 ### 2.2 Modify the code for yourself
 When you modify the source code, you can execute the following command to compile the source code:
 ``` shell
-gradlew[.bat] build
+gradlew[.bat] buildApp
 ```
 If you only modified the java code, you can also compile the Java source code and launch the application by executing the following command:
 ``` shell
@@ -41,16 +41,21 @@ You can use the following command to clean up the program output file:
 gradlew[.bat] clean
 ```
 
+You can use the following command to clean up the program output file(contains node dependencies):
+``` shell
+gradlew[.bat] cleanAll
+```
+
 #### 2.3.2 Rebuild
 You can also rebuild external code (node dependencies) with the following command:
 ``` shell
-gradlew[.bat] rebuild
+gradlew[.bat] cleanAll buildApp
 ```
 
 ## 3. Configuration
 ### 3.1 Enable CAS for SSO
-You need config follow property to `angboot/java/build/config/angboot.properties`
-```properties
+You need config follow property to `angboot/java/client/build/config/angboot.properties`
+``` properties
 # cas enable
 angboot.cas.enabled=true
 

@@ -3,6 +3,7 @@ sudo: false
 
 jdk:
    - openjdk8
+#   - oraclejdk8 # CI can't download oracle jdk8
 
 # cache
 cache: false
@@ -11,6 +12,7 @@ cache: false
 before_install:
 # For permission denied in travis-ci
    - chmod +x gradlew
+   - chmod +x buildApp
 
 services:
 # For karma test to start browser.
@@ -21,9 +23,8 @@ install: skip
 # build
 script:
    - ./gradlew cleanAll
-   - ./gradlew java:build
+   - ./gradlew buildApp
    - ./gradlew jacocoTestReport
-   - ./gradlew web:build
    - ./gradlew codeCoverageReport
 
 # notifications

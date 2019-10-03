@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83fa93de-1df5-41eb-96c5-dd710bd06a47" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angboot.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angboot.iws" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildApp" beforeDir="false" afterPath="$PROJECT_DIR$/buildApp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildApp.bat" beforeDir="false" afterPath="$PROJECT_DIR$/buildApp.bat" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -16,6 +13,38 @@
     <ignored path="$PROJECT_DIR$/web/.gradle/" />
     <ignored path="$PROJECT_DIR$/web/build/" />
     <ignored path="$PROJECT_DIR$/java/out/" />
+    <ignored path="$PROJECT_DIR$/java/client/.gradle/" />
+    <ignored path="$PROJECT_DIR$/java/client/build/" />
+    <ignored path="$PROJECT_DIR$/java/client/out/" />
+    <ignored path="$PROJECT_DIR$/java/authority/.gradle/" />
+    <ignored path="$PROJECT_DIR$/java/authority/build/" />
+    <ignored path="$PROJECT_DIR$/java/models/.gradle/" />
+    <ignored path="$PROJECT_DIR$/java/models/build/" />
+    <ignored path="$PROJECT_DIR$/java/interfaces/.gradle/" />
+    <ignored path="$PROJECT_DIR$/java/interfaces/build/" />
+    <ignored path="$PROJECT_DIR$/java/models/out/" />
+    <ignored path="$PROJECT_DIR$/java/interfaces/out/" />
+    <ignored path="$PROJECT_DIR$/java/authority/out/" />
+    <ignored path="$PROJECT_DIR$/api/.gradle/" />
+    <ignored path="$PROJECT_DIR$/api/build/" />
+    <ignored path="$PROJECT_DIR$/client/.gradle/" />
+    <ignored path="$PROJECT_DIR$/client/build/" />
+    <ignored path="$PROJECT_DIR$/providers/.gradle/" />
+    <ignored path="$PROJECT_DIR$/providers/build/" />
+    <ignored path="$PROJECT_DIR$/api/interfaces/.gradle/" />
+    <ignored path="$PROJECT_DIR$/api/interfaces/build/" />
+    <ignored path="$PROJECT_DIR$/api/interfaces/out/" />
+    <ignored path="$PROJECT_DIR$/api/models/.gradle/" />
+    <ignored path="$PROJECT_DIR$/api/models/build/" />
+    <ignored path="$PROJECT_DIR$/api/models/out/" />
+    <ignored path="$PROJECT_DIR$/client/server/.gradle/" />
+    <ignored path="$PROJECT_DIR$/client/server/build/" />
+    <ignored path="$PROJECT_DIR$/client/server/out/" />
+    <ignored path="$PROJECT_DIR$/client/web/.gradle/" />
+    <ignored path="$PROJECT_DIR$/client/web/build/" />
+    <ignored path="$PROJECT_DIR$/providers/authority/.gradle/" />
+    <ignored path="$PROJECT_DIR$/providers/authority/build/" />
+    <ignored path="$PROJECT_DIR$/providers/authority/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +68,70 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/java">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/web">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/java/authority">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/java/client">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/client/web">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="angboot" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="angboot" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="angboot" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="angboot" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="angboot" type="f1a62948:ProjectNode" />
+                <item name="client" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="angboot" type="f1a62948:ProjectNode" />
+                <item name="client" type="2d1252cf:ModuleNode" />
+                <item name="web" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="angboot" type="f1a62948:ProjectNode" />
+                <item name="client" type="2d1252cf:ModuleNode" />
+                <item name="web" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="angboot" type="f1a62948:ProjectNode" />
+                <item name="client" type="2d1252cf:ModuleNode" />
+                <item name="web" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -54,35 +141,127 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/build.gradle">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="214">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/server/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/web/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/buildApp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="378">
-                <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/buildApp.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="61" selection-start-column="61" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/web/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="SCSS File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>lomb</find>
       <find>.gradle</find>
+      <find>client</find>
+      <find>models</find>
+      <find>DATA_DIR</find>
+      <find>app</find>
+      <find>NgbModule</find>
+      <find>jque</find>
+      <find>nav</find>
+      <find>'</find>
+      <find>boots</find>
+      <find>os752d</find>
+      <find>title-bar-icon</find>
+      <find>fontawesome</find>
+      <find>font-awesome</find>
+      <find>font</find>
+      <find>boo</find>
+      <find>bootstrap-float-label</find>
+      <find>$portal-navbar-height</find>
+      <find>em-navbar</find>
+      <find>roboto-fontface</find>
+      <find>EmMonitorComponent</find>
+      <find>BrowserModule</find>
+      <find>_test-output</find>
+      <find>cle</find>
+      <find>isWindows</find>
     </findStrings>
+    <replaceStrings>
+      <replace>models</replace>
+      <replace>&quot;</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/web/src/app/em/title-bar</dir>
+      <dir>$PROJECT_DIR$/web/src/scss</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,9 +269,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/build.gradle" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/web/src/scss/internal/_layout.scss" />
+        <option value="$PROJECT_DIR$/web/src/scss/_imports.scss" />
+        <option value="$PROJECT_DIR$/web/src/scss/_icon.scss" />
+        <option value="$PROJECT_DIR$/web/src/scss/_variable.scss" />
+        <option value="$PROJECT_DIR$/web/src/scss/_layout.scss" />
+        <option value="$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.html" />
+        <option value="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.ts" />
+        <option value="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.scss" />
+        <option value="$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.scss" />
+        <option value="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.spec.ts" />
+        <option value="$PROJECT_DIR$/web/src/app/portal/app.component.html" />
+        <option value="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.html" />
+        <option value="$PROJECT_DIR$/web/src/main.ts" />
+        <option value="$PROJECT_DIR$/web/src/scss/internal/html-override.scss" />
+        <option value="$PROJECT_DIR$/web/src/index.html" />
+        <option value="$PROJECT_DIR$/web/package.json" />
+        <option value="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor-routing.module.ts" />
+        <option value="$PROJECT_DIR$/web/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/web/src/app/em/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.scss" />
+        <option value="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.module.ts" />
+        <option value="$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.module.ts" />
+        <option value="$PROJECT_DIR$/web/src/app/em/index.components.ts" />
+        <option value="$PROJECT_DIR$/web/protractor.conf.js" />
+        <option value="$PROJECT_DIR$/web/src/app/em/app.component.ts" />
+        <option value="$PROJECT_DIR$/web/src/app/em/app.component.html" />
+        <option value="$PROJECT_DIR$/web/src/app/widget/dom-service/dom.service.ts" />
+        <option value="$PROJECT_DIR$/web/src/app/em/em-app.module.ts" />
+        <option value="$PROJECT_DIR$/web/src/app/em/service/SidenavService.ts" />
+        <option value="$PROJECT_DIR$/web/src/app/widget/base/BaseSubscription.ts" />
+        <option value="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.ts" />
+        <option value="$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.component.ts" />
+        <option value="$PROJECT_DIR$/web/src/assets/icons/variables.scss" />
+        <option value="$PROJECT_DIR$/web/src/styles.scss" />
+        <option value="$PROJECT_DIR$/web/src/assets/icons/style.scss" />
+        <option value="$PROJECT_DIR$/web/src/scss/_color.scss" />
+        <option value="$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.component.scss" />
+        <option value="$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.component.html" />
+        <option value="$PROJECT_DIR$/web/src/scss/internal/_bootstrap-override.scss" />
+        <option value="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.html" />
+        <option value="$PROJECT_DIR$/client/web/build.gradle" />
+        <option value="$PROJECT_DIR$/client/web/angular.json" />
+        <option value="$PROJECT_DIR$/client/server/build.gradle" />
+        <option value="$PROJECT_DIR$/api/models/build.gradle" />
+        <option value="$PROJECT_DIR$/api/interfaces/build.gradle" />
+        <option value="$PROJECT_DIR$/providers/authority/build.gradle" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/buildApp" />
+        <option value="$PROJECT_DIR$/buildApp.bat" />
       </list>
     </option>
   </component>
@@ -111,17 +338,19 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="961" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,28 +361,65 @@
             <path>
               <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="providers" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/server" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/web/node_modules/protractor" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2867647" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/web/node_modules/typescript/lib" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/server" />
+      <recent name="E:\Repositories\Java\angboot\v_0.2.0\angboot\web\src\app\portal\portal-title-bar" />
+      <recent name="$PROJECT_DIR$/web/src/assets" />
+      <recent name="$PROJECT_DIR$/web/src/scss" />
+      <recent name="E:\Repositories\Java\angboot\v_0.2.0\angboot\java\models\src\main\java\org\angboot\authority" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Repositories\Java\angboot\v_0.2.0\angboot\web\src\assets\icons" />
+      <recent name="$PROJECT_DIR$/web/src/scss" />
+      <recent name="$PROJECT_DIR$/web/src/scss/internal" />
+      <recent name="E:\Repositories\Java\angboot\v_0.2.0\angboot\java\authority\src\main\java\org\angboot" />
+      <recent name="E:\Repositories\Java\angboot\v_0.2.0\angboot\java\authority\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -167,83 +433,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.angboot [cleanAll]">
-    <configuration name="angboot [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="angboot [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="classes" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="angboot [cleanAll]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="cleanAll" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="angboot [prepareAseets]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="prepareAseets" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.angboot [server]">
     <configuration name="angboot [server]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -263,6 +453,77 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="angboot:client:web [watch]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/client/web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="watch" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="angboot:web [generateIndexFiles]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="generateIndexFiles" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="angboot:web [watch]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="watch" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="EmTitleBarComponent.should create the app" type="JavaScriptTestRunnerProtractor" temporary="true" nameIsGenerated="true">
+      <config-file value="$PROJECT_DIR$/web/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/web/node_modules/protractor" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.spec.ts" />
+      <test-names>
+        <test-name value="EmTitleBarComponent" />
+        <test-name value="should create the app" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="AngbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="angboot.java.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.angboot.AngbootApplication" />
@@ -272,11 +533,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.angboot [cleanAll]" />
-        <item itemvalue="Gradle.angboot [prepareAseets]" />
+        <item itemvalue="Gradle.angboot:client:web [watch]" />
         <item itemvalue="Gradle.angboot [server]" />
-        <item itemvalue="Gradle.angboot [build]" />
-        <item itemvalue="Gradle.angboot [classes]" />
+        <item itemvalue="Gradle.angboot:web [generateIndexFiles]" />
+        <item itemvalue="Gradle.angboot:web [watch]" />
+        <item itemvalue="Protractor.EmTitleBarComponent.should create the app" />
       </list>
     </recent_temporary>
   </component>
@@ -294,17 +555,37 @@
       <workItem from="1565181720135" duration="61000" />
       <workItem from="1565181811765" duration="363000" />
       <workItem from="1565229483034" duration="2485000" />
+      <workItem from="1565338867378" duration="1353000" />
+      <workItem from="1565570617932" duration="6021000" />
+      <workItem from="1565580293769" duration="3451000" />
+      <workItem from="1566216042318" duration="1601000" />
+      <workItem from="1566563420062" duration="7661000" />
+      <workItem from="1568031631128" duration="12113000" />
+      <workItem from="1569481691001" duration="6012000" />
+      <workItem from="1569742831591" duration="5848000" />
+      <workItem from="1569807533868" duration="7216000" />
+      <workItem from="1569920026217" duration="8000000" />
+      <workItem from="1570071484249" duration="22000" />
+      <workItem from="1570071533543" duration="3152000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="EmTitleBarComponent_should_create_the_app - 2019.08.23 at 23h 33m 56s.xml">
+      <configuration name="EmTitleBarComponent.should create the app" configurationId="JavaScriptTestRunnerProtractor" />
+    </history-entry>
+    <history-entry file="EmTitleBarComponent_should_create_the_app - 2019.08.23 at 23h 35m 38s.xml">
+      <configuration name="EmTitleBarComponent.should create the app" configurationId="JavaScriptTestRunnerProtractor" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4079000" />
+    <option name="totallyTimeSpent" value="70412000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1015" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="961" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2249467" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22911549" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -314,27 +595,28 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32886723" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49938574" weight="0.25700366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32886723" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3276492" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32886723" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5006142" side_tool="true" weight="0.25700366" />
       <window_info anchor="bottom" id="Problems" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="TypeScript" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32985258" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32942432" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.28464818" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.2837838" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -345,84 +627,148 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/org/angboot/authority/service/AngBootUserDetailsService.java">
+    <entry file="file://$PROJECT_DIR$/web/src/app/app-routing.module.ts" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/monitor/em-monitor-routing.module.ts" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.scss" />
+    <entry file="file://$PROJECT_DIR$/web/src/main.ts" />
+    <entry file="file://$PROJECT_DIR$/web/src/scss/internal/html-override.scss" />
+    <entry file="file://$PROJECT_DIR$/web/src/index.html" />
+    <entry file="file://$PROJECT_DIR$/web/karma.conf.js" />
+    <entry file="file://$PROJECT_DIR$/web/src/test.ts" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/app.component.ts" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.module.ts" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/widget/widget.module.ts" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/em-app.module.ts" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/widget/base/BaseSubscription.ts" />
+    <entry file="file://$PROJECT_DIR$/web/node_modules/@angular/material/sidenav/typings/drawer.d.ts" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.ts" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/app.component.html" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.ts" />
+    <entry file="file://$PROJECT_DIR$/web/src/styles.scss" />
+    <entry file="file://$PROJECT_DIR$/web/src/scss/_imports.scss" />
+    <entry file="file://$PROJECT_DIR$/web/src/scss/_color.scss" />
+    <entry file="file://$PROJECT_DIR$/web/src/scss/_layout.scss" />
+    <entry file="file://$PROJECT_DIR$/web/src/scss/_variable.scss" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.html" />
+    <entry file="file://$PROJECT_DIR$/web/src/scss/internal/_bootstrap-override.scss" />
+    <entry file="file://$PROJECT_DIR$/web/jasmine-junit-reporter.js" />
+    <entry file="file://$PROJECT_DIR$/web/protractor.conf.js" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/widget/dom-service/dom.service.ts" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.component.scss" />
+    <entry file="file://$PROJECT_DIR$/web/src/assets/icons/style.scss" />
+    <entry file="file://$PROJECT_DIR$/web/src/assets/icons/variables.scss" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.component.html" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.html" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.component.ts" />
+    <entry file="file://$PROJECT_DIR$/web/src/app/em/service/SidenavService.ts" />
+    <entry file="file://$PROJECT_DIR$/api/interfaces/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/angular.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="338">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/org/angboot/domain/Role.java">
+    <entry file="file://$PROJECT_DIR$/client/server/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/server/build/config/datasource.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/models/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/interfaces/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/providers/authority/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/server/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/test/java/org/angboot/authority/dao/RoleDaoTests.java">
+    <entry file="file://$PROJECT_DIR$/api/interfaces/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+        <state relative-caret-position="156">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/org/angboot/config/AngBootCasSecurityConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/build/classes/java/main/org/angboot/domain/Authorization.class" />
-    <entry file="file://$PROJECT_DIR$/web/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+        <state relative-caret-position="26">
+          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="27" column="16" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        <state relative-caret-position="214">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/org/angboot/domain/Authorization.java">
+    <entry file="file://$PROJECT_DIR$/client/web/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        <state relative-caret-position="101">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/org/angboot/AngbootApplication.java">
+    <entry file="file://$PROJECT_DIR$/buildApp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="52">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/buildApp.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="378">
-            <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
+        <state>
+          <caret column="61" selection-start-column="61" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -477,11 +823,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>angboot</last-edited>
+          <last-edited>client|java|angboot</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.2867647" />
                 <option value="0.6" />
               </list>
             </option>
