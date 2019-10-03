@@ -19,3 +19,8 @@ dependencies {
    tools "org.projectlombok:lombok:$lombokVersion"
    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
 }
+
+task cleanAll(type: Delete, dependsOn: [clean]) {
+   group 'build'
+   delete = ['.gradle']
+}

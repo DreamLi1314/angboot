@@ -8,3 +8,8 @@ repositories {
    mavenLocal()
    mavenCentral()
 }
+
+task cleanAll(type: Delete, dependsOn: [clean]) {
+   group 'build'
+   delete = ['.gradle']
+}

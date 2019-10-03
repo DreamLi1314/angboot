@@ -25,8 +25,8 @@ repositories {
 
 dependencies {
    // modules
-   api project(':java:models')
-   api project(':java:interfaces')
+   api project(':api:models')
+   api project(':api:interfaces')
 
    // spring boot
    implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -95,9 +95,9 @@ task prepareConfig(type: Copy) {
 task prepareAseets(dependsOn: [prepareData, prepareConfig]) {
 }
 
-compileJava.dependsOn prepareAseets
+//compileJava.dependsOn prepareAseets
 
-task server() {
+task server(dependsOn: prepareAseets) {
    group 'application'
    description 'run the application'
 

@@ -18,8 +18,8 @@ repositories {
 
 dependencies {
    // modules
-   api project(':java:models')
-   api project(':java:interfaces')
+   api project(':api:models')
+   api project(':api:interfaces')
 }
 
 jacocoTestReport {
@@ -27,4 +27,9 @@ jacocoTestReport {
       xml.enabled true
       html.enabled false
    }
+}
+
+task cleanAll(type: Delete, dependsOn: [clean]) {
+   group 'build'
+   delete = ['.gradle']
 }

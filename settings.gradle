@@ -1,4 +1,7 @@
 rootProject.name = 'angboot'
-include 'java:client', 'java:authority', 'java:models', 'java:interfaces'
-include 'web'
+
+include 'api:interfaces', 'api:models'
+include 'providers:authority'
+include 'client:server', 'client:web'
+
 enableFeaturePreview('STABLE_PUBLISHING')
