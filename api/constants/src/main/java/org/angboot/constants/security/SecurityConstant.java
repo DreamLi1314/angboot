@@ -12,15 +12,31 @@
  * person.
  */
 
-package org.angboot.authority.dao;
+package org.angboot.constants.security;
 
-import org.angboot.domain.Authorization;
-import org.apache.ibatis.annotations.*;
+public class SecurityConstant {
+   /*
+    * admin role.
+    */
+   public static final String ROLE_ADMIN = "ADMIN";
 
-import java.util.List;
+   /*
+    * role prefix.
+    */
+   public static final String ROLE_PREFIX = "";
 
-@Mapper
-public interface AuthorizationDao {
-   @Select("SELECT username, authority FROM t_authorities WHERE username=#{name}")
-   List<Authorization> getAuthenticationByName(String name);
+   /*
+    * customer go to login page url.
+    */
+   public static final String LOGIN_PAGE_URL = "/userlogin";
+
+   /*
+    * Authentication provider key.
+    */
+   public static final String AUTHENTICATION_PROVIDER_KEY = "angboot_cas_provider";
+
+   /*
+    * the key of cas enabled property.
+    */
+   public static final String CAS_ENABLED_KEY = "angboot.cas.enabled";
 }

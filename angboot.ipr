@@ -5,10 +5,14 @@
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="angboot.api.constants.main" target="1.8" />
+      <module name="angboot.api.constants.test" target="1.8" />
       <module name="angboot.api.interfaces.main" target="1.8" />
       <module name="angboot.api.interfaces.test" target="1.8" />
+      <module name="angboot.api.main" target="1.8" />
       <module name="angboot.api.models.main" target="1.8" />
       <module name="angboot.api.models.test" target="1.8" />
+      <module name="angboot.api.test" target="1.8" />
       <module name="angboot.client.server.main" target="1.8" />
       <module name="angboot.client.server.test" target="1.8" />
       <module name="angboot.java.authority.main" target="1.8" />
@@ -23,6 +27,8 @@
       <module name="angboot.java.test" target="1.8" />
       <module name="angboot.providers.authority.main" target="1.8" />
       <module name="angboot.providers.authority.test" target="1.8" />
+      <module name="constants.main" target="1.8" />
+      <module name="constants.test" target="1.8" />
       <module name="org.angboot.angboot.java.main" target="1.8" />
       <module name="org.angboot.angboot.java.test" target="1.8" />
     </bytecodeTargetLevel>
@@ -42,6 +48,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/api" />
+            <option value="$PROJECT_DIR$/api/constants" />
             <option value="$PROJECT_DIR$/api/interfaces" />
             <option value="$PROJECT_DIR$/api/models" />
             <option value="$PROJECT_DIR$/client" />
@@ -49,6 +56,18 @@
             <option value="$PROJECT_DIR$/client/web" />
             <option value="$PROJECT_DIR$/providers" />
             <option value="$PROJECT_DIR$/providers/authority" />
+          </set>
+        </option>
+        <option name="useAutoImport" value="true" />
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api/constants" />
+        <option name="gradleHome" value="D:/InstallSoftware/gradle-5.4.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/api/constants" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />
@@ -85,12 +104,17 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/angboot.iml" filepath="$PROJECT_DIR$/angboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/angboot.api.iml" filepath="$PROJECT_DIR$/api/angboot.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/constants/angboot.api.constants.iml" filepath="$PROJECT_DIR$/api/constants/angboot.api.constants.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/constants/angboot.api.constants.main.iml" filepath="$PROJECT_DIR$/api/constants/angboot.api.constants.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/constants/angboot.api.constants.test.iml" filepath="$PROJECT_DIR$/api/constants/angboot.api.constants.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml" filepath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.main.iml" filepath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.test.iml" filepath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/angboot.api.main.iml" filepath="$PROJECT_DIR$/api/angboot.api.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/models/angboot.api.models.iml" filepath="$PROJECT_DIR$/api/models/angboot.api.models.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/models/angboot.api.models.main.iml" filepath="$PROJECT_DIR$/api/models/angboot.api.models.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/models/angboot.api.models.test.iml" filepath="$PROJECT_DIR$/api/models/angboot.api.models.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/angboot.api.test.iml" filepath="$PROJECT_DIR$/api/angboot.api.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/angboot.client.iml" filepath="$PROJECT_DIR$/client/angboot.client.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/server/angboot.client.server.iml" filepath="$PROJECT_DIR$/client/server/angboot.client.server.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/server/angboot.client.server.main.iml" filepath="$PROJECT_DIR$/client/server/angboot.client.server.main.iml" />
@@ -114,6 +138,10 @@
       <module fileurl="file://$PROJECT_DIR$/providers/authority/angboot.providers.authority.main.iml" filepath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/providers/authority/angboot.providers.authority.test.iml" filepath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/angboot.web.iml" filepath="$PROJECT_DIR$/web/angboot.web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/providers/authority/authority.iml" filepath="$PROJECT_DIR$/providers/authority/authority.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/constants/constants.iml" filepath="$PROJECT_DIR$/api/constants/constants.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/constants/constants.main.iml" filepath="$PROJECT_DIR$/api/constants/constants.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/constants/constants.test.iml" filepath="$PROJECT_DIR$/api/constants/constants.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/org.angboot.angboot.java.main.iml" filepath="$PROJECT_DIR$/java/org.angboot.angboot.java.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/java/org.angboot.angboot.java.test.iml" filepath="$PROJECT_DIR$/java/org.angboot.angboot.java.test.iml" />
     </modules>

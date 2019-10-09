@@ -14,13 +14,19 @@
 
 package org.angboot.authority.dao;
 
-import org.angboot.domain.Authorization;
-import org.apache.ibatis.annotations.*;
+import org.angboot.domain.User;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
 @Mapper
-public interface AuthorizationDao {
-   @Select("SELECT username, authority FROM t_authorities WHERE username=#{name}")
-   List<Authorization> getAuthenticationByName(String name);
+public interface UserDao {
+
+    @Select("SELECT * FROM t_users where id=#{id}")
+    User getUserById(Integer id);
+
+    @Select("SELECT userName, password, enabled FROM t_users WHERE userName=#{userName}")
+    List<User> getUserByName(String userName);
+
 }

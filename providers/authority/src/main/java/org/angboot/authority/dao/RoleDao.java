@@ -14,13 +14,13 @@
 
 package org.angboot.authority.dao;
 
-import org.angboot.domain.Authorization;
-import org.apache.ibatis.annotations.*;
-
-import java.util.List;
+import org.angboot.domain.Role;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 @Mapper
-public interface AuthorizationDao {
-   @Select("SELECT username, authority FROM t_authorities WHERE username=#{name}")
-   List<Authorization> getAuthenticationByName(String name);
+public interface RoleDao {
+
+   @Select("SELECT * FROM t_roles WHERE role_name=#{roleName}")
+   Role getRoleByName(String roleName) throws Exception;
 }
