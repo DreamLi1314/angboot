@@ -40,7 +40,8 @@ gradlew[.bat] server
 * [0.1.x](https://github.com/DreamLi1314/angboot/tree/0.1.x)
 
 ## 5. Getting help
-To see [User Manual](https://dreamli1314.github.io/angboot/).
+* Master version: To see [User Manual](https://dreamli1314.github.io/angboot/).
+* Current Version: To see `docs/index.md`
 
 ## 6. Todo list of this version
 * Split module, microservitization project.
