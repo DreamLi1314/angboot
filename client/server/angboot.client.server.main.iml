@@ -37,8 +37,8 @@
     <orderEntry type="library" name="Gradle: com.alibaba:druid:1.1.18" level="project" />
     <orderEntry type="library" name="Gradle: org.webjars:bootstrap:4.3.1" level="project" />
     <orderEntry type="library" name="Gradle: org.webjars:jquery:3.3.1-2" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.h2database:h2:1.4.199" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-json:2.1.6.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.h2database:h2:1.4.199" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-jdbc:2.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:2.1.6.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:2.1.6.RELEASE" level="project" />

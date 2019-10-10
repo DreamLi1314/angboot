@@ -1,38 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://E:/inetsoft/sr13_2/devenv/java/src/main/java/inetsoft/report/lens/xnode/XNodeTableLens.java" description="delegate.setNode(root);" line="59" />
-    <bookmark url="file://E:/inetsoft/sr13_1/devenv/src/inetsoft/web/viewsheet/model/table/BaseTableCellModel.java" description="getColBorder" line="184" />
-    <bookmark url="file://E:/inetsoft/sr13_1/devenv/src/inetsoft/web/viewsheet/model/VSFormatModel.java" description="getBorder().setBottom(VSCSSUtil.getBorder(composit..." line="90" />
-    <bookmark url="file://E:/inetsoft/sr13_1/devenv/src/inetsoft/analytic/composition/VSCSSUtil.java" description="String width = (int) Math.ceil(Common.getLineWidth..." line="120" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="83fa93de-1df5-41eb-96c5-dd710bd06a47" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/angboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angboot.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angboot.iws" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/angboot.api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/angboot.api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/models/angboot.api.models.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/angboot.api.models.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/angboot.api.models.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/angboot.api.models.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/angboot.api.models.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/angboot.api.models.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/angboot.client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/angboot.client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/server/angboot.client.server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/server/angboot.client.server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/server/angboot.client.server.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/server/angboot.client.server.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/server/angboot.client.server.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/server/angboot.client.server.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/angboot.client.web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/angboot.client.web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/providers/angboot.providers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/providers/angboot.providers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.iml" beforeDir="false" afterPath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.test.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
-    <ignored path="$PROJECT_DIR$/java/.gradle/" />
-    <ignored path="$PROJECT_DIR$/java/build/" />
-    <ignored path="$PROJECT_DIR$/web/.gradle/" />
-    <ignored path="$PROJECT_DIR$/web/build/" />
-    <ignored path="$PROJECT_DIR$/java/out/" />
-    <ignored path="$PROJECT_DIR$/java/client/.gradle/" />
-    <ignored path="$PROJECT_DIR$/java/client/build/" />
-    <ignored path="$PROJECT_DIR$/java/client/out/" />
-    <ignored path="$PROJECT_DIR$/java/authority/.gradle/" />
-    <ignored path="$PROJECT_DIR$/java/authority/build/" />
-    <ignored path="$PROJECT_DIR$/java/models/.gradle/" />
-    <ignored path="$PROJECT_DIR$/java/models/build/" />
-    <ignored path="$PROJECT_DIR$/java/interfaces/.gradle/" />
-    <ignored path="$PROJECT_DIR$/java/interfaces/build/" />
-    <ignored path="$PROJECT_DIR$/java/models/out/" />
-    <ignored path="$PROJECT_DIR$/java/interfaces/out/" />
-    <ignored path="$PROJECT_DIR$/java/authority/out/" />
     <ignored path="$PROJECT_DIR$/api/.gradle/" />
     <ignored path="$PROJECT_DIR$/api/build/" />
     <ignored path="$PROJECT_DIR$/client/.gradle/" />
@@ -71,9 +62,6 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/api/constants">
       <ProjectState />
     </projectState>
   </component>
@@ -190,7 +178,7 @@
         <entry file="file://$PROJECT_DIR$/api/angboot.api.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -198,8 +186,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angboot.ipr">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="179">
+              <caret line="77" column="57" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angboot.iws">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="188" column="30" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -227,7 +224,7 @@
         <entry file="file://$PROJECT_DIR$/api/constants/angboot.api.constants.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -236,7 +233,7 @@
         <entry file="file://$PROJECT_DIR$/api/constants/angboot.api.constants.test.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -252,14 +249,18 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angboot.iml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/models/angboot.api.models.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -268,7 +269,7 @@
         <entry file="file://$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -315,6 +316,7 @@
       <find>modelscon</find>
       <find>models</find>
       <find>module</find>
+      <find>constants</find>
     </findStrings>
     <replaceStrings>
       <replace>models</replace>
@@ -331,7 +333,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/web/src/app/em/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.scss" />
         <option value="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.module.ts" />
@@ -381,6 +382,7 @@
         <option value="$PROJECT_DIR$/api/models/angboot.api.models.iml" />
         <option value="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml" />
         <option value="$PROJECT_DIR$/api/constants/angboot.api.constants.iml" />
+        <option value="$PROJECT_DIR$/angboot.iws" />
         <option value="$PROJECT_DIR$/angboot.ipr" />
       </list>
     </option>
@@ -432,6 +434,12 @@
               <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="constants" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="interfaces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -454,7 +462,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2867647" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -647,7 +655,7 @@
       <workItem from="1570071533543" duration="3152000" />
       <workItem from="1570513126749" duration="2574000" />
       <workItem from="1570584276789" duration="6119000" />
-      <workItem from="1570670119829" duration="2037000" />
+      <workItem from="1570670119829" duration="2494000" />
     </task>
     <servers />
   </component>
@@ -660,13 +668,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81142000" />
+    <option name="totallyTimeSpent" value="81599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1015" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -698,7 +706,7 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.32942432" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info active="true" anchor="right" id="Gradle" order="6" visible="true" weight="0.2835821" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.2835821" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -714,13 +722,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/web/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -951,7 +952,7 @@
     <entry file="file://$PROJECT_DIR$/api/constants/angboot.api.constants.test.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -985,26 +986,23 @@
     <entry file="file://$PROJECT_DIR$/api/models/angboot.api.models.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/constants/angboot.api.constants.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angboot.iml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -1016,14 +1014,28 @@
     <entry file="file://$PROJECT_DIR$/api/angboot.api.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angboot.iws">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="188" column="30" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angboot.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/angboot.ipr">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="179">
+          <caret line="77" column="57" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1079,12 +1091,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>constants|api|angboot</last-edited>
+          <last-edited>models|api|angboot</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2867647" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
