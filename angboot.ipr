@@ -9,28 +9,12 @@
       <module name="angboot.api.constants.test" target="1.8" />
       <module name="angboot.api.interfaces.main" target="1.8" />
       <module name="angboot.api.interfaces.test" target="1.8" />
-      <module name="angboot.api.main" target="1.8" />
       <module name="angboot.api.models.main" target="1.8" />
       <module name="angboot.api.models.test" target="1.8" />
-      <module name="angboot.api.test" target="1.8" />
       <module name="angboot.client.server.main" target="1.8" />
       <module name="angboot.client.server.test" target="1.8" />
-      <module name="angboot.java.authority.main" target="1.8" />
-      <module name="angboot.java.authority.test" target="1.8" />
-      <module name="angboot.java.client.main" target="1.8" />
-      <module name="angboot.java.client.test" target="1.8" />
-      <module name="angboot.java.interfaces.main" target="1.8" />
-      <module name="angboot.java.interfaces.test" target="1.8" />
-      <module name="angboot.java.main" target="1.8" />
-      <module name="angboot.java.models.main" target="1.8" />
-      <module name="angboot.java.models.test" target="1.8" />
-      <module name="angboot.java.test" target="1.8" />
       <module name="angboot.providers.authority.main" target="1.8" />
       <module name="angboot.providers.authority.test" target="1.8" />
-      <module name="constants.main" target="1.8" />
-      <module name="constants.test" target="1.8" />
-      <module name="org.angboot.angboot.java.main" target="1.8" />
-      <module name="org.angboot.angboot.java.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
@@ -110,40 +94,18 @@
       <module fileurl="file://$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml" filepath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.main.iml" filepath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.test.iml" filepath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api/angboot.api.main.iml" filepath="$PROJECT_DIR$/api/angboot.api.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/models/angboot.api.models.iml" filepath="$PROJECT_DIR$/api/models/angboot.api.models.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/models/angboot.api.models.main.iml" filepath="$PROJECT_DIR$/api/models/angboot.api.models.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/models/angboot.api.models.test.iml" filepath="$PROJECT_DIR$/api/models/angboot.api.models.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api/angboot.api.test.iml" filepath="$PROJECT_DIR$/api/angboot.api.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/angboot.client.iml" filepath="$PROJECT_DIR$/client/angboot.client.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/server/angboot.client.server.iml" filepath="$PROJECT_DIR$/client/server/angboot.client.server.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/server/angboot.client.server.main.iml" filepath="$PROJECT_DIR$/client/server/angboot.client.server.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/server/angboot.client.server.test.iml" filepath="$PROJECT_DIR$/client/server/angboot.client.server.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/client/web/angboot.client.web.iml" filepath="$PROJECT_DIR$/client/web/angboot.client.web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/angboot.java.iml" filepath="$PROJECT_DIR$/java/angboot.java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/authority/angboot.java.authority.iml" filepath="$PROJECT_DIR$/java/authority/angboot.java.authority.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/authority/angboot.java.authority.main.iml" filepath="$PROJECT_DIR$/java/authority/angboot.java.authority.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/authority/angboot.java.authority.test.iml" filepath="$PROJECT_DIR$/java/authority/angboot.java.authority.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/client/angboot.java.client.iml" filepath="$PROJECT_DIR$/java/client/angboot.java.client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/client/angboot.java.client.main.iml" filepath="$PROJECT_DIR$/java/client/angboot.java.client.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/client/angboot.java.client.test.iml" filepath="$PROJECT_DIR$/java/client/angboot.java.client.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/interfaces/angboot.java.interfaces.iml" filepath="$PROJECT_DIR$/java/interfaces/angboot.java.interfaces.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/interfaces/angboot.java.interfaces.main.iml" filepath="$PROJECT_DIR$/java/interfaces/angboot.java.interfaces.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/interfaces/angboot.java.interfaces.test.iml" filepath="$PROJECT_DIR$/java/interfaces/angboot.java.interfaces.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/models/angboot.java.models.iml" filepath="$PROJECT_DIR$/java/models/angboot.java.models.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/models/angboot.java.models.main.iml" filepath="$PROJECT_DIR$/java/models/angboot.java.models.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/models/angboot.java.models.test.iml" filepath="$PROJECT_DIR$/java/models/angboot.java.models.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/providers/angboot.providers.iml" filepath="$PROJECT_DIR$/providers/angboot.providers.iml" />
       <module fileurl="file://$PROJECT_DIR$/providers/authority/angboot.providers.authority.iml" filepath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.iml" />
       <module fileurl="file://$PROJECT_DIR$/providers/authority/angboot.providers.authority.main.iml" filepath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/providers/authority/angboot.providers.authority.test.iml" filepath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/web/angboot.web.iml" filepath="$PROJECT_DIR$/web/angboot.web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/providers/authority/authority.iml" filepath="$PROJECT_DIR$/providers/authority/authority.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api/constants/constants.iml" filepath="$PROJECT_DIR$/api/constants/constants.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api/constants/constants.main.iml" filepath="$PROJECT_DIR$/api/constants/constants.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api/constants/constants.test.iml" filepath="$PROJECT_DIR$/api/constants/constants.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/org.angboot.angboot.java.main.iml" filepath="$PROJECT_DIR$/java/org.angboot.angboot.java.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java/org.angboot.angboot.java.test.iml" filepath="$PROJECT_DIR$/java/org.angboot.angboot.java.test.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
