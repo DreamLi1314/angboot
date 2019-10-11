@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83fa93de-1df5-41eb-96c5-dd710bd06a47" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/angboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angboot.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/angboot.api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/angboot.api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models/angboot.api.models.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/angboot.api.models.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models/angboot.api.models.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/angboot.api.models.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models/angboot.api.models.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/angboot.api.models.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/angboot.client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/angboot.client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/server/angboot.client.server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/server/angboot.client.server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/server/angboot.client.server.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/server/angboot.client.server.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/server/angboot.client.server.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/server/angboot.client.server.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web/angboot.client.web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/angboot.client.web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/providers/angboot.providers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/providers/angboot.providers.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.iml" beforeDir="false" afterPath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angboot.iws" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.iws" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -97,66 +80,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="angboot" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="angboot" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="angboot" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="angboot" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="angboot" type="f1a62948:ProjectNode" />
-                <item name="client" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="angboot" type="f1a62948:ProjectNode" />
-                <item name="client" type="2d1252cf:ModuleNode" />
-                <item name="server" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="angboot" type="f1a62948:ProjectNode" />
-                <item name="providers" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="angboot" type="f1a62948:ProjectNode" />
-                <item name="providers" type="2d1252cf:ModuleNode" />
-                <item name="authority" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="angboot" type="f1a62948:ProjectNode" />
-                <item name="providers" type="2d1252cf:ModuleNode" />
-                <item name="authority" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="angboot" type="f1a62948:ProjectNode" />
-                <item name="providers" type="2d1252cf:ModuleNode" />
-                <item name="authority" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -164,117 +88,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="37" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/angboot.api.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angboot.ipr">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="77" column="57" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angboot.iws">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="188" column="30" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/constants/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/models/gradle.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/constants/gradle.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/constants/angboot.api.constants.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/constants/angboot.api.constants.test.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/models/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angboot.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/models/angboot.api.models.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -370,7 +184,6 @@
         <option value="$PROJECT_DIR$/api/constants/build.gradle" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/api/constants/src/main/java/org/angboot/constants/security/SecurityConstant.java" />
-        <option value="$PROJECT_DIR$/client/server/build.gradle" />
         <option value="$PROJECT_DIR$/providers/authority/build.gradle" />
         <option value="$PROJECT_DIR$/providers/authority/src/main/java/org/angboot/authority/service/AngBootUserDetailsService.java" />
         <option value="$PROJECT_DIR$/client/server/src/main/java/org/angboot/authority/service/AngBootUserDetailsService.java" />
@@ -384,6 +197,7 @@
         <option value="$PROJECT_DIR$/api/constants/angboot.api.constants.iml" />
         <option value="$PROJECT_DIR$/angboot.iws" />
         <option value="$PROJECT_DIR$/angboot.ipr" />
+        <option value="$PROJECT_DIR$/client/server/build.gradle" />
       </list>
     </option>
   </component>
@@ -391,7 +205,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="$MAVEN_REPOSITORY$" />
-        <option name="mavenHome" value="$USER_HOME$/Software/apache-maven-3.5.3" />
+        <option name="mavenHome" value="D:/InstallSoftware/apache-maven-3.5.3" />
         <option name="userSettingsFile" value="$USER_HOME$/Software/apache-maven-3.5.3/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -403,9 +217,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="961" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1932" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -415,7 +230,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -423,28 +237,12 @@
               <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="constants" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="api" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="interfaces" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -462,10 +260,10 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2867647" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/web/node_modules/typescript/lib" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
@@ -500,7 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.angboot [cleanAll]">
+  <component name="RunManager" selected="Gradle.angboot [server]">
     <configuration name="angboot [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -539,10 +337,10 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="angboot:client:web [watch]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="angboot [lint]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/client/web" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -550,7 +348,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="watch" />
+            <option value="lint" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -558,10 +356,10 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="angboot:providers:authority [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="angboot [prepareAseets]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/providers/authority" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -569,7 +367,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="bootRun" />
+            <option value="prepareAseets" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -577,10 +375,10 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="angboot:providers:authority [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="angboot [server]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/providers/authority" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -588,7 +386,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="server" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -619,11 +417,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.angboot [cleanAll]" />
-        <item itemvalue="Gradle.angboot:providers:authority [build]" />
         <item itemvalue="Gradle.angboot [build]" />
-        <item itemvalue="Gradle.angboot:providers:authority [bootRun]" />
-        <item itemvalue="Gradle.angboot:client:web [watch]" />
+        <item itemvalue="Gradle.angboot [lint]" />
+        <item itemvalue="Gradle.angboot [prepareAseets]" />
+        <item itemvalue="Gradle.angboot [server]" />
+        <item itemvalue="Gradle.angboot [cleanAll]" />
       </list>
     </recent_temporary>
   </component>
@@ -655,7 +453,8 @@
       <workItem from="1570071533543" duration="3152000" />
       <workItem from="1570513126749" duration="2574000" />
       <workItem from="1570584276789" duration="6119000" />
-      <workItem from="1570670119829" duration="2494000" />
+      <workItem from="1570670119829" duration="3170000" />
+      <workItem from="1570762161320" duration="3000000" />
     </task>
     <servers />
   </component>
@@ -668,13 +467,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81599000" />
+    <option name="totallyTimeSpent" value="85275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1015" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20682302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -689,7 +487,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.3265306" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3265306" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.30839002" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -740,13 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -901,24 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/providers/authority/src/main/java/org/angboot/authority/AuthorityApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/server/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/server/src/main/java/org/angboot/util/ConditionalOnCasEnable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -952,7 +725,7 @@
     <entry file="file://$PROJECT_DIR$/api/constants/angboot.api.constants.test.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -985,21 +758,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/models/angboot.api.models.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="207">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="207">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/constants/angboot.api.constants.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="184">
           <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
@@ -1020,22 +793,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angboot.iws">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="188" column="30" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="30" />
+        <state relative-caret-position="455">
+          <caret line="205" column="30" selection-start-line="205" selection-start-column="30" selection-end-line="205" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/angboot.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="253">
           <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/angboot.ipr">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="77" column="57" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="57" />
+        <state relative-caret-position="45">
+          <caret line="70" column="16" lean-forward="true" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/providers/authority/src/main/java/org/angboot/authority/AuthorityApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/server/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="102" column="36" lean-forward="true" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1091,7 +889,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>models|api|angboot</last-edited>
+          <last-edited>api|angboot</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
