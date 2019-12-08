@@ -22,3 +22,13 @@
    @extend .base-title-bar-icon-size;
    min-width: 42px;
 }
+
+// margin
+.lmargin-15 {
+   margin-left: 15px !important;
+}
+
+// select
+.btn-selected {
+   @extend .txt-dark;
+}

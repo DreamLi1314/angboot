@@ -7,13 +7,40 @@
     </div>
   </div>
 
-  <div class="btn-group" role="group" aria-label="EM Home Btn">
+  <div class="btn-group" role="group" aria-label="EM Title Bar Left Buttons">
     <a href="..">
       <button type="button" class="btn btn-default tile-bar-icon-size bg-primary">
-        <i class="home-icon"></i>
+        <i class="icon-home"></i>
         <span class="sr-only">Home</span>
       </button>
     </a>
+
+    <button type="button" class="lmargin-15 btn btn-default tile-bar-icon-size"
+            (click)="changeTab(MONITOR_PAGE)"
+            [class.btn-selected]="currentTab == MONITOR_PAGE">
+      <i class="icon-monitor"></i>
+      <span class="sr-only">Monitor</span>
+    </button>
+
+    <button type="button" class="btn btn-default tile-bar-icon-size"
+            (click)="changeTab(SETTING_PAGE)"
+            [class.btn-selected]="currentTab == SETTING_PAGE">
+      <i class="icon-setting"></i>
+      <span class="sr-only">Setting</span>
+    </button>
+  </div>
+
+  <div class="btn-group title-bar-align-right" role="group" aria-label="EM Home Btn">
+    <button type="button" class="btn btn-default tile-bar-icon-size"
+        (click)="logout()">
+      <i class="icon-logout"></i>
+      <span class="sr-only">Log Out</span>
+    </button>
+
+    <button type="button" class="btn btn-default tile-bar-icon-size">
+      <i class="icon-help"></i>
+      <span class="sr-only">Help</span>
+    </button>
   </div>
 
 </div>

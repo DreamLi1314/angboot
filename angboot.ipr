@@ -27,6 +27,29 @@
       <module name="org.angboot.angboot.java.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
+  <component name="CopyrightManager" default="angboot-copyright">
+    <copyright>
+      <option name="notice" value="Copyright (c) 2019, AngBoot Technology Corp, All Rights Reserved.&#10;&#10;The software and information contained herein are copyrighted and&#10;proprietary to AngBoot Technology Corp. This software is furnished&#10;pursuant to a written license agreement and may be used, copied,&#10;transmitted, and stored only in accordance with the terms of such&#10;license and with the inclusion of the above copyright notice. Please&#10;refer to the file &quot;COPYRIGHT&quot; for further copyright and licensing&#10;information. This software and information or any other copies&#10;thereof may not be provided or otherwise made available to any other&#10;person." />
+      <option name="myName" value="angboot-copyright" />
+    </copyright>
+    <module2copyright>
+      <element module="Project Files" copyright="angboot-copyright" />
+    </module2copyright>
+    <LanguageOptions name="CSS">
+      <option name="fileTypeOverride" value="1" />
+    </LanguageOptions>
+    <LanguageOptions name="HTML">
+      <option name="fileTypeOverride" value="1" />
+      <option name="prefixLines" value="false" />
+    </LanguageOptions>
+    <LanguageOptions name="SCSS">
+      <option name="fileTypeOverride" value="1" />
+    </LanguageOptions>
+    <LanguageOptions name="XML">
+      <option name="fileTypeOverride" value="1" />
+      <option name="prefixLines" value="false" />
+    </LanguageOptions>
+  </component>
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="PROJECT" charset="UTF-8" />
   </component>

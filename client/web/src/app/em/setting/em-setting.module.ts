@@ -16,20 +16,20 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import {
-   MatButtonModule, MatInputModule, MatSidenavModule, MatSnackBarModule, MatToolbarModule
+   MatButtonModule, MatInputModule, MatSidenavModule, MatSnackBarModule
 } from "@angular/material";
-import { EmMonitorRoutingModule } from "./em-monitor-routing.module";
-import { EmMonitorComponent } from "./em-monitor.component";
+import { EmSettingRoutingModule } from "./em-setting-routing.module";
+import { EmSettingComponent } from "./em-setting.component";
 
 @NgModule({
    declarations: [
-      EmMonitorComponent,
+      EmSettingComponent,
    ],
    imports: [
       CommonModule,
       FormsModule,
       ReactiveFormsModule,
-      EmMonitorRoutingModule,
+      EmSettingRoutingModule,
       MatButtonModule,
       MatSnackBarModule,
       MatSidenavModule,
@@ -40,5 +40,5 @@ import { EmMonitorComponent } from "./em-monitor.component";
    providers: [
    ]
 })
-export class EmMonitorModule {
+export class EmSettingModule {
 }

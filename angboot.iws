@@ -2,8 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83fa93de-1df5-41eb-96c5-dd710bd06a47" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angboot.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angboot.iws" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/angboot.api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/angboot.api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/angboot.api.models.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/angboot.api.models.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/angboot.api.models.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/angboot.api.models.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/angboot.api.models.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/angboot.api.models.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/angboot.client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/angboot.client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/server/angboot.client.server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/server/angboot.client.server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/server/angboot.client.server.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/server/angboot.client.server.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/server/angboot.client.server.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/server/angboot.client.server.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/angboot.client.web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/angboot.client.web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/common/util/component-tool.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/common/util/component-tool.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/em/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/em/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/em/em-app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/em/em-app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/em/monitor/em-monitor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/em/monitor/em-monitor.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/em/monitor/em-monitor.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/em/monitor/em-monitor.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/em/service/SidenavService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/em/service/side-nav.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/em/tool-bar/em-tool-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/em/tool-bar/em-tool-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/em/tool-bar/em-tool-bar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/em/tool-bar/em-tool-bar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/portal/portal-title-bar/portal-title-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/portal/portal-title-bar/portal-title-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/widget/services/model.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/widget/services/model.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/assets/icons/fonts/angboot.eot" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/assets/icons/fonts/angboot.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/assets/icons/fonts/angboot.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/assets/icons/fonts/angboot.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/assets/icons/fonts/angboot.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/assets/icons/fonts/angboot.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/assets/icons/fonts/angboot.woff" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/assets/icons/fonts/angboot.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/assets/icons/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/assets/icons/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/scss/_imports.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/scss/_imports.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/scss/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/providers/angboot.providers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/providers/angboot.providers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.iml" beforeDir="false" afterPath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/providers/authority/angboot.providers.authority.test.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -93,23 +133,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="angboot" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="angboot" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="angboot" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="angboot" type="f1a62948:ProjectNode" />
                 <item name="client" type="2d1252cf:ModuleNode" />
               </path>
               <path>
@@ -141,20 +164,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="203">
-                <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -167,14 +177,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lomb</find>
-      <find>.gradle</find>
-      <find>client</find>
-      <find>models</find>
-      <find>DATA_DIR</find>
-      <find>app</find>
-      <find>NgbModule</find>
-      <find>jque</find>
       <find>nav</find>
       <find>'</find>
       <find>boots</find>
@@ -194,6 +196,17 @@
       <find>cle</find>
       <find>isWindows</find>
       <find>master</find>
+      <find>apiVersion</find>
+      <find>margin-left</find>
+      <find>margin-left: 15px;</find>
+      <find>home-icon</find>
+      <find>tab-focus</find>
+      <find>active</find>
+      <find>@import &quot;color&quot;;</find>
+      <find>@extend</find>
+      <find>js:Error</find>
+      <find>showmess</find>
+      <find>/logout</find>
     </findStrings>
     <replaceStrings>
       <replace>models</replace>
@@ -210,33 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/scss/_imports.scss" />
-        <option value="$PROJECT_DIR$/web/src/scss/_icon.scss" />
-        <option value="$PROJECT_DIR$/web/src/scss/_variable.scss" />
-        <option value="$PROJECT_DIR$/web/src/scss/_layout.scss" />
-        <option value="$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.html" />
-        <option value="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.ts" />
-        <option value="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.scss" />
-        <option value="$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.scss" />
-        <option value="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.spec.ts" />
-        <option value="$PROJECT_DIR$/web/src/app/portal/app.component.html" />
-        <option value="$PROJECT_DIR$/web/src/app/portal/portal-title-bar/portal-title-bar.component.html" />
-        <option value="$PROJECT_DIR$/web/src/main.ts" />
-        <option value="$PROJECT_DIR$/web/src/scss/internal/html-override.scss" />
-        <option value="$PROJECT_DIR$/web/src/index.html" />
-        <option value="$PROJECT_DIR$/web/package.json" />
-        <option value="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor-routing.module.ts" />
-        <option value="$PROJECT_DIR$/web/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/web/src/app/em/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.scss" />
-        <option value="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.module.ts" />
-        <option value="$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.module.ts" />
-        <option value="$PROJECT_DIR$/web/src/app/em/index.components.ts" />
-        <option value="$PROJECT_DIR$/web/protractor.conf.js" />
-        <option value="$PROJECT_DIR$/web/src/app/em/app.component.ts" />
-        <option value="$PROJECT_DIR$/web/src/app/em/app.component.html" />
-        <option value="$PROJECT_DIR$/web/src/app/widget/dom-service/dom.service.ts" />
-        <option value="$PROJECT_DIR$/web/src/app/em/em-app.module.ts" />
         <option value="$PROJECT_DIR$/web/src/app/em/service/SidenavService.ts" />
         <option value="$PROJECT_DIR$/web/src/app/widget/base/BaseSubscription.ts" />
         <option value="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.ts" />
@@ -250,7 +236,6 @@
         <option value="$PROJECT_DIR$/web/src/scss/internal/_bootstrap-override.scss" />
         <option value="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.html" />
         <option value="$PROJECT_DIR$/client/web/build.gradle" />
-        <option value="$PROJECT_DIR$/client/web/angular.json" />
         <option value="$PROJECT_DIR$/client/server/build.gradle" />
         <option value="$PROJECT_DIR$/api/models/build.gradle" />
         <option value="$PROJECT_DIR$/api/interfaces/build.gradle" />
@@ -261,6 +246,34 @@
         <option value="$PROJECT_DIR$/buildApp" />
         <option value="$PROJECT_DIR$/buildApp.bat" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/client/web/package.json" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/client/web/angular.json" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/setting/em-setting.component.html" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/setting/em-setting-routing.module.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/setting/em-setting.module.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/monitor/em-monitor.module.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/setting/em-setting.component.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/monitor/em-monitor.component.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/service/title-bar.service.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/tool-bar/em-tool-bar.component.html" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/tool-bar/em-tool-bar.component.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/service/em-title-bar.service.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.scss" />
+        <option value="$PROJECT_DIR$/client/web/src/assets/icons/variables.scss" />
+        <option value="$PROJECT_DIR$/client/web/src/app/portal/portal-title-bar/portal-title-bar.component.html" />
+        <option value="$PROJECT_DIR$/client/web/src/scss/_layout.scss" />
+        <option value="$PROJECT_DIR$/client/web/src/scss/_imports.scss" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.html" />
+        <option value="$PROJECT_DIR$/client/web/src/app/common/constant/url/em-url-constants.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/em-app.module.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/widget/services/model.service.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/common/util/component-tool.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/index.components.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/common/constant/url/em-url-constant.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/common/constants/url/em-url-constants.ts" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.ts" />
       </list>
     </option>
   </component>
@@ -292,7 +305,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -305,6 +317,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,7 +325,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/web/src/assets/icons/fonts" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/web/node_modules/protractor" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -321,24 +334,24 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2867647" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/web/node_modules/typescript/lib" />
+    <property name="settings.editor.selected.configurable" value="copyright.filetypes.CSS" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/client/web/node_modules/typescript/lib" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/server" />
-      <recent name="E:\Repositories\Java\angboot\v_0.2.0\angboot\web\src\app\portal\portal-title-bar" />
-      <recent name="$PROJECT_DIR$/web/src/assets" />
-      <recent name="$PROJECT_DIR$/web/src/scss" />
-      <recent name="E:\Repositories\Java\angboot\v_0.2.0\angboot\java\models\src\main\java\org\angboot\authority" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/web/src/assets/icons/icons_svg" />
+      <recent name="$PROJECT_DIR$/client/web/src/assets/icons/fonts" />
       <recent name="E:\Repositories\Java\angboot\v_0.2.0\angboot\web\src\assets\icons" />
       <recent name="$PROJECT_DIR$/web/src/scss" />
       <recent name="$PROJECT_DIR$/web/src/scss/internal" />
-      <recent name="E:\Repositories\Java\angboot\v_0.2.0\angboot\java\authority\src\main\java\org\angboot" />
-      <recent name="E:\Repositories\Java\angboot\v_0.2.0\angboot\java\authority\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/web/src/assets/icons/fonts" />
+      <recent name="$PROJECT_DIR$/client/web/src/app/em/service" />
+      <recent name="$PROJECT_DIR$/client/web/src/app/em/setting" />
+      <recent name="$PROJECT_DIR$/client/server" />
+      <recent name="E:\Repositories\Java\angboot\v_0.2.0\angboot\web\src\app\portal\portal-title-bar" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -353,7 +366,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.angboot [server]">
+  <component name="RunManager" selected="Gradle.angboot:client:web [generateIndexFiles]">
     <configuration name="angboot [server]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -366,6 +379,25 @@
         <option name="taskNames">
           <list>
             <option value="server" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="angboot:client:web [generateIndexFiles]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/client/web" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="generateIndexFiles" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -430,20 +462,6 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EmTitleBarComponent.should create the app" type="JavaScriptTestRunnerProtractor" temporary="true" nameIsGenerated="true">
-      <config-file value="$PROJECT_DIR$/web/protractor.conf.js" />
-      <node-interpreter value="project" />
-      <protractor-package value="$PROJECT_DIR$/web/node_modules/protractor" />
-      <protractor-options value="" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.spec.ts" />
-      <test-names>
-        <test-name value="EmTitleBarComponent" />
-        <test-name value="should create the app" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="AngbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="angboot.java.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.angboot.AngbootApplication" />
@@ -453,11 +471,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.angboot:client:web [generateIndexFiles]" />
         <item itemvalue="Gradle.angboot:client:web [watch]" />
         <item itemvalue="Gradle.angboot [server]" />
         <item itemvalue="Gradle.angboot:web [generateIndexFiles]" />
         <item itemvalue="Gradle.angboot:web [watch]" />
-        <item itemvalue="Protractor.EmTitleBarComponent.should create the app" />
       </list>
     </recent_temporary>
   </component>
@@ -487,7 +505,8 @@
       <workItem from="1569920026217" duration="8000000" />
       <workItem from="1570071484249" duration="22000" />
       <workItem from="1570071533543" duration="3152000" />
-      <workItem from="1570080863856" duration="112000" />
+      <workItem from="1570080863856" duration="1450000" />
+      <workItem from="1575686110180" duration="13960000" />
     </task>
     <servers />
   </component>
@@ -500,13 +519,21 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70524000" />
+    <option name="totallyTimeSpent" value="85822000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="961" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23218673" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26044226" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -514,16 +541,17 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49938574" weight="0.25700366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32886723" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.3276492" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32886723" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32886723" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5006142" side_tool="true" weight="0.25700366" />
       <window_info anchor="bottom" id="Problems" order="12" />
@@ -548,62 +576,26 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/monitor/em-monitor-routing.module.ts" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.scss" />
-    <entry file="file://$PROJECT_DIR$/web/src/main.ts" />
-    <entry file="file://$PROJECT_DIR$/web/src/scss/internal/html-override.scss" />
-    <entry file="file://$PROJECT_DIR$/web/src/index.html" />
-    <entry file="file://$PROJECT_DIR$/web/karma.conf.js" />
-    <entry file="file://$PROJECT_DIR$/web/src/test.ts" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/app.component.ts" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.module.ts" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/widget/widget.module.ts" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/em-app.module.ts" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/widget/base/BaseSubscription.ts" />
-    <entry file="file://$PROJECT_DIR$/web/node_modules/@angular/material/sidenav/typings/drawer.d.ts" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.ts" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/app.component.html" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.ts" />
-    <entry file="file://$PROJECT_DIR$/web/src/styles.scss" />
-    <entry file="file://$PROJECT_DIR$/web/src/scss/_imports.scss" />
-    <entry file="file://$PROJECT_DIR$/web/src/scss/_color.scss" />
-    <entry file="file://$PROJECT_DIR$/web/src/scss/_layout.scss" />
-    <entry file="file://$PROJECT_DIR$/web/src/scss/_variable.scss" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/title-bar/em-title-bar.component.html" />
-    <entry file="file://$PROJECT_DIR$/web/src/scss/internal/_bootstrap-override.scss" />
-    <entry file="file://$PROJECT_DIR$/web/jasmine-junit-reporter.js" />
-    <entry file="file://$PROJECT_DIR$/web/protractor.conf.js" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/widget/dom-service/dom.service.ts" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.component.scss" />
-    <entry file="file://$PROJECT_DIR$/web/src/assets/icons/style.scss" />
-    <entry file="file://$PROJECT_DIR$/web/src/assets/icons/variables.scss" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.component.html" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.html" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.component.ts" />
-    <entry file="file://$PROJECT_DIR$/web/src/app/em/service/SidenavService.ts" />
-    <entry file="file://$PROJECT_DIR$/api/interfaces/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/angular.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="52">
+            <caret line="2" column="66" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/server/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/server/build/config/datasource.properties">
+    <entry file="file://$PROJECT_DIR$/.codecov.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="78">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/models/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
+        <state relative-caret-position="650">
           <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
         </state>
       </provider>
@@ -617,88 +609,384 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/providers/authority/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="442">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/interfaces/.gitignore">
+    <entry file="file://$PROJECT_DIR$/client/web/.node-version">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        <state>
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/client/web/node_modules/bootstrap/scss/bootstrap.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        <state relative-caret-position="-536" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/scss/internal/_bootstrap-override.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/assets/icons/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-224" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="18" />
+        <state relative-caret-position="348">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/server/build.gradle">
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/monitor/em-monitor-routing.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2834">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        <state relative-caret-position="-250">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/build.gradle">
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/portal/app-routing.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="-206">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buildApp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/package.json">
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/setting/em-setting.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buildApp.bat">
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#646#687#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/setting/em-setting.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#646#693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/setting/em-setting.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="53" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#646#707#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/service/side-nav.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/tool-bar/em-tool-bar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#646#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/monitor/em-monitor.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#646#707#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/monitor/em-monitor.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#646#693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/service/em-title-bar.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="e#646#700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/tool-bar/em-tool-bar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="61" selection-start-column="61" selection-end-column="61" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="203">
-            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/client/web/src/assets/icons/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/portal/portal-title-bar/portal-title-bar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/node_modules/bootstrap/dist/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="2647" column="47" selection-start-line="2647" selection-start-column="41" selection-end-line="2647" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/scss/_icon.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/scss/_imports.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/scss/_color.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/scss/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/setting/em-setting-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#646#687#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/server/src/main/java/org/angboot/authority/model/SecurityConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/widget/widget.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="61" column="19" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/em-app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#646#693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/widget/dialog/message-dialog.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/widget/dialog/message-dialog.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/widget/services/model.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="108" column="69" selection-start-line="108" selection-start-column="69" selection-end-line="108" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/index.components.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/common/util/component-tool.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3952">
+          <caret line="179" selection-start-line="179" selection-end-line="179" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/common/services/csrf-interceptor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/common/data/dimension.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-305">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/common/util/gui-tool.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/common/util/uri-codec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/common/constants/url/em-url-constants.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/node_modules/@angular/router/src/router.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="291" column="4" selection-start-line="291" selection-start-column="4" selection-end-line="291" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1352">
+          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#646#688#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -708,6 +996,18 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>angboot-copyright</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
