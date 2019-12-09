@@ -27,6 +27,8 @@
       <module name="angboot.providers.schedule.test" target="1.8" />
       <module name="org.angboot.angboot.java.main" target="1.8" />
       <module name="org.angboot.angboot.java.test" target="1.8" />
+      <module name="org.angboot.angboot.providers.schedule.main" target="1.8" />
+      <module name="org.angboot.angboot.providers.schedule.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="CopyrightManager" default="angboot-copyright">
@@ -129,6 +131,9 @@
       <module fileurl="file://$PROJECT_DIR$/providers/schedule/angboot.providers.schedule.iml" filepath="$PROJECT_DIR$/providers/schedule/angboot.providers.schedule.iml" />
       <module fileurl="file://$PROJECT_DIR$/providers/schedule/angboot.providers.schedule.main.iml" filepath="$PROJECT_DIR$/providers/schedule/angboot.providers.schedule.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/providers/schedule/angboot.providers.schedule.test.iml" filepath="$PROJECT_DIR$/providers/schedule/angboot.providers.schedule.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/providers/schedule/org.angboot.angboot.providers.schedule.iml" filepath="$PROJECT_DIR$/providers/schedule/org.angboot.angboot.providers.schedule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/providers/schedule/org.angboot.angboot.providers.schedule.main.iml" filepath="$PROJECT_DIR$/providers/schedule/org.angboot.angboot.providers.schedule.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/providers/schedule/org.angboot.angboot.providers.schedule.test.iml" filepath="$PROJECT_DIR$/providers/schedule/org.angboot.angboot.providers.schedule.test.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
