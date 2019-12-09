@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83fa93de-1df5-41eb-96c5-dd710bd06a47" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/angboot.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angboot.iws" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/server/angboot.client.server.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/client/server/angboot.client.server.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/providers/schedule/src/test/java/org/angboot/schedule/ScheduleApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/providers/schedule/src/test/java/org/angboot/schedule/ScheduleApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/providers/schedule/src/test/java/org/angboot/schedule/job/HelloJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/providers/schedule/src/test/java/org/angboot/schedule/job/HelloJob.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -132,7 +130,59 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/providers/schedule/src/test/java/org/angboot/schedule/ScheduleApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="647">
+              <caret line="61" column="4" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/providers/schedule/src/test/java/org/angboot/schedule/job/HelloJob.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/org/quartz/Scheduler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="582" column="9" selection-start-line="582" selection-start-column="9" selection-end-line="582" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/org/quartz/impl/StdScheduler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="340" column="19" selection-start-line="340" selection-start-column="19" selection-end-line="340" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/org/quartz/core/QuartzScheduler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="1994" column="48" selection-start-line="1994" selection-start-column="34" selection-end-line="1994" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -241,8 +291,8 @@
         <option value="$PROJECT_DIR$/providers/schedule/src/main/java/org/angboot/schedule/ScheduleApplication.java" />
         <option value="$PROJECT_DIR$/providers/schedule/build.gradle" />
         <option value="$PROJECT_DIR$/providers/schedule/src/test/resources/quartz.properties" />
-        <option value="$PROJECT_DIR$/providers/schedule/src/test/java/org/angboot/schedule/job/HelloJob.java" />
         <option value="$PROJECT_DIR$/providers/schedule/src/test/java/org/angboot/schedule/ScheduleApplicationTests.java" />
+        <option value="$PROJECT_DIR$/providers/schedule/src/test/java/org/angboot/schedule/job/HelloJob.java" />
       </list>
     </option>
   </component>
@@ -274,8 +324,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -473,28 +523,11 @@
       <workItem from="1575875039084" duration="740000" />
       <workItem from="1575877490752" duration="1229000" />
       <workItem from="1575883147587" duration="642000" />
+      <workItem from="1575889037567" duration="2479000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 14h 17m 51s.xml">
-      <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 14h 19m 20s.xml">
-      <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 14h 22m 25s.xml">
-      <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 14h 27m 25s.xml">
-      <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 14h 30m 46s.xml">
-      <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 14h 34m 16s.xml">
-      <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 14h 44m 51s.xml">
       <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
     </history-entry>
@@ -507,9 +540,27 @@
     <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 15h 55m 28s.xml">
       <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 19h 19m 29s.xml">
+      <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 19h 35m 13s.xml">
+      <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 19h 37m 57s.xml">
+      <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 19h 38m 01s.xml">
+      <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 19h 41m 13s.xml">
+      <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScheduleApplicationTests_testSchedulerIssue - 2019.12.09 at 19h 44m 52s.xml">
+      <configuration name="ScheduleApplicationTests.testSchedulerIssue" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93467000" />
+    <option name="totallyTimeSpent" value="95946000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -523,8 +574,8 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1015" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49659863" visible="true" weight="0.20309168" />
-      <window_info id="Structure" order="1" sideWeight="0.50340134" side_tool="true" visible="true" weight="0.20309168" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49546486" visible="true" weight="0.20522387" />
+      <window_info id="Structure" order="1" sideWeight="0.50453514" side_tool="true" visible="true" weight="0.20522387" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -533,7 +584,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49938574" weight="0.5124717" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49938574" weight="0.37868482" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -566,35 +617,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/service/side-nav.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/tool-bar/em-tool-bar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="38" column="42" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#646#688#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/monitor/em-monitor.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#646#707#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/web/src/app/em/monitor/em-monitor.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
@@ -929,17 +951,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/org/quartz/JobBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/org/quartz/Scheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="438" column="35" selection-start-line="438" selection-start-column="35" selection-end-line="438" selection-end-column="35" />
+        <state relative-caret-position="134">
+          <caret line="582" column="9" selection-start-line="582" selection-start-column="9" selection-end-line="582" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/org/quartz/impl/StdScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="340" column="19" selection-start-line="340" selection-start-column="19" selection-end-line="340" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/org/quartz/core/QuartzScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="1994" column="48" selection-start-line="1994" selection-start-column="34" selection-end-line="1994" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/providers/schedule/src/test/java/org/angboot/schedule/job/HelloJob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state relative-caret-position="221">
+          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -948,8 +991,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/providers/schedule/src/test/java/org/angboot/schedule/ScheduleApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="647">
+          <caret line="61" column="4" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

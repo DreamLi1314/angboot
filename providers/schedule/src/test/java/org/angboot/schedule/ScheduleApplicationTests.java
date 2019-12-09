@@ -9,6 +9,8 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import static org.angboot.schedule.job.HelloJob.IDENTITY_GROUP;
+import static org.angboot.schedule.job.HelloJob.IDENTITY_NAME;
 import static org.quartz.TriggerBuilder.newTrigger;
 
 class ScheduleApplicationTests {
@@ -26,21 +28,34 @@ class ScheduleApplicationTests {
       Set<Trigger> triggers = new HashSet<>();
 
       JobDetail jobDetail = JobBuilder.newJob(HelloJob.class)
-         .withIdentity(HelloJob.IDENTITY_NAME, HelloJob.IDENTITY_GROUP)
+         .withIdentity(IDENTITY_NAME, IDENTITY_GROUP)
          .storeDurably()
          .build();
 
       Trigger runOnceTrigger = newTrigger()
-         .withIdentity(HelloJob.IDENTITY_NAME, HelloJob.IDENTITY_GROUP)
+         .withIdentity(IDENTITY_NAME, IDENTITY_GROUP)
          .forJob(jobDetail.getKey())
-         .withSchedule(CronScheduleBuilder.cronSchedule("0 54 15 9 12 ? 2019"))
+         .withSchedule(CronScheduleBuilder.cronSchedule("0 42 19 9 12 ? 2019"))
          .build();
 
       triggers.add(runOnceTrigger);
 
       scheduler.scheduleJob(jobDetail, triggers, true);
 
-      scheduler.resumeJob(new JobKey(HelloJob.IDENTITY_NAME, HelloJob.IDENTITY_GROUP));
+      scheduler.resumeJob(new JobKey(IDENTITY_NAME, IDENTITY_GROUP));
+
+      TimeUnit.SECONDS.sleep(1);
+
+      new Thread(() -> {
+         try {
+            // 在当前 task running 的状态, 再次触发一次当前 task.
+            JobDataMap data = new JobDataMap();
+            data.put("runNow", true);
+            scheduler.triggerJob(new JobKey(IDENTITY_NAME, IDENTITY_GROUP), data);
+         } catch (SchedulerException e) {
+            e.printStackTrace();
+         }
+      }).start();
 
       TimeUnit.MINUTES.sleep(3);
       scheduler.shutdown();

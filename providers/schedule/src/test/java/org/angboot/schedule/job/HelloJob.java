@@ -19,27 +19,29 @@ import org.quartz.*;
 import java.time.Instant;
 import java.util.concurrent.TimeUnit;
 
-public class HelloJob implements Job {
+@DisallowConcurrentExecution
+public class HelloJob implements InterruptableJob {
 
    @Override
    public void execute(JobExecutionContext context) throws JobExecutionException {
       try {
          System.out.println("==================execute============" + Instant.now().toString());
+
          TimeUnit.SECONDS.sleep(5);
 
-         new Thread(() -> {
-            try {
-               // 在当前 task running 的状态, 再次触发一次当前 task.
-               if(!HelloJob.flag) {
-                  HelloJob.flag = true;
-                  JobDataMap data = new JobDataMap();
-                  data.put("runNow", true);
-                  context.getScheduler().triggerJob(new JobKey(IDENTITY_NAME, IDENTITY_GROUP), data);
-               }
-            } catch (SchedulerException e) {
-               e.printStackTrace();
-            }
-         }).start();
+//         new Thread(() -> {
+//            try {
+//               // 在当前 task running 的状态, 再次触发一次当前 task.
+//               if(!HelloJob.flag) {
+//                  HelloJob.flag = true;
+//                  JobDataMap data = new JobDataMap();
+//                  data.put("runNow", true);
+//                  context.getScheduler().triggerJob(new JobKey(IDENTITY_NAME, IDENTITY_GROUP), data);
+//               }
+//            } catch (SchedulerException e) {
+//               e.printStackTrace();
+//            }
+//         }).start();
 
          TimeUnit.SECONDS.sleep(5);
       } catch (Exception e) {
@@ -47,8 +49,13 @@ public class HelloJob implements Job {
       }
    }
 
-   private static volatile boolean flag;
+   public static volatile boolean flag;
 
    public static final String IDENTITY_NAME = "test-hello";
    public static final String IDENTITY_GROUP = "test-group-hello";
+
+   @Override
+   public void interrupt() throws UnableToInterruptJobException {
+
+   }
 }
