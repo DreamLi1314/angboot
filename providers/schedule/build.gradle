@@ -1,0 +1,29 @@
+buildscript {
+	ext {
+		quartzVersion = '2.3.0'
+	}
+}
+
+plugins {
+	id 'java'
+}
+
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation(group: 'org.quartz-scheduler', name: 'quartz', version: "$quartzVersion") {
+		exclude(group: 'org.slf4j')
+	}
+
+	implementation(group: 'org.quartz-scheduler', name: 'quartz-jobs', version: "$quartzVersion")
+
+	implementation(group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3')
+
+	// test
+	testImplementation(group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.5.2')
+}
+
