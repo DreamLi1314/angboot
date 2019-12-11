@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83fa93de-1df5-41eb-96c5-dd710bd06a47" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/angboot.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angboot.iws" beforeDir="false" afterPath="$PROJECT_DIR$/angboot.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/server/src/main/java/org/angboot/config/AngBootWebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/server/src/main/java/org/angboot/config/AngBootWebMvcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/.node-version" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/.node-version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/.nvmrc" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/.nvmrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/scss/_imports.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/scss/_imports.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/scss/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/scss/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/web/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/web/src/styles.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -136,56 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/server/src/main/java/org/angboot/config/AngBootWebMvcConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/server/src/main/java/org/angboot/authority/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/server/src/main/java/org/angboot/web/security/LogoutFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.1.8.RELEASE/1b39bc8f5e65621e891efb0dc6e2d5cf7e443ae3/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="909" selection-start-line="909" selection-end-line="909" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.1.8.RELEASE/1b39bc8f5e65621e891efb0dc6e2d5cf7e443ae3/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/WebContentInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2834">
-              <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.1.8.RELEASE/1b39bc8f5e65621e891efb0dc6e2d5cf7e443ae3/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/handler/UserRoleAuthorizationInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-279">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="460">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -193,8 +150,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="53" column="53" lean-forward="true" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+            <state relative-caret-position="506">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#646#688#0" expanded="true" />
@@ -203,10 +160,110 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/web/src/scss/_layout.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="31" column="18" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/web/src/scss/_themeable.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/web/src/scss/_variable.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/web/src/scss/_icon.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/web/src/scss/_color.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/web/src/scss/_imports.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/web/src/styles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/web/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/web/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/web/.npm-version">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/web/.nvmrc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/web/src/app/em/service/em-title-bar.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
+            <state relative-caret-position="874">
               <caret line="52" column="17" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="17" />
             </state>
           </provider>
@@ -226,16 +283,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>boots</find>
-      <find>os752d</find>
-      <find>title-bar-icon</find>
-      <find>fontawesome</find>
-      <find>font-awesome</find>
-      <find>font</find>
-      <find>boo</find>
-      <find>bootstrap-float-label</find>
-      <find>$portal-navbar-height</find>
-      <find>em-navbar</find>
       <find>roboto-fontface</find>
       <find>EmMonitorComponent</find>
       <find>BrowserModule</find>
@@ -248,7 +295,6 @@
       <find>margin-left: 15px;</find>
       <find>home-icon</find>
       <find>tab-focus</find>
-      <find>active</find>
       <find>@import &quot;color&quot;;</find>
       <find>@extend</find>
       <find>js:Error</find>
@@ -256,6 +302,17 @@
       <find>/logout</find>
       <find>springBootVersion</find>
       <find>WebMvcConfigurer</find>
+      <find>gray-600</find>
+      <find>$white</find>
+      <find>white</find>
+      <find>button</find>
+      <find>btn-active-box-shadow</find>
+      <find>btn-disabled-opacity</find>
+      <find>opacity</find>
+      <find>ac</find>
+      <find>active</find>
+      <find>8192</find>
+      <find>btn-default</find>
     </findStrings>
     <replaceStrings>
       <replace>models</replace>
@@ -272,12 +329,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/app/em/tool-bar/em-tool-bar.component.html" />
-        <option value="$PROJECT_DIR$/web/src/scss/internal/_bootstrap-override.scss" />
-        <option value="$PROJECT_DIR$/web/src/app/em/monitor/em-monitor.component.html" />
-        <option value="$PROJECT_DIR$/client/web/build.gradle" />
-        <option value="$PROJECT_DIR$/client/server/build.gradle" />
-        <option value="$PROJECT_DIR$/api/models/build.gradle" />
         <option value="$PROJECT_DIR$/api/interfaces/build.gradle" />
         <option value="$PROJECT_DIR$/providers/authority/build.gradle" />
         <option value="$PROJECT_DIR$/.travis.yml" />
@@ -302,9 +353,6 @@
         <option value="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.scss" />
         <option value="$PROJECT_DIR$/client/web/src/assets/icons/variables.scss" />
         <option value="$PROJECT_DIR$/client/web/src/app/portal/portal-title-bar/portal-title-bar.component.html" />
-        <option value="$PROJECT_DIR$/client/web/src/scss/_layout.scss" />
-        <option value="$PROJECT_DIR$/client/web/src/scss/_imports.scss" />
-        <option value="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.html" />
         <option value="$PROJECT_DIR$/client/web/src/app/common/constant/url/em-url-constants.ts" />
         <option value="$PROJECT_DIR$/client/web/src/app/em/em-app.module.ts" />
         <option value="$PROJECT_DIR$/client/web/src/app/widget/services/model.service.ts" />
@@ -323,6 +371,15 @@
         <option value="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.spec.ts" />
         <option value="$PROJECT_DIR$/client/server/src/main/java/org/angboot/web/security/LogoutFilter.java" />
         <option value="$PROJECT_DIR$/client/server/src/main/java/org/angboot/config/AngBootWebMvcConfiguration.java" />
+        <option value="$PROJECT_DIR$/client/web/.node-version" />
+        <option value="$PROJECT_DIR$/client/web/.nvmrc" />
+        <option value="$PROJECT_DIR$/client/web/build.gradle" />
+        <option value="$PROJECT_DIR$/client/web/src/scss/_imports.scss" />
+        <option value="$PROJECT_DIR$/client/web/src/scss/_themeable.scss" />
+        <option value="$PROJECT_DIR$/client/web/src/styles.scss" />
+        <option value="$PROJECT_DIR$/client/web/src/scss/_color.scss" />
+        <option value="$PROJECT_DIR$/client/web/src/scss/_layout.scss" />
+        <option value="$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.html" />
       </list>
     </option>
   </component>
@@ -341,7 +398,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="961" />
@@ -354,6 +411,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -370,70 +428,35 @@
               <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
               <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angboot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angboot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="client" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="angboot" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,7 +464,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/providers/schedule/src/test/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/web/src/scss" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/client/web/node_modules/protractor" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -455,19 +478,19 @@
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Repositories\Java\angboot\v_0.2.1\angboot\providers\schedule\src\test\resources" />
-      <recent name="$PROJECT_DIR$/client/web/src/assets/icons/fonts" />
-      <recent name="$PROJECT_DIR$/client/web/src/app/em/service" />
-      <recent name="$PROJECT_DIR$/client/web/src/app/em/setting" />
-      <recent name="$PROJECT_DIR$/client/server" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/web/src/assets/icons/icons_svg" />
       <recent name="$PROJECT_DIR$/client/web/src/assets/icons/fonts" />
       <recent name="E:\Repositories\Java\angboot\v_0.2.0\angboot\web\src\assets\icons" />
       <recent name="$PROJECT_DIR$/web/src/scss" />
       <recent name="$PROJECT_DIR$/web/src/scss/internal" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Repositories\Java\angboot\v_0.2.1\angboot\client\web\src\scss" />
+      <recent name="E:\Repositories\Java\angboot\v_0.2.1\angboot\providers\schedule\src\test\resources" />
+      <recent name="$PROJECT_DIR$/client/web/src/assets/icons/fonts" />
+      <recent name="$PROJECT_DIR$/client/web/src/app/em/service" />
+      <recent name="$PROJECT_DIR$/client/web/src/app/em/setting" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -624,6 +647,9 @@
       <workItem from="1575883147587" duration="642000" />
       <workItem from="1575889037567" duration="2479000" />
       <workItem from="1575902300740" duration="3940000" />
+      <workItem from="1575966868883" duration="1354000" />
+      <workItem from="1576029750087" duration="620000" />
+      <workItem from="1576042487411" duration="10457000" />
     </task>
     <servers />
   </component>
@@ -660,7 +686,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99886000" />
+    <option name="totallyTimeSpent" value="112317000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -672,9 +698,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="961" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1015" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49451888" visible="true" weight="0.3243243" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49451888" visible="true" weight="0.28624734" />
       <window_info id="Structure" order="1" sideWeight="0.5054811" side_tool="true" weight="0.20823096" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -768,162 +795,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/setting/em-setting-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="12" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#646#687#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/server/src/main/java/org/angboot/authority/model/SecurityConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/widget/widget.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/em-app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#646#693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/widget/dialog/message-dialog.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/widget/dialog/message-dialog.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/widget/services/model.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="108" column="69" selection-start-line="108" selection-start-column="69" selection-end-line="108" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" lean-forward="true" selection-start-column="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/index.components.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/common/util/component-tool.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3952">
-          <caret line="179" selection-start-line="179" selection-end-line="179" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/common/services/csrf-interceptor.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/common/data/dimension.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-305">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/common/util/gui-tool.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/common/util/uri-codec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/node_modules/@angular/router/src/router.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="291" column="4" selection-start-line="291" selection-start-column="4" selection-end-line="291" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/providers/schedule/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="12" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/providers/schedule/src/main/resources/quartz.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="11" selection-start-line="2" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/providers/schedule/src/main/java/org/angboot/schedule/ScheduleApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -998,13 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/service/em-title-bar.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1026,28 +890,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="53" column="53" lean-forward="true" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#646#688#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/server/src/main/java/org/angboot/AngbootApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="17" column="31" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.1.8.RELEASE/1b39bc8f5e65621e891efb0dc6e2d5cf7e443ae3/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/handler/UserRoleAuthorizationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1065,37 +911,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/server/src/main/java/org/angboot/authority/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.1.8.RELEASE/1b39bc8f5e65621e891efb0dc6e2d5cf7e443ae3/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/WebContentInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2834">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/server/src/main/java/org/angboot/config/AngBootWebMvcConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/server/src/main/java/org/angboot/web/security/LogoutFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="29" column="4" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/client/server/src/main/java/org/angboot/web/security/LogoutFilter.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator-autoconfigure/2.1.6.RELEASE/4293aa245d2a2577ea8b19ddcb084d5f46474798/spring-boot-actuator-autoconfigure-2.1.6.RELEASE.jar!/org/springframework/boot/actuate/autoconfigure/web/servlet/WebMvcEndpointChildContextConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
@@ -1103,10 +919,184 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.1.8.RELEASE/1b39bc8f5e65621e891efb0dc6e2d5cf7e443ae3/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/handler/UserRoleAuthorizationInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.1.8.RELEASE/1b39bc8f5e65621e891efb0dc6e2d5cf7e443ae3/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/WebContentInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.1.8.RELEASE/1b39bc8f5e65621e891efb0dc6e2d5cf7e443ae3/spring-webmvc-5.1.8.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="909" selection-start-line="909" selection-end-line="909" />
+        <state relative-caret-position="292">
+          <caret line="904" column="28" selection-start-line="904" selection-start-column="28" selection-end-line="904" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/server/src/main/java/org/angboot/authority/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="18" column="59" lean-forward="true" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/server/src/main/java/org/angboot/config/AngBootWebMvcConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#646#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/.node-version">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/.npm-version">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/.nvmrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/service/em-title-bar.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/node_modules/bootstrap/js/dist/button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="169" column="5" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/node_modules/bootstrap/scss/_button-group.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="97" column="33" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/node_modules/bootstrap/dist/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="7821" column="22" selection-start-line="7821" selection-start-column="22" selection-end-line="7821" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/node_modules/bootstrap/scss/_buttons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="98" column="26" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/node_modules/bootstrap/scss/bootstrap.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/node_modules/bootstrap/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="432" column="22" selection-start-line="432" selection-end-line="432" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/scss/_icon.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/scss/_imports.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/scss/_variable.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/scss/_themeable.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/scss/_color.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/scss/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/web/src/app/em/title-bar/em-title-bar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>

@@ -2,7 +2,7 @@
 .title-bar-container {
    height: $title-bar-height;
    width: 100%;
-   background: $bg-title-bar-container;
+   background-color: $bg-title-bar-container;
 }
 
 .base-title-bar-icon-size {
@@ -29,6 +29,28 @@
 }
 
 // select
-.btn-selected {
-   @extend .txt-dark;
+.btn-icon-selected {
+   i {
+      color: $primary;
+   }
+}
+
+// header
+.title-bar-header {
+   .btn:focus,.btn:active {
+      box-shadow: none !important;
+   }
+
+   .btn-default:active {
+      background-color: unset;
+      color: unset;
+      &:disabled {
+         background-color: unset;
+         color: unset;
+      }
+      &:hover {
+         background-color: unset;
+         color: unset;
+      }
+   }
 }
