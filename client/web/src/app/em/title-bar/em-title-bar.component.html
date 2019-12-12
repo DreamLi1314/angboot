@@ -31,12 +31,18 @@
   </div>
 
   <div class="btn-group title-bar-align-right" role="group" aria-label="EM Home Btn Group">
-    <a href="/logout">
-      <button type="button" class="btn btn-default tile-bar-icon-size title-bar-btn">
-        <i class="icon-logout"></i>
-        <span class="sr-only">Log Out</span>
+    <div class="dropdown">
+      <button id="account-dropdown-toggle" type="button"
+              class="btn btn-default tile-bar-icon-size title-bar-btn dropdown-toggle"
+              aria-label="Account" aria-haspopup="true" aria-expanded="false">
+        <i class="icon-account"></i>
+        <span class="sr-only">Account</span>
       </button>
-    </a>
+
+      <ul class="dropdown-menu" aria-labelledby="account-dropdown-toggle">
+        <li><a href="/logout">Log Out</a></li>
+      </ul>
+    </div>
 
     <button type="button" class="btn btn-default tile-bar-icon-size title-bar-btn">
       <i class="icon-help"></i>

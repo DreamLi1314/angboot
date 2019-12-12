@@ -1,13 +1,15 @@
-$icon-edit: "\e900";
-$icon-help: "\e901";
-$icon-home: "\e902";
-$icon-logout: "\e903";
-$icon-menu-off: "\e904";
-$icon-menu-on: "\e905";
-$icon-monitor: "\e906";
-$icon-setting: "\e907";
+$icon-account: "\e900";
+$icon-edit: "\e901";
+$icon-help: "\e902";
+$icon-home: "\e903";
+$icon-logout: "\e904";
+$icon-menu-off: "\e905";
+$icon-menu-on: "\e906";
+$icon-monitor: "\e907";
+$icon-setting: "\e908";
 
 $angboot-base-map: (
+   icon-account: $icon-account,
    icon-edit: $icon-edit,
    icon-help: $icon-help,
    icon-home: $icon-home,
