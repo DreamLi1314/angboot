@@ -2,9 +2,8 @@ import org.apache.tools.ant.taskdefs.condition.Os
 
 buildscript {
    repositories {
-      maven {
-         url 'http://maven.aliyun.com/nexus/content/groups/public/'
-      }
+      jcenter()
+      mavenCentral()
    }
 }
 
@@ -13,9 +12,8 @@ allprojects {
    version = '0.2.1-SNAPSHOT'
 
    repositories {
-      maven {
-         url 'http://maven.aliyun.com/nexus/content/groups/public/'
-      }
+      jcenter()
+      mavenCentral()
    }
 
    buildscript {

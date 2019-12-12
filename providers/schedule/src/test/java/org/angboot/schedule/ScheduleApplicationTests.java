@@ -57,7 +57,7 @@ class ScheduleApplicationTests {
          }
       }).start();
 
-      TimeUnit.MINUTES.sleep(3);
+//      TimeUnit.MINUTES.sleep(3);
       scheduler.shutdown();
    }
 }
