@@ -15,6 +15,7 @@
 import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { EmUrlConstants } from "../../common/constants/url/em-url-constants";
+import { GuiTool } from "../../common/util/gui-tool";
 import { ModelService } from "../../widget/services/model.service";
 import { EmTab, EmTitleBarService } from "../service/em-title-bar.service";
 
@@ -53,5 +54,9 @@ export class EmTitleBarComponent {
       // TODO redirect to login page by interceptor.
       this.modelService.getModel(EmUrlConstants.LOGOUT_URL).subscribe((status) => {
       });
+   }
+
+   help(): void {
+      GuiTool.openBrowserTab("https://dreamli1314.github.io/angboot/");
    }
 }
