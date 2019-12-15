@@ -13,7 +13,8 @@
  */
 
 import { Component } from "@angular/core";
-import { SidenavService } from "../service/SidenavService";
+import { EmTitleBarService } from "../service/em-title-bar.service";
+import { SideNavService } from "../service/side-nav.service";
 
 @Component({
    selector: "em-tool-bar",
@@ -21,7 +22,10 @@ import { SidenavService } from "../service/SidenavService";
    styleUrls: ["em-tool-bar.component.scss"]
 })
 export class EmToolBarComponent {
-   constructor(private sidenavService: SidenavService) {}
+   constructor(private sidenavService: SideNavService,
+               private titleBarService: EmTitleBarService)
+   {
+   }
 
    get isToggle(): boolean {
       return this.sidenavService.isToggle;
@@ -29,6 +33,10 @@ export class EmToolBarComponent {
 
    toggle(): void {
       this.sidenavService.toggle();
+   }
+
+   get tabDesc(): string {
+      return this.titleBarService.tabDesc;
    }
 
 }

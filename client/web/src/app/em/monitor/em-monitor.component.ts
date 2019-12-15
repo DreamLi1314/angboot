@@ -15,7 +15,7 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { MatDrawer } from "@angular/material";
 import { BaseSubscription } from "../../widget/base/BaseSubscription";
-import { SidenavService } from "../service/SidenavService";
+import { SideNavService } from "../service/side-nav.service";
 
 @Component({
    selector: "em-monitor",
@@ -25,7 +25,7 @@ import { SidenavService } from "../service/SidenavService";
 export class EmMonitorComponent extends BaseSubscription implements OnInit {
    @ViewChild("drawer") sidenav: MatDrawer;
 
-   constructor(private sidenavService: SidenavService) {
+   constructor(private sidenavService: SideNavService) {
       super();
    }
 

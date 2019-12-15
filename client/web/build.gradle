@@ -1,23 +1,30 @@
-buildscript {
-   repositories {
-      jcenter()
-      mavenCentral()
-   }
+//buildscript {
+//   repositories {
+//      maven {
+//         url "https://plugins.gradle.org/m2/"
+//      }
+//   }
+//
+//   dependencies {
+//      classpath "com.moowork.gradle:gradle-node-plugin:1.3.1"
+//   }
+//}
 
-   dependencies {
-      classpath "com.moowork.gradle:gradle-node-plugin:1.3.1"
-   }
-}
+//apply plugin: "com.moowork.node"
 
 plugins {
-   id 'com.moowork.node' version '1.3.1'
+   // The `moowork.gradle` plugin unSupport gradle 6+ now,
+   // so using `github.node-gradle` for install node and npm
+   // if the grunt and gulp is not required now.
+   // See: https://github.com/srs/gradle-node-plugin/pull/349
+   id "com.github.node-gradle.node" version "2.0.0"
 }
 
 node {
-   version = '9.11.1'
-   npmVersion = '5.6.0'
+   version = '10.17.0'
+   npmVersion = '6.11.3'
    download = true
-   workDir = file("${project.gradle.gradleUserHomeDir}/caches/tools")
+   workDir = file("${buildDir}/tools/nodejs")
 }
 
 task generateIndexFiles(type: NpmTask, dependsOn: npmInstall) {
