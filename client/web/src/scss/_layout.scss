@@ -1,3 +1,8 @@
+.angboot-icon-size {
+   @extend .base-title-bar-icon-size;
+   min-width: $title-bar-height;
+   margin-right: 5px;
+}
 
 .title-bar-container {
    height: $title-bar-height;
@@ -12,15 +17,13 @@
    height: $title-bar-height;
 }
 
-.angboot-icon-size {
-   @extend .base-title-bar-icon-size;
-   min-width: $title-bar-height;
-   margin-right: 5px;
-}
-
 .tile-bar-icon-size {
    @extend .base-title-bar-icon-size;
    min-width: 42px;
+}
+
+.title-bar-align-right {
+   margin-left: auto;
 }
 
 // margin

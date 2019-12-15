@@ -31,7 +31,7 @@ gradlew[.bat] classes
 ```
 Of course, our Angular code also supports hot deployment. Execute the following command and refresh the browser after successful compilation to apply the modified code:
 ``` shell
-gradlew[.bat] web:watch
+gradlew[.bat] watch
 ```
 
 ### 2.3 Rebuild and clean the application
