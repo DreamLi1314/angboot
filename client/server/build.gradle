@@ -40,7 +40,11 @@ dependencies {
    implementation 'org.springframework.security:spring-security-cas'
 
    // mybatis
-   implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.1'
+   implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatisVersion}"
+
+   // dubbo
+   implementation "org.apache.dubbo:dubbo-spring-boot-starter:${dubboVersion}"
+   implementation "org.apache.curator:curator-recipes:${dubboCuratorVersion}"
 
    // database
    runtimeOnly 'com.h2database:h2'

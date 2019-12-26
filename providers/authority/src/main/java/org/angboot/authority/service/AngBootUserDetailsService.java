@@ -36,6 +36,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service("userDetailsService")
+@org.apache.dubbo.config.annotation.Service
 public class AngBootUserDetailsService implements UserDetailsService {
 
    @Override
@@ -80,6 +81,7 @@ public class AngBootUserDetailsService implements UserDetailsService {
 
    @Autowired
    private UserService userService;
+
    @Autowired
    private AuthorizationService authorizationService;
 

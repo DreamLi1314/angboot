@@ -39,4 +39,9 @@ public class SecurityConstant {
     * the key of cas enabled property.
     */
    public static final String CAS_ENABLED_KEY = "angboot.cas.enabled";
+
+   /*
+    * the key of outer authority enabled property.
+    */
+   public static final String OUTER_AUTHORITY_ENABLED_KEY = "angboot.outer.authority.enabled";
 }

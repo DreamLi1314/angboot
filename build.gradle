@@ -23,6 +23,9 @@ allprojects {
          apiVersion = "0.1.0-SNAPSHOT"
          springBootVersion = '2.1.6.RELEASE'
          lombokVersion = '1.18.8'
+         dubboVersion = '2.7.4.1'
+         dubboCuratorVersion = '2.13.0'
+         mybatisVersion = '2.0.1'
          isWindows = Os.isFamily(Os.FAMILY_WINDOWS)
       }
    }
