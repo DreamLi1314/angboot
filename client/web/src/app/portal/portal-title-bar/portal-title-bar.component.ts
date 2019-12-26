@@ -13,6 +13,7 @@
  */
 
 import { Component } from "@angular/core";
+import { GuiTool } from "../../common/util/gui-tool";
 
 @Component({
    selector: "portal-title-bar",
@@ -20,4 +21,7 @@ import { Component } from "@angular/core";
    styleUrls: ["portal-title-bar.component.scss"]
 })
 export class PortalTitleBarComponent {
+   help(): void {
+      GuiTool.openBrowserTab("https://dreamli1314.github.io/angboot/");
+   }
 }
