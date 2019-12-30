@@ -2,24 +2,30 @@ import org.apache.tools.ant.taskdefs.condition.Os
 
 buildscript {
    repositories {
-      jcenter()
-      mavenCentral()
+      maven{
+         url 'http://maven.aliyun.com/nexus/content/groups/public/'
+      }
    }
 }
 
 allprojects {
    group = 'org.angboot'
-   version = '0.2.1-SNAPSHOT'
+   version = '0.1.0-SNAPSHOT'
 
    repositories {
-      jcenter()
-      mavenCentral()
+      maven{
+         url 'http://maven.aliyun.com/nexus/content/groups/public/'
+      }
    }
 
    buildscript {
       ext {
+         apiVersion = "0.1.0-SNAPSHOT"
          springBootVersion = '2.1.6.RELEASE'
          lombokVersion = '1.18.8'
+         dubboVersion = '2.7.4.1'
+         dubboCuratorVersion = '2.13.0'
+         mybatisVersion = '2.0.1'
          isWindows = Os.isFamily(Os.FAMILY_WINDOWS)
       }
    }
@@ -58,5 +64,5 @@ task codeCoverageReport(type: JacocoReport) {
 }
 
 wrapper {
-   gradleVersion = '6.0.1'
+   gradleVersion = '5.4.1'
 }

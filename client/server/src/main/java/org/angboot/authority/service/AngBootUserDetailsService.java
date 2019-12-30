@@ -14,7 +14,7 @@
 
 package org.angboot.authority.service;
 
-import org.angboot.authority.model.SecurityConstant;
+import org.angboot.constants.security.SecurityConstant;
 import org.angboot.domain.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
