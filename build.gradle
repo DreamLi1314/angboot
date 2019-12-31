@@ -23,6 +23,14 @@ allprojects {
          isWindows = Os.isFamily(Os.FAMILY_WINDOWS)
       }
    }
+
+   configurations {
+      api
+      tools
+      developmentOnly
+      compile.extendsFrom(api)
+      compileOnly.extendsFrom(tools, annotationProcessor)
+   }
 }
 
 apply plugin: 'jacoco'

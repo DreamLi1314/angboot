@@ -10,14 +10,6 @@ apply plugin: 'jacoco'
 
 sourceCompatibility = '1.8'
 
-configurations {
-   api
-   tools
-   developmentOnly
-   compile.extendsFrom(api)
-   compileOnly.extendsFrom(tools, annotationProcessor)
-}
-
 repositories {
    mavenLocal()
    mavenCentral()

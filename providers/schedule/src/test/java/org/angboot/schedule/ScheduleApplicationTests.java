@@ -1,7 +1,7 @@
 package org.angboot.schedule;
 
 import org.angboot.schedule.job.HelloJob;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 
@@ -15,16 +15,24 @@ import static org.quartz.TriggerBuilder.newTrigger;
 
 class ScheduleApplicationTests {
 
+   @BeforeAll
+   static void initSchedule() throws Exception {
+      scheduler = StdSchedulerFactory.getDefaultScheduler();
+      scheduler.start();
+   }
+
    /**
     * 测试 Quartz issue: 在一个 run once 的 task 在 running 的状态, 再次手动触发执行 task
     * issue: Test task 是否执行了三遍.
     * result: 两遍
     */
    @Test
+   @Disabled
+   @Tags({
+      @Tag("run-manually"),
+      @Tag("long-time-test")
+   })
    void testSchedulerIssue() throws Exception {
-      Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler();
-      scheduler.start();
-
       Set<Trigger> triggers = new HashSet<>();
 
       JobDetail jobDetail = JobBuilder.newJob(HelloJob.class)
@@ -57,7 +65,15 @@ class ScheduleApplicationTests {
          }
       }).start();
 
-//      TimeUnit.MINUTES.sleep(3);
-      scheduler.shutdown();
+      TimeUnit.MINUTES.sleep(3);
+
    }
+
+   @AfterAll
+   static void destroyResource() throws Exception {
+      scheduler.shutdown();
+      scheduler = null;
+   }
+
+   private static Scheduler scheduler;
 }
