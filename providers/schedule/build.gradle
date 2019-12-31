@@ -18,6 +18,12 @@ dependencies {
 	api project(':api:models')
 	api project(':api:interfaces')
 
+	// spring
+	implementation group: 'org.springframework', name: 'spring-core', version: '5.1.8.RELEASE'
+	implementation group: 'org.springframework', name: 'spring-beans', version: '5.1.8.RELEASE'
+	implementation group: 'org.springframework', name: 'spring-context', version: '5.1.8.RELEASE'
+
+	// quartz
 	implementation(group: 'org.quartz-scheduler', name: 'quartz', version: "$quartzVersion") {
 		exclude(group: 'org.slf4j')
 	}
