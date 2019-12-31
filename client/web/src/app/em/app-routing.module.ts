@@ -15,6 +15,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { EMAppComponent } from "./app.component";
+import { EmMonitorComponent } from "./monitor/em-monitor.component";
 
 const appRoutes: Routes = [
    {

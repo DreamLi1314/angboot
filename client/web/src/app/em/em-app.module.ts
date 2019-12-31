@@ -24,9 +24,7 @@ import { EMAppComponent } from "./app.component";
 import { MODULE_COMPONENTS } from "./index.components";
 import { EMAppRoutingModule } from "./app-routing.module";
 import { EmMonitorModule } from "./monitor/em-monitor.module";
-import { EmTitleBarService } from "./service/em-title-bar.service";
-import { SideNavService } from "./service/side-nav.service";
-import { EmSettingModule } from "./setting/em-setting.module";
+import { SidenavService } from "./service/SidenavService";
 
 @NgModule({
    declarations: [
@@ -35,13 +33,10 @@ import { EmSettingModule } from "./setting/em-setting.module";
    ],
    imports: [
       CommonModule,
-      WidgetModule,
       FormsModule,
-      NgbModule,
       ReactiveFormsModule,
       EMAppRoutingModule,
       EmMonitorModule,
-      EmSettingModule,
       MatToolbarModule,
       MatButtonModule
    ],
@@ -51,9 +46,7 @@ import { EmSettingModule } from "./setting/em-setting.module";
    entryComponents: [
    ],
    providers: [
-      SideNavService,
-      EmTitleBarService,
-      ModelService
+      SidenavService
    ]
 })
 export class EmAppModule {

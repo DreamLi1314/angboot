@@ -42,7 +42,8 @@ gradlew[.bat] server
 * [0.2.1](https://github.com/DreamLi1314/angboot/tree/0.2.1)
 
 ## 5. Getting help
-To see [User Manual](https://dreamli1314.github.io/angboot/).
+* Master version: To see [User Manual](https://dreamli1314.github.io/angboot/).
+* Current Version: To see `docs/index.md`
 
 ## 6. Todo list of this version
 * Upgrade angular to v8.

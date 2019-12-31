@@ -1,14 +1,18 @@
 plugins {
+   id 'org.springframework.boot' version '2.1.6.RELEASE'
    id 'java'
 }
 
-sourceCompatibility = '1.8'
-
+apply plugin: 'io.spring.dependency-management'
 apply plugin: 'jacoco'
+
+sourceCompatibility = '1.8'
 
 configurations {
    api
+   developmentOnly
    compile.extendsFrom(api)
+   compileOnly.extendsFrom(tools, annotationProcessor)
 }
 
 repositories {
@@ -20,6 +24,28 @@ dependencies {
    // modules
    api project(':api:models')
    api project(':api:interfaces')
+   api project(':api:constants')
+
+   // spring
+   implementation 'org.springframework.boot:spring-boot-starter-web'
+   implementation 'org.springframework.boot:spring-boot-starter-security'
+
+   // only development
+   developmentOnly 'org.springframework.boot:spring-boot-devtools'
+   annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+   // mybatis
+   implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatisVersion}"
+
+   // dubbo
+   implementation "org.apache.dubbo:dubbo-spring-boot-starter:${dubboVersion}"
+   implementation "org.apache.curator:curator-recipes:${dubboCuratorVersion}"
+
+   // database
+   runtimeOnly 'com.h2database:h2'
+   implementation 'com.alibaba:druid:1.1.18'
+
+   testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 jacocoTestReport {

@@ -5,6 +5,8 @@
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="angboot.api.constants.main" target="1.8" />
+      <module name="angboot.api.constants.test" target="1.8" />
       <module name="angboot.api.interfaces.main" target="1.8" />
       <module name="angboot.api.interfaces.test" target="1.8" />
       <module name="angboot.api.models.main" target="1.8" />
@@ -25,6 +27,11 @@
       <module name="angboot.providers.authority.test" target="1.8" />
       <module name="angboot.providers.schedule.main" target="1.8" />
       <module name="angboot.providers.schedule.test" target="1.8" />
+      <module name="org.angboot.angboot.api.interfaces.test" target="1.8" />
+      <module name="org.angboot.angboot.api.models.main" target="1.8" />
+      <module name="org.angboot.angboot.api.models.test" target="1.8" />
+      <module name="org.angboot.angboot.client.server.main" target="1.8" />
+      <module name="org.angboot.angboot.client.server.test" target="1.8" />
       <module name="org.angboot.angboot.java.main" target="1.8" />
       <module name="org.angboot.angboot.java.test" target="1.8" />
       <module name="org.angboot.angboot.providers.schedule.main" target="1.8" />
@@ -71,6 +78,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/api" />
+            <option value="$PROJECT_DIR$/api/constants" />
             <option value="$PROJECT_DIR$/api/interfaces" />
             <option value="$PROJECT_DIR$/api/models" />
             <option value="$PROJECT_DIR$/client" />
@@ -78,7 +86,6 @@
             <option value="$PROJECT_DIR$/client/web" />
             <option value="$PROJECT_DIR$/providers" />
             <option value="$PROJECT_DIR$/providers/authority" />
-            <option value="$PROJECT_DIR$/providers/schedule" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />
@@ -115,6 +122,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/angboot.iml" filepath="$PROJECT_DIR$/angboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/angboot.api.iml" filepath="$PROJECT_DIR$/api/angboot.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/constants/angboot.api.constants.iml" filepath="$PROJECT_DIR$/api/constants/angboot.api.constants.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/constants/angboot.api.constants.main.iml" filepath="$PROJECT_DIR$/api/constants/angboot.api.constants.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/constants/angboot.api.constants.test.iml" filepath="$PROJECT_DIR$/api/constants/angboot.api.constants.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml" filepath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.main.iml" filepath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.test.iml" filepath="$PROJECT_DIR$/api/interfaces/angboot.api.interfaces.test.iml" />
@@ -134,6 +144,17 @@
       <module fileurl="file://$PROJECT_DIR$/providers/schedule/angboot.providers.schedule.main.iml" filepath="$PROJECT_DIR$/providers/schedule/angboot.providers.schedule.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/providers/schedule/angboot.providers.schedule.test.iml" filepath="$PROJECT_DIR$/providers/schedule/angboot.providers.schedule.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/providers/schedule/dev-0.2.2.angboot.providers.schedule.iml" filepath="$PROJECT_DIR$/providers/schedule/dev-0.2.2.angboot.providers.schedule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/interfaces/org.angboot.angboot.api.interfaces.test.iml" filepath="$PROJECT_DIR$/api/interfaces/org.angboot.angboot.api.interfaces.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/models/org.angboot.angboot.api.models.iml" filepath="$PROJECT_DIR$/api/models/org.angboot.angboot.api.models.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/models/org.angboot.angboot.api.models.main.iml" filepath="$PROJECT_DIR$/api/models/org.angboot.angboot.api.models.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/models/org.angboot.angboot.api.models.test.iml" filepath="$PROJECT_DIR$/api/models/org.angboot.angboot.api.models.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/org.angboot.angboot.client.iml" filepath="$PROJECT_DIR$/client/org.angboot.angboot.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/server/org.angboot.angboot.client.server.iml" filepath="$PROJECT_DIR$/client/server/org.angboot.angboot.client.server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/server/org.angboot.angboot.client.server.main.iml" filepath="$PROJECT_DIR$/client/server/org.angboot.angboot.client.server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/server/org.angboot.angboot.client.server.test.iml" filepath="$PROJECT_DIR$/client/server/org.angboot.angboot.client.server.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/web/org.angboot.angboot.client.web.iml" filepath="$PROJECT_DIR$/client/web/org.angboot.angboot.client.web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/providers/org.angboot.angboot.providers.iml" filepath="$PROJECT_DIR$/providers/org.angboot.angboot.providers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/providers/authority/org.angboot.angboot.providers.authority.iml" filepath="$PROJECT_DIR$/providers/authority/org.angboot.angboot.providers.authority.iml" />
       <module fileurl="file://$PROJECT_DIR$/providers/schedule/org.angboot.angboot.providers.schedule.iml" filepath="$PROJECT_DIR$/providers/schedule/org.angboot.angboot.providers.schedule.iml" />
       <module fileurl="file://$PROJECT_DIR$/providers/schedule/org.angboot.angboot.providers.schedule.main.iml" filepath="$PROJECT_DIR$/providers/schedule/org.angboot.angboot.providers.schedule.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/providers/schedule/org.angboot.angboot.providers.schedule.test.iml" filepath="$PROJECT_DIR$/providers/schedule/org.angboot.angboot.providers.schedule.test.iml" />
@@ -238,6 +259,24 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.4.0/5fa1f08842f94c146ecfd17b39cb80632ccd1c68/classmate-1.4.0-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: com.google.code.gson:gson:2.8.5">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/f645ed69d595b24d4cf8b3fbb64cc505bede8829/gson-2.8.5.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/c5b4c491aecb72e7c32a78da0b5c6b9cda8dee0f/gson-2.8.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.google.guava:guava:16.0.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/16.0.1/5fa98cd1a63c99a44dd8d3b77e4762b066a5d0c5/guava-16.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/16.0.1/2477d012cd5379f9696e0d9d3ccc62ad13a09ca4/guava-16.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: com.h2database:h2:1.4.199">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.h2database/h2/1.4.199/7bf08152984ed8859740ae3f97fae6c72771ae45/h2-1.4.199.jar!/" />
@@ -256,24 +295,6 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.4.0/c43fc506196089da87a7bb36ec847b57072a818b/json-path-2.4.0-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: com.mchange:c3p0:0.9.5.2">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mchange/c3p0/0.9.5.2/5f86cb6130bc6e8475615ed82d5b5e6fb226a86a/c3p0-0.9.5.2.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mchange/c3p0/0.9.5.2/147cbd16cde386d978a7d5f23f42778102a08cfc/c3p0-0.9.5.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: com.mchange:mchange-commons-java:0.2.11">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mchange/mchange-commons-java/0.2.11/2a6a6c1fe25f28f5a073171956ce6250813467ef/mchange-commons-java-0.2.11.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mchange/mchange-commons-java/0.2.11/33a53955501fa830ecfc98d6ae611c6dc451946c/mchange-commons-java-0.2.11-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Gradle: com.vaadin.external.google:android-json:0.0.20131108.vaadin1">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/" />
@@ -281,15 +302,6 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/bf42d7e47a3228513b626dd7d37ac6f072aeca4f/android-json-0.0.20131108.vaadin1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: com.zaxxer:HikariCP-java6:2.3.13">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP-java6/2.3.13/376d13a7b2dc57379c550619fe02ecfe51e62465/HikariCP-java6-2.3.13.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP-java6/2.3.13/2bf20fa35c3b5fa099fe2ab5eede4e437a6e1063/HikariCP-java6-2.3.13-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: com.zaxxer:HikariCP:3.2.0">
@@ -310,6 +322,24 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-core/1.1.5/5f170c31cb86c99fa03e4fb846b78fe920092d5a/micrometer-core-1.1.5-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: io.netty:netty-all:4.1.36.Final">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.36.Final/722e6b1b3ceead8fbe3c5d0218e083f757155451/netty-all-4.1.36.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.36.Final/194c47ffd2525ec0a1caf8f070321ce7629ca1d8/netty-all-4.1.36.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty:3.7.0.Final">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.7.0.Final/7a8c35599c68c0bf383df74469aa3e03d9aca87/netty-3.7.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.7.0.Final/92d6795b502e5194f84c5d1fd05c39800413fe53/netty-3.7.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: javax.annotation:javax.annotation-api:1.3.2">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.3.2/934c04d3cfef185a8008e7bf34331b79730a9d43/javax.annotation-api-1.3.2.jar!/" />
@@ -328,6 +358,15 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/4b714a5167580122e46ead3317ffcdcdbd67c5f0/validation-api-2.0.1.Final-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: jline:jline:0.9.94">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jline/jline/0.9.94/99a18e9a44834afdebc467294e1138364c207402/jline-0.9.94.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jline/jline/0.9.94/7ac7b49164e4f9d250309c70caee645151b87e46/jline-0.9.94-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: junit:junit:4.12">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar!/" />
@@ -335,6 +374,15 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: log4j:log4j:1.2.16">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.16/7999a63bfccbc7c247a9aea10d83d4272bd492c6/log4j-1.2.16.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.16/bf945d1dc995be7fe64923625f842fbb6bf443be/log4j-1.2.16-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: net.bytebuddy:byte-buddy-agent:1.9.13">
@@ -373,6 +421,69 @@
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/caches/modules-2/files-2.1/net.minidev/json-smart/2.3/36c61f1b839bde5b284528cb76f6811efbe0f08b/json-smart-2.3-sources.jar!/" />
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.3/36c61f1b839bde5b284528cb76f6811efbe0f08b/json-smart-2.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.curator:curator-client:2.13.0">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-client/2.13.0/a1974d9b3251c055408059b2f408d19d7db07224/curator-client-2.13.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-client/2.13.0/ed3b8b1770d5ae87d1fa36b01628799ca1d103c9/curator-client-2.13.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.curator:curator-framework:2.13.0">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-framework/2.13.0/d45229aee7d3f1f628a34fcac9b66ed5ba52c31f/curator-framework-2.13.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-framework/2.13.0/597aedcea214b6139298a5f17ce8b74c2134eccc/curator-framework-2.13.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.curator:curator-recipes:2.13.0">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-recipes/2.13.0/1e6d5cf7b18a402f5d52785877010711538d68a0/curator-recipes-2.13.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-recipes/2.13.0/3d2ecbb6517cdf0e3de22b371862493451208248/curator-recipes-2.13.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.dubbo:dubbo-spring-boot-autoconfigure-compatible:2.7.4.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.dubbo/dubbo-spring-boot-autoconfigure-compatible/2.7.4.1/5d04072b43b1d545a18d64518cc390a342977534/dubbo-spring-boot-autoconfigure-compatible-2.7.4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.dubbo/dubbo-spring-boot-autoconfigure-compatible/2.7.4.1/cad48472005451145af5f4c140088c4c9833ae82/dubbo-spring-boot-autoconfigure-compatible-2.7.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.dubbo:dubbo-spring-boot-autoconfigure:2.7.4.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.dubbo/dubbo-spring-boot-autoconfigure/2.7.4.1/73e173b02d117923c02c924c443114cef434d2c/dubbo-spring-boot-autoconfigure-2.7.4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.dubbo/dubbo-spring-boot-autoconfigure/2.7.4.1/7d9a5470e06346677e27c69349286cffd2210387/dubbo-spring-boot-autoconfigure-2.7.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.dubbo:dubbo-spring-boot-starter:2.7.4.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.dubbo/dubbo-spring-boot-starter/2.7.4.1/aaf201b884ad86ad596065ef43efc10fb7ba4302/dubbo-spring-boot-starter-2.7.4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.dubbo/dubbo-spring-boot-starter/2.7.4.1/6e1686e10ef9544c9ed7bcedb056d9ced13c3b53/dubbo-spring-boot-starter-2.7.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.dubbo:dubbo:2.7.4.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.dubbo/dubbo/2.7.4.1/13f171b885f6c64ef88521f3c80ae73ddec6c3d3/dubbo-2.7.4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.dubbo/dubbo/2.7.4.1/93b4532c5225559379621267bd324cc54dbf0780/dubbo-2.7.4.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.apache.logging.log4j:log4j-api:2.11.2">
@@ -430,13 +541,13 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.21/18e0f0e2b6734df5ca5d6eb449255488ec408c81/tomcat-embed-websocket-9.0.21-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: org.apiguardian:apiguardian-api:1.1.0">
+    <library name="Gradle: org.apache.zookeeper:zookeeper:3.4.8">
       <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/fc9dff4bb36d627bdc553de77e1f17efd790876c/apiguardian-api-1.1.0.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.4.8/933ea2ed15e6a0e24b788973e3d128ff163c3136/zookeeper-3.4.8.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/f3c15fe970af864390c8d0634c9f16aca1b064a8/apiguardian-api-1.1.0-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.zookeeper/zookeeper/3.4.8/c8be20e62fd2f850136cd490e19c690cd2e2bcfc/zookeeper-3.4.8-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.assertj:assertj-core:3.11.1">
@@ -516,6 +627,15 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jasig.cas.client/cas-client-core/3.5.1/a2aaab2ba3c1c61a1820d597c705e7988b19c8d5/cas-client-core-3.5.1-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: org.javassist:javassist:3.20.0-GA">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.20.0-GA/a9cbcdfb7e9f86fbc74d3afae65f2248bfbf82a0/javassist-3.20.0-GA.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.20.0-GA/d8fdc08a455bc0b28bc0bed1f0d032d935cee8e1/javassist-3.20.0-GA-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: org.jboss.logging:jboss-logging:3.3.2.Final">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/3789d00e859632e6c6206adc0c71625559e6e3b0/jboss-logging-3.3.2.Final.jar!/" />
@@ -525,24 +645,6 @@
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/a44f0f22bbd9ccb96952806e73f6cc16ef7d2f67/jboss-logging-3.3.2.Final-sources.jar!/" />
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.2.Final/a44f0f22bbd9ccb96952806e73f6cc16ef7d2f67/jboss-logging-3.3.2.Final-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.junit.jupiter:junit-jupiter-api:5.5.2">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.5.2/6393db7e4c0265152d8fc4ff146633d1a7d36c47/junit-jupiter-api-5.5.2.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.5.2/22b57242e953bf2de96fd5a122bd697f18b2fcd2/junit-jupiter-api-5.5.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.junit.platform:junit-platform-commons:1.5.2">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.5.2/9703df63b65d415b2a027d43ce908c625b3aedce/junit-platform-commons-1.5.2.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.5.2/32912ebbdeda6dcc83fe50d0ca112a930a777b5f/junit-platform-commons-1.5.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.latencyutils:LatencyUtils:2.0.3">
@@ -622,15 +724,6 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.6/96614f514a1031296657bf0dde452dc15e42fcb8/objenesis-2.6-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: org.opentest4j:opentest4j:1.2.0">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/41d55b3c2254de9837b4ec8923cbd371b8a7eab5/opentest4j-1.2.0-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Gradle: org.ow2.asm:asm:5.0.4">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/caches/modules-2/files-2.1/org.ow2.asm/asm/5.0.4/da08b8cce7bbf903602a25a3a163ae252435795/asm-5.0.4.jar!/" />
@@ -653,24 +746,6 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.8/1aa07070912b2caee846638641606f3b2f1f440a/lombok-1.18.8-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: org.quartz-scheduler:quartz-jobs:2.3.0">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz-jobs/2.3.0/6649dc473708cece6f7e1923baafedd0d7128ebe/quartz-jobs-2.3.0.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz-jobs/2.3.0/d1bc0b58267554c2fffdcdb823859215428236ef/quartz-jobs-2.3.0-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.quartz-scheduler:quartz:2.3.0">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/a090397102a12f6241177c5d501835334bb7662a/quartz-2.3.0.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quartz-scheduler/quartz/2.3.0/5f4aa836b09f44d586550fa7a7629273c16c0f17/quartz-2.3.0-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Gradle: org.skyscreamer:jsonassert:1.5.0">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3/jsonassert-1.5.0.jar!/" />
@@ -691,15 +766,6 @@
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.26/74d35fd39913770cb0213e0ca418f485ed69ce4c/jul-to-slf4j-1.7.26-sources.jar!/" />
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.26/74d35fd39913770cb0213e0ca418f485ed69ce4c/jul-to-slf4j-1.7.26-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Gradle: org.slf4j:slf4j-api:1.7.25">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar!/" />
-      </CLASSES>
-      <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/962153db4a9ea71b79d047dfd1b2a0d80d8f4739/slf4j-api-1.7.25-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.slf4j:slf4j-api:1.7.26">
