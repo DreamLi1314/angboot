@@ -17,9 +17,12 @@ package org.angboot.schedule.service;
 import org.quartz.Scheduler;
 import org.quartz.SchedulerException;
 import org.quartz.impl.StdSchedulerFactory;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 
+@Service
+@org.apache.dubbo.config.annotation.Service
 public class ScheduleServiceImpl implements ScheduleService {
 
    @PostConstruct
