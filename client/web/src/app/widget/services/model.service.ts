@@ -106,7 +106,7 @@ export class ModelService {
                     res.status ? `${res.status} - ${res.statusText}` : "_#(js:server.error.connectionLost)";
 
         if(!error || !this.errorHandler || !this.errorHandler(error)) {
-            ComponentTool.showMessageDialog(this.modalService, "Error", errMsg);
+            ComponentTool.showMessageDialog(this.modalService, "_#(js:Error)", errMsg);
         }
 
         return throwError(errMsg);

@@ -22,5 +22,5 @@ import java.util.List;
 @Mapper
 public interface AuthorizationDao {
    @Select("SELECT username, authority FROM t_authorities WHERE username=#{name}")
-   public List<Authorization> getAuthenticationByName(String name);
+   List<Authorization> getAuthenticationByName(String name);
 }
