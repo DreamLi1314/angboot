@@ -2,9 +2,8 @@ import org.apache.tools.ant.taskdefs.condition.Os
 
 buildscript {
    repositories {
-      maven{
-         url 'http://maven.aliyun.com/nexus/content/groups/public/'
-      }
+      jcenter()
+      mavenCentral()
    }
 }
 
@@ -13,14 +12,12 @@ allprojects {
    version = '0.2.2-SNAPSHOT'
 
    repositories {
-      maven{
-         url 'http://maven.aliyun.com/nexus/content/groups/public/'
-      }
+      jcenter()
+      mavenCentral()
    }
 
    buildscript {
       ext {
-         apiVersion = "0.1.0-SNAPSHOT"
          springBootVersion = '2.1.6.RELEASE'
          lombokVersion = '1.18.8'
          dubboVersion = '2.7.4.1'
@@ -72,5 +69,5 @@ task codeCoverageReport(type: JacocoReport) {
 }
 
 wrapper {
-   gradleVersion = '5.4.1'
+   gradleVersion = '6.0.1'
 }

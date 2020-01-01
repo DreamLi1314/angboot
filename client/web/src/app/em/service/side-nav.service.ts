@@ -12,16 +12,24 @@
  * person.
  */
 
-import { Component } from "@angular/core";
-import { GuiTool } from "../../common/util/gui-tool";
+import { Injectable, OnDestroy } from "@angular/core";
+import { Subject } from "rxjs";
 
-@Component({
-   selector: "portal-title-bar",
-   templateUrl: "portal-title-bar.component.html",
-   styleUrls: ["portal-title-bar.component.scss"]
-})
-export class PortalTitleBarComponent {
-   help(): void {
-      GuiTool.openBrowserTab("https://dreamli1314.github.io/angboot/");
+@Injectable()
+export class SideNavService implements OnDestroy {
+   isToggle: boolean = true;
+   onSidenavToggle = new Subject<void>();
+
+   ngOnDestroy(): void {
+      if(!!this.onSidenavToggle) {
+         this.onSidenavToggle.unsubscribe();
+         this.onSidenavToggle = null;
+      }
    }
+
+   toggle: () => void = () => {
+      this.isToggle = !this.isToggle;
+      this.onSidenavToggle.next();
+   };
+
 }

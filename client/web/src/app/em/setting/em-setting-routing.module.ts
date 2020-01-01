@@ -12,24 +12,24 @@
  * person.
  */
 
-import { Injectable, OnDestroy } from "@angular/core";
-import { Subject } from "rxjs";
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { EmSettingComponent } from "./em-setting.component";
 
-@Injectable()
-export class SidenavService implements OnDestroy {
-   isToggle: boolean = true;
-   onSidenavToggle = new Subject<void>();
-
-   ngOnDestroy(): void {
-      if(!!this.onSidenavToggle) {
-         this.onSidenavToggle.unsubscribe();
-         this.onSidenavToggle = null;
-      }
+const appRoutes: Routes = [
+   {
+      path: "",
+      component: EmSettingComponent,
    }
+];
 
-   toggle: () => void = () => {
-      this.isToggle = !this.isToggle;
-      this.onSidenavToggle.next();
-   };
-
+@NgModule({
+   imports: [
+      RouterModule.forChild(appRoutes)
+   ],
+   exports: [
+      RouterModule
+   ]
+})
+export class EmSettingRoutingModule {
 }

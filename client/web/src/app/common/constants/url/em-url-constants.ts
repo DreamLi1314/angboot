@@ -12,16 +12,9 @@
  * person.
  */
 
-import { Component } from "@angular/core";
-import { GuiTool } from "../../common/util/gui-tool";
-
-@Component({
-   selector: "portal-title-bar",
-   templateUrl: "portal-title-bar.component.html",
-   styleUrls: ["portal-title-bar.component.scss"]
-})
-export class PortalTitleBarComponent {
-   help(): void {
-      GuiTool.openBrowserTab("https://dreamli1314.github.io/angboot/");
-   }
+export class EmUrlConstants {
+   /**
+    * log out.
+    */
+   public static readonly LOGOUT_URL = "../logout";
 }

@@ -15,7 +15,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { EMAppComponent } from "./app.component";
-import { EmMonitorComponent } from "./monitor/em-monitor.component";
 
 const appRoutes: Routes = [
    {
@@ -29,6 +28,10 @@ const appRoutes: Routes = [
          {
             path: "setting",
             loadChildren: () => import("./setting/em-setting.module").then(m => m.EmSettingModule)
+         },
+         {
+            path: "setting",
+            loadChildren: "./setting/em-setting.module#EmSettingModule"
          },
          {
             path: "**",
