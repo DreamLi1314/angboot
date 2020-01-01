@@ -26,8 +26,7 @@
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
-            "scripts": [],
-            "webWorkerTsConfig": "tsconfig.worker.json"
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -89,8 +88,7 @@
           "options": {
             "tsConfig": [
               "src/tsconfig.app.json",
-              "src/tsconfig.spec.json",
-              "tsconfig.worker.json"
+              "src/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

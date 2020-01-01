@@ -11,8 +11,7 @@
   "exclude": [
     "test.ts",
     "app/common/test/**/*.ts",
-    "**/*.spec.ts",
-    "**/*.worker.ts"
+    "**/*.spec.ts"
   ],
   "angularCompilerOptions": {
     "preserveWhitespaces": "off"
