@@ -1,0 +1,18 @@
+plugins {
+   id 'java'
+}
+
+sourceCompatibility = '1.8'
+
+repositories {
+   mavenLocal()
+   mavenCentral()
+}
+
+dependencies {
+}
+
+task cleanAll(type: Delete, dependsOn: [clean]) {
+   group 'build'
+   delete = ['.gradle']
+}

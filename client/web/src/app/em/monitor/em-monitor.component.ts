@@ -13,7 +13,7 @@
  */
 
 import { Component, OnInit, ViewChild } from "@angular/core";
-import { MatDrawer } from "@angular/material";
+import { MatDrawer } from "@angular/material/sidenav";
 import { BaseSubscription } from "../../widget/base/BaseSubscription";
 import { SideNavService } from "../service/side-nav.service";
 
@@ -23,7 +23,7 @@ import { SideNavService } from "../service/side-nav.service";
    styleUrls: ["em-monitor.component.scss"]
 })
 export class EmMonitorComponent extends BaseSubscription implements OnInit {
-   @ViewChild("drawer") sidenav: MatDrawer;
+   @ViewChild("drawer", { static: true }) sidenav: MatDrawer;
 
    constructor(private sidenavService: SideNavService) {
       super();

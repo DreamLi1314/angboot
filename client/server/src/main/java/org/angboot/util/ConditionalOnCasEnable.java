@@ -14,7 +14,7 @@
 
 package org.angboot.util;
 
-import org.angboot.authority.model.SecurityConstant;
+import org.angboot.constants.security.SecurityConstant;
 import org.springframework.boot.autoconfigure.condition.ConditionOutcome;
 import org.springframework.boot.autoconfigure.condition.SpringBootCondition;
 import org.springframework.context.annotation.ConditionContext;

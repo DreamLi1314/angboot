@@ -13,8 +13,14 @@
  */
 package org.angboot.schedule;
 
-public class ScheduleApplication {
-	public static void main(String[] args) throws Exception {
+import org.angboot.schedule.service.ScheduleService;
+import org.springframework.beans.factory.annotation.Autowired;
 
-	}
+public class ScheduleApplication {
+   public static void main(String[] args) throws Exception {
+      scheduleService.startServer();
+   }
+
+   @Autowired
+   private static ScheduleService scheduleService;
 }

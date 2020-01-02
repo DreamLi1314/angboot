@@ -15,7 +15,7 @@
 package org.angboot.config;
 
 import org.angboot.authority.model.CasServerProperties;
-import org.angboot.authority.model.SecurityConstant;
+import org.angboot.constants.security.SecurityConstant;
 import org.angboot.util.AngBootEnv;
 import org.angboot.util.ConditionalOnCasEnable;
 import org.jasig.cas.client.session.SingleSignOutFilter;
