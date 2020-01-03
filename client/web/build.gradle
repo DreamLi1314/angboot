@@ -42,7 +42,7 @@ task generateIndexFiles(type: NpmTask, dependsOn: npmInstall) {
 task compileDevelopment(type: NpmTask, dependsOn: npmInstall) {
    onlyIf { !productionBuild }
    description = 'Compiles the main and EM applications using development settings'
-   args = ['run', 'build:dev']
+   args = ['run', 'build']
 }
 
 task compileProduction(type: NpmTask, dependsOn: npmInstall) {
