@@ -1,3 +1,9 @@
+buildscript {
+   ext {
+      productionBuild = project.hasProperty('buildenv') && project.property('buildenv') == 'prod'
+   }
+}
+
 //buildscript {
 //   repositories {
 //      maven {
@@ -17,7 +23,7 @@ plugins {
    // so using `github.node-gradle` for install node and npm
    // if the grunt and gulp is not required now.
    // See: https://github.com/srs/gradle-node-plugin/pull/349
-   id "com.github.node-gradle.node" version "2.0.0"
+   id "com.github.node-gradle.node" version "2.2.0"
 }
 
 node {
@@ -33,10 +39,22 @@ task generateIndexFiles(type: NpmTask, dependsOn: npmInstall) {
    args = ['run', 'generate-index-files']
 }
 
+task compileDevelopment(type: NpmTask, dependsOn: npmInstall) {
+   onlyIf { !productionBuild }
+   description = 'Compiles the main and EM applications using development settings'
+   args = ['run', 'build:dev']
+}
+
+task compileProduction(type: NpmTask, dependsOn: npmInstall) {
+   onlyIf { productionBuild }
+   description = 'Compiles the main and EM applications using production settings'
+   args = ['run', 'build:prod']
+}
+
 task compile(type: NpmTask, dependsOn: npmInstall) {
    group 'build'
    description 'Compile angular'
-   args = ['run', 'build']
+   dependsOn compileDevelopment, compileProduction
 }
 
 task lint(type: NpmTask, dependsOn: npmInstall) {
