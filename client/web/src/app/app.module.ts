@@ -40,7 +40,7 @@ export const httpInterceptorProviders = [
       BrowserAnimationsModule,
       HttpClientModule,
       AppRoutingModule,
-      NgbModalModule.forRoot()
+      NgbModalModule
    ],
    providers: [
       httpInterceptorProviders,

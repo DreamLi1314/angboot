@@ -41,17 +41,17 @@ task generateIndexFiles(type: NpmTask, dependsOn: npmInstall) {
 
 task compileDevelopment(type: NpmTask, dependsOn: npmInstall) {
    onlyIf { !productionBuild }
-   description = 'Compiles the main and EM applications using development settings'
+   description = 'Compiles applications using development settings'
    args = ['run', 'build']
 }
 
 task compileProduction(type: NpmTask, dependsOn: npmInstall) {
    onlyIf { productionBuild }
-   description = 'Compiles the main and EM applications using production settings'
+   description = 'Compiles the applications using production settings'
    args = ['run', 'build:prod']
 }
 
-task compile(type: NpmTask, dependsOn: npmInstall) {
+task compile(dependsOn: npmInstall) {
    group 'build'
    description 'Compile angular'
    dependsOn compileDevelopment, compileProduction
