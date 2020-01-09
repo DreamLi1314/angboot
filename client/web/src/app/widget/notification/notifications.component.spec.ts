@@ -22,7 +22,7 @@ describe("NotificationsComponent Integration Tests", () => {
       TestBed.configureTestingModule({
          imports: [
             // NoopAnimationsModule,
-            NgbModule.forRoot()
+            NgbModule
          ],
          declarations: [
             NotificationsComponent
