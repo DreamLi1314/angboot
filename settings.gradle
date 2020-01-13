@@ -1,5 +1,5 @@
 rootProject.name = 'angboot'
 
-include 'api:interfaces', 'api:models', 'api:constants'
+include 'api:interfaces', 'api:models', 'api:constants', 'api:common'
 include 'providers:authority'
 include 'client:server', 'client:web'

@@ -15,7 +15,7 @@
 package org.angboot.authority.model;
 
 import org.angboot.util.AngBootEnv;
-import org.angboot.util.ConditionalOnCasEnable;
+import org.angboot.util.conditional.ConditionalOnCasEnable;
 import lombok.Data;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
