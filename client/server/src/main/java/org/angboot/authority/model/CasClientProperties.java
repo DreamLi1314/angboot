@@ -14,6 +14,7 @@
 
 package org.angboot.authority.model;
 
+import io.swagger.annotations.ApiModel;
 import org.angboot.util.AngBootEnv;
 import org.angboot.util.conditional.ConditionalOnCasEnable;
 import lombok.Data;
@@ -23,6 +24,7 @@ import org.springframework.context.annotation.Configuration;
 @Data
 @Configuration
 @Conditional(ConditionalOnCasEnable.class)
+@ApiModel("Cas Client Properties")
 public class CasClientProperties {
 
    public CasClientProperties() {

@@ -25,6 +25,7 @@ repositories {
 
 dependencies {
    // modules
+   api project(':api:common')
    api project(':api:models')
    api project(':api:interfaces')
    api project(':api:constants')
@@ -35,6 +36,10 @@ dependencies {
    implementation 'org.springframework.boot:spring-boot-starter-security'
    implementation 'org.springframework.boot:spring-boot-starter-actuator'
    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+   // springfox swagger
+   implementation "io.springfox:springfox-swagger2:${swaggerVersion}"
+   implementation "io.springfox:springfox-swagger-ui:${swaggerVersion}"
 
    // spring-cas
    implementation 'org.springframework.security:spring-security-cas'

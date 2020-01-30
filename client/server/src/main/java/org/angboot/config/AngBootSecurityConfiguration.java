@@ -50,6 +50,7 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
          .antMatchers("/api/**").permitAll() // public api.
          .antMatchers("/app/portal/**").permitAll() // portal for all users.
          .antMatchers("/app/em/**").hasRole(SecurityConstant.ROLE_ADMIN) // EM need role.
+         .antMatchers("/swagger-ui.html").hasRole(SecurityConstant.ROLE_ADMIN) // swagger ui for admin role.
          ;
 
       http.formLogin()
