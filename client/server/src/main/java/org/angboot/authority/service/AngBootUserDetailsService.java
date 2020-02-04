@@ -16,9 +16,11 @@ package org.angboot.authority.service;
 
 import org.angboot.constants.security.SecurityConstant;
 import org.angboot.domain.User;
+import org.angboot.util.conditional.ConditionalOnOuterAuthorityDisabled;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.SpringSecurityMessageSource;
@@ -36,7 +38,16 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service("userDetailsService")
+@Conditional(ConditionalOnOuterAuthorityDisabled.class)
 public class AngBootUserDetailsService implements UserDetailsService {
+
+   @Autowired
+   public AngBootUserDetailsService(UserService userService,
+                                    AuthorizationService authorizationService)
+   {
+      this.userService = userService;
+      this.authorizationService = authorizationService;
+   }
 
    @Override
    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -78,10 +89,8 @@ public class AngBootUserDetailsService implements UserDetailsService {
       return new org.springframework.security.core.userdetails.User(username, userFromUserQuery.getPassword(), userFromUserQuery.isEnabled(), true, true, true, combinedAuthorities);
    }
 
-   @Autowired
-   private UserService userService;
-   @Autowired
-   private AuthorizationService authorizationService;
+   private final UserService userService;
+   private final AuthorizationService authorizationService;
 
    private MessageSourceAccessor messages = SpringSecurityMessageSource.getAccessor();
 

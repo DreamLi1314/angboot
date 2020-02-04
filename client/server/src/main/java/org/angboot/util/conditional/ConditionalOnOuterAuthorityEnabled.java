@@ -22,11 +22,15 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ConditionalOnAuthorityEnabled extends SpringBootCondition {
+public class ConditionalOnOuterAuthorityEnabled extends SpringBootCondition {
    @Override
    public ConditionOutcome getMatchOutcome(ConditionContext context, AnnotatedTypeMetadata metadata) {
-      boolean outerAuthority = AngBootEnv.getBoolean(SecurityConstant.OUTER_AUTHORITY_ENABLED_KEY);
+      boolean outerAuthority = ConditionalOnOuterAuthorityEnabled.isOuterAuthorityEnabled();
 
       return new ConditionOutcome(outerAuthority, "out authority enabled: " + outerAuthority);
+   }
+
+   public static boolean isOuterAuthorityEnabled() {
+      return AngBootEnv.getBoolean(SecurityConstant.OUTER_AUTHORITY_ENABLED_KEY);
    }
 }

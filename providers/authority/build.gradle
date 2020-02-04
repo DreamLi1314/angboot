@@ -29,6 +29,7 @@ dependencies {
    // spring
    implementation 'org.springframework.boot:spring-boot-starter-web'
    implementation 'org.springframework.boot:spring-boot-starter-security'
+   implementation 'org.springframework.boot:spring-boot-starter-cache'
 
    // only development
    developmentOnly 'org.springframework.boot:spring-boot-devtools'

@@ -38,8 +38,8 @@ dependencies {
    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 
    // springfox swagger
-   implementation "io.springfox:springfox-swagger2:${swaggerVersion}"
-   implementation "io.springfox:springfox-swagger-ui:${swaggerVersion}"
+   tools "io.springfox:springfox-swagger2:${swaggerVersion}"
+   tools "io.springfox:springfox-swagger-ui:${swaggerVersion}"
 
    // spring-cas
    implementation 'org.springframework.security:spring-security-cas'
@@ -72,32 +72,32 @@ dependencies {
 }
 
 task prepareData(type: Copy) {
-   def dataDir = file("$buildDir/data")
-
-   if(!dataDir.exists()) {
-      from 'src/main/resources/install/angbootdb'
-      into "$buildDir/data/angbootdb"
+   onlyIf {
+      !file("$buildDir/data").exists()
    }
+
+   from 'src/main/resources/install/angbootdb'
+   into "$buildDir/data/angbootdb"
 }
 
 task prepareConfig(type: Copy) {
-   def workHomeDir = file("$buildDir/config")
+   onlyIf {
+      !file("$buildDir/config").exists()
+   }
 
-   if(!workHomeDir.exists()) {
-      from 'src/main/resources/install/config'
-      into "$buildDir/config"
-      exclude '*.sql'
+   from 'src/main/resources/install/config'
+   into "$buildDir/config"
+   exclude '*.sql'
 
-      filesMatching('datasource.properties') {
-         String replacement = file("$buildDir/data").getCanonicalPath().replace('\\', '/')
-         filter ReplaceTokens, tokens: ['DATA_DIR': replacement]
-      }
+   filesMatching('datasource.properties') {
+      String replacement = file("$buildDir/data").getCanonicalPath().replace('\\', '/')
+      filter ReplaceTokens, tokens: ['DATA_DIR': replacement]
+   }
 
-      doLast {
-         String angbootHome = workHomeDir.getCanonicalPath()
-         ant.propertyfile(file: file("$buildDir/config/angboot.properties")) {
-            entry(key: 'angboot.home', value: angbootHome)
-         }
+   doLast {
+      String angbootHome = file("$buildDir/config").getCanonicalPath()
+      ant.propertyfile(file: file("$buildDir/config/angboot.properties")) {
+         entry(key: 'angboot.home', value: angbootHome)
       }
    }
 }

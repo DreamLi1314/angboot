@@ -4,9 +4,20 @@ plugins {
 
 sourceCompatibility = '1.8'
 
+configurations {
+   tools
+   compileOnly.extendsFrom(tools, annotationProcessor)
+}
+
 repositories {
    mavenLocal()
    mavenCentral()
+}
+
+dependencies {
+   // springfox swagger
+   tools "io.springfox:springfox-swagger2:${swaggerVersion}"
+   tools "io.springfox:springfox-swagger-ui:${swaggerVersion}"
 }
 
 task cleanAll(type: Delete, dependsOn: [clean]) {

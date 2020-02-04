@@ -53,8 +53,9 @@ gradlew[.bat] cleanAll buildApp
 ```
 
 ## 3. Configuration
+You need config follow property to `angboot/client/server/build/config/angboot.properties`
+
 ### 3.1 Enable CAS for SSO
-You need config follow property to `angboot/java/client/build/config/angboot.properties`
 ``` properties
 # cas enable
 angboot.cas.enabled=true
@@ -70,4 +71,15 @@ angboot.cas.client.logoutUrl=/logout
 angboot.cas.server.casServerUrlPrefix=http://localhost:10080/cas
 angboot.cas.server.loginUrl=http://localhost:10080/cas/login
 angboot.cas.server.logoutUrl=http://localhost:10080/cas/logout
+```
+
+### 3.2 Enable Outer Authority For Custom Authority Application
+> RPC using Dubbo framework, so your app should based on Dubbo for custom authority.
+``` properties
+# Enable
+angboot.outer.authority.enabled=true
+# Dubbo app name
+outer.authority.app.name=angboot-client
+# Dubbo registry address
+outer.authority.app.registry.address=zookeeper://127.0.0.1:2181
 ```
