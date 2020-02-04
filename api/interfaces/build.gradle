@@ -14,6 +14,8 @@ sourceCompatibility = '1.8'
 
 configurations {
    tools
+   internalApi
+   compile.extendsFrom(internalApi)
    compileOnly.extendsFrom(tools, annotationProcessor)
 }
 
@@ -36,7 +38,7 @@ repositories {
 
 dependencies {
    // internal api
-   implementation 'org.angboot:models:0.2.0-20200204.165008-3@jar'
+   internalApi project(':api:models')
 
    // springfox swagger
    tools "io.springfox:springfox-swagger2:${swaggerVersion}"

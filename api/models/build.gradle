@@ -19,10 +19,6 @@ dependencies {
    // tools
    tools "org.projectlombok:lombok:$lombokVersion"
    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
-
-   // spring security
-   implementation 'org.springframework.security:spring-security-core:5.1.5.RELEASE'
-
 }
 
 task cleanAll(type: Delete, dependsOn: [clean]) {

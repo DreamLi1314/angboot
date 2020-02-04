@@ -18,10 +18,10 @@ apply plugin: 'jacoco'
 sourceCompatibility = '1.8'
 
 configurations {
-   api
+   internalApi
    tools
    developmentOnly
-   compile.extendsFrom(api)
+   compile.extendsFrom(internalApi)
    compileOnly.extendsFrom(tools, annotationProcessor)
 }
 
@@ -44,10 +44,10 @@ repositories {
 
 dependencies {
    // modules
-   api project(':api:common')
-   api project(':api:models')
-   api project(':api:interfaces')
-   api project(':api:constants')
+   internalApi project(':api:common')
+   internalApi project(':api:models')
+   internalApi project(':api:interfaces')
+   internalApi project(':api:constants')
 
    // spring
    implementation 'org.springframework.boot:spring-boot-starter-web'
