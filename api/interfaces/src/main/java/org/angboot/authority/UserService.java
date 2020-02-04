@@ -12,16 +12,14 @@
  * person.
  */
 
-package org.angboot.authority.dao;
+package org.angboot.authority;
 
-import org.angboot.domain.Authorization;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
+import org.angboot.domain.User;
 
 import java.util.List;
 
-@Mapper
-public interface AuthorizationDao {
-   @Select("SELECT username, authority FROM t_authorities WHERE username=#{name}")
-   List<Authorization> getAuthenticationByName(String name);
+public interface UserService {
+   User getUserById(Integer id);
+
+   List<User> getUserByName(String userName);
 }

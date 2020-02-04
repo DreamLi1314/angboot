@@ -14,13 +14,13 @@
 
 package org.angboot.authority.service;
 
+import org.angboot.authority.AuthorizationService;
+import org.angboot.authority.UserService;
 import org.angboot.constants.security.SecurityConstant;
 import org.angboot.domain.User;
-import org.angboot.util.conditional.ConditionalOnOuterAuthorityDisabled;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Conditional;
 import org.springframework.context.support.MessageSourceAccessor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.SpringSecurityMessageSource;
@@ -38,7 +38,6 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service("userDetailsService")
-@Conditional(ConditionalOnOuterAuthorityDisabled.class)
 public class AngBootUserDetailsService implements UserDetailsService {
 
    @Autowired

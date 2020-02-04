@@ -14,6 +14,8 @@
 
 package org.angboot.config;
 
+import org.angboot.authority.AuthorizationService;
+import org.angboot.authority.UserService;
 import org.angboot.constants.security.SecurityConstant;
 import org.angboot.util.AngBootEnv;
 import org.angboot.util.conditional.ConditionalOnOuterAuthorityEnabled;
@@ -23,7 +25,6 @@ import org.apache.dubbo.config.RegistryConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.util.StringUtils;
 
 @Conditional(ConditionalOnOuterAuthorityEnabled.class)
@@ -51,12 +52,24 @@ public class OuterAuthorityConfiguration {
       return registry;
    }
 
-   @Bean("userDetailsService")
-   public UserDetailsService userDetailsService() {
-      ReferenceConfig<UserDetailsService> reference = new ReferenceConfig<>();
+   @Bean()
+   public UserService userService() {
+      ReferenceConfig<UserService> reference = new ReferenceConfig<>();
       reference.setApplication(applicationConfig());
       reference.setRegistry(registryConfig());
-      reference.setInterface(UserDetailsService.class);
+      reference.setInterface(UserService.class);
+      // TODO reference version
+//      reference.setVersion("1.0.0");
+
+      return reference.get();
+   }
+
+   @Bean()
+   public AuthorizationService authorizationService() {
+      ReferenceConfig<AuthorizationService> reference = new ReferenceConfig<>();
+      reference.setApplication(applicationConfig());
+      reference.setRegistry(registryConfig());
+      reference.setInterface(AuthorizationService.class);
       // TODO reference version
 //      reference.setVersion("1.0.0");
 

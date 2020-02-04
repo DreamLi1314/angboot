@@ -1,5 +1,12 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
+buildscript {
+   repositories {
+      jcenter()
+      mavenCentral()
+   }
+}
+
 plugins {
    id 'org.springframework.boot' version '2.1.6.RELEASE'
    id 'java'
@@ -19,7 +26,19 @@ configurations {
 }
 
 repositories {
-   mavenLocal()
+   maven {
+      url 'http://javafamily.club:8081/repository/maven-public/'
+      content {
+         // put internal and custom artifacts here that aren't available in public repositories
+         includeGroup 'org.angboot'
+      }
+   }
+
+   maven {
+      url 'http://maven.aliyun.com/nexus/content/groups/public/'
+   }
+
+   jcenter()
    mavenCentral()
 }
 

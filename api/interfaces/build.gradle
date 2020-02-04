@@ -1,5 +1,13 @@
+buildscript {
+   repositories {
+      jcenter()
+      mavenCentral()
+   }
+}
+
 plugins {
    id 'java'
+   id 'maven-publish'
 }
 
 sourceCompatibility = '1.8'
@@ -10,11 +18,26 @@ configurations {
 }
 
 repositories {
-   mavenLocal()
+   maven {
+      url 'http://javafamily.club:8081/repository/maven-public/'
+      content {
+         // put internal and custom artifacts here that aren't available in public repositories
+         includeGroup 'org.angboot'
+      }
+   }
+
+   maven {
+      url 'http://maven.aliyun.com/nexus/content/groups/public/'
+   }
+
+   jcenter()
    mavenCentral()
 }
 
 dependencies {
+   // internal api
+   implementation 'org.angboot:models:0.2.0-20200204.165008-3@jar'
+
    // springfox swagger
    tools "io.springfox:springfox-swagger2:${swaggerVersion}"
    tools "io.springfox:springfox-swagger-ui:${swaggerVersion}"
@@ -23,4 +46,35 @@ dependencies {
 task cleanAll(type: Delete, dependsOn: [clean]) {
    group 'build'
    delete = ['.gradle']
+}
+
+publishing {
+   publications {
+      maven(MavenPublication) {
+         groupId project.group
+         artifactId project.name
+         version project.version
+         from components.java
+
+         pom.withXml {
+            def pomNode = asNode()
+            pomNode.dependencies.each {
+               it.parent().remove(it)
+            }
+         }
+      }
+   }
+
+   repositories {
+      maven {
+         credentials {
+            username 'admin'
+            password 'dreamLi0416!@#'
+         }
+
+         def snapshotsUrl = 'http://javafamily.club:8081/repository/maven-snapshots/'
+         def releasesUrl = 'http://javafamily.club:8081/repository/maven-releases/'
+         url = project.version.endsWith('-SNAPSHOT') ? snapshotsUrl : releasesUrl
+      }
+   }
 }
