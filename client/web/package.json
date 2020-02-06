@@ -8,6 +8,7 @@
     "build:ng:app": "npm run ng -- build --vendor-chunk",
     "build": "npm run build:ng",
     "build:prod": "npm run build:ng:prod",
+    "build:ng:prod": "npm run build:ng:app -- --prod --aot --output-path dist/prod/app --progress false --extract-licenses false --source-map=false --build-optimizer",
     "build:watch": "concurrently -r \"npm run build:ng:app -- --watch\"",
     "test": "npm run test:app -- --watch false",
     "test:app": "npm run ng -- test angboot-web",
