@@ -5,6 +5,15 @@ buildscript {
       jcenter()
       mavenCentral()
    }
+
+   ext {
+      // internal projects available
+      apiAvailable = file('../../api').exists()
+      apiModelsAvailable = file('../../api/models').exists()
+      apiCommonAvailable = file('../../api/common').exists()
+      apiConstantsAvailable = file('../../api/constants').exists()
+      apiInterfacesAvailable = file('../../api/interfaces').exists()
+   }
 }
 
 plugins {
@@ -43,11 +52,19 @@ repositories {
 }
 
 dependencies {
-   // modules
-   internalApi project(':api:common')
-   internalApi project(':api:models')
-   internalApi project(':api:interfaces')
-   internalApi project(':api:constants')
+   // internal api
+   if(apiAvailable) {
+      internalApi project(':api:models')
+      internalApi project(':api:common')
+      internalApi project(':api:interfaces')
+      internalApi project(':api:constants')
+   }
+   else {
+      internalApi "org.angboot:models:${project.version}"
+      internalApi "org.angboot:common:${project.version}"
+      internalApi "org.angboot:interfaces:${project.version}"
+      internalApi "org.angboot:constants:${project.version}"
+   }
 
    // spring
    implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -135,12 +152,36 @@ task server(dependsOn: prepareAseets) {
       def angbootProp =  new Properties()
       angbootProp.load(new FileInputStream(propFile))
       String angbootHome =  angbootProp.getProperty("angboot.home")
+      def envMode = productionBuild ? 'prod' : 'dev'
 
       javaexec {
          classpath sourceSets.main.runtimeClasspath
          main = 'org.angboot.AngbootApplication'
          jvmArgs = [
-            '-Dspring.profiles.active=dev',
+            "-Dspring.profiles.active=${envMode}",
+            '-Djava.rmi.server.hostname=127.0.0.1',
+            '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5009']
+         args = ['--stop-port', '8082', '--stop-key', 'stop', "angboot.home=$angbootHome"]
+      }
+   }
+}
+
+task serverProd(dependsOn: prepareAseets) {
+   group 'application'
+   description 'run the application with production'
+
+   doLast {
+      def propFile = file("$buildDir/config/angboot.properties")
+      def angbootProp =  new Properties()
+      angbootProp.load(new FileInputStream(propFile))
+      String angbootHome =  angbootProp.getProperty("angboot.home")
+      def envMode = 'prod'
+
+      javaexec {
+         classpath sourceSets.main.runtimeClasspath
+         main = 'org.angboot.AngbootApplication'
+         jvmArgs = [
+            "-Dspring.profiles.active=${envMode}",
             '-Djava.rmi.server.hostname=127.0.0.1',
             '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5009']
          args = ['--stop-port', '8082', '--stop-key', 'stop', "angboot.home=$angbootHome"]

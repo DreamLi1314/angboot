@@ -27,16 +27,24 @@ task generateIndexFiles(type: NpmTask, dependsOn: npmInstall) {
    args = ['run', 'generate-index-files']
 }
 
-task compile(type: NpmTask, dependsOn: npmInstall) {
+task compileDevelopment(type: NpmTask, dependsOn: npmInstall) {
+   onlyIf { !productionBuild }
    group 'build'
-   description 'Compile angular'
+   description = 'Compiles applications using development settings'
    args = ['run', 'build']
 }
 
-task compileProd(type: NpmTask, dependsOn: npmInstall) {
+task compileProduction(type: NpmTask, dependsOn: npmInstall) {
+   onlyIf { productionBuild }
+   group 'build'
+   description = 'Compiles the applications using production settings'
+   args = ['run', 'build:prod']
+}
+
+task compile(dependsOn: npmInstall) {
    group 'build'
    description 'Compile angular'
-   args = ['run', 'build:prod']
+   dependsOn compileDevelopment, compileProduction
 }
 
 task lint(type: NpmTask, dependsOn: npmInstall) {
