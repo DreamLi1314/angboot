@@ -141,8 +141,6 @@ task prepareConfig(type: Copy) {
 task prepareAseets(dependsOn: [prepareData, prepareConfig]) {
 }
 
-//compileJava.dependsOn prepareAseets
-
 task server(dependsOn: prepareAseets) {
    group 'application'
    description 'run the application'
@@ -172,9 +170,9 @@ task serverProd(dependsOn: prepareAseets) {
 
    doLast {
       def propFile = file("$buildDir/config/angboot.properties")
-      def angbootProp =  new Properties()
+      def angbootProp = new Properties()
       angbootProp.load(new FileInputStream(propFile))
-      String angbootHome =  angbootProp.getProperty("angboot.home")
+      String angbootHome = angbootProp.getProperty("angboot.home")
       def envMode = 'prod'
 
       javaexec {
