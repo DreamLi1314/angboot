@@ -11,17 +11,10 @@
  * thereof may not be provided or otherwise made available to any other
  * person.
  */
-
-package org.angboot.authority.dao;
-
-import org.angboot.domain.Authorization;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-
-import java.util.List;
-
-@Mapper
-public interface AuthorizationDao {
-   @Select("SELECT username, authority FROM t_authorities WHERE username=#{name}")
-   List<Authorization> getAuthenticationByName(String name);
+package org.angboot.util;
+/**
+ * Wrapper Service for muti-env using Service.
+ */
+public interface ServiceWrapper <T> {
+   T getService();
 }

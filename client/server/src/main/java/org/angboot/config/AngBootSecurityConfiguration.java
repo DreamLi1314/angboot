@@ -17,7 +17,7 @@ package org.angboot.config;
 import org.angboot.authority.model.CasServerProperties;
 import org.angboot.constants.security.SecurityConstant;
 import org.angboot.util.AngBootEnv;
-import org.angboot.util.ConditionalOnCasEnable;
+import org.angboot.util.conditional.ConditionalOnCasEnable;
 import org.jasig.cas.client.session.SingleSignOutFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -50,6 +50,7 @@ public class AngBootSecurityConfiguration extends WebSecurityConfigurerAdapter {
          .antMatchers("/api/**").permitAll() // public api.
          .antMatchers("/app/portal/**").permitAll() // portal for all users.
          .antMatchers("/app/em/**").hasRole(SecurityConstant.ROLE_ADMIN) // EM need role.
+         .antMatchers("/swagger-ui.html").hasRole(SecurityConstant.ROLE_ADMIN) // swagger ui for admin role.
          ;
 
       http.formLogin()

@@ -1,1 +1,1 @@
-gradlew providers:authority:build client:server:build client:web:build
+gradlew clean build -Pbuildenv=prod --no-daemon --console plain

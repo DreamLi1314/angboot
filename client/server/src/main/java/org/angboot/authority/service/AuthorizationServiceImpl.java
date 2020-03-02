@@ -14,24 +14,29 @@
 
 package org.angboot.authority.service;
 
+import org.angboot.authority.AuthorizationService;
 import org.angboot.authority.dao.AuthorizationDao;
 import org.angboot.domain.Authorization;
+import org.angboot.util.conditional.ConditionalOnOuterAuthorityDisabled;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Conditional(ConditionalOnOuterAuthorityDisabled.class)
+@Service("authorizationService")
 @CacheConfig(cacheNames="angboot-authorization")
-public class AuthorizationService {
+public class AuthorizationServiceImpl implements AuthorizationService {
 
    @Autowired
    @SuppressWarnings("all")
    private AuthorizationDao authorizationDao;
 
    @Cacheable
+   @Override
    public List<Authorization> getAuthenticationByName(String name) {
       return authorizationDao.getAuthenticationByName(name);
    }

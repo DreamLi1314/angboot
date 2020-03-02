@@ -18,9 +18,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
+import java.io.Serializable;
+
 @Data
 @NoArgsConstructor
-public class Authorization {
+public class Authorization implements Serializable {
    @NonNull
    private String userName;
    private String authority;
