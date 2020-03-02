@@ -19,20 +19,20 @@ dependencies {
 	api project(':api:interfaces')
 
 	// spring
-	implementation group: 'org.springframework', name: 'spring-core', version: '5.1.8.RELEASE'
-	implementation group: 'org.springframework', name: 'spring-beans', version: '5.1.8.RELEASE'
-	implementation group: 'org.springframework', name: 'spring-context', version: '5.1.8.RELEASE'
+	implementation 'org.springframework:spring-core:5.1.8.RELEASE'
+	implementation 'org.springframework:spring-beans:5.1.8.RELEASE'
+	implementation 'org.springframework:spring-context:5.1.8.RELEASE'
 
 	// quartz
-	implementation(group: 'org.quartz-scheduler', name: 'quartz', version: "$quartzVersion") {
+	implementation ("org.quartz-scheduler:quartz:$quartzVersion") {
 		exclude(group: 'org.slf4j')
 	}
 
-	implementation(group: 'org.quartz-scheduler', name: 'quartz-jobs', version: "$quartzVersion")
+	implementation "org.quartz-scheduler:quartz-jobs:$quartzVersion"
 
-	implementation(group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3')
+	implementation 'ch.qos.logback:logback-classic:1.2.3'
 
 	// test
-	testImplementation(group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.5.2')
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.2'
 }
 
