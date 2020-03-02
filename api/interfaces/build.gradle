@@ -1,15 +1,101 @@
+buildscript {
+   repositories {
+      jcenter()
+      mavenCentral()
+   }
+
+   ext {
+      // internal projects available
+      apiModelsAvailable = file('../models').exists()
+   }
+}
+
 plugins {
    id 'java'
+   id 'maven-publish'
 }
 
 sourceCompatibility = '1.8'
 
+configurations {
+   tools
+   internalApi
+   compile.extendsFrom(internalApi)
+   compileOnly.extendsFrom(tools, annotationProcessor)
+}
+
 repositories {
-   mavenLocal()
+   maven {
+      url 'http://javafamily.club:8081/repository/maven-public/'
+      content {
+         // put internal and custom artifacts here that aren't available in public repositories
+         includeGroup 'org.angboot'
+      }
+   }
+
+   maven {
+      url 'http://maven.aliyun.com/nexus/content/groups/public/'
+   }
+
+   jcenter()
    mavenCentral()
+}
+
+dependencies {
+   // internal api
+   if(apiModelsAvailable) {
+      internalApi project(':api:models')
+   }
+   else {
+      internalApi "org.angboot:models:${project.version}"
+   }
+
+   // springfox swagger
+   tools "io.springfox:springfox-swagger2:${swaggerVersion}"
+   tools "io.springfox:springfox-swagger-ui:${swaggerVersion}"
 }
 
 task cleanAll(type: Delete, dependsOn: [clean]) {
    group 'build'
    delete = ['.gradle']
+}
+
+task sourceJar(type: Jar) {
+   from sourceSets.main.allJava
+}
+
+publishing {
+   publications {
+      maven(MavenPublication) {
+         groupId project.group
+         artifactId project.name
+         version project.version
+         from components.java
+
+         pom.withXml {
+            def pomNode = asNode()
+            pomNode.dependencies.each {
+               it.parent().remove(it)
+            }
+         }
+
+         // upload source code
+         artifact sourceJar {
+            classifier "sources"
+         }
+      }
+   }
+
+   repositories {
+      maven {
+         credentials {
+            username 'admin'
+            password 'dreamLi0416!@#'
+         }
+
+         def snapshotsUrl = 'http://javafamily.club:8081/repository/maven-snapshots/'
+         def releasesUrl = 'http://javafamily.club:8081/repository/maven-releases/'
+         url = project.version.endsWith('-SNAPSHOT') ? snapshotsUrl : releasesUrl
+      }
+   }
 }

@@ -1,5 +1,21 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
+buildscript {
+   repositories {
+      jcenter()
+      mavenCentral()
+   }
+
+   ext {
+      // internal projects available
+      apiAvailable = file('../../api').exists()
+      apiModelsAvailable = file('../../api/models').exists()
+      apiCommonAvailable = file('../../api/common').exists()
+      apiConstantsAvailable = file('../../api/constants').exists()
+      apiInterfacesAvailable = file('../../api/interfaces').exists()
+   }
+}
+
 plugins {
    id 'org.springframework.boot' version '2.1.6.RELEASE'
    id 'java'
@@ -10,16 +26,45 @@ apply plugin: 'jacoco'
 
 sourceCompatibility = '1.8'
 
+configurations {
+   internalApi
+   tools
+   developmentOnly
+   compile.extendsFrom(internalApi)
+   compileOnly.extendsFrom(tools, annotationProcessor)
+}
+
 repositories {
-   mavenLocal()
+   maven {
+      url 'http://javafamily.club:8081/repository/maven-public/'
+      content {
+         // put internal and custom artifacts here that aren't available in public repositories
+         includeGroup 'org.angboot'
+      }
+   }
+
+   maven {
+      url 'http://maven.aliyun.com/nexus/content/groups/public/'
+   }
+
+   jcenter()
    mavenCentral()
 }
 
 dependencies {
-   // modules
-   api project(':api:models')
-   api project(':api:interfaces')
-   api project(':api:constants')
+   // internal api
+   if(apiAvailable) {
+      internalApi project(':api:models')
+      internalApi project(':api:common')
+      internalApi project(':api:interfaces')
+      internalApi project(':api:constants')
+   }
+   else {
+      internalApi "org.angboot:models:${project.version}"
+      internalApi "org.angboot:common:${project.version}"
+      internalApi "org.angboot:interfaces:${project.version}"
+      internalApi "org.angboot:constants:${project.version}"
+   }
 
    // spring
    implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -27,6 +72,10 @@ dependencies {
    implementation 'org.springframework.boot:spring-boot-starter-security'
    implementation 'org.springframework.boot:spring-boot-starter-actuator'
    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+   // springfox swagger
+   tools "io.springfox:springfox-swagger2:${swaggerVersion}"
+   tools "io.springfox:springfox-swagger-ui:${swaggerVersion}"
 
    // spring-cas
    implementation 'org.springframework.security:spring-security-cas'
@@ -59,40 +108,38 @@ dependencies {
 }
 
 task prepareData(type: Copy) {
-   def dataDir = file("$buildDir/data")
-
-   if(!dataDir.exists()) {
-      from 'src/main/resources/install/angbootdb'
-      into "$buildDir/data/angbootdb"
+   onlyIf {
+      !file("$buildDir/data").exists()
    }
+
+   from 'src/main/resources/install/angbootdb'
+   into "$buildDir/data/angbootdb"
 }
 
 task prepareConfig(type: Copy) {
-   def workHomeDir = file("$buildDir/config")
+   onlyIf {
+      !file("$buildDir/config").exists()
+   }
 
-   if(!workHomeDir.exists()) {
-      from 'src/main/resources/install/config'
-      into "$buildDir/config"
-      exclude '*.sql'
+   from 'src/main/resources/install/config'
+   into "$buildDir/config"
+   exclude '*.sql'
 
-      filesMatching('datasource.properties') {
-         String replacement = file("$buildDir/data").getCanonicalPath().replace('\\', '/')
-         filter ReplaceTokens, tokens: ['DATA_DIR': replacement]
-      }
+   filesMatching('datasource.properties') {
+      String replacement = file("$buildDir/data").getCanonicalPath().replace('\\', '/')
+      filter ReplaceTokens, tokens: ['DATA_DIR': replacement]
+   }
 
-      doLast {
-         String angbootHome = workHomeDir.getCanonicalPath()
-         ant.propertyfile(file: file("$buildDir/config/angboot.properties")) {
-            entry(key: 'angboot.home', value: angbootHome)
-         }
+   doLast {
+      String angbootHome = file("$buildDir/config").getCanonicalPath()
+      ant.propertyfile(file: file("$buildDir/config/angboot.properties")) {
+         entry(key: 'angboot.home', value: angbootHome)
       }
    }
 }
 
 task prepareAseets(dependsOn: [prepareData, prepareConfig]) {
 }
-
-//compileJava.dependsOn prepareAseets
 
 task server(dependsOn: prepareAseets) {
    group 'application'
@@ -103,12 +150,36 @@ task server(dependsOn: prepareAseets) {
       def angbootProp =  new Properties()
       angbootProp.load(new FileInputStream(propFile))
       String angbootHome =  angbootProp.getProperty("angboot.home")
+      def envMode = productionBuild ? 'prod' : 'dev'
 
       javaexec {
          classpath sourceSets.main.runtimeClasspath
          main = 'org.angboot.AngbootApplication'
          jvmArgs = [
-            '-Dspring.profiles.active=dev',
+            "-Dspring.profiles.active=${envMode}",
+            '-Djava.rmi.server.hostname=127.0.0.1',
+            '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5009']
+         args = ['--stop-port', '8082', '--stop-key', 'stop', "angboot.home=$angbootHome"]
+      }
+   }
+}
+
+task serverProd(dependsOn: prepareAseets) {
+   group 'application'
+   description 'run the application with production'
+
+   doLast {
+      def propFile = file("$buildDir/config/angboot.properties")
+      def angbootProp = new Properties()
+      angbootProp.load(new FileInputStream(propFile))
+      String angbootHome = angbootProp.getProperty("angboot.home")
+      def envMode = 'prod'
+
+      javaexec {
+         classpath sourceSets.main.runtimeClasspath
+         main = 'org.angboot.AngbootApplication'
+         jvmArgs = [
+            "-Dspring.profiles.active=${envMode}",
             '-Djava.rmi.server.hostname=127.0.0.1',
             '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5009']
          args = ['--stop-port', '8082', '--stop-key', 'stop', "angboot.home=$angbootHome"]

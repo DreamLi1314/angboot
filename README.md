@@ -7,6 +7,9 @@
 ![GitHub](https://img.shields.io/github/license/dreamli1314/angboot)
 [![Gitter](https://badges.gitter.im/Angboot/Angboot.svg)](https://gitter.im/Angboot/Angboot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+## 0. Preview Application
+You can preview angboot on [http://javafamily.club](http://javafamily.club)
+
 ## 1. Prerequisites
 You should have installed the following software and configure the corresponding environment variables:
 
@@ -19,8 +22,9 @@ You should have installed the following software and configure the corresponding
 * SSO: CAS
 * Web: Angular8 + Bootstrap4 + SCSS
 * Server: Tomcat
-* Database: H2 + Druid
+* Datasource: H2 + Druid
 * Project Management Tools: Gradle
+* Doc Tools: Swagger2, Swagger-UI
 * CI Tools: [Travis](https://travis-ci.org/DreamLi1314/angboot)(Default), Jenkins
 * Cache: Map(Support Redis, Ehcache etc.)
 * RPC: Dubbo
@@ -28,7 +32,7 @@ You should have installed the following software and configure the corresponding
 ## 3. Run application
 > execute follow command for install dependencies in your terminal, Note: **just first**.
 ```
-gradlew[.bat] buildApp
+gradlew[.bat] build
 ```
 > execute follow command for start up application
 ```

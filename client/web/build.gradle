@@ -24,6 +24,8 @@ plugins {
    // if the grunt and gulp is not required now.
    // See: https://github.com/srs/gradle-node-plugin/pull/349
    id "com.github.node-gradle.node" version "2.2.0"
+
+   id 'maven-publish'
 }
 
 node {
@@ -47,6 +49,19 @@ task compileDevelopment(type: NpmTask, dependsOn: npmInstall) {
 
 task compileProduction(type: NpmTask, dependsOn: npmInstall) {
    onlyIf { productionBuild }
+   description = 'Compiles the applications using production settings'
+   args = ['run', 'build:prod']
+}
+
+task compile(dependsOn: npmInstall) {
+   group 'build'
+   description 'Compile angular'
+   dependsOn compileDevelopment, compileProduction
+}
+
+task compileProduction(type: NpmTask, dependsOn: npmInstall) {
+   onlyIf { productionBuild }
+   group 'build'
    description = 'Compiles the applications using production settings'
    args = ['run', 'build:prod']
 }
@@ -99,4 +114,41 @@ task watch(type: NpmTask, dependsOn: npmInstall) {
    description 'watch angular compile'
 
    args = ['run', 'build:watch']
+}
+
+task jar(type: Jar, dependsOn: compile) {
+   group 'build'
+   description = 'Assembles the JAR file containing the compiled resources'
+   archiveFileName = "angboot-web-${project.version}.jar"
+   destinationDirectory = file("${buildDir}/libs")
+
+   from('dist/prod') {
+      include '**/*'
+   }
+}
+
+
+publishing {
+   publications {
+      maven(MavenPublication) {
+         artifactId = 'angboot-web'
+
+         afterEvaluate {
+            artifact jar
+         }
+      }
+   }
+
+   repositories {
+      maven {
+         credentials {
+            username 'admin'
+            password 'dreamLi0416!@#'
+         }
+
+         def snapshotsUrl = 'http://javafamily.club:8081/repository/maven-snapshots/'
+         def releasesUrl = 'http://javafamily.club:8081/repository/maven-releases/'
+         url = project.version.endsWith('-SNAPSHOT') ? snapshotsUrl : releasesUrl
+      }
+   }
 }

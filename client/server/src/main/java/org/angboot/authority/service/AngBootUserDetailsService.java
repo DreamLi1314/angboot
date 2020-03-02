@@ -14,6 +14,8 @@
 
 package org.angboot.authority.service;
 
+import org.angboot.authority.AuthorizationService;
+import org.angboot.authority.UserService;
 import org.angboot.constants.security.SecurityConstant;
 import org.angboot.domain.User;
 import org.slf4j.Logger;
@@ -37,6 +39,14 @@ import java.util.stream.Collectors;
 
 @Service("userDetailsService")
 public class AngBootUserDetailsService implements UserDetailsService {
+
+   @Autowired
+   public AngBootUserDetailsService(UserService userService,
+                                    AuthorizationService authorizationService)
+   {
+      this.userService = userService;
+      this.authorizationService = authorizationService;
+   }
 
    @Override
    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -78,10 +88,8 @@ public class AngBootUserDetailsService implements UserDetailsService {
       return new org.springframework.security.core.userdetails.User(username, userFromUserQuery.getPassword(), userFromUserQuery.isEnabled(), true, true, true, combinedAuthorities);
    }
 
-   @Autowired
-   private UserService userService;
-   @Autowired
-   private AuthorizationService authorizationService;
+   private final UserService userService;
+   private final AuthorizationService authorizationService;
 
    private MessageSourceAccessor messages = SpringSecurityMessageSource.getAccessor();
 

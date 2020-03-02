@@ -11,20 +11,19 @@
  * thereof may not be provided or otherwise made available to any other
  * person.
  */
-
 package org.angboot.authority.controller;
 
+import io.swagger.annotations.ApiOperation;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class LoginController {
 
    @GetMapping("/userlogin")
+   @ApiOperation("Redirect to login page.")
    public String gotoLoginPage() {
       return "login";
    }
-
 
 }
