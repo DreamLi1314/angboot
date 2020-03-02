@@ -14,30 +14,36 @@
 
 package org.angboot.authority.service;
 
+import org.angboot.authority.UserService;
 import org.angboot.authority.dao.UserDao;
 import org.angboot.domain.User;
+import org.angboot.util.conditional.ConditionalOnOuterAuthorityDisabled;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Conditional(ConditionalOnOuterAuthorityDisabled.class)
+@Service("userService")
 @CacheConfig(cacheNames="angboot-user")
-public class UserService {
+public class UserServiceImpl implements UserService {
 
    @Autowired
    @SuppressWarnings("all")
-   public UserService(UserDao userDao) {
+   public UserServiceImpl(UserDao userDao) {
       this.userDao = userDao;
    }
 
+   @Override
    @Cacheable(key = "#id")
    public User getUserById(Integer id) {
       return userDao.getUserById(id);
    }
 
+   @Override
    @Cacheable(key = "#userName")
    public List<User> getUserByName(String userName) {
       return this.userDao.getUserByName(userName);

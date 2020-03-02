@@ -23,7 +23,11 @@ allprojects {
          dubboVersion = '2.7.4.1'
          dubboCuratorVersion = '2.13.0'
          mybatisVersion = '2.0.1'
+         swaggerVersion = "2.9.2"
          isWindows = Os.isFamily(Os.FAMILY_WINDOWS)
+
+         // all projects variable
+         productionBuild = project.hasProperty('buildenv') && project.property('buildenv') == 'prod'
       }
    }
 

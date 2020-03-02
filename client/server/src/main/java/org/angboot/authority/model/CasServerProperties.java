@@ -14,15 +14,17 @@
 
 package org.angboot.authority.model;
 
-import org.angboot.util.AngBootEnv;
-import org.angboot.util.ConditionalOnCasEnable;
+import io.swagger.annotations.ApiModel;
 import lombok.Data;
+import org.angboot.util.AngBootEnv;
+import org.angboot.util.conditional.ConditionalOnCasEnable;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 
 @Data
 @Configuration
 @Conditional(ConditionalOnCasEnable.class)
+@ApiModel("Cas Server Properties")
 public class CasServerProperties {
 
    public CasServerProperties() {

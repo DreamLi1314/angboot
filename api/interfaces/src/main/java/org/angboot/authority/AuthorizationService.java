@@ -11,28 +11,12 @@
  * thereof may not be provided or otherwise made available to any other
  * person.
  */
+package org.angboot.authority;
 
-package org.angboot.authority.service;
-
-import org.angboot.authority.dao.AuthorizationDao;
 import org.angboot.domain.Authorization;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CacheConfig;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
-@CacheConfig(cacheNames="angboot-authorization")
-public class AuthorizationService {
-
-   @Autowired
-   @SuppressWarnings("all")
-   private AuthorizationDao authorizationDao;
-
-   @Cacheable
-   public List<Authorization> getAuthenticationByName(String name) {
-      return authorizationDao.getAuthenticationByName(name);
-   }
+public interface AuthorizationService {
+   List<Authorization> getAuthenticationByName(String name);
 }

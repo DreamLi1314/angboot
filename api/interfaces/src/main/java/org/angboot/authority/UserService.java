@@ -12,21 +12,14 @@
  * person.
  */
 
-package org.angboot.authority.dao;
+package org.angboot.authority;
 
 import org.angboot.domain.User;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
-@Mapper
-public interface UserDao {
+public interface UserService {
+   User getUserById(Integer id);
 
-    @Select("SELECT * FROM t_users where id=#{id}")
-    User getUserById(Integer id);
-
-    @Select("SELECT userName, password, enabled FROM t_users WHERE userName=#{userName}")
-    List<User> getUserByName(String userName);
-
+   List<User> getUserByName(String userName);
 }

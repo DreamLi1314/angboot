@@ -17,7 +17,7 @@ package org.angboot.config;
 import org.angboot.authority.model.CasClientProperties;
 import org.angboot.authority.model.CasServerProperties;
 import org.angboot.constants.security.SecurityConstant;
-import org.angboot.util.ConditionalOnCasEnable;
+import org.angboot.util.conditional.ConditionalOnCasEnable;
 import org.jasig.cas.client.validation.Cas20ServiceTicketValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

@@ -1,6 +1,6 @@
-spring:
-   profiles:
-      active: dev
+#spring:
+#   profiles:
+#      active: dev
 
 mybatis:
    configuration:
@@ -22,7 +22,7 @@ spring:
          store-type: none
 
 server:
-   port: 80
+   port: 8080
 
 logging:
    level:
@@ -48,5 +48,5 @@ server:
 
 spring:
    profiles: prod
-
-
+server:
+   port: 80

@@ -14,6 +14,7 @@
 
 package org.angboot.authority.service;
 
+import org.angboot.authority.UserService;
 import org.angboot.domain.User;
 import org.junit.Assert;
 import org.junit.Test;

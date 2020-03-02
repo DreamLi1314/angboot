@@ -11,10 +11,10 @@
  * thereof may not be provided or otherwise made available to any other
  * person.
  */
-
-package org.angboot.util;
+package org.angboot.util.conditional;
 
 import org.angboot.constants.security.SecurityConstant;
+import org.angboot.util.AngBootEnv;
 import org.springframework.boot.autoconfigure.condition.ConditionOutcome;
 import org.springframework.boot.autoconfigure.condition.SpringBootCondition;
 import org.springframework.context.annotation.ConditionContext;
@@ -22,10 +22,15 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ConditionalOnCasEnable extends SpringBootCondition {
+public class ConditionalOnOuterAuthorityEnabled extends SpringBootCondition {
    @Override
    public ConditionOutcome getMatchOutcome(ConditionContext context, AnnotatedTypeMetadata metadata) {
-      boolean isCasEnabled = AngBootEnv.getBoolean(SecurityConstant.CAS_ENABLED_KEY);
-      return new ConditionOutcome(isCasEnabled, "cas enabled: " + isCasEnabled);
+      boolean outerAuthority = ConditionalOnOuterAuthorityEnabled.isOuterAuthorityEnabled();
+
+      return new ConditionOutcome(outerAuthority, "out authority enabled: " + outerAuthority);
+   }
+
+   public static boolean isOuterAuthorityEnabled() {
+      return AngBootEnv.getBoolean(SecurityConstant.OUTER_AUTHORITY_ENABLED_KEY);
    }
 }

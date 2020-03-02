@@ -11,6 +11,7 @@
  * thereof may not be provided or otherwise made available to any other
  * person.
  */
+
 package org.angboot.util.conditional;
 
 import org.angboot.constants.security.SecurityConstant;
@@ -22,11 +23,10 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ConditionalOnAuthorityEnabled extends SpringBootCondition {
+public class ConditionalOnCasEnable extends SpringBootCondition {
    @Override
    public ConditionOutcome getMatchOutcome(ConditionContext context, AnnotatedTypeMetadata metadata) {
-      boolean outerAuthority = AngBootEnv.getBoolean(SecurityConstant.OUTER_AUTHORITY_ENABLED_KEY);
-
-      return new ConditionOutcome(outerAuthority, "out authority enabled: " + outerAuthority);
+      boolean isCasEnabled = AngBootEnv.getBoolean(SecurityConstant.CAS_ENABLED_KEY);
+      return new ConditionOutcome(isCasEnabled, "cas enabled: " + isCasEnabled);
    }
 }
