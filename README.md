@@ -49,6 +49,7 @@ gradlew[.bat] server
 * Current Version: To see `docs/index.md`
 
 ## 6. Todo list of this version
+* Upgrade gradle from `v5.x` to `v6.x`.
 * Support Schedule Task With `Quartz`.
 
 ## 7. Change Log
