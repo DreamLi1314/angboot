@@ -66,7 +66,7 @@ gradlew[.bat] server
 * Support `Swagger/Swagger-UI` for [angboot api doc](http://javafamily.club/swagger-ui.html).
 
 ### Version 0.2.1:
-* upgrade gradle from `v5.x` to `v6.x`.
+* Upgrade gradle from `v5.x` to `v6.x`.
 * Support Schedule Task With `Quartz`
 
 ## License
