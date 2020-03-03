@@ -54,9 +54,9 @@ gradlew[.bat] server
 * Upgrade angular from `v7` to `v8`.
 
 ## 7. Change Log
-### Version 0.1.x:
-* project management tools from `ant + maven` to `gradle`.
-* upgrade angular from `v6` to `v7`.
+### Version 0.2.1:
+* Upgrade gradle from `v5.x` to `v6.x`.
+* Support Schedule Task With `Quartz`
 
 ### Version 0.2.0:
 * Split module, microservitization project.
@@ -65,9 +65,9 @@ gradlew[.bat] server
 * Support Master Application [preview](http://javafamily.club/).
 * Support `Swagger/Swagger-UI` for [angboot api doc](http://javafamily.club/swagger-ui.html).
 
-### Version 0.2.1:
-* Upgrade gradle from `v5.x` to `v6.x`.
-* Support Schedule Task With `Quartz`
+### Version 0.1.x:
+* project management tools from `ant + maven` to `gradle`.
+* upgrade angular from `v6` to `v7`.
 
 ## License
 AngBoot is Open Source software released under the Apache 2.0 license.
