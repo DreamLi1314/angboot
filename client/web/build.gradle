@@ -49,18 +49,6 @@ task compileDevelopment(type: NpmTask, dependsOn: npmInstall) {
 
 task compileProduction(type: NpmTask, dependsOn: npmInstall) {
    onlyIf { productionBuild }
-   description = 'Compiles the applications using production settings'
-   args = ['run', 'build:prod']
-}
-
-task compile(dependsOn: npmInstall) {
-   group 'build'
-   description 'Compile angular'
-   dependsOn compileDevelopment, compileProduction
-}
-
-task compileProduction(type: NpmTask, dependsOn: npmInstall) {
-   onlyIf { productionBuild }
    group 'build'
    description = 'Compiles the applications using production settings'
    args = ['run', 'build:prod']
@@ -126,7 +114,6 @@ task jar(type: Jar, dependsOn: compile) {
       include '**/*'
    }
 }
-
 
 publishing {
    publications {
