@@ -1,5 +1,5 @@
 rootProject.name = 'angboot'
 
 include 'api:interfaces', 'api:models', 'api:constants', 'api:common'
-include 'providers:schedule'
+// include 'providers:schedule'
 include 'client:server', 'client:web'
