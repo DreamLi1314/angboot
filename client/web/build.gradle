@@ -102,7 +102,6 @@ task jar(type: Jar, dependsOn: compile) {
    }
 }
 
-
 publishing {
    publications {
       maven(MavenPublication) {
