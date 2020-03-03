@@ -53,16 +53,16 @@ gradlew[.bat] server
 * Support Schedule Task With `Quartz`.
 
 ## 7. Change Log
-### Version 0.1.x:
-* project management tools from `ant + maven` to `gradle`.
-* upgrade angular from `v6` to `v7`.
-
 ### Version 0.2.0:
 * Split module, microservitization project.
 * Support outer authority application with `Dubbo`.
 * Support private nexus repository: [http://javafamily.club:8081/](http://javafamily.club:8081/).
 * Support Master Application [preview](http://javafamily.club/).
 * Support `Swagger/Swagger-UI` for [angboot api doc](http://javafamily.club/swagger-ui.html).
+
+### Version 0.1.x:
+* project management tools from `ant + maven` to `gradle`.
+* upgrade angular from `v6` to `v7`.
 
 ## License
 AngBoot is Open Source software released under the Apache 2.0 license.
