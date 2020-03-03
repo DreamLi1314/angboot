@@ -4,7 +4,7 @@
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/dreamli1314/angboot.svg)](http://isitmaintained.com/project/dreamli1314/angboot "Percentage of issues still open")
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/dreamli1314/angboot.svg)](http://isitmaintained.com/project/dreamli1314/angboot "Average time to resolve an issue")
 ![GitHub release](https://img.shields.io/github/release-pre/dreamli1314/angboot)
-![GitHub](https://img.shields.io/github/license/dreamli1314/angboot)
+![GitHub License](https://img.shields.io/github/license/dreamli1314/angboot)
 [![Gitter](https://badges.gitter.im/Angboot/Angboot.svg)](https://gitter.im/Angboot/Angboot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## 0. Preview Application
@@ -28,6 +28,7 @@ You should have installed the following software and configure the corresponding
 * CI Tools: [Travis](https://travis-ci.org/DreamLi1314/angboot)(Default), Jenkins
 * Cache: Map(Support Redis, Ehcache etc.)
 * RPC: Dubbo
+* Schedule: Quartz
 
 ## 3. Run application
 > execute follow command for install dependencies in your terminal, Note: **just first**.
@@ -50,7 +51,7 @@ gradlew[.bat] server
 * Current Version: To see `docs/index.md`
 
 ## 6. Todo list of this version
-* Upgrade angular to v8.
+* Upgrade angular from `v7` to `v8`.
 
 ## 7. Change Log
 ### Version 0.1.x:
@@ -58,10 +59,15 @@ gradlew[.bat] server
 * upgrade angular from `v6` to `v7`.
 
 ### Version 0.2.0:
+* Split module, microservitization project.
+* Support outer authority application with `Dubbo`.
+* Support private nexus repository: [http://javafamily.club:8081/](http://javafamily.club:8081/).
+* Support Master Application [preview](http://javafamily.club/).
+* Support `Swagger/Swagger-UI` for [angboot api doc](http://javafamily.club/swagger-ui.html).
+
 ### Version 0.2.1:
 * upgrade gradle from `v5.x` to `v6.x`.
-### Version 0.2.2
-* upgrade angular from `v7` to `v8`.
+* Support Schedule Task With `Quartz`
 
 ## License
 AngBoot is Open Source software released under the Apache 2.0 license.
