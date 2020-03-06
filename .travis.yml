@@ -12,7 +12,6 @@ cache: false
 before_install:
 # For permission denied in travis-ci
    - chmod +x gradlew
-   - chmod +x buildApp
 
 services:
 # For karma test to start browser.
@@ -23,8 +22,7 @@ install: skip
 # build
 script:
    - ./gradlew cleanAll
-   - ./gradlew buildApp
-   - ./gradlew publish
+   - ./gradlew clean build publish -Pbuildenv=prod --no-daemon --console plain
    - ./gradlew jacocoTestReport
    - ./gradlew codeCoverageReport
 
@@ -32,7 +30,7 @@ script:
 notifications:
    email:
       recipients:
-         - 243853974@qq.com
+         - 18829346477@163.com
       on_success: change
       on_failure: always
       on_cancel: never
