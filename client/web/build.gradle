@@ -3,22 +3,18 @@ buildscript {
       jcenter()
       mavenCentral()
    }
-
-   dependencies {
-      classpath "com.moowork.gradle:gradle-node-plugin:1.3.1"
-   }
 }
 
 plugins {
    id 'maven-publish'
-   id 'com.moowork.node' version '1.3.1'
+   id "com.github.node-gradle.node" version "2.2.0"
 }
 
 node {
-   version = '9.11.1'
-   npmVersion = '5.6.0'
+   version = '10.17.0'
+   npmVersion = '6.11.3'
    download = true
-   workDir = file("${project.gradle.gradleUserHomeDir}/caches/tools")
+   workDir = file("${buildDir}/tools/nodejs")
 }
 
 task generateIndexFiles(type: NpmTask, dependsOn: npmInstall) {
