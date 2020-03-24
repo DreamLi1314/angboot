@@ -64,4 +64,44 @@ public class SecurityConstant {
     * the key of outer authority application registry password.
     */
    public static final String OUTER_AUTHORITY_APP_REGISTRY_PASSWORD_KEY = "outer.authority.app.registry.password";
+
+   /**
+    * the key of https enabled.
+    */
+   public static final String HTTPS_ENABLED_KEY = "angboot.https.enabled";
+
+   /**
+    * the key of https connection port.
+    */
+   public static final String HTTPS_PORT_KEY = "angboot.https.port";
+
+   /**
+    * Defaulting https connection port.
+    */
+   public static final int DEFAULT_HTTPS_PORT = 443;
+
+   /**
+    * Defaulting http connection port.
+    */
+   public static final int DEFAULT_HTTP_PORT = 80;
+
+   /**
+    * the key of https sll key store.
+    */
+   public static final String HTTPS_KEY_STORE_KEY = "angboot.https.ssl.key.store";
+
+   /**
+    * the key of https sll key alias.
+    */
+   public static final String HTTPS_KEY_ALIAS_KEY = "angboot.https.ssl.key.alias";
+
+   /**
+    * the key of password of https sll key store.
+    */
+   public static final String HTTPS_KEY_STORE_PASSWORD_KEY = "angboot.https.ssl.key.store.pwd";
+
+   /**
+    * the key of type of https sll key store.
+    */
+   public static final String HTTPS_KEY_STORE_TYPE_KEY = "angboot.https.ssl.key.store.type";
 }

@@ -89,6 +89,26 @@ public class AngBootEnv {
    }
 
    /**
+    * Get a property int value with a default if the property is not defined.
+    */
+   public static int getIntegerProperty(String name, int defaultValue) {
+      String val = AngBootEnv.getProperty(name);
+      int result = defaultValue;
+
+      if(val != null) {
+         try {
+            result = Integer.parseInt(val);
+         }
+         catch(Exception ignore) {
+            // TODO Log Format
+            LOGGER.info("Parse property error. Key is: {}, Value is: " + val, name);
+         }
+      }
+
+      return result;
+   }
+
+   /**
     * Get a property as a boolean value.
     */
    public static Boolean getBoolean(String name) {
