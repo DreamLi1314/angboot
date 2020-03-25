@@ -1,7 +1,3 @@
-#spring:
-#   profiles:
-#      active: dev
-
 mybatis:
    configuration:
       map-underscore-to-camel-case: true
@@ -21,12 +17,9 @@ spring:
       session:
          store-type: none
 
-server:
-   port: 8080
-
 logging:
    level:
-      org.dream.angboot: debug
+      org.angboot: debug
 
 management:
    endpoints:
@@ -48,5 +41,3 @@ server:
 
 spring:
    profiles: prod
-server:
-   port: 80

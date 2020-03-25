@@ -33,7 +33,7 @@ public class AngBootHttpsConfiguration {
     */
    @Bean
    public TomcatServletWebServerFactory tomcatServletWebServerFactory(){
-      TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory(){
+      TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory() {
          @Override
          protected void postProcessContext(Context context) {
             SecurityConstraint securityConstraint = new SecurityConstraint();
@@ -56,6 +56,7 @@ public class AngBootHttpsConfiguration {
       return tomcat;
    }
 
+   @Bean
    public Connector connector(){
       Connector connector = new Connector();
       connector.setScheme("http"); // default
@@ -67,14 +68,24 @@ public class AngBootHttpsConfiguration {
       return connector;
    }
 
-   private Ssl getSsl() {
+   @Bean
+   public Ssl getSsl() {
       Ssl ssl = new Ssl();
       ssl.setEnabled(true);
-      ssl.setKeyStore(AngBootEnv.getProperty(SecurityConstant.HTTPS_KEY_STORE_KEY));
+      ssl.setKeyStore(getBasedSslFolder() + AngBootEnv.getProperty(SecurityConstant.HTTPS_KEY_STORE_PATH_KEY));
       ssl.setKeyAlias(AngBootEnv.getProperty(SecurityConstant.HTTPS_KEY_ALIAS_KEY));
       ssl.setKeyStorePassword(AngBootEnv.getProperty(SecurityConstant.HTTPS_KEY_STORE_PASSWORD_KEY));
       ssl.setKeyStoreType(AngBootEnv.getProperty(SecurityConstant.HTTPS_KEY_STORE_TYPE_KEY));
 
       return ssl;
    }
+
+   /**
+    * Get ssl config base folder.
+    */
+   private String getBasedSslFolder() {
+      return AngBootEnv.getHome() + ANGBOOT_SSL_BASED_PATH;
+   }
+
+   public static final String ANGBOOT_SSL_BASED_PATH = "/ssl/";
 }

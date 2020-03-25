@@ -164,29 +164,6 @@ task server(dependsOn: prepareAseets) {
    }
 }
 
-task serverProd(dependsOn: prepareAseets) {
-   group 'application'
-   description 'run the application with production'
-
-   doLast {
-      def propFile = file("$buildDir/config/angboot.properties")
-      def angbootProp = new Properties()
-      angbootProp.load(new FileInputStream(propFile))
-      String angbootHome = angbootProp.getProperty("angboot.home")
-      def envMode = 'prod'
-
-      javaexec {
-         classpath sourceSets.main.runtimeClasspath
-         main = 'org.angboot.AngbootApplication'
-         jvmArgs = [
-            "-Dspring.profiles.active=${envMode}",
-            '-Djava.rmi.server.hostname=127.0.0.1',
-            '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5009']
-         args = ['--stop-port', '8082', '--stop-key', 'stop', "angboot.home=$angbootHome"]
-      }
-   }
-}
-
 task cleanAll(type: Delete, dependsOn: [clean]) {
    group 'build'
    delete = ['.gradle']

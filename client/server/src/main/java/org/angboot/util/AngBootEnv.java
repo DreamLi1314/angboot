@@ -126,8 +126,13 @@ public class AngBootEnv {
       return val;
    }
 
+   public static String getHome() {
+      return AngBootEnv.getProperty(ANGBOOT_HOME_KEY);
+   }
+
    private static Hashtable cache = new Hashtable(); // cached objects
 
+   public static final String ANGBOOT_HOME_KEY = "angboot.home";
    private static final String PROPERTIES_KEY = AngBootEnv.class.getName() + ".properties";
 
    private static final Logger LOGGER = LoggerFactory.getLogger(AngBootEnv.class);

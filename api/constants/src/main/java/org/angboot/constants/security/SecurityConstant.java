@@ -78,17 +78,22 @@ public class SecurityConstant {
    /**
     * Defaulting https connection port.
     */
-   public static final int DEFAULT_HTTPS_PORT = 443;
+   public static final int DEFAULT_HTTPS_PORT = 8443;
 
    /**
-    * Defaulting http connection port.
+    * Defaulting prod mode http connection port.
     */
    public static final int DEFAULT_HTTP_PORT = 80;
 
    /**
-    * the key of https sll key store.
+    * Defaulting dev mode http connection port.
     */
-   public static final String HTTPS_KEY_STORE_KEY = "angboot.https.ssl.key.store";
+   public static final int DEFAULT_DEVELOP_HTTP_PORT = 8080;
+
+   /**
+    * the key of https sll key store. Based on `config/ssl/`
+    */
+   public static final String HTTPS_KEY_STORE_PATH_KEY = "angboot.https.ssl.key.store.path";
 
    /**
     * the key of https sll key alias.

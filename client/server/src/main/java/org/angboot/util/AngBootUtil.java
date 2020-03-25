@@ -39,7 +39,7 @@ public final class AngBootUtil {
       if(args != null && args.length > 0) {
          home = Arrays.asList(args)
             .stream()
-            .filter(arg -> !StringUtils.isEmpty(arg) && arg.contains(AngBootUtil.ANGBOOT_HOME_KEY))
+            .filter(arg -> !StringUtils.isEmpty(arg) && arg.contains(AngBootEnv.ANGBOOT_HOME_KEY))
             .map(arg -> arg.split("="))
             .filter(kv -> kv != null && kv.length == 2)
             .map(kv -> kv[1])
@@ -48,7 +48,7 @@ public final class AngBootUtil {
       }
 
       if(StringUtils.isEmpty(home)) {
-         home = System.getProperty(AngBootUtil.ANGBOOT_HOME_KEY);
+         home = System.getProperty(AngBootEnv.ANGBOOT_HOME_KEY);
       }
 
       return home;
@@ -112,8 +112,6 @@ public final class AngBootUtil {
 
       return properties;
    }
-
-   public static final String ANGBOOT_HOME_KEY = "angboot.home";
 
    private static final Logger LOGGER = LoggerFactory.getLogger(AngBootUtil.class);
 }

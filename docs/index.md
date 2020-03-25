@@ -89,3 +89,15 @@ outer.authority.app.registry.password
 ```
 > we provide a simple outer authority application. you can find it on [GitHub: angboot-providers/authority](https://github.com/DreamLi1314/angboot-providers/tree/master/authority)
 
+### 3.3 Enable Https for Security Connection
+
+```properties
+angboot.https.enabled=true
+angboot.https.port=8443
+angboot.https.ssl.key.store.path=angboot.keystore
+angboot.https.ssl.key.alias=angboot
+angboot.https.ssl.key.store.pwd=angboot
+angboot.https.ssl.key.store.type=JKS
+```
+
+> **Notice:** `angboot.https.ssl.key.store.path` must based on `config/ssl/` folder
