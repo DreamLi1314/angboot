@@ -27,6 +27,7 @@ allprojects {
          mybatisVersion = '2.0.1'
          swaggerVersion = "2.9.2"
          isWindows = Os.isFamily(Os.FAMILY_WINDOWS)
+         quartzVersion = '2.3.0'
 
          // all projects variable
          productionBuild = project.hasProperty('buildenv') && project.property('buildenv') == 'prod'

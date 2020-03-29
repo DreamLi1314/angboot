@@ -45,14 +45,23 @@ dependencies {
    // internal api
    if(apiModelsAvailable) {
       internalApi project(':api:models')
+      internalApi project(':api:common')
    }
    else {
       internalApi "org.angboot:models:${project.version}"
+      internalApi "org.angboot:common:${project.version}"
    }
 
    // springfox swagger
    tools "io.springfox:springfox-swagger2:${swaggerVersion}"
    tools "io.springfox:springfox-swagger-ui:${swaggerVersion}"
+
+   // quartz
+   implementation ("org.quartz-scheduler:quartz:$quartzVersion") {
+      exclude(group: 'org.slf4j')
+   }
+
+   implementation "org.quartz-scheduler:quartz-jobs:$quartzVersion"
 }
 
 task cleanAll(type: Delete, dependsOn: [clean]) {

@@ -48,22 +48,22 @@ public class SecurityConstant {
    /**
     * the key of outer authority application name.
     */
-   public static final String OUTER_AUTHORITY_APP_NAME_KEY = "outer.authority.app.name";
+   public static final String DUBBO_CLIENT_NAME_KEY = "dubbo.app.name";
 
    /**
     * the key of outer authority application registry address.
     */
-   public static final String OUTER_AUTHORITY_APP_REGISTRY_ADDRESS_KEY = "outer.authority.app.registry.address";
+   public static final String DUBBO_REGISTRY_ADDRESS_KEY = "dubbo.registry.address";
 
    /**
     * the key of outer authority application registry username.
     */
-   public static final String OUTER_AUTHORITY_APP_REGISTRY_USERNAME_KEY = "outer.authority.app.registry.username";
+   public static final String DUBBO_REGISTRY_USERNAME_KEY = "dubbo.registry.username";
 
    /**
     * the key of outer authority application registry password.
     */
-   public static final String OUTER_AUTHORITY_APP_REGISTRY_PASSWORD_KEY = "outer.authority.app.registry.password";
+   public static final String DUBBO_REGISTRY_PASSWORD_KEY = "dubbo.registry.password";
 
    /**
     * the key of https enabled.

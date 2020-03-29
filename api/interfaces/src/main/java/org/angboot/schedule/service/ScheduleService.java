@@ -14,9 +14,39 @@
 
 package org.angboot.schedule.service;
 
+import org.quartz.*;
+
+/**
+ * Schedule Service Interface, implement should provided by rpc provider
+ */
 public interface ScheduleService {
 
-   void startServer() throws Exception;
+   /**
+    * Start Schedule Server
+    */
+   void startServer() throws SchedulerException;
 
-   void stopServer() throws Exception;
+   /**
+    * Stop Schedule Server, default waiting added jobs complete.
+    */
+   void stopServer() throws SchedulerException;
+
+   /**
+    * Stop Schedule Server
+    * @param waitForJobsToComplete waiting added jobs complete
+    */
+   void shutdown(boolean waitForJobsToComplete) throws SchedulerException;
+
+   void addJob(JobDetail job) throws SchedulerException;
+
+   void addJob(JobDetail job, boolean replace) throws SchedulerException;
+
+   void executeJob(JobKey jobKey) throws SchedulerException;
+
+   void executeJob(JobKey jobKey, JobDataMap data) throws SchedulerException;
+
+   void scheduleJob(Trigger trigger) throws SchedulerException;
+
+   void scheduleJob(JobDetail jobDetail, Trigger trigger) throws SchedulerException;
+
 }
