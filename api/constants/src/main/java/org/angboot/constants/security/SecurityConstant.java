@@ -109,4 +109,9 @@ public class SecurityConstant {
     * the key of type of https sll key store.
     */
    public static final String HTTPS_KEY_STORE_TYPE_KEY = "angboot.https.ssl.key.store.type";
+
+   /**
+    * the key of flag of schedule started.
+    */
+   public static final String SCHEDULING_ENABLE_KEY = "schedule.start";
 }

@@ -21,6 +21,8 @@ import org.springframework.context.annotation.ConditionContext;
 import org.springframework.core.type.AnnotatedTypeMetadata;
 import org.springframework.stereotype.Component;
 
+import static org.angboot.constants.security.SecurityConstant.SCHEDULING_ENABLE_KEY;
+
 @Component
 public class ConditionalOnScheduleStarted extends SpringBootCondition {
    @Override
@@ -28,6 +30,4 @@ public class ConditionalOnScheduleStarted extends SpringBootCondition {
       Boolean isStarted = AngBootEnv.getBoolean(SCHEDULING_ENABLE_KEY);
       return new ConditionOutcome(isStarted, "Schedule server is not started.");
    }
-
-   private static final String SCHEDULING_ENABLE_KEY = "schedule.start";
 }
