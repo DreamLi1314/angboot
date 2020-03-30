@@ -16,6 +16,7 @@ package org.angboot.schedule;
 
 import org.angboot.schedule.service.ScheduleService;
 import org.apache.dubbo.common.utils.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +29,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @ActiveProfiles("test")
 public class PrintDateTimeScheduleTests {
 
-//   @Ignore
+   @Ignore
    @Test
    public void testPrintDateTimeExecute() {
       Assert.notNull(scheduleService, "Schedule instance is null.");
