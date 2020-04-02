@@ -14,22 +14,21 @@
 
 package org.angboot.controller.schedule;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
+import io.swagger.annotations.*;
 import org.angboot.domain.User;
 import org.angboot.schedule.jobs.PrintDateTimeJob;
 import org.angboot.schedule.service.ScheduleService;
+import org.angboot.util.conditional.ConditionalOnScheduleStarted;
 import org.quartz.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.context.annotation.Conditional;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 
 @Api("Schedule Print Controller")
 @RestController
+@Conditional(ConditionalOnScheduleStarted.class)
 public class PrintController {
 
    @Autowired
