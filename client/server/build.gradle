@@ -96,7 +96,7 @@ dependencies {
       exclude(group: 'org.slf4j')
    }
 
-//   implementation "org.quartz-scheduler:quartz-jobs:$quartzVersion"
+   implementation "org.quartz-scheduler:quartz-jobs:$quartzVersion"
 
    // webjars
    implementation 'org.webjars:jquery:3.3.1-2'
