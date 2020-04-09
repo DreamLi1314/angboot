@@ -1,3 +1,8 @@
+buildscript {
+    ext {
+    }
+}
+
 plugins {
     id 'java'
     id 'maven-publish'
@@ -5,12 +10,29 @@ plugins {
 
 sourceCompatibility = 1.8
 
+configurations {
+    internalApi
+    tools
+    developmentOnly
+    compile.extendsFrom(internalApi)
+    compileOnly.extendsFrom(tools, annotationProcessor)
+}
+
 repositories {
     mavenLocal()
     mavenCentral()
 }
 
 dependencies {
+    // quartz
+    implementation ("org.quartz-scheduler:quartz:$quartzVersion") {
+        exclude(group: 'org.slf4j')
+    }
+
+    implementation "org.quartz-scheduler:quartz-jobs:$quartzVersion"
+
+    // models
+    internalApi project(":api:models")
 }
 
 task sourceJar(type: Jar) {

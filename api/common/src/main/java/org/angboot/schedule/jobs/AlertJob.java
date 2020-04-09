@@ -11,16 +11,24 @@
  * thereof may not be provided or otherwise made available to any other
  * person.
  */
-package org.angboot.schedule;
+package org.angboot.schedule.jobs;
 
-import org.angboot.schedule.service.ScheduleService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.angboot.domain.User;
+import org.quartz.Job;
+import org.quartz.JobDataMap;
+import org.quartz.JobExecutionContext;
+import org.quartz.JobExecutionException;
 
-public class ScheduleApplication {
-   public static void main(String[] args) throws Exception {
-      scheduleService.startServer();
+public class AlertJob implements Job {
+   @Override
+   public void execute(JobExecutionContext context) throws JobExecutionException {
+      JobDataMap jobDataMap = context.getJobDetail().getJobDataMap();
+
+      String msg = jobDataMap.getString("msg");
+      User user = (User) jobDataMap.get("user");
+
+      assert user != null;
+
+      System.out.println("User is " + user.toString() + ", say " + msg);
    }
-
-   @Autowired
-   private static ScheduleService scheduleService;
 }

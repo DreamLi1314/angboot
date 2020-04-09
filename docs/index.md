@@ -55,6 +55,18 @@ gradlew[.bat] cleanAll build
 ## 3. Configuration
 You need config follow property to `angboot/client/server/build/config/angboot.properties`
 
+> For Dubbo common configuration
+``` properties
+# Dubbo app name
+dubbo.app.name=angboot-client
+# Dubbo registry address
+dubbo.registry.address=zookeeper://127.0.0.1:2181
+# Optional. Dubbo registry username
+dubbo.registry.username=xxx
+# Optional. Dubbo registry password
+dubbo.registry.password=xxx
+```
+
 ### 3.1 Enable CAS for SSO
 ``` properties
 # cas enable
@@ -78,14 +90,18 @@ angboot.cas.server.logoutUrl=http://localhost:10080/cas/logout
 ``` properties
 # Enable
 angboot.outer.authority.enabled=true
-# Dubbo app name
-outer.authority.app.name=angboot-client
-# Dubbo registry address
-outer.authority.app.registry.address=zookeeper://127.0.0.1:2181
-# Optional. Dubbo registry username
-outer.authority.app.registry.username=xxx
-# Optional. Dubbo registry password
-outer.authority.app.registry.password
 ```
 > we provide a simple outer authority application. you can find it on [GitHub: angboot-providers/authority](https://github.com/DreamLi1314/angboot-providers/tree/master/authority)
 
+### 3.3 Enable Https for Security Connection
+
+``` properties
+angboot.https.enabled=true
+angboot.https.port=8443
+angboot.https.ssl.key.store.path=angboot.keystore
+angboot.https.ssl.key.alias=angboot
+angboot.https.ssl.key.store.pwd=angboot
+angboot.https.ssl.key.store.type=JKS
+```
+
+> **Notice:** `angboot.https.ssl.key.store.path` must based on `config/ssl/` folder

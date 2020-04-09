@@ -14,36 +14,23 @@
 
 package org.angboot.config;
 
-import org.angboot.authority.AuthorizationService;
-import org.angboot.authority.UserService;
-import org.angboot.util.conditional.ConditionalOnOuterAuthorityEnabled;
+import org.angboot.schedule.service.ScheduleService;
+import org.angboot.util.conditional.ConditionalOnScheduleStarted;
 import org.apache.dubbo.config.ReferenceConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 
-@Conditional(ConditionalOnOuterAuthorityEnabled.class)
 @Configuration
-public class OuterAuthorityConfiguration extends AngBootDubboConfiguration {
+@Conditional(ConditionalOnScheduleStarted.class)
+public class AngBootScheduleConfiguration extends AngBootDubboConfiguration {
 
    @Bean()
-   public UserService userService() {
-      ReferenceConfig<UserService> reference = new ReferenceConfig<>();
+   public ScheduleService scheduleService() {
+      ReferenceConfig<ScheduleService> reference = new ReferenceConfig<>();
       reference.setApplication(applicationConfig());
       reference.setRegistry(registryConfig());
-      reference.setInterface(UserService.class);
-      // TODO reference version
-//      reference.setVersion("1.0.0");
-
-      return reference.get();
-   }
-
-   @Bean()
-   public AuthorizationService authorizationService() {
-      ReferenceConfig<AuthorizationService> reference = new ReferenceConfig<>();
-      reference.setApplication(applicationConfig());
-      reference.setRegistry(registryConfig());
-      reference.setInterface(AuthorizationService.class);
+      reference.setInterface(ScheduleService.class);
       // TODO reference version
 //      reference.setVersion("1.0.0");
 
