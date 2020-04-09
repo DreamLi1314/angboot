@@ -2,6 +2,12 @@ buildscript {
    ext {
       productionBuild = project.hasProperty('buildenv') && project.property('buildenv') == 'prod'
    }
+
+   repositories {
+      jcenter()
+      mavenCentral()
+
+   }
 }
 
 //buildscript {

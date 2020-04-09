@@ -48,20 +48,70 @@ public class SecurityConstant {
    /**
     * the key of outer authority application name.
     */
-   public static final String OUTER_AUTHORITY_APP_NAME_KEY = "outer.authority.app.name";
+   public static final String DUBBO_CLIENT_NAME_KEY = "dubbo.app.name";
 
    /**
     * the key of outer authority application registry address.
     */
-   public static final String OUTER_AUTHORITY_APP_REGISTRY_ADDRESS_KEY = "outer.authority.app.registry.address";
+   public static final String DUBBO_REGISTRY_ADDRESS_KEY = "dubbo.registry.address";
 
    /**
     * the key of outer authority application registry username.
     */
-   public static final String OUTER_AUTHORITY_APP_REGISTRY_USERNAME_KEY = "outer.authority.app.registry.username";
+   public static final String DUBBO_REGISTRY_USERNAME_KEY = "dubbo.registry.username";
 
    /**
     * the key of outer authority application registry password.
     */
-   public static final String OUTER_AUTHORITY_APP_REGISTRY_PASSWORD_KEY = "outer.authority.app.registry.password";
+   public static final String DUBBO_REGISTRY_PASSWORD_KEY = "dubbo.registry.password";
+
+   /**
+    * the key of https enabled.
+    */
+   public static final String HTTPS_ENABLED_KEY = "angboot.https.enabled";
+
+   /**
+    * the key of https connection port.
+    */
+   public static final String HTTPS_PORT_KEY = "angboot.https.port";
+
+   /**
+    * Defaulting https connection port.
+    */
+   public static final int DEFAULT_HTTPS_PORT = 8443;
+
+   /**
+    * Defaulting prod mode http connection port.
+    */
+   public static final int DEFAULT_HTTP_PORT = 80;
+
+   /**
+    * Defaulting dev mode http connection port.
+    */
+   public static final int DEFAULT_DEVELOP_HTTP_PORT = 8080;
+
+   /**
+    * the key of https sll key store. Based on `config/ssl/`
+    */
+   public static final String HTTPS_KEY_STORE_PATH_KEY = "angboot.https.ssl.key.store.path";
+
+   /**
+    * the key of https sll key alias.
+    */
+   public static final String HTTPS_KEY_ALIAS_KEY = "angboot.https.ssl.key.alias";
+
+   /**
+    * the key of password of https sll key store.
+    */
+   public static final String HTTPS_KEY_STORE_PASSWORD_KEY = "angboot.https.ssl.key.store.pwd";
+
+   /**
+    * the key of type of https sll key store.
+    */
+   public static final String HTTPS_KEY_STORE_TYPE_KEY = "angboot.https.ssl.key.store.type";
+
+   /**
+    * the key of flag of schedule started.
+    */
+   public static final String SCHEDULING_ENABLE_KEY = "schedule.start";
 }

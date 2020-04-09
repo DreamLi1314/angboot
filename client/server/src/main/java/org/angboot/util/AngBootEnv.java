@@ -89,6 +89,26 @@ public class AngBootEnv {
    }
 
    /**
+    * Get a property int value with a default if the property is not defined.
+    */
+   public static int getIntegerProperty(String name, int defaultValue) {
+      String val = AngBootEnv.getProperty(name);
+      int result = defaultValue;
+
+      if(val != null) {
+         try {
+            result = Integer.parseInt(val);
+         }
+         catch(Exception ignore) {
+            // TODO Log Format
+            LOGGER.info("Parse property error. Key is: {}, Value is: " + val, name);
+         }
+      }
+
+      return result;
+   }
+
+   /**
     * Get a property as a boolean value.
     */
    public static Boolean getBoolean(String name) {
@@ -106,8 +126,13 @@ public class AngBootEnv {
       return val;
    }
 
+   public static String getHome() {
+      return AngBootEnv.getProperty(ANGBOOT_HOME_KEY);
+   }
+
    private static Hashtable cache = new Hashtable(); // cached objects
 
+   public static final String ANGBOOT_HOME_KEY = "angboot.home";
    private static final String PROPERTIES_KEY = AngBootEnv.class.getName() + ".properties";
 
    private static final Logger LOGGER = LoggerFactory.getLogger(AngBootEnv.class);
