@@ -15,6 +15,8 @@
     "lint": "tsc -p rules/tsconfig.json && npm run ng -- lint",
     "e2e": "npm run ng -- e2e --serve false",
     "generate-index-files": "node ./generate-index-files.js",
+    "jest": "jest",
+    "jest:watch": "jest --watch",
     "report-coverage": "codecov --token=1eb18219-afec-47c9-8f90-1210b4ec4d07"
   },
   "private": true,
@@ -72,5 +74,9 @@
     "tslint": "~5.11.0",
     "typescript": "3.5.3",
     "vinyl-fs": "^2.4.4"
+  },
+  "jest": {
+    "preset": "jest-preset-angular",
+    "setupFilesAfterEnv": ["./setupJest.ts"]
   }
 }
