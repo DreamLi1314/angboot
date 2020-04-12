@@ -13,9 +13,9 @@ before_install:
 # For permission denied in travis-ci
    - chmod +x gradlew
 
-services:
+#services:
 # For karma test to start browser.
-   - xvfb
+#   - xvfb # since web test framework change to jest, so this is not requirement.
 
 install: skip
 

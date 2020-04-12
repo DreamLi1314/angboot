@@ -52,6 +52,7 @@ gradlew[.bat] server
 
 ## 6. Todo list of this version
 * Upgrade angular from `v7` to `v8`.
+* Change web test framework from `karma` to `jest`.
 
 ## 7. Change Log
 ### Version 0.2.1:
