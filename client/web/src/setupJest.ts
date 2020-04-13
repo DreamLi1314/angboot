@@ -13,4 +13,3 @@
  */
 
 import "./jestGlobalMocks.ts"; // jest 全局的 mock
-import "RouterTestingModule"; // angular router mock

@@ -4,5 +4,5 @@ module.exports = {
          tsConfigFile: './tsconfig.spec.json',
       },
    },
-   setupFiles: ["jest-canvas-mock"]
+   setupFiles: ["jest-canvas-mock", "<rootDir>/src/setupJest.ts"]
 };
