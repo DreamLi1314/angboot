@@ -23,7 +23,7 @@ You should have installed the following software and configure the corresponding
 * Security: SpringSecurity
 * ORM: Mybatis
 * SSO: CAS
-* Web: Angular7 + Bootstrap4 + SCSS
+* Web: Angular8 + Bootstrap4 + SCSS
 * Server: Tomcat
 * Datasource: H2 + Druid
 * Project Management Tools: Gradle
@@ -46,16 +46,22 @@ gradlew[.bat] server
 ## 4. Versions
 * [0.0.0](https://github.com/DreamLi1314/angboot/tree/0.0.0)
 * [0.1.x](https://github.com/DreamLi1314/angboot/tree/0.1.x)
+* [0.2.0](https://github.com/DreamLi1314/angboot/tree/0.2.0)
+* [0.2.1](https://github.com/DreamLi1314/angboot/tree/0.2.1)
 
 ## 5. Getting help
 * Master version: To see [User Manual](https://dreamli1314.github.io/angboot/).
 * Current Version: To see `docs/index.md`
 
 ## 6. Todo list of this version
-* Upgrade gradle from `v5.x` to `v6.x`.
-* Support Schedule Task With `Quartz`.
+* Upgrade angular from `v7` to `v8`.
+* Change web test framework from `karma` to `jest`.
 
 ## 7. Change Log
+### Version 0.2.1:
+* Upgrade gradle from `v5.x` to `v6.x`.
+* Support Schedule Task With `Quartz`
+
 ### Version 0.2.0:
 * Split module, microservitization project.
 * Support outer authority application with `Dubbo`.

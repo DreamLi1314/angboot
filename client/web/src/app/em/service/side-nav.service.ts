@@ -12,14 +12,24 @@
  * person.
  */
 
-import { browser, by, element } from "protractor";
+import { Injectable, OnDestroy } from "@angular/core";
+import { Subject } from "rxjs";
 
-export class AppPage {
-  navigateTo() {
-    return browser.get("/");
-  }
+@Injectable()
+export class SideNavService implements OnDestroy {
+   isToggle: boolean = true;
+   onSidenavToggle = new Subject<void>();
 
-  getParagraphText() {
-    return element(by.css("app-root h1")).getText();
-  }
+   ngOnDestroy(): void {
+      if(!!this.onSidenavToggle) {
+         this.onSidenavToggle.unsubscribe();
+         this.onSidenavToggle = null;
+      }
+   }
+
+   toggle: () => void = () => {
+      this.isToggle = !this.isToggle;
+      this.onSidenavToggle.next();
+   };
+
 }

@@ -18,9 +18,6 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import {
    MatButtonModule, MatInputModule, MatSidenavModule, MatSnackBarModule, MatToolbarModule
 } from "@angular/material";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { WidgetModule } from "../../widget/widget.module";
 import { EmMonitorRoutingModule } from "./em-monitor-routing.module";
 import { EmMonitorComponent } from "./em-monitor.component";
 

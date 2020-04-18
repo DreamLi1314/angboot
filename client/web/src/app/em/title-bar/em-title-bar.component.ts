@@ -13,6 +13,11 @@
  */
 
 import { Component } from "@angular/core";
+import { Router } from "@angular/router";
+import { EmUrlConstants } from "../../common/constants/url/em-url-constants";
+import { GuiTool } from "../../common/util/gui-tool";
+import { ModelService } from "../../widget/services/model.service";
+import { EmTab, EmTitleBarService } from "../service/em-title-bar.service";
 
 @Component({
    selector: "em-title-bar",
@@ -20,4 +25,38 @@ import { Component } from "@angular/core";
    styleUrls: ["em-title-bar.component.scss"]
 })
 export class EmTitleBarComponent {
+
+   constructor(private router: Router,
+               private modelService: ModelService,
+               private titleBarService: EmTitleBarService) {
+   }
+
+   readonly MONITOR_PAGE = EmTab.MONITOR;
+   readonly SETTING_PAGE = EmTab.SETTING;
+
+   get currentTab(): EmTab {
+      return this.titleBarService.currentTab;
+   }
+
+   changeTab(tab: EmTab): void {
+      this.titleBarService.changeTab(tab);
+
+      let tabURL = "em/monitor";
+
+      if(tab == EmTab.SETTING) {
+         tabURL = "em/setting";
+      }
+
+      this.router.navigateByUrl(tabURL);
+   }
+
+   logout(): void {
+      // TODO redirect to login page by interceptor.
+      this.modelService.getModel(EmUrlConstants.LOGOUT_URL).subscribe((status) => {
+      });
+   }
+
+   help(): void {
+      GuiTool.openBrowserTab("https://dreamli1314.github.io/angboot/");
+   }
 }

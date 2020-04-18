@@ -1,18 +1,16 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/spec",
     "baseUrl": "./",
-    "module": "commonjs",
     "types": [
-      "jasmine",
+      "jest",
       "node",
       "geojson"
     ]
   },
   "files": [
-    "test.ts",
-    "polyfills.ts"
+    "src/polyfills.ts"
   ],
   "include": [
     "**/*.spec.ts",
