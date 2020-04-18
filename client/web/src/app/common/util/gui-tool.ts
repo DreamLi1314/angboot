@@ -28,17 +28,17 @@ export namespace GuiTool {
    /**
      * Fraction width, 1/16 point.
      */
-    export const FRACTION_WIDTH_MASK: number = 0xF0000;
+   export const FRACTION_WIDTH_MASK: number = 0xF0000;
 
-    /**
-     * This mask is used to extract the encoded line width from line styles.
-     */
-    export const WIDTH_MASK: number = 0x0F;
+   /**
+    * This mask is used to extract the encoded line width from line styles.
+    */
+   export const WIDTH_MASK: number = 0x0F;
 
-    /**
-     * This mask is used to extract the dash length.
-     */
-    export const DASH_MASK: number = 0x0F0;
+   /**
+    * This mask is used to extract the dash length.
+    */
+   export const DASH_MASK: number = 0x0F0;
 
    export const DATA_TIP_OFFSET = measureScrollbars();
 
@@ -46,7 +46,8 @@ export namespace GuiTool {
 
    export const MINIMUM_TITLE_HEIGHT = 18;
 
-   let scrollbarWidth: number;
+   export let scrollbarWidth: number;
+
    /**
     * Return the text width in pixels.
     */

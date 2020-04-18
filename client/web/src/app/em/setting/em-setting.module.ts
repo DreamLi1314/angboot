@@ -15,30 +15,31 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { PortalAppComponent } from "./app.component";
-import { WidgetModule } from "../widget/widget.module";
-import { MODULE_COMPONENTS } from "./index.components";
-import { PortalAppRoutingModule } from "./app-routing.module";
+import { MatButtonModule } from "@angular/material/button";
+import { MatInputModule } from "@angular/material/input";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { EmSettingRoutingModule } from "./em-setting-routing.module";
+import { EmSettingComponent } from "./em-setting.component";
 
 @NgModule({
    declarations: [
-      PortalAppComponent,
-      ...MODULE_COMPONENTS
+      EmSettingComponent,
    ],
    imports: [
       CommonModule,
       FormsModule,
-      WidgetModule,
       ReactiveFormsModule,
-      NgbModule,
-      PortalAppRoutingModule
+      EmSettingRoutingModule,
+      MatButtonModule,
+      MatSnackBarModule,
+      MatSidenavModule,
+      MatInputModule
    ],
-   bootstrap: [PortalAppComponent],
    entryComponents: [
    ],
    providers: [
    ]
 })
-export class PortalAppModule {
+export class EmSettingModule {
 }

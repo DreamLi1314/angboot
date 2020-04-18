@@ -18,11 +18,11 @@ import { BaseSubscription } from "../../widget/base/BaseSubscription";
 import { SideNavService } from "../service/side-nav.service";
 
 @Component({
-   selector: "em-monitor",
-   templateUrl: "em-monitor.component.html",
-   styleUrls: ["em-monitor.component.scss"]
+   selector: "em-setting",
+   templateUrl: "em-setting.component.html",
+   styleUrls: ["em-setting.component.scss"]
 })
-export class EmMonitorComponent extends BaseSubscription implements OnInit {
+export class EmSettingComponent extends BaseSubscription implements OnInit {
    @ViewChild("drawer", { static: true }) sidenav: MatDrawer;
 
    constructor(private sidenavService: SideNavService) {
