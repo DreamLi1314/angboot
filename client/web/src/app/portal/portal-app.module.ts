@@ -31,7 +31,7 @@ import { PortalAppRoutingModule } from "./app-routing.module";
       FormsModule,
       WidgetModule,
       ReactiveFormsModule,
-      NgbModule,
+      NgbModule.forRoot(),
       PortalAppRoutingModule
    ],
    bootstrap: [PortalAppComponent],

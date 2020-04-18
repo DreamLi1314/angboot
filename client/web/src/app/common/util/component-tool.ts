@@ -47,7 +47,7 @@ export namespace ComponentTool {
       }
 
       console.error(msg);
-      ComponentTool.showMessageDialog(modal, "Error", msg);
+      ComponentTool.showMessageDialog(modal, "_#(js:Error)", msg);
    }
 
    /**
@@ -152,7 +152,7 @@ export namespace ComponentTool {
       modalService: NgbModal,
       title: string,
       message: string,
-      buttonOptions: {[key: string]: string} = {"ok": "OK"},
+      buttonOptions: {[key: string]: string} = {"ok": "_#(js:OK)"},
       modalOptions: NgbModalOptions = {backdrop: "static" },
       closeSubject: Subject<any> = null): Promise<any>
    {
@@ -176,6 +176,8 @@ export namespace ComponentTool {
             });
          }
       }
+
+      console.log("==message===", message);
 
       let messMix: string[] = !!message && isString(message) ?
          message.split(MESSAGEDIALOG_MESSAGE_CONNECTION) : [];

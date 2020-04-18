@@ -15,18 +15,13 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { MatButtonModule } from "@angular/material/button";
-import { MatToolbarModule } from "@angular/material/toolbar";
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { ModelService } from "../widget/services/model.service";
-import { WidgetModule } from "../widget/widget.module";
+import { MatButtonModule, MatToolbarModule } from "@angular/material";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { EMAppComponent } from "./app.component";
 import { MODULE_COMPONENTS } from "./index.components";
 import { EMAppRoutingModule } from "./app-routing.module";
 import { EmMonitorModule } from "./monitor/em-monitor.module";
-import { EmTitleBarService } from "./service/em-title-bar.service";
-import { SideNavService } from "./service/side-nav.service";
-import { EmSettingModule } from "./setting/em-setting.module";
+import { SidenavService } from "./service/SidenavService";
 
 @NgModule({
    declarations: [
@@ -35,13 +30,10 @@ import { EmSettingModule } from "./setting/em-setting.module";
    ],
    imports: [
       CommonModule,
-      WidgetModule,
       FormsModule,
-      NgbModule,
       ReactiveFormsModule,
       EMAppRoutingModule,
       EmMonitorModule,
-      EmSettingModule,
       MatToolbarModule,
       MatButtonModule
    ],
@@ -51,9 +43,7 @@ import { EmSettingModule } from "./setting/em-setting.module";
    entryComponents: [
    ],
    providers: [
-      SideNavService,
-      EmTitleBarService,
-      ModelService
+      SidenavService
    ]
 })
 export class EmAppModule {

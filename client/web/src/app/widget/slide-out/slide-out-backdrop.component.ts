@@ -17,7 +17,7 @@ import { Component, Input } from "@angular/core";
 @Component({
    selector: "w-slide-out-backdrop",
    template: "",
-   host: { // tslint:disable-line:no-host-metadata-property
+   host: { // tslint:disable-line:use-host-property-decorator
       "[class]": '"modal-backdrop fade show" + (backdropClass ? " " + backdropClass : "")',
       "style": "z-index: 1050"
    }

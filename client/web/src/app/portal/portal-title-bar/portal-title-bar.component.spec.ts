@@ -15,6 +15,7 @@
 import { TestBed, async } from "@angular/core/testing";
 import { BrowserModule } from "@angular/platform-browser";
 import { Router } from "@angular/router";
+import { Subject } from "rxjs";
 import { RouterTestingModule } from "@angular/router/testing";
 import { PortalTitleBarComponent } from "./portal-title-bar.component";
 
@@ -23,6 +24,9 @@ describe("PortalTitleBarComponent", () => {
    let router: any;
 
    beforeEach(async(() => {
+      router = jasmine.createSpyObj("Router", ["navigate"]);
+      router.events = new Subject<any>().asObservable();
+
       TestBed.configureTestingModule({
          imports: [
             BrowserModule,

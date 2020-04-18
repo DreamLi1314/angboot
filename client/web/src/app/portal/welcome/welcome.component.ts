@@ -22,7 +22,7 @@ let echarts = require("echarts");
    styleUrls: ["welcome.component.scss"]
 })
 export class WelcomeComponent implements OnInit {
-   @ViewChild("chartRegion", {static: true}) chartRegion: ElementRef;
+   @ViewChild("chartRegion") chartRegion: ElementRef;
 
    ngOnInit(): void {
       const mockDataOption = {

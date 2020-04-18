@@ -1,37 +1,13 @@
 buildscript {
-   ext {
-      productionBuild = project.hasProperty('buildenv') && project.property('buildenv') == 'prod'
-   }
-
    repositories {
       jcenter()
       mavenCentral()
-
    }
 }
 
-//buildscript {
-//   repositories {
-//      maven {
-//         url "https://plugins.gradle.org/m2/"
-//      }
-//   }
-//
-//   dependencies {
-//      classpath "com.moowork.gradle:gradle-node-plugin:1.3.1"
-//   }
-//}
-
-//apply plugin: "com.moowork.node"
-
 plugins {
-   // The `moowork.gradle` plugin unSupport gradle 6+ now,
-   // so using `github.node-gradle` for install node and npm
-   // if the grunt and gulp is not required now.
-   // See: https://github.com/srs/gradle-node-plugin/pull/349
-   id "com.github.node-gradle.node" version "2.2.0"
-
    id 'maven-publish'
+   id "com.github.node-gradle.node" version "2.2.0"
 }
 
 node {
@@ -49,6 +25,7 @@ task generateIndexFiles(type: NpmTask, dependsOn: npmInstall) {
 
 task compileDevelopment(type: NpmTask, dependsOn: npmInstall) {
    onlyIf { !productionBuild }
+   group 'build'
    description = 'Compiles applications using development settings'
    args = ['run', 'build']
 }
