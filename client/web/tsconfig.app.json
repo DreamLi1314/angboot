@@ -1,5 +1,5 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc",
     "baseUrl": "",
@@ -9,8 +9,7 @@
     ]
   },
   "exclude": [
-    "test.ts",
-    "app/common/test/**/*.ts",
+    "src/app/common/test/**/*.ts",
     "**/*.spec.ts"
   ],
   "angularCompilerOptions": {
