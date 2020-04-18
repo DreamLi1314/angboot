@@ -1,5 +1,5 @@
 # <a href="https://dreamli1314.github.io/angboot/"><img width="60px" align="center" src="https://s1.ax1x.com/2020/04/18/JnNVS0.png" alt="icon"/></a> [angboot](https://dreamli1314.github.io/angboot/) 
-[![Build Status](https://travis-ci.org/DreamLi1314/angboot.svg?branch=0.2.1)](https://travis-ci.org/DreamLi1314/angboot)
+[![Build Status](https://travis-ci.org/DreamLi1314/angboot.svg?branch=0.2.2)](https://travis-ci.org/DreamLi1314/angboot)
 [![HitCount](http://hits.dwyl.com/DreamLi1314/angboot.svg)](http://hits.dwyl.com/DreamLi1314/angboot)
 [![codecov](https://codecov.io/gh/DreamLi1314/angboot/branch/master/graph/badge.svg)](https://codecov.io/gh/DreamLi1314/angboot)
 ![GitHub issues](https://img.shields.io/github/issues/DreamLi1314/angboot)

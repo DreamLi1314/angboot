@@ -2,7 +2,7 @@
   "name": "angboot-web",
   "version": "0.2.0",
   "scripts": {
-    "ng": "node --max-old-space-size=6000 ./node_modules/@angular/cli/bin/ng",
+    "ng": "node --max-old-space-size=4096 ./node_modules/@angular/cli/bin/ng",
     "start": "npm run ng -- serve",
     "build:ng": "npm run build:ng:app",
     "build:ng:app": "npm run ng -- build --vendor-chunk",
