@@ -20,4 +20,5 @@ MANIFEST.MF
 
 # Package Files #
 
+client/web/package-lock.json
 angboot-providers/

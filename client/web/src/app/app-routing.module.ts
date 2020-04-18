@@ -21,11 +21,11 @@ const routes: Routes = [
       children: [
          {
             path: "portal",
-            loadChildren: "./portal/portal-app.module#PortalAppModule"
+            loadChildren: () => import("./portal/portal-app.module").then(m => m.PortalAppModule)
          },
          {
             path: "em",
-            loadChildren: "./em/em-app.module#EmAppModule"
+            loadChildren: () => import("./em/em-app.module").then(m => m.EmAppModule)
          },
          {
             path: "**",
