@@ -17,4 +17,13 @@
  */
 export namespace TestUtils {
 
+   export function toString(localStr: string): string {
+      let str = localStr.slice(localStr.indexOf("(") + 1, localStr.lastIndexOf(")"));
+
+      if(str.startsWith("js:")) {
+         str = str.substring(3);
+      }
+
+      return str;
+   }
 }

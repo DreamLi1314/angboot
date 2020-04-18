@@ -103,7 +103,7 @@ describe("Actions Contextmenu Component Tests", () => {
       app.actions = visibleAndInvisibleActions;
       fixture.detectChanges(true);
 
-      expect(fixture.debugElement.queryAll(By.css("a")).length).toBe(1);
+      expect(fixture.debugElement.queryAll(By.css("a")).length).toBe(1, "There should be exactly one action");
    });
 
    it("should apply a css class to disabled actions", () => {
@@ -112,7 +112,7 @@ describe("Actions Contextmenu Component Tests", () => {
       app.actions = disabledActions;
       fixture.detectChanges(true);
 
-      expect(fixture.debugElement.query(By.css("a.disable-link"))).toBeTruthy();
+      expect(fixture.debugElement.query(By.css("a.disable-link"))).toBeTruthy("The action is not disabled");
    });
 
    it("should create a divider to separate action groups", () => {
@@ -121,7 +121,7 @@ describe("Actions Contextmenu Component Tests", () => {
       app.actions = multipleActionGroups;
       fixture.detectChanges(true);
 
-      expect(fixture.debugElement.queryAll(By.css(".dropdown-divider")).length).toBe(1);
+      expect(fixture.debugElement.queryAll(By.css(".dropdown-divider")).length).toBe(1, "There should be exactly one divider");
    });
 
    it("should not create a dropdown when there are no visible actions", () => {
@@ -130,6 +130,6 @@ describe("Actions Contextmenu Component Tests", () => {
       app.actions = invisibleActions;
       fixture.detectChanges(true);
 
-      expect(fixture.debugElement.query(By.css(".show"))).toBeFalsy();
+      expect(fixture.debugElement.query(By.css(".show"))).toBeFalsy("The dropdown is being incorrectly shown");
    });
 });

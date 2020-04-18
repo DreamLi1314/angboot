@@ -52,25 +52,21 @@ export class SlideOutService {
     * for slide outs and will therefore be ignored.
     */
    public open(content: any, options?: SlideOutOptions, injector?: Injector): SlideOutRef {
-      let containerEl: Element = options.container instanceof Element ? options.container : null;
-      let containerSelector: string = null;
+      const containerSelector: string = options.container || "body";
+      const containerCandidates = document.querySelectorAll(containerSelector);
+      let containerEl: Element = null;
 
-      if(containerEl == null) {
-         containerSelector = options.container as string || "body";
-         const containerCandidates = document.querySelectorAll(containerSelector);
+      // Don"t check the layout box if only one element is found.
+      if(containerCandidates.length === 1) {
+         containerEl = containerCandidates.item(0);
+      }
+      else {
+         for(let i = 0; i < containerCandidates.length; i++) {
+            const containerCandidate = containerCandidates.item(i);
 
-         // Don"t check the layout box if only one element is found.
-         if(containerCandidates.length === 1) {
-            containerEl = containerCandidates.item(0);
-         }
-         else {
-            for(let i = 0; i < containerCandidates.length; i++) {
-               const containerCandidate = containerCandidates.item(i);
-
-               if(GuiTool.hasLayoutBox(containerCandidate)) {
-                  containerEl = containerCandidate;
-                  break;
-               }
+            if(GuiTool.hasLayoutBox(containerCandidate)) {
+               containerEl = containerCandidate;
+               break;
             }
          }
       }

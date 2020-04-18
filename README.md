@@ -1,5 +1,5 @@
-# <a href="https://dreamli1314.github.io/angboot/"><img width="60px" align="center" src="https://raw.githubusercontent.com/DreamLi1314/angboot/master/client/web/src/favicon.ico" alt="icon"/></a> [angboot](https://dreamli1314.github.io/angboot/) 
-[![Build Status](https://travis-ci.org/DreamLi1314/angboot.svg)](https://travis-ci.org/DreamLi1314/angboot)
+# <a href="https://dreamli1314.github.io/angboot/"><img width="60px" align="center" src="https://s1.ax1x.com/2020/04/18/JnNVS0.png" alt="icon"/></a> [angboot](https://dreamli1314.github.io/angboot/) 
+[![Build Status](https://travis-ci.org/DreamLi1314/angboot.svg?branch=0.2.2)](https://travis-ci.org/DreamLi1314/angboot)
 [![HitCount](http://hits.dwyl.com/DreamLi1314/angboot.svg)](http://hits.dwyl.com/DreamLi1314/angboot)
 [![codecov](https://codecov.io/gh/DreamLi1314/angboot/branch/master/graph/badge.svg)](https://codecov.io/gh/DreamLi1314/angboot)
 ![GitHub issues](https://img.shields.io/github/issues/DreamLi1314/angboot)
@@ -23,7 +23,7 @@ You should have installed the following software and configure the corresponding
 * Security: SpringSecurity
 * ORM: Mybatis
 * SSO: CAS
-* Web: Angular8 + Bootstrap4 + SCSS
+* Web: Angular7 + Bootstrap4 + SCSS
 * Server: Tomcat
 * Datasource: H2 + Druid
 * Project Management Tools: Gradle
@@ -46,22 +46,16 @@ gradlew[.bat] server
 ## 4. Versions
 * [0.0.0](https://github.com/DreamLi1314/angboot/tree/0.0.0)
 * [0.1.x](https://github.com/DreamLi1314/angboot/tree/0.1.x)
-* [0.2.0](https://github.com/DreamLi1314/angboot/tree/0.2.0)
-* [0.2.1](https://github.com/DreamLi1314/angboot/tree/0.2.1)
 
 ## 5. Getting help
 * Master version: To see [User Manual](https://dreamli1314.github.io/angboot/).
 * Current Version: To see `docs/index.md`
 
 ## 6. Todo list of this version
-* Upgrade angular from `v7` to `v8`.
-* Change web test framework from `karma` to `jest`.
+* Upgrade gradle from `v5.x` to `v6.x`.
+* Support Schedule Task With `Quartz`.
 
 ## 7. Change Log
-### Version 0.2.1:
-* Upgrade gradle from `v5.x` to `v6.x`.
-* Support Schedule Task With `Quartz`
-
 ### Version 0.2.0:
 * Split module, microservitization project.
 * Support outer authority application with `Dubbo`.

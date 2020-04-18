@@ -36,7 +36,7 @@ export class DropdownView {
    @Input() disabled: boolean = false;
    @Output() onToggle = new EventEmitter<string>();
    @Output() closed = new EventEmitter<boolean>();
-   @ViewChild(FixedDropdownDirective, { static: true }) dropdown: FixedDropdownDirective;
+   @ViewChild(FixedDropdownDirective) dropdown: FixedDropdownDirective;
 
    constructor(private elem: ElementRef, private renderer: Renderer2) {
    }

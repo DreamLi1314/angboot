@@ -12,6 +12,7 @@
  * person.
  */
 
+import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { TestBed, async, ComponentFixture } from "@angular/core/testing";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { NotificationsComponent } from "./notifications.component";
@@ -21,7 +22,7 @@ describe("NotificationsComponent Integration Tests", () => {
       TestBed.configureTestingModule({
          imports: [
             // NoopAnimationsModule,
-            NgbModule
+            NgbModule.forRoot()
          ],
          declarations: [
             NotificationsComponent

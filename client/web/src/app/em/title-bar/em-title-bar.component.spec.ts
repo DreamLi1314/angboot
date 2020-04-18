@@ -14,20 +14,18 @@
 
 import { TestBed, async } from "@angular/core/testing";
 import { BrowserModule } from "@angular/platform-browser";
+import { Router } from "@angular/router";
+import { Subject } from "rxjs";
 import { RouterTestingModule } from "@angular/router/testing";
-import { ModelService } from "../../widget/services/model.service";
-import { EmTab, EmTitleBarService } from "../service/em-title-bar.service";
-import { EmTitleBarComponent } from "./em-title-bar.component";
+import {EmTitleBarComponent} from "./em-title-bar.component";
 
 describe("EmTitleBarComponent", () => {
 
-   let modelService: any;
-   let emTitleBarService: any;
+   let router: any;
 
    beforeEach(async(() => {
-      modelService = { getModel: jest.fn() };
-      emTitleBarService = { changeTab: jest.fn() };
-      emTitleBarService.currentTab = EmTab.MONITOR;
+      router = jasmine.createSpyObj("Router", ["navigate"]);
+      router.events = new Subject<any>().asObservable();
 
       TestBed.configureTestingModule({
          imports: [
@@ -39,12 +37,8 @@ describe("EmTitleBarComponent", () => {
          ],
          providers: [
             {
-               provide: ModelService,
-               useValue: modelService
-            },
-            {
-               provide: EmTitleBarService,
-               useValue: emTitleBarService
+               provide: Router,
+               useValue: router
             }
          ]
       }).compileComponents();

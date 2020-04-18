@@ -37,7 +37,7 @@ import { FixedDropdownComponent } from "./fixed-dropdown/fixed-dropdown.componen
       CommonModule,
       FormsModule,
       ReactiveFormsModule,
-      NgbModule
+      NgbModule.forRoot()
    ],
    declarations: [
       ...MODULE_COMPONENTS,

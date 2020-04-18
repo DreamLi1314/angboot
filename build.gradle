@@ -2,18 +2,20 @@ import org.apache.tools.ant.taskdefs.condition.Os
 
 buildscript {
    repositories {
-      jcenter()
-      mavenCentral()
+      maven{
+         url 'http://maven.aliyun.com/nexus/content/groups/public/'
+      }
    }
 }
 
 allprojects {
    group = 'org.angboot'
-   version = '0.2.2-SNAPSHOT'
+   version = '0.2.1-SNAPSHOT'
 
    repositories {
-      jcenter()
-      mavenCentral()
+      maven{
+         url 'http://maven.aliyun.com/nexus/content/groups/public/'
+      }
    }
 
    buildscript {
