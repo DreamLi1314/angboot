@@ -10,7 +10,7 @@
 ![GitHub License](https://img.shields.io/github/license/dreamli1314/angboot)
 [![Gitter](https://badges.gitter.im/Angboot/Angboot.svg)](https://gitter.im/Angboot/Angboot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-## New Repository for [jfoa: https://github.com/JavaFamilyClub/jfoa](https://github.com/JavaFamilyClub/jfoa)
+## Deprecated: New Repository for [jfoa: https://github.com/JavaFamilyClub/jfoa](https://github.com/JavaFamilyClub/jfoa)
 
 ## 0. Preview Application
 You can preview angboot on [http://javafamily.club](http://javafamily.club)----- It is new repository [jfoa](https://github.com/JavaFamilyClub/jfoa) now.
