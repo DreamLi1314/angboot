@@ -13,7 +13,7 @@
 ## Deprecated: New Repository for [jfoa: https://github.com/JavaFamilyClub/jfoa](https://github.com/JavaFamilyClub/jfoa)
 
 ## 0. Preview Application
-You can preview angboot on [http://javafamily.club](http://javafamily.club)----- It is new repository [jfoa](https://github.com/JavaFamilyClub/jfoa) now.
+You can preview angboot on [www.javafamily.club](www.javafamily.club)----- It is new repository [jfoa](https://github.com/JavaFamilyClub/jfoa) now.
 
 ## 1. Prerequisites
 You should have installed the following software and configure the corresponding environment variables:
